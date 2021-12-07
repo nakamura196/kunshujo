@@ -467,7 +467,7 @@ export default {
 
   generate: {
     routes() {
-      return routes2()
+      return [] //routes2()
     },
   },
 }

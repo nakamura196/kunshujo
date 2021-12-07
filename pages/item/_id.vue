@@ -183,7 +183,7 @@
                         </template>
                         <!-- <br v-if="key2 !== item[agg.value].length - 1" /> -->
                         <span
-                          class="mr-4"
+                          class="mr-5"
                           v-if="key2 !== item[agg.value].length - 1"
                         />
                       </span>
