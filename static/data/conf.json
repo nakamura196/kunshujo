@@ -6,9 +6,5 @@
   "siteKeywords": "IIIF",
   "shortName": "くんしゅうじょう",
   "curationUrl": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/icv/",
-  "etc": {
-    "itaiji": "static/data/norm.json",
-    "settings": "static/data/settings.json",
-    "legend": "static/data/legend.json"
-  }
+  "etc": {}
 }

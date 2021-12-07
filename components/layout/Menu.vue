@@ -41,7 +41,7 @@
     <v-dialog v-model="dialog2" :transition="false" fullscreen hide-overlay>
       <v-card>
         <v-toolbar flat dark>
-          <FullTextSearch :history="false" :head="true" />
+          <FullTextSearch :history="false" />
           <v-spacer></v-spacer>
           <v-btn icon dark @click="dialog2 = false">
             <v-icon>mdi-close</v-icon>
@@ -61,7 +61,7 @@
 
     <v-app-bar dark app flat id="bar">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <!--  v-if="!isMobile" -->
+
       <v-toolbar-title>
         <nuxt-link
           :to="
@@ -77,7 +77,7 @@
 
       <v-spacer></v-spacer>
 
-      <FullTextSearch v-if="!isMobile" :head="true" />
+      <FullTextSearch class="ml-2" v-if="!isMobile" />
 
       <v-spacer></v-spacer>
 

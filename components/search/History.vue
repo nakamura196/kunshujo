@@ -136,7 +136,7 @@ export default class FullTextSearch extends Vue {
 
     this.$router.push(
       this.localePath({
-        name: 'search',
+        name: 'search-slug',
         query,
       }),
       () => {},

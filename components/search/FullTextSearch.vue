@@ -10,14 +10,14 @@
         rounded
         dense
         hide-details
-        :clearable="true /*head ? false : true*/"
+        :clearable="true"
         :clear-icon="mdiClose"
         :append-icon="mdiMagnify"
         :background-color="backgroundColor"
         @click:append="search"
         @keydown.enter="trigger"
         v-bind="attrs"
-        v-on="head && history ? on : false"
+        v-on="on"
         :placeholder="$t('inputSearchKeyword')"
       ></v-text-field>
     </template>
@@ -62,9 +62,6 @@ export default class FullTextSearch extends Vue {
   @Prop({ default: 'white' })
   backgroundColor!: string
 
-  @Prop({ default: false })
-  head!: boolean
-
   @Prop({ default: true })
   history!: boolean
 
@@ -82,21 +79,6 @@ export default class FullTextSearch extends Vue {
     this.menu = false
     this.search()
   }
-
-  /*
-  created() {
-    const query = this.$route.query
-    if (query.keyword) {
-      let q = query.keyword
-      if (typeof q !== 'string') {
-        q = q.join(' ')
-      }
-      this.q = q
-    } else {
-      this.q = ''
-    }
-  }
-  */
 
   items: any[] = []
 
