@@ -18,7 +18,9 @@
               style="height: 150px"
               width="100%"
               class="grey lighten-2"
-              :src="item._source.thumbnail"
+              :src="
+                item._source.thumbnail || baseUrl + '/img/icons/no-image.webp'
+              "
             />
           </nuxt-link>
           <div class="pa-4">
@@ -46,6 +48,8 @@ import { Prop, Vue, Component, Watch } from 'nuxt-property-decorator'
 export default class FullTextSearch extends Vue {
   @Prop({})
   items!: any[]
+
+  baseUrl: any = process.env.BASE_URL
 
   get name() {
     const slug = this.$route.params.slug || 'default'

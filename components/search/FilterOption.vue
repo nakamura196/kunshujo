@@ -15,7 +15,6 @@
       </template>
 
       <span class="mr-1">{{ getLabel(filter.label) }}:</span>
-      <!-- <c-render :value="filter.value" /> -->
       {{ custom(getValue(filter.value), filter.label) }}
     </v-chip>
 
@@ -96,7 +95,7 @@ export default class FullTextSearch extends Vue {
     //新しいリストで置き換え
     query[field] = values
 
-    query.page /*['main[page]']*/ = 1
+    query.page = 1
 
     const to: any = {
       name: 'search',
@@ -143,7 +142,6 @@ export default class FullTextSearch extends Vue {
     return value
       .replace('fc-', this.$t('facet') + '-')
       .replace('q-', this.$t('detail') + '-')
-      .replace('keyword', (this as any).$t('keyword'))
   }
 
   customMap: any = {}
@@ -151,7 +149,6 @@ export default class FullTextSearch extends Vue {
   created() {
     const slug = this.$route.params.slug || 'default'
     const searches: any = process.env.searches
-    console.log({ slug, searches })
     const advanced: any = searches[slug].advanced || []
     const customMap: any = {}
     for (const obj of advanced) {

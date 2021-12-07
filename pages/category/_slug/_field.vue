@@ -1,7 +1,7 @@
 <template>
   <div>
     <Breadcrumbs :items="bh" />
-    <v-container class="my-5">
+    <v-container class="my-5 pb-10">
       <v-tabs v-model="tabValue" class="mb-10">
         <template v-for="(aggList, aggField) in aggs">
           <v-tab
@@ -49,11 +49,12 @@
           </v-tab>
         </v-tabs>
 
-        <v-tabs-items v-model="tabs" class="mt-10">
+        <v-tabs-items v-model="tabs" class="mt-5">
           <v-tab-item :value="'mobile-tabs-5-1'">
             <v-card flat>
               <v-card-title>
                 <v-text-field
+                  class="mb-5"
                   filled
                   rounded
                   v-model="search"
@@ -61,6 +62,8 @@
                   dense
                   single-line
                   hide-details
+                  background-color="#E0E0E0"
+                  :placeholder="$t('inputSearchKeyword')"
                 ></v-text-field>
               </v-card-title>
               <v-data-table

@@ -1,10 +1,9 @@
 {
   "lang": "ja",
-  "siteName": "電子展示『くんしゅうじょう』",
-  "siteDesc": "このサイトは、ＷＥＢ上で正保琉球国絵図の画像を公開するとともに、絵図に描き込まれた情報を分析するために構築されたデジタルアーカイブです。",
+  "siteName": "電子展示『捃拾帖』",
+  "siteDesc": "このシステムは、東京大学総合図書館所蔵の田中芳男文庫『捃拾帖』を中心とした電子展示サイトです。貼り込み資料単位の検索ができます。",
   "footer": "東京大学",
   "siteKeywords": "IIIF",
-  "shortName": "くんしゅうじょう",
-  "curationUrl": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/icv/",
+  "shortName": "捃拾帖",
   "etc": {}
 }
