@@ -109,7 +109,7 @@
             class="overflow-y-auto pa-0"
           >
             <div class="pa-4">
-              <FullTextSearch class="mt-2 mb-5" />
+              <FullTextSearch class="mb-5" />
               <FilterOption />
               <v-row dense align="center">
                 <v-col cols="12" md="3">

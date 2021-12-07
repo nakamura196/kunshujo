@@ -118,7 +118,7 @@ function filter(
     q = q.join(' ')
   }
 
-  const sort: any = routeQuery.sort
+  const sort: any = routeQuery.sort || '_score:desc'
 
   const spl = sort.split(':')
   const sortValue = spl[0]
@@ -129,11 +129,13 @@ function filter(
     ids = Object.keys(docs)
   } else {
     // 異体字対応
-    const spl = q.split('')
-    q = ''
     const itaiji: any = process.env.itaiji
-    for (const e of spl) {
-      q += itaiji[e] || e
+    if (itaiji) {
+      const spl = q.split('')
+      q = ''
+      for (const e of spl) {
+        q += itaiji[e] || e
+      }
     }
 
     const terms = q.split('　').join(' ').split(' ')

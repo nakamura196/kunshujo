@@ -41,7 +41,23 @@ env.menu = [
   {
     label: 'category',
     to: {
-      name: 'category',
+      name: 'category-slug',
+      params: {
+        slug: 'item',
+      },
+    },
+    icon: 'mdi-tag',
+    description:
+      '正保の琉球国絵図３舗に書き込まれた文字などの情報（全895件）につき、島や村などの分類によって検索できます。',
+    top: true,
+  },
+  {
+    label: 'カテゴリ（エンティティ）',
+    to: {
+      name: 'category-slug',
+      params: {
+        slug: 'entity',
+      },
     },
     icon: 'mdi-tag',
     description:
@@ -91,6 +107,7 @@ const manifestIcon = 'img/icons/icon-512.png'
 
 env.searches = {
   default: {
+    label: 'item',
     index: 'data/index.json',
     aggs: {
       category: {
@@ -169,6 +186,7 @@ env.searches = {
     ],
   },
   entity: {
+    label: 'entity',
     index: 'data/entity.json',
     aggs: {
       タイプ: {
@@ -211,17 +229,17 @@ env.searches = {
         component: 'search-layout-graph',
       },
     ],
+    list: [
+      {
+        label: '絵図',
+        value: '図',
+      },
+      {
+        label: '分類',
+        value: 'category',
+      },
+    ],
   },
-  list: [
-    {
-      label: '絵図',
-      value: '図',
-    },
-    {
-      label: '分類',
-      value: 'category',
-    },
-  ],
 }
 
 export default {

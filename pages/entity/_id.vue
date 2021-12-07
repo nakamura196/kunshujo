@@ -299,7 +299,7 @@ export default class Item extends Vue {
 
   height: number = 300
 
-  hide: any = process.env.hide
+  hide: any = process.env.hide || {}
 
   searches: any = process.env.searches
 

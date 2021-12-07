@@ -9,7 +9,7 @@
           <v-btn
             large
             class="mt-5"
-            :to="localePath({ name: 'search' })"
+            :to="localePath({ name: 'search-slug' })"
             color="primary"
             >{{ $t('try_out') }}</v-btn
           >

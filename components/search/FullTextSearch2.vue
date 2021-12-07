@@ -10,10 +10,10 @@
         rounded
         dense
         hide-details
-        :clearable="true /*head ? false : true*/"
+        :clearable="true"
         :clear-icon="mdiClose"
         :append-icon="mdiMagnify"
-        background-color="gray"
+        background-color="#E0E0E0"
         @click:append="search"
         @keydown.enter="trigger"
         :placeholder="$t('inputSearchKeyword')"

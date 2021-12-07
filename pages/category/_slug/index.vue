@@ -23,8 +23,8 @@
                   <nuxt-link
                     :to="
                       localePath({
-                        name: 'category-slug',
-                        params: { slug: key },
+                        name: 'category-slug-field',
+                        params: { slug, field: key },
                       })
                     "
                   >
@@ -46,36 +46,43 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import axios from 'axios'
+import { Prop, Vue, Component, Watch } from 'nuxt-property-decorator'
 import Breadcrumbs from '~/components/common/Breadcrumbs.vue'
 
-export default {
+@Component({
   components: {
     Breadcrumbs,
   },
-  data() {
-    return {
-      aggs: process.env.aggs,
+})
+export default class FullTextSearch extends Vue {
+  get slug(): any {
+    return this.$route.params.slug || 'item'
+  }
+  get aggs(): any {
+    const slug = this.slug
+    const slug2 = slug === 'item' ? 'default' : slug
+    const searches: any = process.env.searches
+    return searches[slug2].aggs
+  }
 
-      bh: [
-        {
-          text: this.$t('top'),
-          disabled: false,
-          to: this.localePath({ name: 'index' }),
-          exact: true,
-        },
-        {
-          text: this.$t('category'),
-        },
-      ],
-    }
-  },
+  bh: any[] = [
+    {
+      text: this.$t('top'),
+      disabled: false,
+      to: this.localePath({ name: 'index' }),
+      exact: true,
+    },
+    {
+      text: this.$t('category'),
+    },
+  ]
 
   head() {
     return {
       title: this.$t('category'),
     }
-  },
+  }
 }
 </script>
