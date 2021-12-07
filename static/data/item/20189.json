@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "港湾"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0002.json",
+    "description": [
+        "一、此那覇湊、入廿弐町、広さ壱町廿間、深さ三尋半\n一、大船三拾艘程繋ル、干潮之時船入事不成\n一、東風南風之時湊口船入事不成、湊内何風ニ而も船繋リ自由\n一、那覇湊ヨリ長崎迄、海上三百里\n一、右同湊ヨリ朝鮮国迄、海上四百五十里ト申伝候\n一、右同湊ヨリ高砂かみのはな迄、海上弐百五十里ト申伝候、"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0002",
+    "jk": [
+        ""
+    ],
+    "label": "那覇湊",
+    "latitude": [
+        "26.2107757"
+    ],
+    "latlng": [
+        "26.2107757,127.6701733"
+    ],
+    "longitude": [
+        "127.6701733"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/canvas/p1#xywh=13046,14882,1136,2720",
+    "objectID": "20189",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/20189.jpg",
+    "リンク": [
+        "https://goo.gl/maps/tbvxVyLgu1obaytv6"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国悪鬼納島絵図写"
+    ],
+    "現在の地名": [
+        "沖縄県那覇市通堂町"
+    ],
+    "番号": [
+        "124"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

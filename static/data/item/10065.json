@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "あり"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "間切"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        "千七百八十石余"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        "30020470000266500"
+    ],
+    "label": "徳時間切",
+    "latitude": [
+        "27.353573"
+    ],
+    "latlng": [
+        "27.353573,128.5401619"
+    ],
+    "longitude": [
+        "128.5401619"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=8342,14100,244,294",
+    "objectID": "10065",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10065.jpg",
+    "リンク": [
+        "https://goo.gl/maps/Dpx2FAjmHSpkfy1GA"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県大島郡知名町徳時"
+    ],
+    "番号": [
+        "〔60〕"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "崎"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        ""
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "大くろ崎",
+    "latitude": [
+        "28.4774528"
+    ],
+    "latlng": [
+        "28.4774528,129.6216667"
+    ],
+    "longitude": [
+        "129.6216667"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=41832,9258,242,114",
+    "objectID": "10128",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10128.jpg",
+    "リンク": [
+        "https://goo.gl/maps/YTstPGgVPtFueuTp9"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県大島郡龍郷町安木屋場"
+    ],
+    "番号": [
+        "55"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

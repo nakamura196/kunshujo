@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "村"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0003.json",
+    "description": [
+        "与那覇村"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0003",
+    "jk": [
+        ""
+    ],
+    "label": "下地間切之内与那覇村",
+    "latitude": [
+        "24.7390913"
+    ],
+    "latlng": [
+        "24.7390913,125.2670344"
+    ],
+    "longitude": [
+        "125.2670344"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/canvas/p1#xywh=41264,17674,334,360",
+    "objectID": "30016",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/30016.jpg",
+    "リンク": [
+        "https://goo.gl/maps/oFfprtrpxH2BsX7n6"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国八山島絵図"
+    ],
+    "現在の地名": [
+        "沖縄県宮古島市下地与那覇"
+    ],
+    "番号": [
+        "〔11〕"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

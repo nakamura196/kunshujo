@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "島"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0003.json",
+    "description": [
+        "石墻嶋之内\n嶋廻り一里卅町"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0003",
+    "jk": [
+        ""
+    ],
+    "label": "たけとみ嶋",
+    "latitude": [
+        "24.3267023"
+    ],
+    "latlng": [
+        "24.3267023,124.0893962"
+    ],
+    "longitude": [
+        "124.0893962"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/canvas/p1#xywh=20926,18294,282,650",
+    "objectID": "30142",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/30142.jpg",
+    "リンク": [
+        "https://goo.gl/maps/k5Twcc5XDPDVzg2o8"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国八山島絵図"
+    ],
+    "現在の地名": [
+        "沖縄県八重山郡竹富町竹富"
+    ],
+    "番号": [
+        "87"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "干瀬"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        ""
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "みんせ",
+    "latitude": [
+        "28.1048056"
+    ],
+    "latlng": [
+        "28.1048056,129.3544167"
+    ],
+    "longitude": [
+        "129.3544167"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=28228,12900,68,138",
+    "objectID": "10262",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10262.jpg",
+    "リンク": [
+        "https://goo.gl/maps/etcQX2f4b95mfMuE6"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県大島郡瀬戸内町渡連"
+    ],
+    "番号": [
+        "189"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "島"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0002.json",
+    "description": [
+        "嶋廻一り廿弐町\nけらま嶋之内\n人居有"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0002",
+    "jk": [
+        ""
+    ],
+    "label": "座間味嶋",
+    "latitude": [
+        "26.233338"
+    ],
+    "latlng": [
+        "26.233338,127.3052262"
+    ],
+    "longitude": [
+        "127.3052262"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/canvas/p1#xywh=10278,10296,366,388",
+    "objectID": "20057",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/20057.jpg",
+    "リンク": [
+        "https://goo.gl/maps/n1HEmsnsPKK4jxeY7"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国悪鬼納島絵図写"
+    ],
+    "現在の地名": [
+        "沖縄県島尻郡座間味村阿佐"
+    ],
+    "番号": [
+        "〔52〕"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

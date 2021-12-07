@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "島"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        ""
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "与論嶋\n高千弐百七拾弐石六斗\n嶋廻三里五町",
+    "latitude": [
+        "27.042604"
+    ],
+    "latlng": [
+        "27.042604,128.432407"
+    ],
+    "longitude": [
+        "128.432407"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=8024,19248,542,986",
+    "objectID": "10373",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10373.jpg",
+    "リンク": [
+        "https://goo.gl/maps/LyGChF1zUrJJivNf9"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県大島郡与論町朝戸"
+    ],
+    "番号": [
+        "299"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

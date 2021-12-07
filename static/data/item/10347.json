@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "港湾"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        "此和にや泊、入壱町廿間、広さ廿間、深さ五尋、水底惣岩、船繋リ不自由、西風之時船繋リ不成"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "和にや泊",
+    "latitude": [
+        "27.8329601"
+    ],
+    "latlng": [
+        "27.8329601,128.8911057"
+    ],
+    "longitude": [
+        "128.8911057"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=15542,8396,1874,306",
+    "objectID": "10347",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10347.jpg",
+    "リンク": [
+        "https://goo.gl/maps/us2WTNYUaDSvrBbdA"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県大島郡天城町浅間"
+    ],
+    "番号": [
+        "273"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

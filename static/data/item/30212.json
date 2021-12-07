@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "崎"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0003.json",
+    "description": [
+        ""
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0003",
+    "jk": [
+        ""
+    ],
+    "label": "おかみ崎",
+    "latitude": [
+        "24.425246"
+    ],
+    "latlng": [
+        "24.425246, 123.765583"
+    ],
+    "longitude": [
+        "123.765583"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/canvas/p1#xywh=13584,10966,294,252",
+    "objectID": "30212",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/30212.jpg",
+    "リンク": [
+        ""
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国八山島絵図"
+    ],
+    "現在の地名": [
+        "沖縄県八重山郡竹富町上原"
+    ],
+    "番号": [
+        "157"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

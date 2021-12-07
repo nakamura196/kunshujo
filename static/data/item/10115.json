@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "山"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        ""
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "あまみ嶽",
+    "latitude": [
+        "28.432159"
+    ],
+    "latlng": [
+        "28.432159,129.6875555"
+    ],
+    "longitude": [
+        "129.6875555"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=41856,12344,122,316",
+    "objectID": "10115",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10115.jpg",
+    "リンク": [
+        "https://goo.gl/maps/kHUGS5XN7iKngpZd6"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県奄美市笠利町大字平"
+    ],
+    "番号": [
+        "42"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "島"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0002.json",
+    "description": [
+        "嶋廻二里"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0002",
+    "jk": [
+        ""
+    ],
+    "label": "やが嶋",
+    "latitude": [
+        "26.6705839"
+    ],
+    "latlng": [
+        "26.6705839,128.015522"
+    ],
+    "longitude": [
+        "128.015522"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/canvas/p1#xywh=28814,16144,426,342",
+    "objectID": "20123",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/20123.jpg",
+    "リンク": [
+        "https://goo.gl/maps/knCKmJXLa1DQ6JkU7"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国悪鬼納島絵図写"
+    ],
+    "現在の地名": [
+        "沖縄県名護市済井出"
+    ],
+    "番号": [
+        "58"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

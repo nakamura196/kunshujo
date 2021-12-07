@@ -1,0 +1,2 @@
+uri,dcterms:identifier,rdfs:label,schema:image,schema:url,description:curation,temporal:label,schema:temporal,description:本文,schema:spatial,jps:sourceInfo,jk,緯度経度
+http://example.org/data/shoho-0002,shoho-0002,正保琉球国悪鬼納島絵図写,"https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0002/49528,17880,134,194/200,/0/default.jpg",https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/manifest.json,https://hi-ut.github.io/ryukyu_data/curation/shoho-0002.json,,,,,http://example.org/data/W23

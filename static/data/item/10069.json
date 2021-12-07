@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "村"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        "和村"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "大城間切之内和村",
+    "latitude": [
+        "27.395595926733545"
+    ],
+    "latlng": [
+        "27.395595926733545, 128.63988101163653"
+    ],
+    "longitude": [
+        "128.63988101163653"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=11348,15802,252,292",
+    "objectID": "10069",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10069.jpg",
+    "リンク": [
+        "https://goo.gl/maps/zHnKL41m1K6YB4sx6"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県大島郡和泊町和"
+    ],
+    "番号": [
+        "〔64〕"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

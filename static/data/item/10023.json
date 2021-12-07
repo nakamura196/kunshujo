@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "村"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        "小敷村"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "名瀬間切之内小敷村",
+    "latitude": [
+        "28.38268"
+    ],
+    "latlng": [
+        "28.38268,129.4709144"
+    ],
+    "longitude": [
+        "129.4709144"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=37426,8082,280,322",
+    "objectID": "10023",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10023.jpg",
+    "リンク": [
+        "https://goo.gl/maps/do5C6gCFUnnW4bY18"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県奄美市名瀬大字小宿"
+    ],
+    "番号": [
+        "〔18〕"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

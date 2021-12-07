@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "寺社"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0003.json",
+    "description": [
+        ""
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0003",
+    "jk": [
+        ""
+    ],
+    "label": "権現",
+    "latitude": [
+        "24.3434311"
+    ],
+    "latlng": [
+        "24.3434311,124.1558618"
+    ],
+    "longitude": [
+        "124.1558618"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/canvas/p1#xywh=23342,18136,98,156",
+    "objectID": "30134",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/30134.jpg",
+    "リンク": [
+        "https://goo.gl/maps/t4RembUJq2B4aUBX8"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国八山島絵図"
+    ],
+    "現在の地名": [
+        "沖縄県石垣市石垣"
+    ],
+    "番号": [
+        "78"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

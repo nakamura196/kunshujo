@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "島"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        "人居なし"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "すこもはなれ",
+    "latitude": [
+        "28.1191215"
+    ],
+    "latlng": [
+        "28.1191215,129.1670465"
+    ],
+    "longitude": [
+        "129.1670465"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=25394,7056,122,528",
+    "objectID": "10284",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10284.jpg",
+    "リンク": [
+        "https://goo.gl/maps/qoMzXLhrpeJtZEeW9"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県大島郡瀬戸内町須子茂"
+    ],
+    "番号": [
+        "210"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "崎"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0003.json",
+    "description": [
+        ""
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0003",
+    "jk": [
+        ""
+    ],
+    "label": "きさす崎",
+    "latitude": [
+        "24.327791"
+    ],
+    "latlng": [
+        "24.327791,124.0030616"
+    ],
+    "longitude": [
+        "124.0030616"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/canvas/p1#xywh=19086,17470,102,294",
+    "objectID": "30157",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/30157.jpg",
+    "リンク": [
+        "https://goo.gl/maps/q9deEUX54wJ3xVic8"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国八山島絵図"
+    ],
+    "現在の地名": [
+        "沖縄県八重山郡竹富町小浜"
+    ],
+    "番号": [
+        "102"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

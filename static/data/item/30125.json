@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "島"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0003.json",
+    "description": [
+        ""
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0003",
+    "jk": [
+        ""
+    ],
+    "label": "石墻嶋\n八重山嶋之内\n嶋廻り十六里十七町\n高弐千五百三拾八石七升九合",
+    "latitude": [
+        "24.4063954"
+    ],
+    "latlng": [
+        "24.4063954,124.1754627"
+    ],
+    "longitude": [
+        "124.1754627"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/canvas/p1#xywh=25678,16628,1252,2564",
+    "objectID": "30125",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/30125.jpg",
+    "リンク": [
+        "https://goo.gl/maps/3v35syjJrf26ymh78"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国八山島絵図"
+    ],
+    "現在の地名": [
+        "沖縄県石垣市字登野城"
+    ],
+    "番号": [
+        "69"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

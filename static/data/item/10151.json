@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "干瀬"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        ""
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "黒瀬",
+    "latitude": [
+        "28.3590347"
+    ],
+    "latlng": [
+        "28.3590347,129.3541259"
+    ],
+    "longitude": [
+        "129.3541259"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=35344,6666,92,174",
+    "objectID": "10151",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10151.jpg",
+    "リンク": [
+        "https://goo.gl/maps/KgFYiEQ6oS2rGE1C9"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県大島郡大和村大金久"
+    ],
+    "番号": [
+        "78"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

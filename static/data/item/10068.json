@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "あり"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "間切"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        "五百八十八石余"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        "30020470000266800"
+    ],
+    "label": "大城間切",
+    "latitude": [
+        "27.3776145"
+    ],
+    "latlng": [
+        "27.3776145,128.6188955"
+    ],
+    "longitude": [
+        "128.6188955"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=9854,15424,240,290",
+    "objectID": "10068",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10068.jpg",
+    "リンク": [
+        "https://goo.gl/maps/dCaUvhbCwgM5eV6XA"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県大島郡和泊町大城"
+    ],
+    "番号": [
+        "〔63〕"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

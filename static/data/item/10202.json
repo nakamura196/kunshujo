@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "崎"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        ""
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "まちやみ崎",
+    "latitude": [
+        "28.1539659"
+    ],
+    "latlng": [
+        "28.1539659,129.2927008"
+    ],
+    "longitude": [
+        "129.2927008"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=28378,10456,298,98",
+    "objectID": "10202",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10202.jpg",
+    "リンク": [
+        "https://goo.gl/maps/M2Y5vswmfGnXSAFY8"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県大島郡瀬戸内町手安"
+    ],
+    "番号": [
+        "129"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

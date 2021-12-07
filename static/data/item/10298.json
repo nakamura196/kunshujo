@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "干瀬"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        ""
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "鳥瀬",
+    "latitude": [
+        "28.0082893"
+    ],
+    "latlng": [
+        "28.0082893,129.2684225"
+    ],
+    "longitude": [
+        "129.2684225"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=24764,12730,80,144",
+    "objectID": "10298",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10298.jpg",
+    "リンク": [
+        "https://goo.gl/maps/F8uSuPEWWWq93w9J9"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県大島郡瀬戸内町請阿室"
+    ],
+    "番号": [
+        "224"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}
