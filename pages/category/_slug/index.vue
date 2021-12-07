@@ -2,18 +2,13 @@
   <div>
     <Breadcrumbs :items="bh" />
     <v-container class="my-5">
-      <h2 class="mb-5">{{ $t('category') }}</h2>
+      <h2 class="mb-5">{{ title }}</h2>
 
-      <p>
-        正保の琉球国絵図３舗に書き込まれた文字などの情報（全895件）につき、島や村などの分類によって検索できます。
-      </p>
-
-      <v-simple-table>
+      <v-simple-table class="mb-10">
         <template v-slot:default>
           <thead>
             <tr>
               <th>{{ $t('name') }}</th>
-              <!-- <th></th> -->
             </tr>
           </thead>
           <tbody>
@@ -31,12 +26,6 @@
                     {{ agg.label }}
                   </nuxt-link>
                 </td>
-
-                <!--
-                    <td>
-                      {{100}} {{$t("results")}}
-                    </td>
-                    -->
               </tr>
             </template>
           </tbody>
@@ -75,13 +64,17 @@ export default class FullTextSearch extends Vue {
       exact: true,
     },
     {
-      text: this.$t('category'),
+      text: this.title,
     },
   ]
 
+  get title() {
+    return this.$route.params.slug + ' ' + 'category'
+  }
+
   head() {
     return {
-      title: this.$t('category'),
+      title: this.title,
     }
   }
 }

@@ -151,11 +151,11 @@ export default class categoryTypeSlug extends Vue {
     return this.$route.params.slug
   }
 
-  fixSlug(slug) {
+  fixSlug(slug: string) {
     return slug === 'item' ? 'default' : slug
   }
 
-  fixSearchSlug(slug) {
+  fixSearchSlug(slug: string) {
     return slug === 'item' ? null : slug
   }
 
