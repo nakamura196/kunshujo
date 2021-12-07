@@ -5,7 +5,7 @@
         <nuxt-link
           :to="
             localePath({
-              name: 'item-id',
+              name,
               params: { id: item._id },
             })
           "
@@ -25,7 +25,7 @@
           <nuxt-link
             :to="
               localePath({
-                name: 'item-id',
+                name,
                 params: { id: item._id },
               })
             "
@@ -35,13 +35,19 @@
 
         <div class="my-2">
           <template v-for="(metadataValue, key) in metadataList">
-            <span :key="key"
+            <span
+              :key="key"
+              v-if="
+                item._source[metadataValue.value] &&
+                item._source[metadataValue.value].length > 0
+              "
               ><b>{{ metadataValue.label }}: </b
               >{{ $utils.formatArrayValue(item._source[metadataValue.value]) }}
 
-              <span class="mr-2" v-if="key != metadataList.length - 1">,</span>
+              <span class="mr-2" v-if="key != metadataList.length - 1"></span>
             </span>
           </template>
+          <!--
           <p v-if="false && item._source.description">
             <template v-for="(value, key) in item._source.description">
               <small v-if="value.length < 50" :key="key">
@@ -54,17 +60,7 @@
           <p v-if="false">
             <v-icon>mdi-database</v-icon> {{ item._source.attribution }}
           </p>
-        </div>
-        <div class="text-right" v-if="false">
-          <ResultOption
-            :item="{
-              label: item.label,
-              url: localePath({
-                name: 'item-id',
-                params: { id: item.objectID },
-              }),
-            }"
-          />
+          -->
         </div>
       </v-col>
     </v-row>
@@ -74,12 +70,8 @@
 <script lang="ts">
 import { Prop, Vue, Component } from 'nuxt-property-decorator'
 
-import ResultOption from '~/components/display/ResultOption.vue'
-
 @Component({
-  components: {
-    ResultOption,
-  },
+  components: {},
 })
 export default class FullTextSearch extends Vue {
   @Prop({})
@@ -88,6 +80,16 @@ export default class FullTextSearch extends Vue {
   @Prop({})
   q!: any
 
-  metadataList: any = process.env.list
+  get metadataList(): any {
+    const searches: any = process.env.searches
+    const slug = this.$route.params.slug || 'default'
+    return searches[slug].list
+  }
+
+  get name() {
+    const slug = this.$route.params.slug || 'default'
+    const searches: any = process.env.searches
+    return searches[slug].name
+  }
 }
 </script>

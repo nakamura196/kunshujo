@@ -11,7 +11,7 @@
       </v-text-field>
     </v-col>
     <v-col cols="8">
-      <small>/ {{ length }}</small>
+      <small>/ {{ length.toLocaleString() }}</small>
       <v-btn
         class2="ml-2"
         class="ml-1"

@@ -98,7 +98,10 @@ export default class FullTextSearch extends Vue {
     query.page = 1
 
     const to: any = {
-      name: 'search',
+      name: 'search-slug',
+      params: {
+        slug: this.$route.params.slug,
+      },
     }
     to.query = query
     this.$router.push(this.localePath(to))

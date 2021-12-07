@@ -96,7 +96,7 @@ const siteKeywords = conf.siteKeywords
 
 // images
 const iconImages = baseDir + 'img/icons/'
-const ogpImages = basePath + 'img/ogp/' // cdnPath + 'img/ogp/'
+const ogpImages = basePath + 'img/ogp/'
 
 env.top = basePath + 'img/ogp/home.webp'
 
@@ -110,34 +110,50 @@ env.searches = {
     label: 'item',
     index: 'data/index.json',
     aggs: {
-      category: {
-        key: 'category',
+      book: {
+        key: 'book',
         sort: '',
-        label: '分類',
+        label: 'book',
         value: {},
         more: false,
         open: true,
       },
-      図: {
-        key: '図',
+      agentials: {
+        key: 'agentials',
         sort: '',
-        label: '絵図',
+        label: 'agentials',
         value: {},
         more: false,
         open: true,
       },
-      緯度経度: {
-        key: '緯度経度',
+      places: {
+        key: 'places',
         sort: '',
-        label: '緯度経度',
+        label: 'places',
         value: {},
         more: false,
         open: true,
       },
-      JKリンク: {
-        key: 'JKリンク',
+      orgs: {
+        key: 'orgs',
         sort: '',
-        label: 'JKリンク',
+        label: 'orgs',
+        value: {},
+        more: false,
+        open: true,
+      },
+      keywords: {
+        key: 'keywords',
+        sort: '',
+        label: 'keywords',
+        value: {},
+        more: false,
+        open: true,
+      },
+      times: {
+        key: 'times',
+        sort: '',
+        label: 'times',
         value: {},
         more: false,
         open: true,
@@ -149,8 +165,29 @@ env.searches = {
     name: 'item-id',
     detail: [
       {
-        label: 'タイプ',
-        value: 'タイプ',
+        label: 'book',
+        value: 'book',
+      },
+      {
+        label: 'tags',
+        value: 'tags',
+        type: 'text',
+      },
+      {
+        label: 'agentials',
+        value: 'agentials',
+      },
+      {
+        label: 'places',
+        value: 'places',
+      },
+      {
+        label: 'keywords',
+        value: 'keywords',
+      },
+      {
+        label: 'times',
+        value: 'times',
       },
     ],
     advanced: [],
@@ -176,12 +213,12 @@ env.searches = {
     ],
     list: [
       {
-        label: '絵図',
-        value: '図',
+        label: 'tags',
+        value: 'tags',
       },
       {
-        label: '分類',
-        value: 'category',
+        label: 'book',
+        value: 'book',
       },
     ],
   },
@@ -231,12 +268,8 @@ env.searches = {
     ],
     list: [
       {
-        label: '絵図',
-        value: '図',
-      },
-      {
-        label: '分類',
-        value: 'category',
+        label: 'タイプ',
+        value: 'タイプ',
       },
     ],
   },

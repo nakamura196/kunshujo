@@ -2,7 +2,12 @@
   <div v-if="aggs">
     <template v-for="(conf, key) of confMap">
       <Facet
-        v-if="!conf.hide && !conf.key.includes('car-') && aggs[conf.key]"
+        v-if="
+          isExist(conf.key) &&
+          !conf.hide &&
+          !conf.key.includes('car-') &&
+          aggs[conf.key]
+        "
         :agg="aggs[conf.key]"
         :label="conf.label"
         :value="key"
@@ -31,10 +36,11 @@ export default class FullTextSearch extends Vue {
     return query
   }
 
-  /*
-  @Prop({})
-  confMap!: any
-  */
+  isExist(key: string): boolean {
+    const aggs: any = this.aggs
+    const query: any = this.query
+    return (aggs[key] && aggs[key].total > 0) || query['fc-' + key]
+  }
 
   get confMap() {
     const slug = this.$route.params.slug || 'default'

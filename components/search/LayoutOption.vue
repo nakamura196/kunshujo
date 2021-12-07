@@ -66,6 +66,7 @@ export default class Sort extends Vue {
         params: {
           slug,
         },
+        query,
       })
     )
   }

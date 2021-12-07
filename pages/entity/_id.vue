@@ -14,13 +14,6 @@
       </div>
     </template>
 
-    <!--
-    <v-sheet class="py-2" color="grey lighten-3">
-      <v-container>
-        <h2>{{ label }}</h2>
-      </v-container>
-    </v-sheet>
-    -->
     <v-container class="mt-5">
       <h1 class="mb-5">
         {{ title }}
@@ -34,27 +27,6 @@
       <p class="text-center">
         <v-btn v-if="false" icon class="ma-1" target="_blank" :href="rdfUrl"
           ><img :src="baseUrl + '/img/icons/rdf-logo.svg'" width="24px"
-        /></v-btn>
-
-        <!-- てすと -->
-        <!--
-        <v-btn
-          v-if="viewerUrl"
-          icon
-          class="ma-1"
-          target="_blank"
-          :href="viewerUrl"
-          ><img :src="baseUrl + '/img/icons/icp-logo.svg'" width="24px"
-        /></v-btn>
-        -->
-
-        <v-btn
-          v-if="viewerUrl"
-          icon
-          class="ma-1"
-          target="_blank"
-          :href="viewerUrl"
-          ><img :src="baseUrl + '/img/icons/icp-logo.svg'" width="24px"
         /></v-btn>
 
         <v-btn
@@ -97,7 +69,19 @@
         />
       </p>
 
-      <v-simple-table class="mt-10">
+      <v-btn
+        class="my-10"
+        large
+        rounded
+        block
+        color="primary darken-2"
+        depressed
+        :to="localePath(to)"
+      >
+        アイテムを検索 <v-icon class="ml-1">mdi-magnify</v-icon>
+      </v-btn>
+
+      <v-simple-table class="pt-5">
         <template #default>
           <tbody>
             <template v-for="(agg, key) in aggs">
@@ -379,58 +363,36 @@ export default class Item extends Vue {
     ]
   }
 
-  get viewerUrl() {
-    const item = (this as any).item
-    const manifest = item.manifest
-
-    if (process.env.viewer === 'curation') {
-      const memberId = item.member
-      if (!memberId) {
-        return null
-      }
-      const spl = memberId.split('#xywh=')
-      return (
-        process.env.curationUrl +
-        '?curation=' +
-        item.curation +
-        '&canvas=' +
-        spl[0] +
-        '&xywh=' +
-        spl[1] +
-        '&xywh_highlight=border'
-      )
-    } else {
-      return
-      ;('')
+  getField(prefix: string) {
+    switch (prefix) {
+      case 'chname':
+        return 'agentials'
+        break
+      case 'place':
+        return 'places'
+        break
+      case 'time':
+        return 'times'
+        break
+      case 'org':
+        return 'orgs'
+        break
+      case 'keyword':
+        return 'keywords'
+        break
     }
   }
 
-  get iframeUrl() {
-    const manifest = (this as any).item.manifest
-
-    if (process.env.viewer === 'curation') {
-      const memberId = (this as any).item.member
-      return (
-        this.baseUrl +
-        '/curation/?manifest=' +
-        manifest +
-        '&canvas=' +
-        encodeURIComponent(memberId)
-      )
-    } else {
-      return
-      'https://universalviewer.io/examples/uv/uv.html#?manifest=' +
-        manifest +
-        '&bottomPanel=true'
+  get to() {
+    const id = this.$route.params.id
+    const prefix = id.split(':')[0]
+    const field = this.getField(prefix)
+    const query: any = {}
+    query['fc-' + field] = id
+    return {
+      name: 'search-slug',
+      query,
     }
-  }
-
-  get rdfUrl() {
-    return (
-      process.env.DATA_URL +
-      '/snorql/?describe=http%3A%2F%2Fexample.org%2Fdata%2F' +
-      this.$route.params.id
-    )
   }
 
   getQuery(key: string, value: string) {

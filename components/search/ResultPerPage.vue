@@ -5,7 +5,6 @@
     outlined
     rounded
     :items="items"
-    :label2="'表示件数'"
     dense
     @change="changeHitsPerPage()"
   ></v-select>

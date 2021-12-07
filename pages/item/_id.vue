@@ -15,13 +15,6 @@
       </div>
     </template>
 
-    <!--
-    <v-sheet class="py-2" color="grey lighten-3">
-      <v-container>
-        <h2>{{ label }}</h2>
-      </v-container>
-    </v-sheet>
-    -->
     <v-container class="mt-5">
       <h1 class="mb-5">
         {{ title }}
@@ -32,8 +25,6 @@
           ><img :src="baseUrl + '/img/icons/rdf-logo.svg'" width="24px"
         /></v-btn>
 
-        <!-- てすと -->
-        <!--
         <v-btn
           v-if="viewerUrl"
           icon
@@ -41,25 +32,6 @@
           target="_blank"
           :href="viewerUrl"
           ><img :src="baseUrl + '/img/icons/icp-logo.svg'" width="24px"
-        /></v-btn>
-        -->
-
-        <v-btn
-          v-if="viewerUrl"
-          icon
-          class="ma-1"
-          target="_blank"
-          :href="viewerUrl"
-          ><img :src="baseUrl + '/img/icons/icp-logo.svg'" width="24px"
-        /></v-btn>
-
-        <v-btn
-          v-if="false"
-          icon
-          class="ma-1"
-          target="_blank"
-          :href="baseUrl + '/data/item/' + $route.params.id + '.json'"
-          ><img :src="baseUrl + '/img/icons/json-logo.svg'" width="24px"
         /></v-btn>
 
         <span class="mx-2"></span>
@@ -93,7 +65,7 @@
         />
       </p>
 
-      <v-simple-table class="mt-10">
+      <v-simple-table class="pt-5">
         <template #default>
           <tbody>
             <tr v-if="item.description && item.description[0]">
@@ -183,14 +155,37 @@
                           <nuxt-link
                             :to="
                               localePath({
-                                name: 'search',
+                                name: 'search-slug',
                                 query: getQuery(agg.value, value),
                               })
                             "
                             >{{ value }}</nuxt-link
                           >
+                          <template v-if="value.includes(':')">
+                            <v-btn
+                              class="ma-1"
+                              small
+                              color="primary darken-2"
+                              rounded
+                              depressed
+                              :to="
+                                localePath({
+                                  name: 'entity-id',
+                                  params: {
+                                    id: value,
+                                  },
+                                })
+                              "
+                            >
+                              詳細をみる
+                            </v-btn>
+                          </template>
                         </template>
-                        <br v-if="key2 !== item[agg.value].length - 1" />
+                        <!-- <br v-if="key2 !== item[agg.value].length - 1" /> -->
+                        <span
+                          class="mr-4"
+                          v-if="key2 !== item[agg.value].length - 1"
+                        />
                       </span>
                     </v-col>
                   </v-row>
@@ -302,28 +297,35 @@ import MapMain from '~/components/map/MapMain.vue'
 export default class Item extends Vue {
   item: any = {}
 
-  hide: any = process.env.hide
+  hide: any = process.env.hide || {}
 
   async asyncData({ payload, app, $axios, params }: any) {
     if (payload) {
       return { item: payload }
     } else {
       const id = app.context.params.id
-      const item = await import(`~/static/data/item/${params.id}.json`)
 
-      const markers = []
-      let center = [33, 130]
+      //const index = await import(`~/static/data/index.json`)
 
-      const lat = item.latitude[0]
-      const lon = item.longitude[0]
+      const { data } = await axios.get(
+        process.env.BASE_URL + `/data/index.json`
+      )
 
-      if (lat != '') {
-        markers.push({
-          latlng: [Number(lat), Number(lon)],
-        })
+      const index = data
 
-        center = [Number(lat), Number(lon)]
+      let item = {}
+
+      for (const obj of index) {
+        if (obj.objectID === id) {
+          item = obj
+          break
+        }
       }
+
+      //const item = await import(`~/static/data/item/${params.id}.json`)
+
+      const markers: any[] = []
+      let center: Number[] = [33, 130]
 
       return { item, center, markers }
     }
@@ -366,7 +368,8 @@ export default class Item extends Vue {
   }
 
   get aggs() {
-    const aggs = process.env.detail
+    const searches: any = process.env.searches
+    const aggs = searches.default.detail
     return aggs
   }
 
@@ -381,7 +384,7 @@ export default class Item extends Vue {
       {
         text: this.$t('search'),
         disabled: false,
-        to: this.localePath({ name: 'search' }),
+        to: this.localePath({ name: 'search-slug' }),
         exact: true,
       },
       {
@@ -416,21 +419,14 @@ export default class Item extends Vue {
   get iframeUrl() {
     const manifest = (this as any).item.manifest
 
-    if (process.env.viewer === 'curation') {
-      const memberId = (this as any).item.member
-      return (
-        this.baseUrl +
-        '/curation/?manifest=' +
-        manifest +
-        '&canvas=' +
-        encodeURIComponent(memberId)
-      )
-    } else {
-      return
-      'https://universalviewer.io/examples/uv/uv.html#?manifest=' +
-        manifest +
-        '&bottomPanel=true'
-    }
+    const memberId = (this as any).item.member
+    return (
+      this.baseUrl +
+      '/curation/?manifest=' +
+      manifest +
+      '&canvas=' +
+      encodeURIComponent(memberId)
+    )
   }
 
   get rdfUrl() {

@@ -19,7 +19,7 @@
         :placeholder="$t('inputSearchKeyword')"
       ></v-text-field>
     </v-col>
-    <v-col cols="2">
+    <v-col cols="2" v-if="false">
       <v-btn rounded color="primary" depressed>
         <v-icon class="mr-1">mdi-menu</v-icon>
         詳細検索
