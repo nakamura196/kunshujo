@@ -21,7 +21,23 @@
         </template>
       </v-tabs>
 
-      <h2 class="my-5">{{ label }}</h2>
+      <v-row>
+        <v-col cols="12" md="8">
+          <h2>{{ label }}</h2>
+        </v-col>
+        <v-col cols="12" md="4">
+          <v-tabs v-model="tabs" right>
+            <v-tabs-slider></v-tabs-slider>
+            <v-tab href="#mobile-tabs-5-1" class="primary--text">
+              <v-icon>mdi-table</v-icon>
+            </v-tab>
+
+            <v-tab href="#mobile-tabs-5-2" class="primary--text">
+              <v-icon>mdi-chart-bar</v-icon>
+            </v-tab>
+          </v-tabs>
+        </v-col>
+      </v-row>
 
       <template v-if="loading">
         <div class="text-center">
@@ -38,17 +54,6 @@
       </template>
 
       <template v-else>
-        <v-tabs v-model="tabs" right>
-          <v-tabs-slider></v-tabs-slider>
-          <v-tab href="#mobile-tabs-5-1" class="primary--text">
-            <v-icon>mdi-table</v-icon>
-          </v-tab>
-
-          <v-tab href="#mobile-tabs-5-2" class="primary--text">
-            <v-icon>mdi-chart-bar</v-icon>
-          </v-tab>
-        </v-tabs>
-
         <v-tabs-items v-model="tabs" class="mt-5">
           <v-tab-item :value="'mobile-tabs-5-1'">
             <v-card flat>

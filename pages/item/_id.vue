@@ -396,24 +396,20 @@ export default class Item extends Vue {
   get viewerUrl() {
     const item = (this as any).item
     const manifest = item.manifest
-
-    if (process.env.viewer === 'curation') {
-      const memberId = item.member
-      const spl = memberId.split('#xywh=')
-      return (
-        process.env.curationUrl +
-        '?curation=' +
-        item.curation +
-        '&canvas=' +
-        spl[0] +
-        '&xywh=' +
-        spl[1] +
-        '&xywh_highlight=border'
-      )
-    } else {
-      return
-      ;('')
-    }
+    const memberId = item.member
+    const spl = memberId.split('#xywh=')
+    return (
+      'http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/' +
+      //'?curation=' +
+      //item.curation +
+      '?manifest=' +
+      item.manifest +
+      '&canvas=' +
+      spl[0] +
+      '&xywh=' +
+      spl[1] +
+      '&xywh_highlight=border'
+    )
   }
 
   get iframeUrl() {
