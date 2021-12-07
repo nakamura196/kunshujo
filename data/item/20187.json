@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "島"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0002.json",
+    "description": [
+        ""
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0002",
+    "jk": [
+        ""
+    ],
+    "label": "せなか嶋",
+    "latitude": [
+        "26.1748987"
+    ],
+    "latlng": [
+        "26.1748987,127.6422368"
+    ],
+    "longitude": [
+        "127.6422368"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/canvas/p1#xywh=11972,17432,246,170",
+    "objectID": "20187",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/20187.jpg",
+    "リンク": [
+        "https://goo.gl/maps/Q7zscS6QtzwMH92a9"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国悪鬼納島絵図写"
+    ],
+    "現在の地名": [
+        "沖縄県豊見城市瀬長"
+    ],
+    "番号": [
+        "122"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

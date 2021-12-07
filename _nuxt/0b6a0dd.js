@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1266],{1666:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"大日本窯業協会","objectID":"org:大日本窯業協会","タイプ":["Organization"]}')}}]);

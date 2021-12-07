@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1077],{1477:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["農業大学（のうぎょうだいがく）は、農学を中心とする教育、研究を行う高等教育機関。農科大学（のうかだいがく）ともいわれる。農業大学・農科大学では農学部を設置し、農学、畜産学、林学、園芸学、農業経済学などの幅広い分野の教育・研究が行われている。（ウィキペディア より）"],"label":"農業大学","objectID":"keyword:農業大学","タイプ":["Keyword"]}')}}]);

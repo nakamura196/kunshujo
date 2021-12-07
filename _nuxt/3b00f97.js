@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[483],{883:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"名声布四海","objectID":"keyword:名声布四海","タイプ":["Keyword"]}')}}]);

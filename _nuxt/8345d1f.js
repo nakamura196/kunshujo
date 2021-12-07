@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[754],{1154:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"東京剪断通信社規則","objectID":"keyword:東京剪断通信社規則","タイプ":["Keyword"]}')}}]);

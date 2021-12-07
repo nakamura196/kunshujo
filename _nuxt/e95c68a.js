@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[439],{839:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["区長（くちょう）は、何らかの区の長のことである。区によってその職掌や選出方法は異なる。（ウィキペディア より）"],"label":"区長","objectID":"keyword:区長","タイプ":["Keyword"]}')}}]);

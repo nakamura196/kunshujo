@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1458],{1858:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"絵画研究会","objectID":"org:絵画研究会","タイプ":["Organization"]}')}}]);

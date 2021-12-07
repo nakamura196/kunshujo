@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[242],{642:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"Made_in_japan","objectID":"keyword:Made_in_japan","タイプ":["Keyword"]}')}}]);

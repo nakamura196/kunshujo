@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1565],{1965:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["和倉温泉（わくらおんせん）は、石川県七尾市に位置する温泉である。（ウィキペディア より）"],"label":"和倉温泉","objectID":"place:和倉温泉","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Wakura_Onsen_01.jpg/200px-Wakura_Onsen_01.jpg","タイプ":["Place"]}')}}]);

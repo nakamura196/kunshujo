@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1364],{1764:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"本郷電信分局","objectID":"org:本郷電信分局","タイプ":["Organization"]}')}}]);

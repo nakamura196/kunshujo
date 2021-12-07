@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1205],{1605:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["亀屋（かめや）とは、埼玉県川越市に本社を置く老舗の和菓子メーカー。正しい屋号は「龜屋」であるが、亀屋の表記も用いられる。（ウィキペディア より）"],"label":"亀屋","objectID":"org:亀屋","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Kameya-1.jpg/200px-Kameya-1.jpg","タイプ":["Organization"]}')}}]);

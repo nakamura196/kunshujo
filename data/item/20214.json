@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "島"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0002.json",
+    "description": [
+        "けらま嶋内\n人居なし"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0002",
+    "jk": [
+        ""
+    ],
+    "label": "安室嶋",
+    "latitude": [
+        "26.2048303"
+    ],
+    "latlng": [
+        "26.2048303,127.3119103"
+    ],
+    "longitude": [
+        "127.3119103"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/canvas/p1#xywh=9560,11282,204,292",
+    "objectID": "20214",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/20214.jpg",
+    "リンク": [
+        "https://goo.gl/maps/Jy3J21Vaok6ieJyF8"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国悪鬼納島絵図写"
+    ],
+    "現在の地名": [
+        "沖縄県島尻郡座間味村座間味"
+    ],
+    "番号": [
+        "142"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

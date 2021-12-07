@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1251],{1651:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["国文社（こくぶんしゃ）は、東京都豊島区にある日本の出版社。主に哲学、思想を中心に、歴史、文化、評論、詩集などの書籍を出版している。（ウィキペディア より）"],"label":"国文社","objectID":"org:国文社","タイプ":["Organization"]}')}}]);

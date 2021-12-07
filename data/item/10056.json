@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "村"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        "てゝ村"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "西目間切之内てゝ村",
+    "latitude": [
+        "27.8802288"
+    ],
+    "latlng": [
+        "27.8802288,128.9198304"
+    ],
+    "longitude": [
+        "128.9198304"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=20172,7974,212,294",
+    "objectID": "10056",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10056.jpg",
+    "リンク": [
+        "https://goo.gl/maps/ezgdNc4H8ZBCG2Jt6"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県大島郡徳之島町手々"
+    ],
+    "番号": [
+        "〔51〕"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

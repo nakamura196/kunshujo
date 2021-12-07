@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "村"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        "かとく村"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "東間切之内かとく村",
+    "latitude": [
+        "28.2013918"
+    ],
+    "latlng": [
+        "28.2013918,129.3984056"
+    ],
+    "longitude": [
+        "129.3984056"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=31760,11934,258,280",
+    "objectID": "10048",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10048.jpg",
+    "リンク": [
+        "https://goo.gl/maps/EDsEoAb4f7kabxTf8"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県大島郡瀬戸内町嘉徳"
+    ],
+    "番号": [
+        "〔43〕"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

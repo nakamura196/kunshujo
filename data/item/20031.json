@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "村"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0002.json",
+    "description": [
+        "こちや村"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0002",
+    "jk": [
+        ""
+    ],
+    "label": "金武間切之内こちや村",
+    "latitude": [
+        "26.510235"
+    ],
+    "latlng": [
+        "26.510235,127.9837545"
+    ],
+    "longitude": [
+        "127.9837545"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/canvas/p1#xywh=24654,18562,244,324",
+    "objectID": "20031",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/20031.jpg",
+    "リンク": [
+        "https://goo.gl/maps/uMCM8eRQVNSwovn2A"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国悪鬼納島絵図写"
+    ],
+    "現在の地名": [
+        "沖縄県国頭郡宜野座村松田"
+    ],
+    "番号": [
+        "〔26〕"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

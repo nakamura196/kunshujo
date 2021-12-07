@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "あり"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "間切"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0002.json",
+    "description": [
+        "千五百八十四石余"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0002",
+    "jk": [
+        "30020480000054400"
+    ],
+    "label": "東風平間切",
+    "latitude": [
+        "26.176111"
+    ],
+    "latlng": [
+        "26.176111, 127.7225"
+    ],
+    "longitude": [
+        "127.7225"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/canvas/p1#xywh=12862,19892,338,380",
+    "objectID": "20012",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/20012.jpg",
+    "リンク": [
+        "https://goo.gl/maps/a5drdvLdJdHB996a7"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国悪鬼納島絵図写"
+    ],
+    "現在の地名": [
+        ""
+    ],
+    "番号": [
+        "〔7〕"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

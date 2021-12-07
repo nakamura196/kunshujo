@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "港湾"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0003.json",
+    "description": [
+        "川平湊口、広三十八間、深十二尋、湊内、入六町、広一町\n船繋場、深二尋、大船二三十艘程繋ル、西風ニ船繋悪シ、沖汗（ママ、干ヵ）瀬之間船出入口三十七間、深十二尋"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0003",
+    "jk": [
+        ""
+    ],
+    "label": "川平",
+    "latitude": [
+        "24.4627757"
+    ],
+    "latlng": [
+        "24.4627757,124.1439629"
+    ],
+    "longitude": [
+        "124.1439629"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/canvas/p1#xywh=24398,13950,2210,1580",
+    "objectID": "30127",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/30127.jpg",
+    "リンク": [
+        "https://goo.gl/maps/XbYRkpkXThvMYkdm7"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国八山島絵図"
+    ],
+    "現在の地名": [
+        "沖縄県石垣市川平"
+    ],
+    "番号": [
+        "71"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1603],{2003:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"摂津灘新在家","objectID":"place:摂津灘新在家","タイプ":["Place"]}')}}]);

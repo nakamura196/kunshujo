@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1441],{1841:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"神戸郵便電信局","objectID":"org:神戸郵便電信局","タイプ":["Organization"]}')}}]);

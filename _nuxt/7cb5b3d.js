@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[304],{704:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"タクマ式ボイラー","objectID":"keyword:タクマ式ボイラー","タイプ":["Keyword"]}')}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1452],{1852:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"精良種苗園","objectID":"org:精良種苗園","タイプ":["Organization"]}')}}]);

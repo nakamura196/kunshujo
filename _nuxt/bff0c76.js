@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1402],{1802:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"松田ビットル","objectID":"org:松田ビットル","タイプ":["Organization"]}')}}]);

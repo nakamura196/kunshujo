@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[437],{837:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"北斎絵大展覧会","objectID":"keyword:北斎絵大展覧会","タイプ":["Keyword"]}')}}]);

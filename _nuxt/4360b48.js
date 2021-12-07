@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2720],{3131:function(e){e.exports=JSON.parse('{"lang":"ja","siteName":"電子展示『くんしゅうじょう』","siteDesc":"このサイトは、ＷＥＢ上で正保琉球国絵図の画像を公開するとともに、絵図に描き込まれた情報を分析するために構築されたデジタルアーカイブです。","footer":"東京大学","siteKeywords":"IIIF","shortName":"くんしゅうじょう","curationUrl":"https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/icv/","etc":{}}')}}]);

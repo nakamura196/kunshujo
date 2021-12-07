@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1165],{1565:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["鯛めし（たいめし）は、鯛と飯を組み合わせた日本料理の一つである。（ウィキペディア より）"],"label":"鯛めし","objectID":"keyword:鯛めし","タイプ":["Keyword"]}')}}]);

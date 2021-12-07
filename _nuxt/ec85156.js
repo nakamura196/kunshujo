@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1360],{1760:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"本郷区厚徳会","objectID":"org:本郷区厚徳会","タイプ":["Organization"]}')}}]);

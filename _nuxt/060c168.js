@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1489],{1889:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["関西府県連合共進会（かんさいふけんれんごうきょうしんかい）は明治時代に催された地方博覧会。（ウィキペディア より）"],"label":"関西府県連合共進会","objectID":"org:関西府県連合共進会","タイプ":["Organization"]}')}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1135],{1535:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"青森名産","objectID":"keyword:青森名産","タイプ":["Keyword"]}')}}]);

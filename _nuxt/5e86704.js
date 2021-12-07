@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1367],{1767:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"東京人造肥料会社","objectID":"org:東京人造肥料会社","タイプ":["Organization"]}')}}]);

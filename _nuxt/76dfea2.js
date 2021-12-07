@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1221],{1621:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"内国通運会社","objectID":"org:内国通運会社","タイプ":["Organization"]}')}}]);

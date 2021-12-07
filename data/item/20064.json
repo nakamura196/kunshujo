@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "島"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0002.json",
+    "description": [
+        "人居有\n嶋廻廿四町"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0002",
+    "jk": [
+        ""
+    ],
+    "label": "鳥嶋",
+    "latitude": [
+        "27.8722757"
+    ],
+    "latlng": [
+        "27.8722757,128.2295645"
+    ],
+    "longitude": [
+        "128.2295645"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/canvas/p1#xywh=46026,3162,318,344",
+    "objectID": "20064",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/20064.jpg",
+    "リンク": [
+        "https://goo.gl/maps/FVdm6Gogha7N9k2U6"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国悪鬼納島絵図写"
+    ],
+    "現在の地名": [
+        "沖縄県島尻郡久米島町鳥島"
+    ],
+    "番号": [
+        "1"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

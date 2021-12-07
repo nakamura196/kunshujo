@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1150],{1550:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"養生_(健康)","objectID":"keyword:養生_(健康)","タイプ":["Keyword"]}')}}]);

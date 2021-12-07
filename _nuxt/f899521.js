@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1252],{1652:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"国民新聞社","objectID":"org:国民新聞社","タイプ":["Organization"]}')}}]);

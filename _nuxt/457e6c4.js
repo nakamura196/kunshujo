@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[702],{1102:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"日本諸新聞切抜通信舎改正規則","objectID":"keyword:日本諸新聞切抜通信舎改正規則","タイプ":["Keyword"]}')}}]);

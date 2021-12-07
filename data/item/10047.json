@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "村"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        "あきな村"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "東間切之内あきな村",
+    "latitude": [
+        "28.1868716"
+    ],
+    "latlng": [
+        "28.1868716,129.3258125"
+    ],
+    "longitude": [
+        "129.3258125"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=29760,11134,262,294",
+    "objectID": "10047",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10047.jpg",
+    "リンク": [
+        "https://goo.gl/maps/NpDYsJ3WH6fxrFAb9"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県大島郡瀬戸内町阿木名"
+    ],
+    "番号": [
+        "〔42〕"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

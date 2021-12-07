@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[884],{1284:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["知事（ちじ、英語: Governor）は、地方行政区画を統轄する官庁の長のことである。英語では governor というが、古代ローマの属州や、イギリスの海外領土の governor は、「知事」ではなく「総督」と訳されることもある。（ウィキペディア より）"],"label":"知事","objectID":"keyword:知事","タイプ":["Keyword"]}')}}]);

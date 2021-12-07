@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1615],{2015:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["書院町（しょいんちょう）は、日本統治時代の台湾における台北市の行政区画。一丁目から三丁目までで構成された。文武町の西に位置し、現在の、、、一段、一段、の一部が書院町に含まれる。町内に登瀛書院があったことから、この名が付けられた。（ウィキペディア より）"],"label":"書院町 (台北市)","objectID":"place:書院街","タイプ":["Place"]}')}}]);

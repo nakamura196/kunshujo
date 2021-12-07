@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "港湾"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        "此井之川、入廿五間、広サ廿間、深十弐尋、大船出入不自由"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "井ノ川",
+    "latitude": [
+        "27.7792937"
+    ],
+    "latlng": [
+        "27.7792937,129.0148106"
+    ],
+    "longitude": [
+        "129.0148106"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=20600,11458,1602,386",
+    "objectID": "10329",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10329.jpg",
+    "リンク": [
+        "https://goo.gl/maps/4khi7UhQv5Ydmxky5"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県大島郡徳之島町井之川"
+    ],
+    "番号": [
+        "255"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

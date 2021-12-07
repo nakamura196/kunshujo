@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1217],{1617:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["全日本家禽協会（にほんかきんきょうかい）は、一般財団法人進化生物学研究所が運営する研究機関。（ウィキペディア より）"],"label":"全日本家禽協会","objectID":"org:全日本家禽協会","タイプ":["Organization"]}')}}]);

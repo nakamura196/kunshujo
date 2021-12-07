@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1132],{1532:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["電信（でんしん、英: Electrical telegraph）とは、符号の送受信による電気通信である。有線と無線がある。（ウィキペディア より）"],"label":"電信","objectID":"keyword:電信","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Telegraf.jpg/200px-Telegraf.jpg","タイプ":["Keyword"]}')}}]);

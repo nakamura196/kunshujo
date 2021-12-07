@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "村"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0003.json",
+    "description": [
+        "あかり中曽根村"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0003",
+    "jk": [
+        ""
+    ],
+    "label": "平良間切之内あかり中曽根村",
+    "latitude": [
+        "24.8029179"
+    ],
+    "latlng": [
+        "24.8029179,125.2931157"
+    ],
+    "longitude": [
+        "125.2931157"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/canvas/p1#xywh=42858,16026,296,322",
+    "objectID": "30009",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/30009.jpg",
+    "リンク": [
+        "https://goo.gl/maps/EbkQX5yBy2sVC8h47"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国八山島絵図"
+    ],
+    "現在の地名": [
+        "沖縄県宮古島市平良東仲宗根"
+    ],
+    "番号": [
+        "〔4〕"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

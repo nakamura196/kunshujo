@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1492],{1892:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"陸海軍","objectID":"org:陸海軍","タイプ":["Organization"]}')}}]);

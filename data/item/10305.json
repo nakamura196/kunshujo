@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "島"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        ""
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "大嶋之内\nよろノ嶋、嶋廻三里廿町",
+    "latitude": [
+        "28.0365881"
+    ],
+    "latlng": [
+        "28.0365881,129.1595703"
+    ],
+    "longitude": [
+        "129.1595703"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=23172,9330,374,824",
+    "objectID": "10305",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10305.jpg",
+    "リンク": [
+        "https://goo.gl/maps/K2E7ydcoHR5uxNU69"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県大島郡瀬戸内町与路"
+    ],
+    "番号": [
+        "231"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

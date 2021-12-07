@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "島"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0002.json",
+    "description": [
+        "人居有\n嶋廻二十五町"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0002",
+    "jk": [
+        ""
+    ],
+    "label": "前けらま嶋",
+    "latitude": [
+        "26.2140161"
+    ],
+    "latlng": [
+        "26.2140161,127.4481295"
+    ],
+    "longitude": [
+        "127.4481295"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/canvas/p1#xywh=11150,13376,318,352",
+    "objectID": "20208",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/20208.jpg",
+    "リンク": [
+        "https://goo.gl/maps/iSpAsnBmkVAmRE618"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国悪鬼納島絵図写"
+    ],
+    "現在の地名": [
+        "沖縄県島尻郡渡嘉敷村前島"
+    ],
+    "番号": [
+        "136"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[360],{760:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"主治効能","objectID":"keyword:主治効能","タイプ":["Keyword"]}')}}]);

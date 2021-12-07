@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1422],{1822:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"河合機械製作所","objectID":"org:河合機械製作所","タイプ":["Organization"]}')}}]);

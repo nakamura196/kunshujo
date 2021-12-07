@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1391],{1791:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"東洋石油改良社","objectID":"org:東洋石油改良社","タイプ":["Organization"]}')}}]);

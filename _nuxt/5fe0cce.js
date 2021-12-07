@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1083],{1483:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["送り状（英語: Invoice、インボイス）とは、貿易取引において、船荷証券と並ぶ最重要書類の一つ。 通常、単に「送り状」、「Invoice」と言った場合は、商業送り状（Commercial Invoice）を指すことが多いが、他にもいくつかの種類が存在する。（ウィキペディア より）"],"label":"送り状","objectID":"keyword:送状","タイプ":["Keyword"]}')}}]);

@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "島"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0002.json",
+    "description": [
+        "人居なし"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0002",
+    "jk": [
+        ""
+    ],
+    "label": "あぶ嶋",
+    "latitude": [
+        "26.6393269"
+    ],
+    "latlng": [
+        "26.6393269,128.0333847"
+    ],
+    "longitude": [
+        "128.0333847"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0002/canvas/p1#xywh=28878,17194,180,200",
+    "objectID": "20096",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/20096.jpg",
+    "リンク": [
+        "https://goo.gl/maps/XkG6Wi5YFoDtRngV6"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国悪鬼納島絵図写"
+    ],
+    "現在の地名": [
+        "沖縄県名護市真喜屋"
+    ],
+    "番号": [
+        "31"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

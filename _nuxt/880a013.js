@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[88],{488:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"山中市兵衛","objectID":"chname:山中市兵衛","タイプ":["Agent"]}')}}]);

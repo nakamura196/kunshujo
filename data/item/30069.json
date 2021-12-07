@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "島"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0003.json",
+    "description": [
+        "かりまた間切之内"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0003",
+    "jk": [
+        ""
+    ],
+    "label": "大おかみ嶋",
+    "latitude": [
+        "24.9168512"
+    ],
+    "latlng": [
+        "24.9168512,125.3075256"
+    ],
+    "longitude": [
+        "125.3075256"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/canvas/p1#xywh=44918,13246,188,264",
+    "objectID": "30069",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/30069.jpg",
+    "リンク": [
+        "https://goo.gl/maps/Hq6eksJ3ZDbmByMS8"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国八山島絵図"
+    ],
+    "現在の地名": [
+        "沖縄県宮古島市平良大神"
+    ],
+    "番号": [
+        "13"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

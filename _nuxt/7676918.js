@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1665],{2065:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"西堀弥市","objectID":"place:西堀弥市","タイプ":["Place"]}')}}]);

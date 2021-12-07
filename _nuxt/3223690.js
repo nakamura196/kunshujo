@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[684],{1084:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"新栄社製造","objectID":"keyword:新栄社製造","タイプ":["Keyword"]}')}}]);

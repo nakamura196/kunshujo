@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1314],{1714:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["式部職（しきぶしょく）は、宮内庁の内部部局のひとつである。（ウィキペディア より）"],"label":"宮内庁式部職","objectID":"org:式部職","タイプ":["Organization"]}')}}]);

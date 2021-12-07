@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1302],{1702:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"岩谷商会","objectID":"org:岩谷商会","タイプ":["Organization"]}')}}]);

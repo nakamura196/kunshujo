@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1233],{1633:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"十文字商会","objectID":"org:十文字商会","タイプ":["Organization"]}')}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[201],{601:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"行方庄助","objectID":"chname:行方庄助","タイプ":["Agent"]}')}}]);

@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "村"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        "やん村"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "笠利間切之内やん村",
+    "latitude": [
+        "28.4980331"
+    ],
+    "latlng": [
+        "28.4980331,129.654397"
+    ],
+    "longitude": [
+        "129.654397"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=42786,10032,254,314",
+    "objectID": "10016",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10016.jpg",
+    "リンク": [
+        "https://goo.gl/maps/uNPQjv1a26MqSwX26"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県奄美市笠利町大字屋仁"
+    ],
+    "番号": [
+        "〔11〕"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}

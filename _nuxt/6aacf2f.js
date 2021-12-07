@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1084],{1484:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"通信料確受証","objectID":"keyword:通信料確受証","タイプ":["Keyword"]}')}}]);

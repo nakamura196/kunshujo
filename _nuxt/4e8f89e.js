@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1234],{1634:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["千住製絨所（せんじゅせいじゅうしょ）は、かつて東京都荒川区南千住にあった官営の工場。明治新政府によって設立され、被服生地を製造していた。（ウィキペディア より）"],"label":"千住製絨所","objectID":"org:千住製絨所","タイプ":["Organization"]}')}}]);

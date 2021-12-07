@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[539],{939:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["売店（ばいてん）とは、商品を売る店舗を指し、もっぱら商品売買を主目的としない施設の一角に併設される店舗を呼称する際に使用する。ゆえに小規模なスペースの店舗である場合が多い。（ウィキペディア より）"],"label":"売店","objectID":"keyword:売店","タイプ":["Keyword"]}')}}]);

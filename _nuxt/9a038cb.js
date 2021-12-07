@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1415],{1815:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["民友社（みんゆうしゃ）は、徳富蘇峰が湯浅治郎の協力を得て設立した、戦前日本の言論団体・出版社である。1887年（明治20年）設立、1933年（昭和8年）解散。東京市京橋区日吉町4番地（現・東京都中央区銀座8丁目6番周辺）にあった。（ウィキペディア より）"],"label":"民友社","objectID":"org:民友社","タイプ":["Organization"]}')}}]);

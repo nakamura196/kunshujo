@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[389],{789:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["伝票(でんぴょう、英：voucher)とは、会社・商店などで、金銭の出入や取引内容などを記入仕訳する一定の様式を備えた紙片である。これは、仕訳日計表などに使われる。（ウィキペディア より）"],"label":"伝票","objectID":"keyword:伝票","タイプ":["Keyword"]}')}}]);

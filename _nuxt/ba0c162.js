@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1028],{1428:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["記念（きねん）とは、あとの思い出として何かを残しておくもの、あるいはそれによって残されたものである。（ウィキペディア より）"],"label":"記念","objectID":"keyword:記念","タイプ":["Keyword"]}')}}]);

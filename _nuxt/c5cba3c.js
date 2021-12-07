@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1341],{1741:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"日本郵船会社","objectID":"org:日本郵船会社","タイプ":["Organization"]}')}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1619],{2019:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["朝明郡（あさけぐん）は、三重県（伊勢国）にあった郡。（ウィキペディア より）"],"label":"朝明郡","objectID":"place:朝明郡","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Mie_Asake-gun.png/200px-Mie_Asake-gun.png","タイプ":["Place"]}')}}]);

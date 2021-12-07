@@ -1,0 +1,49 @@
+{
+    "JKリンク": [
+        "なし"
+    ],
+    "_updated": "2021-12-02",
+    "category": [
+        "村"
+    ],
+    "curation": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/curation/0001.json",
+    "description": [
+        "よなま村"
+    ],
+    "image": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0001",
+    "jk": [
+        ""
+    ],
+    "label": "西目間切之内よなま村",
+    "latitude": [
+        "27.8604602"
+    ],
+    "latlng": [
+        "27.8604602,128.9198304"
+    ],
+    "longitude": [
+        "128.9198304"
+    ],
+    "manifest": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/manifest.json",
+    "member": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0001/canvas/p1#xywh=19100,7582,236,290",
+    "objectID": "10057",
+    "thumbnail": "https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/medium/10057.jpg",
+    "リンク": [
+        "https://goo.gl/maps/89KYpZ15D1Kb7ng89"
+    ],
+    "備考": [
+        ""
+    ],
+    "図": [
+        "正保琉球国絵図写"
+    ],
+    "現在の地名": [
+        "鹿児島県大島郡天城町与名間"
+    ],
+    "番号": [
+        "〔52〕"
+    ],
+    "緯度経度": [
+        "あり"
+    ]
+}
