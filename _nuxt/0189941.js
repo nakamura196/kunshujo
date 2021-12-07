@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2782],{3222:function(o,n,w){o.exports=w.p+"img/rdf-logo.b1970ac.svg"}}]);
