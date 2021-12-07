@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1103],{1503:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["醸造（じょうぞう）とは、発酵作用を利用してアルコール飲料（酒類）やその他の食品（主に液状の調味料）を製造すること。アルコール燃料等に転用する場合もある。 日本語の醸造という言葉は元来麹（こうじ）を用いて発酵させるものをさしたが、現代では麹以外の微生物を用いたものも含める。（ウィキペディア より）"],"label":"醸造","objectID":"keyword:醸造","タイプ":["Keyword"]}')}}]);

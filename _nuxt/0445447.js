@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1086],{1486:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["通知（つうち）とは、相手に対してものごとを知らせること。行政や司法においてこの言葉が用い相手方に前もって内容を知らせる行為を指すことが多い。（ウィキペディア より）"],"label":"通知","objectID":"keyword:通知","タイプ":["Keyword"]}')}}]);

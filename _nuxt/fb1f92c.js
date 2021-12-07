@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1420],{1820:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"江知勝","objectID":"org:江知勝","タイプ":["Organization"]}')}}]);

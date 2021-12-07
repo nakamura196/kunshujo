@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[812],{1212:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["演奏（えんそう）とは、音楽行為の中で音を出す行為をいう。なお、「奏」の漢字を含んでいるが、演奏には楽器を奏でるばかりでなく、歌を歌う行為も含まれる。（ウィキペディア より）"],"label":"演奏","objectID":"keyword:演奏","タイプ":["Keyword"]}')}}]);

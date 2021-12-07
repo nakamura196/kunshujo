@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1474],{1873:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"製紙分社","objectID":"org:製紙分社","タイプ":["Organization"]}')}}]);

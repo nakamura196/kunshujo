@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1645],{2045:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"盛岡市紺屋町","objectID":"place:盛岡市紺屋町","タイプ":["Place"]}')}}]);

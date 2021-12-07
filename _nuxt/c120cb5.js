@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[766],{1166:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["株式会社（かぶしきがいしゃ）とは、細分化された社員権（株式）を有する株主から有限責任の下に資金を調達して株主から委任を受けた経営者が事業を行い、利益を株主に配当する、「法人格」を有する会社形態であり、を目的とする社団法人である。（ウィキペディア より）"],"label":"株式会社","objectID":"keyword:株式会社","タイプ":["Keyword"]}')}}]);

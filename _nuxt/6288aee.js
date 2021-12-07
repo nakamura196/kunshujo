@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[623],{1023:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"岐阜商工新報","objectID":"keyword:岐阜商工新報","タイプ":["Keyword"]}')}}]);

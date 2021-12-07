@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[961],{1361:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["花王石鹸（かおうせっけん）とは花王が発売する石鹸である。（ウィキペディア より）"],"label":"花王石鹸","objectID":"keyword:花王石鹸","タイプ":["Keyword"]}')}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1285],{1685:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"宝丹本舗","objectID":"org:宝丹本舗","タイプ":["Organization"]}')}}]);

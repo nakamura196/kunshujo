@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1392],{1792:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"東洋製菓株式会社","objectID":"org:東洋製菓株式会社","タイプ":["Organization"]}')}}]);

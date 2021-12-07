@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1371],{1770:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"東京印刷株式会社","objectID":"org:東京印刷株式会社","タイプ":["Organization"]}')}}]);

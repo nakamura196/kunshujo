@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[252],{651:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["おしろい（白粉）とは、本来は女性が顔や首筋などに塗布して肌を色白に見せるために使用する化粧品で、その種類に応じて、粉おしろい、水おしろい、練りおしろいなどに分類される。（ウィキペディア より）"],"label":"おしろい","objectID":"keyword:おしろい","タイプ":["Keyword"]}')}}]);

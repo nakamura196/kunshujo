@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1068],{1468:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"身体保全法","objectID":"keyword:身体保全法","タイプ":["Keyword"]}')}}]);

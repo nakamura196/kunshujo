@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1655],{2055:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"神田田代町9番地","objectID":"place:神田田代町9番地","タイプ":["Place"]}')}}]);

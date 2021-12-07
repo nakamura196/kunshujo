@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1136],{1535:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"静岡育英会紀事概略","objectID":"keyword:静岡育英会紀事概略","タイプ":["Keyword"]}')}}]);

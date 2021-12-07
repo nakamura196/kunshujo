@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[845],{1244:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["甘露梅（かんろばい）は、江戸時代、シソの葉で包んだ青梅を砂糖漬けにした、新吉原名物の和菓子である。（ウィキペディア より）"],"label":"甘露梅","objectID":"keyword:甘露梅","タイプ":["Keyword"]}')}}]);

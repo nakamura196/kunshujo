@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1057],{1457:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"賃金表","objectID":"keyword:賃金表","タイプ":["Keyword"]}')}}]);

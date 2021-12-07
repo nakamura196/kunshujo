@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1137],{1537:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"静岡臨済寺宝物","objectID":"keyword:静岡臨済寺宝物","タイプ":["Keyword"]}')}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1134],{1533:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"電報送達紙","objectID":"keyword:電報送達紙","タイプ":["Keyword"]}')}}]);

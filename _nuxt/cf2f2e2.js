@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1063],{1462:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"起死回生","objectID":"keyword:起死回生","タイプ":["Keyword"]}')}}]);

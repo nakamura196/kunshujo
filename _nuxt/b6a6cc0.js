@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1378],{1777:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"東京帝室博物館","objectID":"org:東京帝室博物館","タイプ":["Organization"]}')}}]);

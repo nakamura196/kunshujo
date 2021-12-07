@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1098],{1498:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["郷友会（きょうゆうかい）とは、故郷を同じくする者同士が親睦、協力等を目的に結成される民間の任意団体。故郷の範囲は、県単位、旧藩・郡単位、市町村単位、大字・集落単位、島単位などの例がある。県単位のものは「県人会」と呼ぶことが多い。（ウィキペディア より）"],"label":"郷友会","objectID":"keyword:郷友会","タイプ":["Keyword"]}')}}]);

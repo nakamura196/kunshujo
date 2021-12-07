@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1309],{1708:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"帝国大学運動会","objectID":"org:帝国大学運動会","タイプ":["Organization"]}')}}]);

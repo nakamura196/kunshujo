@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[998],{1398:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"藤沢樟脳","objectID":"keyword:藤沢樟脳","タイプ":["Keyword"]}')}}]);

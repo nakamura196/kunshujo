@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1681],{2080:function(n){n.exports=JSON.parse('{"_updated":"2021-12-07","description":["飯南郡（いいなんぐん）は、三重県にあった郡。（ウィキペディア より）"],"label":"飯南郡","objectID":"place:飯南郡","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Mie_Iinan-gun.png/200px-Mie_Iinan-gun.png","タイプ":["Place"]}')}}]);

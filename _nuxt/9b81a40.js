@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1413],{1813:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"横浜植木株式会社","objectID":"org:横浜植木株式会社","タイプ":["Organization"]}')}}]);

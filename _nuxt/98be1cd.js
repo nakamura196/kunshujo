@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1208],{1607:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"京都府水産講習所","objectID":"org:京都府水産講習所","タイプ":["Organization"]}')}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[517],{917:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["営業（えいぎょう）とは、営利を目的として業務を行うことをいう。ここから転じて、ある特定の行為が営業と言い習わされている。また企業活動の集合体をさす言葉としても用いられる。以下にそれぞれ詳述する。（ウィキペディア より）"],"label":"営業","objectID":"keyword:営業","タイプ":["Keyword"]}')}}]);

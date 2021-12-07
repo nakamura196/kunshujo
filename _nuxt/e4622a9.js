@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[532],{932:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["執事（しつじ）とは、役職名であるが、使用された時期や場所によって意味合いが異なってくる。（ウィキペディア より）"],"label":"執事","objectID":"keyword:執事","タイプ":["Keyword"]}')}}]);

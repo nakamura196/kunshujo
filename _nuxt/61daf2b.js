@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1497],{1897:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"静岡育英会","objectID":"org:静岡育英会","タイプ":["Organization"]}')}}]);

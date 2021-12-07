@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1537],{1937:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["下谷区（したやく）とは、東京府東京市、東京都にかつて存在した区である。現在の台東区の西部に位置していた。（ウィキペディア より）"],"label":"下谷区","objectID":"place:下谷区","タイプ":["Place"]}')}}]);

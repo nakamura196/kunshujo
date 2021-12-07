@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1576],{1975:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"大阪博物場","objectID":"place:大阪博物場","タイプ":["Place"]}')}}]);

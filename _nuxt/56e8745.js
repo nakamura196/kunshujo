@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[840],{1239:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"玉翠館","objectID":"keyword:玉翠館","タイプ":["Keyword"]}')}}]);

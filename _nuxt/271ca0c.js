@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1448],{1847:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"秋田木材株式会社","objectID":"org:秋田木材株式会社","タイプ":["Organization"]}')}}]);

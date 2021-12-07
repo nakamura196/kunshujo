@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[235],{634:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"高野作重","objectID":"chname:高野作重","タイプ":["Agent"]}')}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[664],{1063:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"ヱビスビール","objectID":"keyword:恵比寿ビール","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Yebisu2021.jpg/200px-Yebisu2021.jpg","タイプ":["Keyword"]}')}}]);

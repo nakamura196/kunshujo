@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1120],{1520:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"錦鶏間祗候","objectID":"keyword:錦鶏間祗候","タイプ":["Keyword"]}')}}]);

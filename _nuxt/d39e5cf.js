@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[892],{1291:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"神仏灯火用","objectID":"keyword:神仏灯火用","タイプ":["Keyword"]}')}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[733],{1132:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"最上醤油","objectID":"keyword:最上醤油","タイプ":["Keyword"]}')}}]);

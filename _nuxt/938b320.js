@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1111],{1511:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"金線印","objectID":"keyword:金線印","タイプ":["Keyword"]}')}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[614],{1013:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["屠蘇（とそ）または、お屠蘇（おとそ）とは、一年間の邪気を払い長寿を願って正月に呑む縁起物の酒であり風習である。（ウィキペディア より）"],"label":"屠蘇","objectID":"keyword:屠蘇","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Otoso.jpg/200px-Otoso.jpg","タイプ":["Keyword"]}')}}]);

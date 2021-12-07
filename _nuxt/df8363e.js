@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1396],{1795:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["株式会社東雲堂（とううんどう）は、福岡県福岡市博多区に本社を置く、和菓子を製造する企業である。郷土芸能である「博多仁和加（はかたにわか）」のお面を形どった二◯加煎餅（にわかせんぺい・和菓子）は、地元の福岡で大変有名である。（ウィキペディア より）"],"label":"東雲堂","objectID":"org:東雲堂","タイプ":["Organization"]}')}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[630],{1029:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["席次（せきじ）とは、儀式など催しにおける座席の順序のことである。転じて成績をさす事もある。（ウィキペディア より）"],"label":"席次","objectID":"keyword:席次","タイプ":["Keyword"]}')}}]);

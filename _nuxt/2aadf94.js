@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1338],{1738:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"日本農事株式会社","objectID":"org:日本農事株式会社","タイプ":["Organization"]}')}}]);

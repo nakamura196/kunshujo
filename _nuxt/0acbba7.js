@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[280],{680:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["ゆべし（柚餅子）とは、柚子ないしクルミを用いた加工食品あるいは和菓子の一種。（ウィキペディア より）"],"label":"ゆべし","objectID":"keyword:ゆべし","タイプ":["Keyword"]}')}}]);

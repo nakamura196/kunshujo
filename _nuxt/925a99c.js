@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1348],{1747:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"明治火災保険株式会社","objectID":"org:明治火災保険株式会社","タイプ":["Organization"]}')}}]);

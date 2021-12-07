@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1389],{1789:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["東京麦酒株式会社（とうきょうびーる）は、かつて存在した日本のビールメーカーである。上面発酵の「桜田ビール」を発売、後に下面発酵に転換して「東京ビール」を発売するが、業界の寡占化が進展して大日本麦酒に買収される。（ウィキペディア より）"],"label":"東京麦酒","objectID":"org:東京麦酒","タイプ":["Organization"]}')}}]);

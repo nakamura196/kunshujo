@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[487],{887:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["名簿（めいぼ）とは、名前の一覧（リスト）のことである。（ウィキペディア より）"],"label":"名簿","objectID":"keyword:名簿","タイプ":["Keyword"]}')}}]);

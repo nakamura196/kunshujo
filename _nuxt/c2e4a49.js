@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[434],{834:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["効用（こうよう、英: utility）とは、経済学の基本的概念であり、各消費者がある財やサービスを消費することによって得ることができる主観的な満足・欲望充足（への貢献）の度合いのこと。所与の選好関係に対してならばを満たす実数値関数の値である。（ウィキペディア より）"],"label":"効用","objectID":"keyword:効用","タイプ":["Keyword"]}')}}]);

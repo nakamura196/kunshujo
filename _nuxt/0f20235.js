@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[727],{1126:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["書留郵便（かきとめゆうびん）とは、郵便の特殊取扱の一種である。略称は書留。（ウィキペディア より）"],"label":"書留郵便","objectID":"keyword:書留","タイプ":["Keyword"]}')}}]);

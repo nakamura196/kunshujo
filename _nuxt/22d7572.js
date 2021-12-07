@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1421],{1820:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"沢田洋服店","objectID":"org:沢田洋服店","タイプ":["Organization"]}')}}]);

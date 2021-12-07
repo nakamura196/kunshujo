@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1078],{1477:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"農業書肆","objectID":"keyword:農業書肆","タイプ":["Keyword"]}')}}]);

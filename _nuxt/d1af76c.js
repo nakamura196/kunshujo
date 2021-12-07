@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1061],{1460:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["贈り物（おくりもの）とは、何か出来事があった際に贈る特別なものを指す。同義語にプレゼント・ギフト・ご進物（ごしんもつ）がある。（ウィキペディア より）"],"label":"贈り物","objectID":"keyword:贈り物","タイプ":["Keyword"]}')}}]);

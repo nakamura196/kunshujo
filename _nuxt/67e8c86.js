@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[797],{1197:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["注意（ちゅうい）は、ある物に対し気をつけることまたは相手に気をつける様にいうことである。ここでは心理学および生理学において用いられる注意、即ち前者を解説する。（ウィキペディア より）"],"label":"注意","objectID":"keyword:注意","タイプ":["Keyword"]}')}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1484],{1884:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"酒悦福神漬商店","objectID":"org:酒悦福神漬商店","タイプ":["Organization"]}')}}]);

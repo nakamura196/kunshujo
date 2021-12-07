@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[823],{1222:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["大蔵省専売局（おおくらしょうせんばいきょく）は、日本の大蔵省に置かれていた外局である。1949年の日本専売公社の発足に伴って分離独立。食塩・樟脳・煙草・アルコールなどの専売業務を担当した。（ウィキペディア より）"],"label":"大蔵省専売局","objectID":"keyword:煙草専売局","タイプ":["Keyword"]}')}}]);

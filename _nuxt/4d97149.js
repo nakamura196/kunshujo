@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[504],{904:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"品物配達所","objectID":"keyword:品物配達所","タイプ":["Keyword"]}')}}]);

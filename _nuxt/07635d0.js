@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[829],{1229:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["牛肉（ぎゅうにく）は、食用に処理されたウシの肉である。ビーフ（英: Beef）ともいう。（ウィキペディア より）"],"label":"牛肉","objectID":"keyword:牛肉","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Prime.jpg/200px-Prime.jpg","タイプ":["Keyword"]}')}}]);

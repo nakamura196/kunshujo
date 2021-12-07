@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[800],{1200:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"浅野式合板","objectID":"keyword:浅野式合板","タイプ":["Keyword"]}')}}]);

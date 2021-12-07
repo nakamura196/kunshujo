@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1638],{2037:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["浅草区（あさくさく、旧字体：淺草區）とは、東京府東京市、東京都にかつて存在した区である。現在の台東区の東部に位置していた。（ウィキペディア より）"],"label":"浅草区","objectID":"place:浅草区","タイプ":["Place"]}')}}]);

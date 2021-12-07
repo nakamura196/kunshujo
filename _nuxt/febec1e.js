@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1667],{2067:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["赤坂区（あかさかく）は、かつて東京都にあった区。（ウィキペディア より）"],"label":"赤坂区","objectID":"place:赤坂区","タイプ":["Place"]}')}}]);

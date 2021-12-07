@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[773],{1173:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"梅羊羹","objectID":"keyword:梅羊羹","タイプ":["Keyword"]}')}}]);
