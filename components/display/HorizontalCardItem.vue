@@ -6,17 +6,9 @@
     flat
     outlined
   >
-    <nuxt-link
-      v-if="item.thumbnail"
-      :to="
-        localePath({
-          name: 'item-id',
-          params: { id: item.objectID },
-        })
-      "
-    >
+    <nuxt-link :to="localePath(item.to)">
       <v-img
-        :src="item.thumbnail"
+        :src="item.thumbnail || baseUrl + '/img/icons/no-image.webp'"
         contain
         style="height: 150px"
         width="100%"
@@ -35,42 +27,15 @@
           : ''
       "
     >
-      <nuxt-link
-        :to="
-          localePath({
-            name: 'item-id',
-            params: { id: item.objectID },
-          })
-        "
-      >
+      <nuxt-link :to="localePath(item.to)">
         <!-- eslint-disable-next-line vue/no-v-html -->
         <h4 v-html="item.label"></h4>
       </nuxt-link>
 
-      <!--
-      <p v-if="item._source.description" class="mt-2 mb-0">
-        {{ item._source.description }}
+      <p v-if="item.description" class="mt-2 mb-0">
+        {{ item.description }}
       </p>
-      -->
-
-      <template>
-        <div class="mt-2" v-html="item.attribution"></div>
-      </template>
     </div>
-
-    <template v-if="!item.share_hide">
-      <v-divider />
-
-      <v-card-actions>
-        <v-spacer></v-spacer>
-        <ResultOption
-          :item="{
-            label: item.label,
-            url: 'aaa',
-          }"
-        />
-      </v-card-actions>
-    </template>
   </v-card>
 </template>
 
@@ -84,6 +49,8 @@ import ResultOption from '~/components/display/ResultOption.vue'
   },
 })
 export default class CardItem extends Vue {
+  baseUrl: any = process.env.BASE_URL
+
   @Prop({ required: true })
   item!: any
 
@@ -103,8 +70,3 @@ export default class CardItem extends Vue {
   horizontal!: boolean
 }
 </script>
-<style>
-a {
-  text-decoration: none;
-}
-</style>

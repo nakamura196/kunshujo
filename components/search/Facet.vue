@@ -5,13 +5,6 @@
         <v-expansion-panel-header class="grey lighten-2">
           {{ $t(label) }}
 
-          <!--
-          <small class="ml-2" v-if="agg.buckets.length < 5"
-            >({{ agg.buckets.length.toLocaleString() }}
-            {{ $t('results') }})</small
-          >
-          -->
-
           <small class="ml-2"
             >({{ agg.total.toLocaleString() }} {{ $t('results') }})</small
           >
@@ -38,7 +31,7 @@
                 <template v-else>
                   <v-icon> {{ mdiCheckboxBlankOutline }} </v-icon>
                 </template>
-                {{ e.key }}
+                {{ formatLabel(e.key) }}
               </v-col>
               <v-col cols="3" class="text-right">
                 {{ e.doc_count.toLocaleString() }}
@@ -137,6 +130,10 @@
           >
             <!-- show-select -->
             <template #top> </template>
+
+            <template #[`item.key`]="{ item }">
+              {{ formatLabel(item.key) }}
+            </template>
 
             <template #[`item.doc_count`]="{ item }">
               {{ item.doc_count.toLocaleString() }}
@@ -564,6 +561,13 @@ export default class FullTextSearch extends Vue {
         }
       }
     }
+  }
+
+  formatLabel(value: string) {
+    if (value.includes(':')) {
+      return value.split(':')[1]
+    }
+    return value
   }
 }
 </script>

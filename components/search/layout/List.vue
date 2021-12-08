@@ -10,14 +10,15 @@
             })
           "
         >
-          <!-- query, -->
           <v-img
             contain
             max-height="150"
             style="height: 150px"
             width="100%"
             class="grey lighten-2"
-            :src="item._source.thumbnail"
+            :src="
+              item._source.thumbnail || baseUrl + '/img/icons/no-image.webp'
+            "
           /> </nuxt-link
       ></v-col>
       <v-col cols="12" sm="9">
@@ -41,7 +42,7 @@
                 item._source[metadataValue.value] &&
                 item._source[metadataValue.value].length > 0
               "
-              ><b>{{ metadataValue.label }}: </b
+              ><b>{{ $t(metadataValue.label) }}: </b
               >{{ $utils.formatArrayValue(item._source[metadataValue.value]) }}
 
               <span class="mr-2" v-if="key != metadataList.length - 1"></span>
@@ -85,6 +86,8 @@ export default class FullTextSearch extends Vue {
     const slug = this.$route.params.slug || 'default'
     return searches[slug].list
   }
+
+  baseUrl: any = process.env.BASE_URL
 
   get name() {
     const slug = this.$route.params.slug || 'default'

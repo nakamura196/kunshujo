@@ -1,6 +1,6 @@
 <template>
   <v-row>
-    <v-col cols="10">
+    <v-col cols="12" md="8">
       <v-text-field
         autocomplete="off"
         v-model="q"
@@ -19,7 +19,7 @@
         :placeholder="$t('inputSearchKeyword')"
       ></v-text-field>
     </v-col>
-    <v-col cols="2" v-if="false">
+    <v-col cols="12" md="4" v-if="false">
       <v-btn rounded color="primary" depressed>
         <v-icon class="mr-1">mdi-menu</v-icon>
         詳細検索

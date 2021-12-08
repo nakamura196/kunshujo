@@ -17,7 +17,7 @@
         @click:append="search"
         @keydown.enter="trigger"
         v-bind="attrs"
-        v-on="on"
+        v-on="history ? on : false"
         :placeholder="$t('inputSearchKeyword')"
       ></v-text-field>
     </template>

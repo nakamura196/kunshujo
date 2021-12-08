@@ -36,6 +36,14 @@ export class localEs {
       facets[option.key] = {}
     }
 
+    const sortOptions: any = searches[slug].sort || []
+    // 今後改善予定
+    for (const sort of sortOptions) {
+      if (sort.value != '_score') {
+        facets[sort.value] = {}
+      }
+    }
+
     for (const item of index) {
       const id = item.objectID
       docs[id] = item
@@ -106,7 +114,6 @@ function filter(
   routeQuery: any,
   advanced: any
 ): string[] {
-  //console.log('filter')
   const query = routeQuery
 
   let ids: string[] = []
@@ -180,90 +187,8 @@ function filter(
   }
 
   // ファセット
-
-  // advanced
-  // クエリ毎に整理
-  const advancedMap: any = {}
-  for (const queryField in query) {
-    if (queryField.includes('fc-') || queryField.includes('q-')) {
-      const facetField = queryField.replace('fc-', '').replace('q-', '')
-
-      if (!advancedMap[facetField]) {
-        advancedMap[facetField] = {
-          '+': [],
-          '-': [],
-        }
-      }
-
-      let values = query[queryField]
-      if (typeof values === 'string') {
-        values = [values]
-      }
-
-      for (const v of values) {
-        let key = '+'
-        let value = v
-        if (v.startsWith('-')) {
-          key = '-'
-          value = v.substring(1)
-        }
-        if (!advancedMap[facetField][key].includes(value)) {
-          advancedMap[facetField][key].push(value)
-        }
-      }
-    }
-  }
-
-  // advanced options
-  const options: any = {}
-
-  const advancedOptions: any = advanced //process.env.advanced
-
-  for (const option of advancedOptions) {
-    options[option.key] = option
-  }
-
-  for (const facetField in advancedMap) {
-    const obj = advancedMap[facetField]
-    const plusValues = obj['+']
-    const minusValues = obj['-']
-
-    const matchFacets = facets[facetField]
-
-    // プラス分
-    if (plusValues.length > 0) {
-      let plusMatchedIds: any[] = []
-      for (const pValue of plusValues) {
-        if (options[facetField] && options[facetField].type === 'select') {
-          plusMatchedIds = plusMatchedIds.concat(matchFacets[pValue])
-        } else {
-          // 部分一致
-          for (const key in matchFacets) {
-            if (key.includes(pValue)) {
-              plusMatchedIds = plusMatchedIds.concat(matchFacets[key])
-            }
-          }
-        }
-      }
-      ids = _.intersection(ids, plusMatchedIds)
-    }
-
-    // マイナス分
-    if (minusValues.length > 0) {
-      // 各値
-      for (const mValue of minusValues) {
-        let eachMinusMatchedIds: any[] = []
-        for (const facetValue in matchFacets) {
-          if (facetValue !== mValue) {
-            eachMinusMatchedIds = eachMinusMatchedIds.concat(
-              matchFacets[facetValue]
-            )
-          }
-        }
-        ids = _.intersection(ids, eachMinusMatchedIds)
-      }
-    }
-  }
+  ids = advancedFilter(ids, facets, query, advanced, 'fc')
+  ids = advancedFilter(ids, facets, query, advanced, 'q')
 
   // ヒット数でソート
   if (sortValue === '_score' && q !== '' && Object.keys(freq).length > 0) {
@@ -310,7 +235,6 @@ function filter(
       let sortIds: string[] = []
       for (const key of keys) {
         const ids_ = sortObj[key]
-        // ids_ = _.intersection(ids, ids_)
         sortIds = sortIds.concat(ids_)
       }
 
@@ -353,15 +277,6 @@ function getHits(
 
 function getAggs(docs: any, ids: string[], routeQuery: any, aggs: any): any {
   const conf: any = process.env.searches
-
-  //const aggs: any = conf[searchId].aggs
-
-  /*
-  // 翻訳
-  for (const aggField in aggs) {
-    aggs[aggField].label = 'aaa'
-  }
-  */
 
   // 最大、検索結果数のループ
   for (const id of ids) {
@@ -424,24 +339,109 @@ function getAggs(docs: any, ids: string[], routeQuery: any, aggs: any): any {
       })
     }
 
-    /*
-    for (const pair of pairs) {
-      bucketsFull.push({
-        key: pair[0],
-        doc_count: pair[1],
-      })
-    }
-    */
-
-    //const aggList = pairs
-    //aggs[aggField].value = aggList
-
     aggregations[aggField] = {
       buckets,
-      //bucketsFull,
       total: pairs.length,
     }
   }
 
   return aggregations
+}
+
+function advancedFilter(
+  ids: string[],
+  facets: any,
+  query: any,
+  advanced: any,
+  type: string
+) {
+  // クエリ毎に整理
+  const advancedMap: any = {}
+  for (const queryField in query) {
+    if (queryField.includes(`${type}-`)) {
+      const facetField = queryField.replace(`${type}-`, '')
+
+      if (!advancedMap[facetField]) {
+        advancedMap[facetField] = {
+          '+': [],
+          '-': [],
+        }
+      }
+
+      let values = query[queryField]
+      if (typeof values === 'string') {
+        values = [values]
+      }
+
+      for (const v of values) {
+        let key = '+'
+        let value = v
+        if (v.startsWith('-')) {
+          key = '-'
+          value = v.substring(1)
+        }
+
+        if (!advancedMap[facetField][key].includes(value)) {
+          advancedMap[facetField][key].push(value)
+        }
+      }
+    }
+  }
+  // advanced options
+  const options: any = {}
+
+  const advancedOptions: any = advanced
+
+  for (const option of advancedOptions) {
+    options[option.key] = option
+  }
+
+  for (const facetField in advancedMap) {
+    const obj = advancedMap[facetField]
+
+    const plusValues = obj['+']
+    const minusValues = obj['-']
+
+    const matchFacets = facets[facetField]
+
+    // プラス分
+    if (plusValues.length > 0) {
+      let plusMatchedIds: any[] = []
+      for (const pValue of plusValues) {
+        //完全一致
+        if (
+          type === 'fc' ||
+          (options[facetField] && options[facetField].type === 'select')
+        ) {
+          plusMatchedIds = plusMatchedIds.concat(matchFacets[pValue])
+        } else {
+          // 部分一致
+          for (const key in matchFacets) {
+            if (key.includes(pValue)) {
+              plusMatchedIds = plusMatchedIds.concat(matchFacets[key])
+            }
+          }
+        }
+      }
+      ids = _.intersection(ids, plusMatchedIds)
+    }
+
+    // マイナス分
+    if (minusValues.length > 0) {
+      // 各値
+      for (const mValue of minusValues) {
+        let eachMinusMatchedIds: any[] = []
+        for (const facetValue in matchFacets) {
+          if (facetValue !== mValue) {
+            eachMinusMatchedIds = eachMinusMatchedIds.concat(
+              matchFacets[facetValue]
+            )
+          }
+        }
+        ids = _.intersection(ids, eachMinusMatchedIds)
+      }
+    }
+  }
+
+  return ids
 }

@@ -46,7 +46,7 @@ env.menu = [
         slug: 'item',
       },
     },
-    icon: 'mdi-tag',
+    icon: 'mdi-chart-bar',
     description: 'アイテムのメタデータ別の集計結果を表示します。',
     top: true,
   },
@@ -58,8 +58,17 @@ env.menu = [
         slug: 'entity',
       },
     },
-    icon: 'mdi-tag',
+    icon: 'mdi-chart-bar',
     description: 'エンティティのメタデータ別の集計結果を表示します。',
+    top: true,
+  },
+  {
+    label: 'map',
+    to: {
+      name: 'map',
+    },
+    icon: 'mdi-map',
+    description: '地図から探す',
     top: true,
   },
 ]
@@ -116,42 +125,42 @@ env.searches = {
         more: false,
         open: true,
       },
-      agentials: {
-        key: 'agentials',
+      agential: {
+        key: 'agential',
         sort: '',
-        label: 'agentials',
+        label: 'agential',
         value: {},
         more: false,
         open: true,
       },
-      places: {
-        key: 'places',
+      place: {
+        key: 'place',
         sort: '',
-        label: 'places',
+        label: 'place',
         value: {},
         more: false,
         open: true,
       },
-      orgs: {
-        key: 'orgs',
+      org: {
+        key: 'org',
         sort: '',
-        label: 'orgs',
+        label: 'org',
         value: {},
         more: false,
         open: true,
       },
-      keywords: {
-        key: 'keywords',
+      keyword: {
+        key: 'keyword',
         sort: '',
-        label: 'keywords',
+        label: 'keyword',
         value: {},
         more: false,
         open: true,
       },
-      times: {
-        key: 'times',
+      time: {
+        key: 'time',
         sort: '',
-        label: 'times',
+        label: 'time',
         value: {},
         more: false,
         open: true,
@@ -167,25 +176,29 @@ env.searches = {
         value: 'book',
       },
       {
-        label: 'tags',
-        value: 'tags',
+        label: 'tag',
+        value: 'tag',
         type: 'text',
       },
       {
-        label: 'agentials',
-        value: 'agentials',
+        label: 'agential',
+        value: 'agential',
       },
       {
-        label: 'places',
-        value: 'places',
+        label: 'org',
+        value: 'org',
       },
       {
-        label: 'keywords',
-        value: 'keywords',
+        label: 'place',
+        value: 'place',
       },
       {
-        label: 'times',
-        value: 'times',
+        label: 'keyword',
+        value: 'keyword',
+      },
+      {
+        label: 'time',
+        value: 'time',
       },
     ],
     advanced: [],
@@ -211,8 +224,8 @@ env.searches = {
     ],
     list: [
       {
-        label: 'tags',
-        value: 'tags',
+        label: 'tag',
+        value: 'tag',
       },
       {
         label: 'book',
@@ -233,8 +246,11 @@ env.searches = {
         open: true,
       },
     },
-    sort: [{ label: '適合度', value: '_score' }],
-    defaultSort: '_score:desc',
+    sort: [
+      { label: '適合度', value: '_score' },
+      { label: '出現頻度', value: 'count' },
+    ],
+    defaultSort: 'count:desc',
     defaultLayout: 'grid',
     name: 'entity-id',
     detail: [
@@ -268,6 +284,10 @@ env.searches = {
       {
         label: 'タイプ',
         value: 'タイプ',
+      },
+      {
+        label: 'description',
+        value: 'description',
       },
     ],
   },

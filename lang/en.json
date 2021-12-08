@@ -472,5 +472,15 @@
   "csv": "CSV",
   "json": "JSON",
   "正保琉球国絵図・地名辞書": "正保琉球国絵図・地名辞書",
-  "正保琉球国絵図（3絵図）": "正保琉球国絵図（3絵図）"
+  "正保琉球国絵図（3絵図）": "正保琉球国絵図（3絵図）",
+  "org": "Organization",
+  "place": "Place",
+  "book": "Book",
+  "検索": "Search",
+  "エンティティ検索": "Entity Search",
+  "カテゴリ（エンティティ）": "Category（Entity）",
+  "タイプ": "Type",
+  "東京大学": "The University of Tokyo",
+  "time": "Time",
+  "関連するエンティティ": "Related Entities"
 }

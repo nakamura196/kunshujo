@@ -6,6 +6,7 @@
         <!-- 全体 -->
         <div :class="loadingSearch ? 'loading' : ''">
           <div class="pa-4">
+            <FullTextSearch class="mb-5" />
             <FilterOption />
             <v-row dense align="center">
               <v-col cols="12" md="3">

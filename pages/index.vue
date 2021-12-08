@@ -19,7 +19,6 @@
 
     <v-container class="mt-10">
       <div class="mb-5 pb-5 text-center">
-        <!-- <h1>{{ $t(siteName) }}</h1> -->
         <p class="py-5" v-html="siteDesc"></p>
       </div>
 
@@ -86,29 +85,16 @@
           </template>
         </v-row>
       </div>
-
-      <v-card flat class="my-5" v-if="false">
-        <v-card-title>
-          <h2>{{ $t('updates') }}</h2>
-        </v-card-title>
-        <v-card-text>
-          <ul class="text--primary">
-            <li>2021年XX月XX日: プロトタイプシステムを公開しました。</li>
-          </ul>
-        </v-card-text>
-      </v-card>
-
-      <br />
     </v-container>
 
-    <v-sheet color="grey lighten-3" class="">
-      <v-container class="mt-5 py-10">
+    <v-sheet color="grey lighten-3">
+      <v-container class="mt-10 py-10">
         <v-card-title>
-          <h2>{{ $t('updates') }}</h2>
+          <h3>{{ $t('updates') }}</h3>
         </v-card-title>
         <v-card-text>
           <ul class="text--primary">
-            <li>2021年12月3日: システムを公開しました。</li>
+            <li>2021年XX月XX日: システムを公開しました。</li>
           </ul>
         </v-card-text>
       </v-container>

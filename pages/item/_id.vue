@@ -159,7 +159,7 @@
                                 query: getQuery(agg.value, value),
                               })
                             "
-                            >{{ value }}</nuxt-link
+                            >{{ formatLabel(value) }}</nuxt-link
                           >
                           <template v-if="value.includes(':')">
                             <v-btn
@@ -476,6 +476,13 @@ export default class Item extends Vue {
         },
       ],
     }
+  }
+
+  formatLabel(value: string) {
+    if (value.includes(':')) {
+      value = value.split(':')[1]
+    }
+    return value
   }
 }
 </script>

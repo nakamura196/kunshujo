@@ -14,7 +14,9 @@
         <v-icon class="mr-1">{{ mdiMinusBox }}</v-icon>
       </template>
 
-      <span class="mr-1">{{ getLabel(filter.label) }}:</span>
+      <span class="mr-1"
+        >{{ getLabel(filter.label) }}<span class="ml-1">:</span></span
+      >
       {{ custom(getValue(filter.value), filter.label) }}
     </v-chip>
 
@@ -135,16 +137,21 @@ export default class FullTextSearch extends Vue {
 
   getValue(value: string) {
     if (value.substring(0, 1) === '-') {
-      return value.substring(1)
-    } else {
-      return value
+      value.substring(1)
     }
+    if (value.includes(':')) {
+      value = value.split(':')[1]
+    }
+    return value
   }
 
   getLabel(value: string) {
-    return value
-      .replace('fc-', this.$t('facet') + '-')
-      .replace('q-', this.$t('detail') + '-')
+    const spl: any = value.split('-')
+    return (
+      spl[0].replace('fc', this.$t('facet')).replace('q', this.$t('detail')) +
+      ' - ' +
+      this.$t(spl[1])
+    )
   }
 
   customMap: any = {}

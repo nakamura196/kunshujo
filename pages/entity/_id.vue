@@ -78,7 +78,8 @@
         depressed
         :to="localePath(to)"
       >
-        アイテムを検索 <v-icon class="ml-1">mdi-magnify</v-icon>
+        {{ Number(item.count) }} 件のアイテムを検索
+        <v-icon class="ml-1">mdi-magnify</v-icon>
       </v-btn>
 
       <v-simple-table class="pt-5">
@@ -202,13 +203,8 @@
     </v-sheet>
 
     <v-container>
-      <!-- v-show="$refs.mlt && $refs.mlt.moreLikeThisData.length > 0" -->
       <div class="mt-10">
-        <MoreLikeThis ref="mlt" :item="item" />
-      </div>
-
-      <div class="mt-10">
-        <SimilarImages ref="mlt2" :item="item" />
+        <RelatedEntities ref="ri" :item="item" :index="index" />
       </div>
     </v-container>
 
@@ -263,6 +259,7 @@ import { Component, Vue } from 'nuxt-property-decorator'
 import ResultOption from '~/components/display/ResultOption.vue'
 import MoreLikeThis from '~/components/item/MoreLikeThis.vue'
 import SimilarImages from '~/components/item/SimilarImages.vue'
+import RelatedEntities from '~/components/item/RelatedEntities.vue'
 import License from '~/components/item/License.vue'
 import axios from 'axios'
 import Breadcrumbs from '~/components/common/Breadcrumbs.vue'
@@ -276,6 +273,7 @@ import MapMain from '~/components/map/MapMain.vue'
     License,
     Breadcrumbs,
     MapMain,
+    RelatedEntities,
   },
 })
 export default class Item extends Vue {
@@ -292,11 +290,28 @@ export default class Item extends Vue {
       return { item: payload }
     } else {
       const id = app.context.params.id
+      /*
       const item = await import(
         `~/static/data/entity/${params.id.replace(':', '-')}.json`
       )
+      */
+      const index: any = await import(`~/static/data/entity.json`)
+      const index2: any = {}
 
-      return { item, markers: [], center: null }
+      let item: any = {}
+      for (let key in index) {
+        const obj: any = index[key]
+        const objectID = obj.objectID
+        if (objectID === id) {
+          item = obj
+          //break
+        }
+        if (objectID) {
+          index2[objectID] = obj
+        }
+      }
+
+      return { item, markers: [], center: null, index: index2 }
     }
   }
 
@@ -366,19 +381,19 @@ export default class Item extends Vue {
   getField(prefix: string) {
     switch (prefix) {
       case 'chname':
-        return 'agentials'
+        return 'agential'
         break
       case 'place':
-        return 'places'
+        return 'place'
         break
       case 'time':
-        return 'times'
+        return 'time'
         break
       case 'org':
-        return 'orgs'
+        return 'org'
         break
       case 'keyword':
-        return 'keywords'
+        return 'keyword'
         break
     }
   }

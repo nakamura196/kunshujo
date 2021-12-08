@@ -74,8 +74,12 @@ export default class FullTextSearch extends Vue {
       }
 
       for (const obj of buckets) {
+        let label = obj.key
+        if (label.includes(':')) {
+          label = label.split(':')[1]
+        }
         items.push({
-          label: obj.key,
+          label,
           value: obj.doc_count,
         })
       }
@@ -95,7 +99,7 @@ export default class FullTextSearch extends Vue {
       }
 
       map.push({
-        label: key, //aggs[key].label,
+        label: this.$t(key), //aggs[key].label,
         labels,
         datasets: [
           {
