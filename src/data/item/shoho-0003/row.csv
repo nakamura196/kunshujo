@@ -1,2 +1,0 @@
-uri,dcterms:identifier,rdfs:label,schema:image,schema:url,description:curation,temporal:label,schema:temporal,description:本文,schema:spatial,jps:sourceInfo,jk,緯度経度
-http://example.org/data/shoho-0003,shoho-0003,正保琉球国八山島絵図,"https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/files/tile/0003/15852,16774,126,152/200,/0/default.jpg",https://www.hi.u-tokyo.ac.jp/collection/degitalgallary/ryukyu/data/iiif/0003/manifest.json,https://hi-ut.github.io/ryukyu_data/curation/shoho-0003.json,,,,,http://example.org/data/W23

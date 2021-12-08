@@ -93,3 +93,5 @@ sw.*
 
 src/gis/output
 *.tif
+
+serviceAccountKey.json
