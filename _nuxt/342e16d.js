@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[719],{1127:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","label":"春日火打焼き","objectID":"keyword:春日火打焼き","タイプ":["Keyword"]}')}}]);

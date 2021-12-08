@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[435],{843:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"初等作詞法内容見本","objectID":"keyword:初等作詞法内容見本","タイプ":["Keyword"]}')}}]);

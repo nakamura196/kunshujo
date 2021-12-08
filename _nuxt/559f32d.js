@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1287],{1686:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["宮内省（くないしょう）は、1947年（昭和22年）まで日本に存在した官庁名。古代におけるものと近代におけるものがあり、近代のものが1949年（昭和24年）以降の現在の宮内庁の前身となる。（ウィキペディア より）"],"label":"宮内省","objectID":"org:宮内省","タイプ":["Organization"]}')}}]);

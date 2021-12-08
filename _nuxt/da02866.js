@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1564],{1963:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"呉服町","objectID":"place:呉服町","タイプ":["Place"]}')}}]);

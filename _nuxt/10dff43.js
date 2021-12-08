@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1711],{2119:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"1887-02","objectID":"time:1887-02","タイプ":["Time"]}')}}]);

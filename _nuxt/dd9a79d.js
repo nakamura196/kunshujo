@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[709],{1108:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"明治法典","objectID":"keyword:明治法典","タイプ":["Keyword"]}')}}]);

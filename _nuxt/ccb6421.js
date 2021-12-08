@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[768],{1176:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","label":"柏光章","objectID":"keyword:柏光章","タイプ":["Keyword"]}')}}]);

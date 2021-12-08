@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[123],{522:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["東宮（とうぐう・みこのみや）、あるいは春宮 （しゅんぐう・はるのみや）とは、皇太子の居所、つまり住居する場所を意味し、転じて、皇太子そのものを意味する言葉にもなった。（ウィキペディア より）"],"label":"東宮","objectID":"chname:東宮","タイプ":["Agent"]}')}}]);

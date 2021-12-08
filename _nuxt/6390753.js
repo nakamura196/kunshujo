@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[205],{613:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00024","label":"藤田久次郎","objectID":"chname:藤田久次郎","タイプ":["Agent"]}')}}]);

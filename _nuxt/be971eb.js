@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[351],{759:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"七色唐がらし","objectID":"keyword:七色唐がらし","タイプ":["Keyword"]}')}}]);

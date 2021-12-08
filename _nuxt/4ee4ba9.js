@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1384],{1792:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00009","label":"東京帝国大学","objectID":"org:東京帝国大学","タイプ":["Organization"]}')}}]);

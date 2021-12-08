@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[647],{1046:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["型紙（かたがみ）とは、型として切った紙のこと。染色、洋裁、手芸などで用いられる。（ウィキペディア より）"],"label":"型紙","objectID":"keyword:形紙","タイプ":["Keyword"]}')}}]);

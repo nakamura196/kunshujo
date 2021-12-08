@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[391],{790:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"伽羅之油","objectID":"keyword:伽羅之油","タイプ":["Keyword"]}')}}]);

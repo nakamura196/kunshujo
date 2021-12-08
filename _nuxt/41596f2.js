@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[399],{798:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["停車場（ていしゃじょう・ていしゃば）は、鉄道において列車が停車できる施設であり、駅・信号場・操車場の総体である。（ウィキペディア より）"],"label":"停車場","objectID":"keyword:停車場","タイプ":["Keyword"]}')}}]);

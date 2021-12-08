@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1540],{1948:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00007","label":"上野公園桜ケ岡","objectID":"place:上野公園桜ケ岡","タイプ":["Place"]}')}}]);

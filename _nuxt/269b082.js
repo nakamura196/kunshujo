@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[229],{637:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00011","label":"長岡久左衛門","objectID":"chname:長岡久左衛門","タイプ":["Agent"]}')}}]);

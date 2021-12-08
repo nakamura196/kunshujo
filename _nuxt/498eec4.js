@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[293],{692:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["クラブ洗粉（-あらいこ）は、日本の洗顔料の商品名である。発売以来100年以上の歴史をもつ。（ウィキペディア より）"],"label":"クラブ洗粉","objectID":"keyword:クラブ洗粉","タイプ":["Keyword"]}')}}]);

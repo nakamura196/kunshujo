@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1279],{1678:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["天賞堂（てんしょうどう）は、日本の宝飾・時計・鉄道模型の販売店である。なお、青森県弘前市にも「天賞堂」という同業の店舗（株式会社弘前天賞堂が経営）が存在するが、当項目で扱う店舗との関係はない。（ウィキペディア より）"],"label":"天賞堂","objectID":"org:天賞堂","タイプ":["Organization"]}')}}]);

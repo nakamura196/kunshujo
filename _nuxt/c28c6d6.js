@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1155],{1563:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"飯南郡公報","objectID":"keyword:飯南郡公報","タイプ":["Keyword"]}')}}]);

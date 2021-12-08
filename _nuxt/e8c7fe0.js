@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[590],{989:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["宿題（しゅくだい、英：homework, homework assignment）は、学校教育等において、教師が児童・生徒・学生に課する自己学習の課題のこと。 転じて、「今後解決しなければならない問題」のことも指すが、本稿では原義について解説する。（ウィキペディア より）"],"label":"宿題","objectID":"keyword:宿題","タイプ":["Keyword"]}')}}]);

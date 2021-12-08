@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1637],{2045:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"横浜市中村町","objectID":"place:横浜市中村町","タイプ":["Place"]}')}}]);

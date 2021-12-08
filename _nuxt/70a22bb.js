@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1433],{1841:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00009","label":"浅野木工場","objectID":"org:浅野木工場","タイプ":["Organization"]}')}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1691],{2099:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","description":["麻布区（あざぶく）は、かつて東京都にあった区。（ウィキペディア より）"],"label":"麻布区","objectID":"place:麻布区","タイプ":["Place"]}')}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1435],{1843:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"濱口珍品堂","objectID":"org:濱口珍品堂","タイプ":["Organization"]}')}}]);

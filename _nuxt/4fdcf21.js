@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[362],{761:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"乗換切符","objectID":"keyword:乗換切符","タイプ":["Keyword"]}')}}]);

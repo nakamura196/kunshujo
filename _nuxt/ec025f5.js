@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1239],{1647:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"北海道物産共進会","objectID":"org:北海道物産共進会","タイプ":["Organization"]}')}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1480],{1879:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"農事改良会","objectID":"org:農事改良会","タイプ":["Organization"]}')}}]);

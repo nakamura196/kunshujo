@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[414],{822:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00044","description":["入場券（にゅうじょうけん）とは、切符の一種で、入場に何らかの制限が加わっている施設において、その施設に入場するために必要となる切符のことである。本項では、鉄道駅に入場するための入場券と、鉄道駅以外の各種施設に入場するための入場券を別見出しにて説明する。（ウィキペディア より）"],"label":"入場券","objectID":"keyword:入場券","タイプ":["Keyword"]}')}}]);

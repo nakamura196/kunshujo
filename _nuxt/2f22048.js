@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[442],{850:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00021","description":["効能（こうのう）は、ある物質の作用によって得られる効果のことである。医薬品のように服用や塗布によってその効果を得るもの、温泉のように入浴や飲泉によって効果を得る場合などがある。（ウィキペディア より）"],"label":"効能","objectID":"keyword:効能","タイプ":["Keyword"]}')}}]);

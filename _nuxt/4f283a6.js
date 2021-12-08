@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[411],{819:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00011","description":["元禄（げんろく、（旧字体: 元祿）は日本の元号の一つ。貞享の後、宝永の前。1688年から1704年までの期間を指す。この時代の天皇は東山天皇。江戸幕府将軍は徳川綱吉。（ウィキペディア より）"],"label":"元禄","objectID":"keyword:元禄","タイプ":["Keyword"]}')}}]);

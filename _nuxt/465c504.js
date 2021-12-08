@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1358],{1766:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","label":"時事新報社","objectID":"org:時事新報社","タイプ":["Organization"]}')}}]);

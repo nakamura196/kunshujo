@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[585],{993:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"宝丹錠","objectID":"keyword:宝丹錠","タイプ":["Keyword"]}')}}]);

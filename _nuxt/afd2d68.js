@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1017],{1425:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"製品定価表","objectID":"keyword:製品定価表","タイプ":["Keyword"]}')}}]);

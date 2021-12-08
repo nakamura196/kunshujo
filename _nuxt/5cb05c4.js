@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[842],{1241:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["瓦せんべい（かわらせんべい）は、瓦に見立てて作られた日本の焼き菓子である。（ウィキペディア より）"],"label":"瓦せんべい","objectID":"keyword:瓦煎餅","タイプ":["Keyword"]}')}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1494],{1893:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"陸軍糧秣廠","objectID":"org:陸軍糧秣廠","タイプ":["Organization"]}')}}]);

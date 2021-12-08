@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1229],{1628:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"勤業義済会","objectID":"org:勤業義済会","タイプ":["Organization"]}')}}]);

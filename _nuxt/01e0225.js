@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1227],{1626:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"勅使河原合資会社","objectID":"org:勅使河原合資会社","タイプ":["Organization"]}')}}]);

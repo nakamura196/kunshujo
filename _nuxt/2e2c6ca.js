@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1162],{1561:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["鯛せんべい(たいせんべい)は、大正時代より千葉県鴨川市小湊漁港・鯛の浦に因んで作られている郷土菓子。 原材料に砂糖、小麦粉、鶏卵、けしの実を使用し、手では割りづらいほどの硬さで、食感は焼き八ツ橋に似た、鯛の形をした甘いせんべい。（ウィキペディア より）"],"label":"鯛せんべい","objectID":"keyword:鯛せんべい","タイプ":["Keyword"]}')}}]);

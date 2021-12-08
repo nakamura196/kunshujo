@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1274],{1682:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00014","label":"大日本織物協会","objectID":"org:大日本織物協会","タイプ":["Organization"]}')}}]);

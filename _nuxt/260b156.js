@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1265],{1673:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"大寿商会","objectID":"org:大寿商会","タイプ":["Organization"]}')}}]);

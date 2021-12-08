@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1434],{1833:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"石崎合資会社","objectID":"org:石崎合資会社","タイプ":["Organization"]}')}}]);

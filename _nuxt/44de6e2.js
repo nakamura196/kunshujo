@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1604],{2003:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"播州別府港","objectID":"place:播州別府港","タイプ":["Place"]}')}}]);

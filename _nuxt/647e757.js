@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1338],{1746:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","label":"日本精米株式会社","objectID":"org:日本精米株式会社","タイプ":["Organization"]}')}}]);

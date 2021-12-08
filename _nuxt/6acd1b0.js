@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1384],{1783:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"東京衛生試験所","objectID":"org:東京衛生試験所","タイプ":["Organization"]}')}}]);

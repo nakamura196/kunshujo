@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1417],{1825:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"桜香本舗","objectID":"org:桜香本舗","タイプ":["Organization"]}')}}]);

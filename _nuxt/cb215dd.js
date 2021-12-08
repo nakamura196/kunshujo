@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1630],{2038:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00000","label":"本郷_(文京区)","objectID":"place:本郷_(文京区)","タイプ":["Place"]}')}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[527],{935:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00020","description":["回数乗車券（かいすうじょうしゃけん）とは、交通機関が一定の期間内に、一定の区間を複数回利用する旅客に対し、任意の割引率をもって発行する乗車券や金券の一種。一般には回数券（かいすうけん）と呼ばれる。 なお、交通機関以外のものについては回数券を参照。（ウィキペディア より）"],"label":"回数乗車券","objectID":"keyword:回数乗車券","タイプ":["Keyword"]}')}}]);

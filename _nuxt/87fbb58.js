@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[421],{829:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00259","description":["内国勧業博覧会とは、日本の明治時代に5回開かれた博覧会。名称通り国内の産業発展を促進し、魅力ある輸出品目育成を目的とした、政府主導の博覧会である。（ウィキペディア より）"],"label":"内国勧業博覧会","objectID":"keyword:内国勧業博覧会","タイプ":["Keyword"]}')}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[353],{761:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","description":["万歳（旧字体：萬歳、ばんざい、ばんぜい）とは、喜びや祝いを表す動作などを指していう言葉。動作を表す場合は、「万歳」の語を発しつつ、両腕を上方に向けて伸ばす。また、より強調して、「万々歳（ばんばんざい）」と言われる場合もある。（ウィキペディア より）"],"label":"万歳","objectID":"keyword:万歳","タイプ":["Keyword"]}')}}]);

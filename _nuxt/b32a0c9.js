@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[531],{930:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["地方（ちほう）とは、 \\n* ある国のある地域。国内の一部分の土地。 \\n* 一般的には日本の三大都市圏以外の地域の事をいうが、範囲は曖昧で明確な定義はない。 \\n* （旧軍隊用語）軍以外の一般社会。（ウィキペディア より）"],"label":"地方","objectID":"keyword:地方","タイプ":["Keyword"]}')}}]);

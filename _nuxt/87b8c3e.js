@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1475],{1883:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"蒲鉾屋長次郎","objectID":"org:蒲鉾屋長次郎","タイプ":["Organization"]}')}}]);

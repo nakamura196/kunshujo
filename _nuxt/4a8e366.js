@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[632],{1040:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00014","label":"崩御","objectID":"keyword:崩御","タイプ":["Keyword"]}')}}]);

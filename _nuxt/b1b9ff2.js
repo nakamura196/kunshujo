@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1613],{2012:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["日義村（ひよしむら）は、長野県木曽郡にあった村である。（ウィキペディア より）"],"label":"日義村","objectID":"place:日義村","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kisokomakogen_Ski_Resort.jpg/200px-Kisokomakogen_Ski_Resort.jpg","タイプ":["Place"]}')}}]);

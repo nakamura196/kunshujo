@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1081],{1480:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["近江屋（おうみや）は、日本各地で店舗や企業、家の屋号として使われる名称。（ウィキペディア より）"],"label":"近江屋","objectID":"keyword:近江屋","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Oumiyaato-1.jpg/200px-Oumiyaato-1.jpg","タイプ":["Keyword"]}')}}]);

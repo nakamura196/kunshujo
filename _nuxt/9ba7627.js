@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1517],{1925:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00007","label":"鶴寿軒支店","objectID":"org:鶴寿軒支店","タイプ":["Organization"]}')}}]);

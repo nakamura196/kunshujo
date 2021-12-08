@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[753],{1152:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"本願寺","objectID":"keyword:本願寺","タイプ":["Keyword"]}')}}]);

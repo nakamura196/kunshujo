@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[376],{775:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["仁丹（じんたん）は、森下仁丹から発売されている口中清涼剤である。医薬部外品。（ウィキペディア より）"],"label":"仁丹","objectID":"keyword:仁丹","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Jintan.jpg/200px-Jintan.jpg","タイプ":["Keyword"]}')}}]);

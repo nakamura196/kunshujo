@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[458],{866:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","label":"南北朝正閏問題","objectID":"keyword:南北朝正閏問題","タイプ":["Keyword"]}')}}]);

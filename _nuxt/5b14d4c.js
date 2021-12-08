@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1628],{2036:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00000","label":"本所_(墨田区)","objectID":"place:本所_(墨田区)","タイプ":["Place"]}')}}]);

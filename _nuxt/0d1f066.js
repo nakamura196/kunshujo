@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[476],{884:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","description":["受領（ずりょう）とは、国司四等官のうち、現地に赴任して行政責任を負う筆頭者を平安時代以後に呼んだ呼称。 実際に現地に赴任する国司が前任者から文書や事務の引継を受けることを「受領（する）」と言い、それが職名になった（なお、後任者に文書や事務の引継を行うことを「分付（する）」と称した）。（ウィキペディア より）"],"label":"受領","objectID":"keyword:受領","タイプ":["Keyword"]}')}}]);

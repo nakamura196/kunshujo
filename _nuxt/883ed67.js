@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1282],{1681:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","description":["始政五年記念朝鮮物産共進会（しせいごねんきねんちょうせんぶっさんきょうしんかい、または朝鮮物産共進会）とは、1915年9月11日から10月31日までに京城（現在のソウル特別市）の景福宮の敷地で行われた博覧会である。（ウィキペディア より）"],"label":"始政五年記念朝鮮物産共進会","objectID":"org:始政5年記念朝鮮物産共進会","タイプ":["Organization"]}')}}]);

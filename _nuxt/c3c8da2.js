@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[464],{872:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00009","label":"博覧新報","objectID":"keyword:博覧新報","タイプ":["Keyword"]}')}}]);

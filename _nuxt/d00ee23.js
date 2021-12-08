@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1485],{1893:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"越中屋旅館","objectID":"org:越中屋旅館","タイプ":["Organization"]}')}}]);

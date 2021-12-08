@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1431],{1839:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","label":"河崎洋品店","objectID":"org:河崎洋品店","タイプ":["Organization"]}')}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[868],{1276:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00009","label":"発明品博覧会","objectID":"keyword:発明品博覧会","タイプ":["Keyword"]}')}}]);

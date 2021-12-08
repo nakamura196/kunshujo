@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[881],{1280:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["目録（もくろく）とは、物の所在を明確にする目的あるいは物の譲渡や寄進が行われる際に作成される品名や内容、数量などを書き並べて見やすくした文書。（ウィキペディア より）"],"label":"目録","objectID":"keyword:目録","タイプ":["Keyword"]}')}}]);

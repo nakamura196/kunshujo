@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1103],{1511:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00025","label":"郵便はがき","objectID":"keyword:郵便はがき","タイプ":["Keyword"]}')}}]);

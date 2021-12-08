@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1596],{2004:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00000","label":"小島惣右衛門町","objectID":"place:小島惣右衛門町","タイプ":["Place"]}')}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[16],{424:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"並木屋文蔵","objectID":"chname:並木屋文蔵","タイプ":["Agent"]}')}}]);

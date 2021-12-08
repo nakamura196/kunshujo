@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[549],{957:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00016","label":"売買約定済","objectID":"keyword:売買約定済","タイプ":["Keyword"]}')}}]);

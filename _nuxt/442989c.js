@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1195],{1603:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00010","label":"三好彩霞園","objectID":"org:三好彩霞園","タイプ":["Organization"]}')}}]);

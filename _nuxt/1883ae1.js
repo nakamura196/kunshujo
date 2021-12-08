@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[722],{1121:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["暑中見舞い（しょちゅうみまい）とは、暑中に知人などへ安否を尋ねるために家を訪問したり、手紙を出すこと。または、その手紙や贈り物そのものを指す。関連する残暑見舞い（ざんしょみまい）についても取り扱う。本来は、1年で最も暑い時期に相手の健康を気遣う趣旨のものである。（ウィキペディア より）"],"label":"暑中見舞い","objectID":"keyword:暑中見舞","タイプ":["Keyword"]}')}}]);

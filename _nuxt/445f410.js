@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1516],{1924:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"鶯渓医院","objectID":"org:鶯渓医院","タイプ":["Organization"]}')}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1593],{1992:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"山田","objectID":"place:山田","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Ise_city_01.JPG/200px-Ise_city_01.JPG","タイプ":["Place"]}')}}]);

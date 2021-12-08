@@ -1,8 +1,10 @@
 {
-    "_updated": "2021-12-07",
+    "_updated": "2021-12-08",
+    "count": "00006",
     "description": [
         "近江屋（おうみや）は、日本各地で店舗や企業、家の屋号として使われる名称。（ウィキペディア より）"
     ],
+    "geo": "35.00559722222222 135.76905555555555",
     "label": "近江屋",
     "objectID": "keyword:近江屋",
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Oumiyaato-1.jpg/200px-Oumiyaato-1.jpg",

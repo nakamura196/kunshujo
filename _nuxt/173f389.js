@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1511],{1919:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00019","label":"駿河屋","objectID":"org:駿河屋","タイプ":["Organization"]}')}}]);

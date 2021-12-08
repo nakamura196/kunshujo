@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[618],{1026:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00009","label":"小麦粉新報_第70号","objectID":"keyword:小麦粉新報_第70号","タイプ":["Keyword"]}')}}]);

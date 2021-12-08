@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1438],{1846:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00007","label":"田丸屋本店","objectID":"org:田丸屋本店","タイプ":["Organization"]}')}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[968],{1367:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"茶代","objectID":"keyword:茶代","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/2_usd_gratuity.jpg/200px-2_usd_gratuity.jpg","タイプ":["Keyword"]}')}}]);

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[622],{1030:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00007","label":"屠蘇散","objectID":"keyword:屠蘇散","タイプ":["Keyword"]}')}}]);

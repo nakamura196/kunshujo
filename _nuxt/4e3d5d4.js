@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1225],{1624:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"前田庄助本店","objectID":"org:前田庄助本店","タイプ":["Organization"]}')}}]);

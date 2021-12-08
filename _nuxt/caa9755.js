@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1266],{1674:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00007","label":"大日本国粋教","objectID":"org:大日本国粋教","タイプ":["Organization"]}')}}]);

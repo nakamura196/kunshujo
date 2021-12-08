@@ -1,8 +1,10 @@
 {
-    "_updated": "2021-12-07",
+    "_updated": "2021-12-08",
+    "count": "00005",
     "description": [
         "大町（おおまち）は、青森県弘前市の地名。郵便番号は036-8004。（ウィキペディア より）"
     ],
+    "geo": "40.59583611111111 140.48080555555555",
     "label": "大町 (弘前市)",
     "objectID": "place:青森市大町3丁目",
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Map_of_Aomori_Prefecture_Ja.svg/200px-Map_of_Aomori_Prefecture_Ja.svg",

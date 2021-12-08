@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1185],{1593:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","label":"鹿児島新聞","objectID":"keyword:鹿児島新聞","タイプ":["Keyword"]}')}}]);

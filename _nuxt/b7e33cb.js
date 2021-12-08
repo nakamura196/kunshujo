@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1476],{1875:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"貴族院","objectID":"org:貴族院","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Japanese_House_of_Peers.jpg/200px-Japanese_House_of_Peers.jpg","タイプ":["Organization"]}')}}]);

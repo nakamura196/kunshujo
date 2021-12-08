@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1381],{1780:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"東京植物学会","objectID":"org:東京植物学会","タイプ":["Organization"]}')}}]);

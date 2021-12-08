@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1631],{2030:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["武生町（たけふちょう）は福井県南条郡にあった町。現在の越前市の中心部にあたる。（ウィキペディア より）"],"label":"武生町","objectID":"place:武生町","タイプ":["Place"]}')}}]);

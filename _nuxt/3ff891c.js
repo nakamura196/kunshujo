@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1375],{1774:function(o){o.exports=JSON.parse('{"_updated":"2021-12-07","label":"東京市本郷区役所","objectID":"org:東京市本郷区役所","タイプ":["Organization"]}')}}]);

@@ -1,8 +1,10 @@
 {
-    "_updated": "2021-12-07",
+    "_updated": "2021-12-08",
+    "count": "00005",
     "description": [
         "神田淡路町（かんだあわじちょう）は、東京都千代田区の町名。住居表示は未実施。現行行政地名は神田淡路町一丁目および神田淡路町二丁目。郵便番号は101-0063。（ウィキペディア より）"
     ],
+    "geo": "35.696375 139.76705833333332",
     "label": "神田淡路町",
     "objectID": "place:神田淡路町",
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Kanda_Post-Office%28Tokyo%29.jpg/200px-Kanda_Post-Office%28Tokyo%29.jpg",

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1235],{1643:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","label":"動物標本社","objectID":"org:動物標本社","タイプ":["Organization"]}')}}]);

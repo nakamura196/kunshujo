@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1268],{1676:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00015","label":"大日本教育会","objectID":"org:大日本教育会","タイプ":["Organization"]}')}}]);

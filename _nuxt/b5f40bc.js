@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1314],{1722:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00015","label":"帝国冷蔵株式会社","objectID":"org:帝国冷蔵株式会社","タイプ":["Organization"]}')}}]);

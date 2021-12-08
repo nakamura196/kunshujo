@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[653],{1061:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00016","description":["引越し（ひっこし、引っ越し）は、人が生活する場所や活動する場所を他の場所へ移すこと、またその作業のことである。住居、あるいは企業・団体の事業所などの移動がこれにあたる。古くは宿替、転宅ともいう。（ウィキペディア より）"],"label":"引越し","objectID":"keyword:引越し","タイプ":["Keyword"]}')}}]);

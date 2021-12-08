@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[377],{785:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00007","description":["五家宝（ごかぼう）とは、埼玉県で生産・販売されている和菓子の一つである。（ウィキペディア より）"],"label":"五家宝","objectID":"keyword:五家宝","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Gokabo.JPG/200px-Gokabo.JPG","タイプ":["Keyword"]}')}}]);

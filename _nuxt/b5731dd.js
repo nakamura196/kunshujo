@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1873],{2311:function(n,o,w){n.exports=w.p+"img/icon.b68105e.png"}}]);

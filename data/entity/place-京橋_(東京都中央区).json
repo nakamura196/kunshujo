@@ -1,8 +1,10 @@
 {
-    "_updated": "2021-12-07",
+    "_updated": "2021-12-08",
+    "count": "00000",
     "description": [
         "京橋（きょうばし）は、東京都中央区の地名で、旧京橋区に当たる京橋地域内である。または地域名である。（ウィキペディア より）"
     ],
+    "geo": "35.67621944444444 139.77071666666666",
     "label": "京橋 (東京都中央区)",
     "objectID": "place:京橋_(東京都中央区)",
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Kyobashi-station%28TOKYO%29_MEIDI-YA.JPG/200px-Kyobashi-station%28TOKYO%29_MEIDI-YA.JPG",

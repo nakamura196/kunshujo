@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1356],{1764:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00025","description":["明治美術会（めいじびしゅつかい）は、明治22年（1889年）に発足した日本国最初の洋風美術団体である。（ウィキペディア より）"],"label":"明治美術会","objectID":"org:明治美術会","タイプ":["Organization"]}')}}]);

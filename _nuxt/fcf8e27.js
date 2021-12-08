@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[839],{1238:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["献立（こんだて）とは、食卓に並べる料理の種類や順序のこと。（ウィキペディア より）"],"label":"献立","objectID":"keyword:献立","タイプ":["Keyword"]}')}}]);

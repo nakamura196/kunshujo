@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1360],{1768:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","label":"有賀商店","objectID":"org:有賀商店","タイプ":["Organization"]}')}}]);

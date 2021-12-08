@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1466],{1874:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00008","description":["株式会社美濃屋吉兵衛商店は、かつて蒲鉾などの水産加工品を製造・販売していた日本の企業。 本稿では、2016年12月に株式会社MKSへ商号変更された初代法人と、2016年3月に初代法人から事業を譲受した2代目法人をまとめて記述する。（ウィキペディア より）"],"label":"美濃屋吉兵衛商店","objectID":"org:美濃屋吉兵衛","タイプ":["Organization"]}')}}]);

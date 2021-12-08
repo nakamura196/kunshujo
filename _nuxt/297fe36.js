@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1248],{1656:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00009","label":"博物局","objectID":"org:博物局","タイプ":["Organization"]}')}}]);

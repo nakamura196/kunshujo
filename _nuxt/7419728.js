@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[306],{705:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["チンキ（蘭: tinctuur、独: Tinktur、英: tincture）、チンキ剤とは、生薬やハーブの成分をエタノール、またはエタノールと精製水の混合液に浸すことで作られる液状の製剤である。（ウィキペディア より）"],"label":"チンキ","objectID":"keyword:チンキ","タイプ":["Keyword"]}')}}]);

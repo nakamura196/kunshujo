@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[388],{796:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"伊勢の浦","objectID":"keyword:伊勢の浦","タイプ":["Keyword"]}')}}]);

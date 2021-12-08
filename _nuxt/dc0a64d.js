@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[636],{1035:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["幹事（かんじ）とは、あるグループを取りまとめる代表となる人をいう。（ウィキペディア より）"],"label":"幹事","objectID":"keyword:幹事","タイプ":["Keyword"]}')}}]);

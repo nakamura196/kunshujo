@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1173],{1572:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","label":"鳳紋賞牌","objectID":"keyword:鳳紋賞牌","タイプ":["Keyword"]}')}}]);

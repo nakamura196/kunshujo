@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[387],{786:function(e){e.exports=JSON.parse('{"_updated":"2021-12-07","description":["会席料理（かいせきりょうり）は宴会や会食で用いられるコース形式の日本料理。連歌や俳句の会席で、本膳料理を簡略化したもの。献立に従って、一品ずつ食べていく「喰い切り」のものと、宴会時の配膳方式のものと2種類の傾向があり、いずれも一品料理ではない。（ウィキペディア より）"],"label":"会席料理","objectID":"keyword:会席料理","タイプ":["Keyword"]}')}}]);

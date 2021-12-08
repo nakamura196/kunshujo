@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[548],{956:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00032","label":"売薬印紙","objectID":"keyword:売薬印紙","タイプ":["Keyword"]}')}}]);
