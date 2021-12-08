@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[200],{608:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"菊池権左衛門","objectID":"chname:菊池権左衛門","タイプ":["Agent"]}')}}]);

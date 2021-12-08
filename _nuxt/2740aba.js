@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[248],{656:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"齋藤唯信","objectID":"chname:齋藤唯信","タイプ":["Agent"]}')}}]);

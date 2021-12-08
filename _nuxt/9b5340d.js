@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[296],{704:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00013","description":["カブトビールは、1898年（明治31年）から1943年（昭和18年）まで製造されていた日本のビール。（ウィキペディア より）"],"label":"カブトビール","objectID":"keyword:カブトビール","タイプ":["Keyword"]}')}}]);

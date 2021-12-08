@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[821],{1229:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00008","label":"火持請合","objectID":"keyword:火持請合","タイプ":["Keyword"]}')}}]);

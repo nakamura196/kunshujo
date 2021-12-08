@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[747],{1155:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"有功銅牌","objectID":"keyword:有功銅牌","タイプ":["Keyword"]}')}}]);

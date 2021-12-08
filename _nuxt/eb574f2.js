@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[799],{1207:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","description":["水飴（みずあめ）は、デンプンを酸や糖化酵素で糖化して作られた粘液状の甘味料。ブドウ糖、麦芽糖、デキストリンなどの混合物で、主成分は酵素糖化水あめや麦芽水あめでは麦芽糖である。（ウィキペディア より）"],"label":"水飴","objectID":"keyword:水飴","タイプ":["Keyword"]}')}}]);

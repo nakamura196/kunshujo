@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[890],{1298:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","label":"真蹟保証付ノ部","objectID":"keyword:真蹟保証付ノ部","タイプ":["Keyword"]}')}}]);

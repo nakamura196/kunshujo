@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[610],{1018:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00035","label":"小包送票","objectID":"keyword:小包送票","タイプ":["Keyword"]}')}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[586],{994:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00008","label":"宝寿御薬艾","objectID":"keyword:宝寿御薬艾","タイプ":["Keyword"]}')}}]);

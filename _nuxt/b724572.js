@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1394],{1802:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00010","label":"東京高等工業学校","objectID":"org:東京高等工業学校","タイプ":["Organization"]}')}}]);

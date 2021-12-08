@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1463],{1871:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"素麺同業組合","objectID":"org:素麺同業組合","タイプ":["Organization"]}')}}]);

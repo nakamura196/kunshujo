@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1319],{1727:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","label":"平安遷都紀念祭協賛会","objectID":"org:平安遷都紀念祭協賛会","タイプ":["Organization"]}')}}]);

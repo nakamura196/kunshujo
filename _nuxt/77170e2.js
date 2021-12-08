@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[286],{694:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00009","description":["大和煮（やまとに）は、獣肉の調理法。またその方法で調理された料理の名称。砂糖・醤油や生姜などの香辛料で濃く味付けをした煮物。（ウィキペディア より）"],"label":"大和煮","objectID":"keyword:やまと煮","タイプ":["Keyword"]}')}}]);

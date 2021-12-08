@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[914],{1322:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00025","description":["第二種郵便物（だいにしゅゆうびんぶつ）とは、日本郵便が定める郵便物区分のひとつである。（ウィキペディア より）"],"label":"第二種郵便物","objectID":"keyword:第二種郵便物","タイプ":["Keyword"]}')}}]);

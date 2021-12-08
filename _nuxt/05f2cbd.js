@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[581],{989:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00025","description":["定価（ていか）とは、前もって定められた価格のこと。（ウィキペディア より）"],"label":"定価","objectID":"keyword:定価","タイプ":["Keyword"]}')}}]);

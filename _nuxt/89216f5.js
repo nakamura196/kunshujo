@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1890],{2322:function(o,w,n){o.exports=n.p+"img/home.145fc2c.webp"}}]);

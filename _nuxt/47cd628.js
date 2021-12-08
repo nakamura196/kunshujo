@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1586],{1994:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00012","label":"大阪市東区安土町","objectID":"place:大阪市東区安土町","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Osaka-Kokusai-Bldg-01.jpg/200px-Osaka-Kokusai-Bldg-01.jpg","タイプ":["Place"]}')}}]);

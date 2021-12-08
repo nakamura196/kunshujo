@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1392],{1800:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00012","label":"東京鉄道[株]","objectID":"org:東京鉄道[株]","タイプ":["Organization"]}')}}]);

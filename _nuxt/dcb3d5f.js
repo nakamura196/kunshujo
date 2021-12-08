@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1425],{1833:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00011","label":"水産共進会","objectID":"org:水産共進会","タイプ":["Organization"]}')}}]);

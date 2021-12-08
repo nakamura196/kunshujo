@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[337],{745:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00008","label":"ミュンヘンビール","objectID":"keyword:ミュンヘンビール","タイプ":["Keyword"]}')}}]);

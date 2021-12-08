@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1365],{1773:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"本郷区公民会","objectID":"org:本郷区公民会","タイプ":["Organization"]}')}}]);

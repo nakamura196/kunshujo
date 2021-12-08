@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[175],{583:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00017","label":"田中玄蕃","objectID":"chname:田中玄蕃","タイプ":["Agent"]}')}}]);

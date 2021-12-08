@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[715],{1123:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00014","label":"昆虫世界","objectID":"keyword:昆虫世界","タイプ":["Keyword"]}')}}]);

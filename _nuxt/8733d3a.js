@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1082],{1490:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","label":"農商務省専売特許","objectID":"keyword:農商務省専売特許","タイプ":["Keyword"]}')}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1003],{1411:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"薬種問屋","objectID":"keyword:薬種問屋","タイプ":["Keyword"]}')}}]);

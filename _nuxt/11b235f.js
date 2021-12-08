@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1419],{1827:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00007","label":"楠本蒲鉾舗","objectID":"org:楠本蒲鉾舗","タイプ":["Organization"]}')}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[340],{748:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00014","label":"ラガービール","objectID":"keyword:ラガービール","タイプ":["Keyword"]}')}}]);

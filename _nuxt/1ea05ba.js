@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[481],{889:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","label":"古道具","objectID":"keyword:古道具","タイプ":["Keyword"]}')}}]);

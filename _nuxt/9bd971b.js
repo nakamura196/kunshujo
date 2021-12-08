@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1629],{2037:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00027","label":"本郷3丁目","objectID":"place:本郷3丁目","タイプ":["Place"]}')}}]);

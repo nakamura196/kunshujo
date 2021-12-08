@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[579],{987:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","label":"守田治兵衛謹製","objectID":"keyword:守田治兵衛謹製","タイプ":["Keyword"]}')}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[107],{515:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"川上藤兵衛","objectID":"chname:川上藤兵衛","タイプ":["Agent"]}')}}]);

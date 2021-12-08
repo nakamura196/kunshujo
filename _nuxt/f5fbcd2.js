@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[517],{925:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"商標_山吹","objectID":"keyword:商標_山吹","タイプ":["Keyword"]}')}}]);

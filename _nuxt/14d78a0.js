@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1318],{1726:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"帝国農家一致協会","objectID":"org:帝国農家一致協会","タイプ":["Organization"]}')}}]);

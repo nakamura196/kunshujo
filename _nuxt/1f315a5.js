@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1369],{1777:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00008","label":"本郷区衛生会","objectID":"org:本郷区衛生会","タイプ":["Organization"]}')}}]);

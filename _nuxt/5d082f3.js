@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[844],{1252:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"特約販売所","objectID":"keyword:特約販売所","タイプ":["Keyword"]}')}}]);

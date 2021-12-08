@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1071],{1479:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","description":["発祥（はっしょう）とは、物事が起こり始まることである。同様のニュアンスを持つ言葉として起源（起原）、ルーツ、原点、源流、由来、元祖、誕生などがある。（ウィキペディア より）"],"label":"発祥","objectID":"keyword:起源","タイプ":["Keyword"]}')}}]);

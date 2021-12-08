@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[57],{465:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"嘉納治郎右衛門","objectID":"chname:嘉納治郎右衛門","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Kanou_Jiroemon.jpg/200px-Kanou_Jiroemon.jpg","タイプ":["Agent"]}')}}]);

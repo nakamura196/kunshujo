@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[36],{444:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00008","label":"伊藤伝七","objectID":"chname:伊藤伝七","タイプ":["Agent"]}')}}]);

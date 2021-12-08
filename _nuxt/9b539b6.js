@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1393],{1801:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00000","description":["東京音楽学校（とうきょうおんがくがっこう）は1887年、東京府下谷区に設立された官立（唯一）の音楽専門学校である。（ウィキペディア より）"],"label":"東京音楽学校 (旧制)","objectID":"org:東京音楽学校_(旧制)","タイプ":["Organization"]}')}}]);

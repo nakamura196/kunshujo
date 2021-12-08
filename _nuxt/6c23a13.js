@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[711],{1119:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00012","label":"日本赤十字社社則","objectID":"keyword:日本赤十字社社則","タイプ":["Keyword"]}')}}]);

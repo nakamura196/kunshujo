@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[798],{1206:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00011","label":"水産品評会","objectID":"keyword:水産品評会","タイプ":["Keyword"]}')}}]);

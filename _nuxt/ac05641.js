@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[957],{1365:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00025","label":"胃散","objectID":"keyword:胃散","タイプ":["Keyword"]}')}}]);

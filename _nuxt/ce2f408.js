@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[982],{1390:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00023","label":"菓子屋","objectID":"keyword:菓子屋","タイプ":["Keyword"]}')}}]);

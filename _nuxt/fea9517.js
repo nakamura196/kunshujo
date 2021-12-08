@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1340],{1748:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","label":"日本葡萄酒株式会社","objectID":"org:日本葡萄酒株式会社","タイプ":["Organization"]}')}}]);

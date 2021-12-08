@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1488],{1896:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00030","label":"農商務省","objectID":"org:農商務省","タイプ":["Organization"]}')}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[755],{1163:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00042","description":["本家（ほんけ）は、日本の荘園制における重層的土地支配構造（荘園公領制、職の体系を参照）上、最上位に位置づけられる土地の名義上の所有権者である。開発領主（かいほつりょうしゅ）から寄進を受けた領家から更に寄進を受けた院宮家、摂関家、大寺社が本家となっていた。宗家ともいう。（ウィキペディア より）"],"label":"本家","objectID":"keyword:本家","タイプ":["Keyword"]}')}}]);

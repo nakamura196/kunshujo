@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1253],{1661:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00007","label":"史跡名所天然記勝物保存協会","objectID":"org:史跡名所天然記勝物保存協会","タイプ":["Organization"]}')}}]);

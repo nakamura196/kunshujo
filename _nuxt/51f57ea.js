@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1012],{1420:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00016","description":["衛生（えいせい、英語・ドイツ語：hygiene）とは、「生」を「まもる」ことから健康をまもること、転じて健康の増進を意味する。特に清潔を保つことを意味する場合も多い。また、学問の一分野として衛生学、保健衛生学がある。（ウィキペディア より）"],"label":"衛生","objectID":"keyword:衛生","タイプ":["Keyword"]}')}}]);

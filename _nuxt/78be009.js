@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1222],{1630:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00011","label":"元老院","objectID":"org:元老院","thumbnail":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Flag_of_the_Japanese_Emperor.svg/200px-Flag_of_the_Japanese_Emperor.svg","タイプ":["Organization"]}')}}]);

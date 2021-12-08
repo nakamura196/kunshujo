@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1668],{2076:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","description":["舞鶴町（まいづるまち）は、大分県大分市の町域。一～三丁目がある。郵便番号は870-0044.（ウィキペディア より）"],"label":"舞鶴町","objectID":"place:舞鶴町","タイプ":["Place"]}')}}]);

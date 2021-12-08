@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1130],{1538:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00008","label":"長生箸","objectID":"keyword:長生箸","タイプ":["Keyword"]}')}}]);

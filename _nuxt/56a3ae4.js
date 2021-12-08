@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1336],{1744:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00023","label":"日本園芸会","objectID":"org:日本園芸会","タイプ":["Organization"]}')}}]);

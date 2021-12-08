@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[365],{773:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00008","label":"主務社印","objectID":"keyword:主務社印","タイプ":["Keyword"]}')}}]);

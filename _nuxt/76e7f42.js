@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1490],{1898:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00009","description":["株式会社サンヨー堂（サンヨーどう、英文社名：SUNYO-DO CO., LTD.）は、缶詰の製造・販売を行う日本の株式会社である。ブランドマークはSUNYO。（ウィキペディア より）"],"label":"サンヨー堂","objectID":"org:逸見山陽堂","タイプ":["Organization"]}')}}]);

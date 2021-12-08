@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[707],{1115:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00013","label":"日本美術協会会頭","objectID":"keyword:日本美術協会会頭","タイプ":["Keyword"]}')}}]);

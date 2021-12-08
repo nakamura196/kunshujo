@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1589],{1997:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00009","description":["異表記として那羅・平城・寧楽などがある（読みは全て「なら」）。平安京（京都）に都が遷った後は南都（なんと）とも呼ばれた。古くは大倭と呼ばれ、また平城京にも相当した。（ウィキペディア より）"],"label":"奈良","objectID":"place:奈良","タイプ":["Place"]}')}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[942],{1350:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"続和漢名詩鈔","objectID":"keyword:続和漢名詩鈔","タイプ":["Keyword"]}')}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1381],{1789:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00023","description":["東京学士会院（とうきょうがくしかいいん）は、大日本帝国にかつて存在した官公庁の一つ。（ウィキペディア より）"],"label":"東京学士会院","objectID":"org:東京学士会院","タイプ":["Organization"]}')}}]);

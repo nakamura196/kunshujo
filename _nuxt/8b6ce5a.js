@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1308],{1716:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"岡林商店","objectID":"org:岡林商店","タイプ":["Organization"]}')}}]);

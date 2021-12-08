@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1160],{1568:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"駿河屋製","objectID":"keyword:駿河屋製","タイプ":["Keyword"]}')}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1229],{1637:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"内外農蚕器商会","objectID":"org:内外農蚕器商会","タイプ":["Organization"]}')}}]);

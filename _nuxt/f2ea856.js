@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1197],{1605:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00007","label":"三浦書店","objectID":"org:三浦書店","タイプ":["Organization"]}')}}]);

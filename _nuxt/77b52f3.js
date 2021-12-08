@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1473],{1881:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00009","label":"若林合名会社","objectID":"org:若林合名会社","タイプ":["Organization"]}')}}]);

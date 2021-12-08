@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1395],{1803:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"東京高等師範学校附属中学校","objectID":"org:東京高等師範学校附属中学校","タイプ":["Organization"]}')}}]);

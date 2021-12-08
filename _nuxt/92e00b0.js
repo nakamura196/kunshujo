@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[688],{1096:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00011","description":["料理（りょうり）は、食物をこしらえることで同時にこしらえた結果である食品そのもの。調理ともいう。 すなわち、食材、調味料などを組み合わせて加工を行うこと、およびそれを行ったものの総称である。（ウィキペディア より）"],"label":"料理","objectID":"keyword:料理","タイプ":["Keyword"]}')}}]);

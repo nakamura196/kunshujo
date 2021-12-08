@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[244],{652:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00007","label":"鴨池宜之","objectID":"chname:鴨池宜之","タイプ":["Agent"]}')}}]);

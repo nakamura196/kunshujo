@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1364],{1772:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","description":["朝鮮総督府鉄道局（ちょうせんそうとくふてつどうきょく）は、日本統治時代の朝鮮に置かれた朝鮮総督府所属の官署である。朝鮮総督府鉄道の管理・運営、朝鮮における私設鉄道・軌道および陸運の監督事務を掌る。（ウィキペディア より）"],"label":"朝鮮総督府鉄道局","objectID":"org:朝鮮総督府鉄道局","タイプ":["Organization"]}')}}]);

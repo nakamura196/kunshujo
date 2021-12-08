@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1349],{1757:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"日本音楽会","objectID":"org:日本音楽会","タイプ":["Organization"]}')}}]);

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[445],{853:function(o){o.exports=JSON.parse('{"_updated":"2021-12-08","count":"00005","label":"北海道名産","objectID":"keyword:北海道名産","タイプ":["Keyword"]}')}}]);

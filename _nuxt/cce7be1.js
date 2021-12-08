@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[98],{506:function(e){e.exports=JSON.parse('{"_updated":"2021-12-08","count":"00006","label":"山本常吉","objectID":"chname:山本常吉","タイプ":["Agent"]}')}}]);
