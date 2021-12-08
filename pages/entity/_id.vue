@@ -78,7 +78,10 @@
         depressed
         :to="localePath(to)"
       >
-        {{ Number(item.count) }} 件のアイテムを検索
+        <template v-if="$i18n.locale === 'ja'">
+          {{ Number(item.count) }} 件のアイテムを検索
+        </template>
+        <template v-else> Search {{ Number(item.count) }} items </template>
         <v-icon class="ml-1">mdi-magnify</v-icon>
       </v-btn>
 

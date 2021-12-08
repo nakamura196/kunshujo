@@ -32,9 +32,12 @@
         <h4 v-html="item.label"></h4>
       </nuxt-link>
 
-      <p v-if="item.description" class="mt-2 mb-0">
-        {{ item.description }}
-      </p>
+      <!-- eslint-disable-next-line vue/no-v-html -->
+      <p
+        v-if="item.description"
+        v-html="item.description"
+        class="mt-2 mb-0"
+      ></p>
     </div>
   </v-card>
 </template>

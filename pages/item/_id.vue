@@ -217,8 +217,7 @@
       </small>
     </v-sheet>
 
-    <v-container>
-      <!-- v-show="$refs.mlt && $refs.mlt.moreLikeThisData.length > 0" -->
+    <v-container fluid class="mb-10">
       <div class="mt-10">
         <MoreLikeThis ref="mlt" :item="item" />
       </div>
@@ -419,7 +418,11 @@ export default class Item extends Vue {
     return (
       this.baseUrl +
       '/curation/?manifest=' +
-      manifest +
+      manifest.replace(
+        'https://iiif.dl.itc.u-tokyo.ac.jp/repo',
+        this.baseUrl + '/data'
+      ) +
+      '.json' +
       '&canvas=' +
       encodeURIComponent(memberId)
     )

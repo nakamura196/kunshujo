@@ -66,7 +66,9 @@ export default class morelikethis extends Vue {
               id: metadata.objectID,
             },
           },
-          description: '共起頻度: ' + item.value,
+          description: `${this.$t('タイプ')}: ${this.$t(
+            metadata['タイプ'].join(', ')
+          )} / ${this.$t('共起頻度')}: ${item.value}`,
         })
       }
     }

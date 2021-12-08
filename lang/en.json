@@ -482,5 +482,11 @@
   "タイプ": "Type",
   "東京大学": "The University of Tokyo",
   "time": "Time",
-  "関連するエンティティ": "Related Entities"
+  "関連するエンティティ": "Related Entities",
+  "color": "Color",
+  "mtag": "Machine Tag",
+  "共起頻度": "Co-occurrence",
+  "出現頻度": "Frequency",
+  "可視化例 1": "Visualization 1",
+  "可視化例 2": "Visualization 2"
 }

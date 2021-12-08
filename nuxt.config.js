@@ -18,6 +18,17 @@ for (let key in etc) {
 
 env.menu = [
   {
+    label: 'about_',
+    to: {
+      name: 'page-slug',
+      params: {
+        slug: 'about',
+      },
+    },
+    icon: 'mdi-information',
+    top: true,
+  },
+  {
     label: '検索',
     to: {
       name: 'search-slug',
@@ -69,6 +80,20 @@ env.menu = [
     },
     icon: 'mdi-map',
     description: '地図から探す',
+    top: true,
+  },
+  {
+    label: '可視化例 1',
+    href: 'https://utda.github.io/kunshujo-a/pd/',
+    img: env.BASE_URL + '/img/etc/pd_banner_magnified.webp',
+    description: 'NYPLが公開する手法を用いた可視化を行います。',
+    top: true,
+  },
+  {
+    label: '可視化例 2',
+    href: 'https://utda.github.io/kunshujo-a/pp/',
+    img: env.BASE_URL + '/img/etc/pixplot.webp',
+    description: 'Yale大学が公開する手法「PixPlot」を用いた可視化を行います。',
     top: true,
   },
 ]
@@ -165,6 +190,22 @@ env.searches = {
         more: false,
         open: true,
       },
+      color: {
+        key: 'color',
+        sort: '',
+        label: 'color',
+        value: {},
+        more: false,
+        open: true,
+      },
+      mtag: {
+        key: 'mtag',
+        sort: '',
+        label: 'mtag',
+        value: {},
+        more: false,
+        open: true,
+      },
     },
     sort: [{ label: '適合度', value: '_score' }],
     defaultSort: '_score:desc',
@@ -199,6 +240,14 @@ env.searches = {
       {
         label: 'time',
         value: 'time',
+      },
+      {
+        label: 'color',
+        value: 'color',
+      },
+      {
+        label: 'mtag',
+        value: 'mtag',
       },
     ],
     advanced: [],

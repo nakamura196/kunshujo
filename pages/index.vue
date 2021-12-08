@@ -1,14 +1,14 @@
 <template>
   <div>
     <section class="mb-5">
-      <v-parallax :src="top" height="300">
+      <v-parallax :src="top" height="250">
         <v-layout column align-center justify-center class="white--text">
           <h1 class="white--text mb-2 display-1 text-center">
             <b>{{ siteName }}</b>
           </h1>
           <v-btn
             large
-            class="mt-5"
+            class="mt-5 mb-5"
             :to="localePath({ name: 'search-slug' })"
             color="primary"
             >{{ $t('try_out') }}</v-btn
