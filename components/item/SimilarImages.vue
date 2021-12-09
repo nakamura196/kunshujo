@@ -26,6 +26,21 @@ export default class morelikethis extends Vue {
   })
   item: any
 
+  @Prop({
+    default: 'index',
+  })
+  index: any
+
+  @Prop({
+    default: 'relation',
+  })
+  relation: any
+
+  @Prop({
+    default: 'item-id',
+  })
+  name: any
+
   mounted() {
     this.moreLikeThis()
   }
@@ -36,7 +51,7 @@ export default class morelikethis extends Vue {
   }
 
   async moreLikeThis() {
-    let index: any = await axios.get(this.baseUrl + '/data/index.json')
+    let index: any = await axios.get(this.baseUrl + `/data/${this.index}.json`)
     index = index.data
 
     const indexMap: any = {}
@@ -44,7 +59,9 @@ export default class morelikethis extends Vue {
       indexMap[item.objectID] = item
     }
 
-    let relation: any = await axios.get(this.baseUrl + '/data/relation.json')
+    let relation: any = await axios.get(
+      this.baseUrl + `/data/${this.relation}.json`
+    )
     relation = relation.data
 
     const id = this.item.objectID
@@ -56,13 +73,17 @@ export default class morelikethis extends Vue {
       for (const id2 of items) {
         const item = indexMap[id2]
 
+        if (!indexMap[id2]) {
+          continue
+        }
+
         moreLikeThisData.push({
           id: id2,
           label: item.label,
           thumbnail: item.thumbnail,
-          description: item.tag.join(', '),
+          description: item.tag ? item.tag.join(', ') : null,
           to: {
-            name: 'item-id',
+            name: this.name,
             params: {
               id: id2,
             },

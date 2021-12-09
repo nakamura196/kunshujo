@@ -376,6 +376,22 @@ env.searches = {
         more: false,
         open: true,
       },
+      color: {
+        key: 'color',
+        sort: '',
+        label: 'color',
+        value: {},
+        more: false,
+        open: true,
+      },
+      score: {
+        key: 'score',
+        sort: '',
+        label: 'score',
+        value: {},
+        more: false,
+        open: true,
+      },
     },
     sort: [
       { label: '適合度', value: '_score' },
@@ -388,6 +404,10 @@ env.searches = {
       {
         label: 'mtag',
         value: 'mtag',
+      },
+      {
+        label: 'color',
+        value: 'color',
       },
       {
         label: 'score',

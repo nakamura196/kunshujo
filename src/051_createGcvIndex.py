@@ -12,7 +12,7 @@ import shutil
 
 
 
-path = "/Users/nakamurasatoru/git/d_omeka/omekac_dd/docs/curation/add_gcv.json"
+path = "/Users/nakamurasatoru/git/d_omeka/omekac_dd2/docs/curation/mod.json"
 
 with open(path) as f:
     st = json.load(f)
@@ -20,6 +20,8 @@ with open(path) as f:
 index = []
 
 selections = st["selections"]
+
+sims = {}
 
 ops = ["Packaged goods"]
 
@@ -33,7 +35,8 @@ for selection in selections:
 
     member_id = member["@id"]
 
-    id = hashlib.md5((member_id + "gcv").encode('utf-8')).hexdigest()
+    # id = hashlib.md5((member_id + "gcv").encode('utf-8')).hexdigest()
+    id = hashlib.md5((member_id).encode('utf-8')).hexdigest()
 
     label = member["label"]
 
@@ -44,10 +47,14 @@ for selection in selections:
         if m["label"] == "Score":
             score = m["value"]
 
+    mtags = []
+    if label not in ops:
+        mtags.append(label)
+
     item = {
         "objectID": id,
         "label": label,
-        "mtag": [label],
+        "mtag": mtags,
         "thumbnail": member["thumbnail"],
         "manifest" : manifest,
         "member" : member_id,
@@ -56,6 +63,17 @@ for selection in selections:
         "_updated" : format(today, '%Y-%m-%d'),
     }
 
+    metadata = member["metadata"]
+
+    for m in metadata:
+        label = m["label"]
+        value = m["value"]
+
+        if label == "Color":
+            item["color"] = [value]
+        elif label == "Score":
+            item["score"] = [str(round(value, 1))]
+
     fulltexts = [item["label"]]
 
     
@@ -63,6 +81,25 @@ for selection in selections:
 
     index.append(item)
 
+    #####
+
+    sims[id] = {}
+
+    keys = ["images", "texts"]
+
+    for key in keys:
+
+        if key in member:
+            arr = []
+            for uri in member[key]:
+                id2 = hashlib.md5(uri.encode('utf-8')).hexdigest()
+                arr.append(id2)
+            sims[id][key] = arr
+
 with open("../static/data/gcv.json", 'w') as outfile:
     json.dump(index, outfile, ensure_ascii=False,
+                indent=4, sort_keys=True, separators=(',', ': '))
+
+with open("../static/data/object_relation.json", 'w') as outfile:
+    json.dump(sims, outfile, ensure_ascii=False,
                 indent=4, sort_keys=True, separators=(',', ': '))

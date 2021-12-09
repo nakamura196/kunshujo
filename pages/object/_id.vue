@@ -244,7 +244,13 @@
       </div>
 
       <div class="mt-10">
-        <SimilarImages ref="mlt2" :item="item" />
+        <SimilarImages
+          ref="mlt2"
+          :item="item"
+          index="gcv"
+          relation="object_relation"
+          name="object-id"
+        />
       </div>
     </v-container>
 
