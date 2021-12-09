@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[161],{594:function(o,n,w){o.exports=w.p+"img/iiif-logo.4f24215.svg"}}]);
