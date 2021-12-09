@@ -88,7 +88,7 @@
                         params: {
                           slug: fixSearchSlug(slug),
                         },
-                        query: getQuery(item.label),
+                        query: getQuery(item.key),
                       })
                     "
                   >
@@ -220,6 +220,7 @@ export default class categoryTypeSlug extends Vue {
       items.push({
         label: this.fix(item.key),
         value: item.doc_count,
+        key: item.key,
       })
 
       data2.push(item.doc_count)
