@@ -129,7 +129,7 @@ for selection in selections:
 
         elif label == "機械タグ":
             for value in values:
-                if value not in ops:
+                if value not in ops and value not in mtags:
                     mtags.append(value)
         elif label == "Color":
             color = values
@@ -228,7 +228,7 @@ for selection in selections:
 
                 edges[id1][id2] += 1
 
-with open("/Users/nakamurasatoru/git/d_kunshujo/kunshujo/static/data/index.json", 'w') as outfile:
+with open("../static/data/index.json", 'w') as outfile:
     json.dump(index, outfile, ensure_ascii=False,
                 indent=4, sort_keys=True, separators=(',', ': '))
 
@@ -249,10 +249,10 @@ for key in edges:
 
     edges2[key] = arr
 
-with open("/Users/nakamurasatoru/git/d_kunshujo/kunshujo/static/data/entity_relation.json", 'w') as outfile:
+with open("../static/data/entity_relation.json", 'w') as outfile:
     json.dump(edges2, outfile, ensure_ascii=False,
                 indent=4, sort_keys=True, separators=(',', ': '))
 
-with open("/Users/nakamurasatoru/git/d_kunshujo/kunshujo/static/data/relation.json", 'w') as outfile:
+with open("../static/data/relation.json", 'w') as outfile:
     json.dump(sims, outfile, ensure_ascii=False,
                 indent=4, sort_keys=True, separators=(',', ': '))

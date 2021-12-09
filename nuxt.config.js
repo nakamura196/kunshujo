@@ -96,6 +96,30 @@ env.menu = [
     description: 'Yale大学が公開する手法「PixPlot」を用いた可視化を行います。',
     top: true,
   },
+  {
+    label: 'オブジェクト検索',
+    to: {
+      name: 'search-slug',
+      params: {
+        slug: 'object',
+      },
+    },
+    icon: 'mdi-tag',
+    description: 'Google Cloud Vision APIを用いて検出した物体を検索します。',
+    top: true,
+  },
+  {
+    label: 'カテゴリ（オブジェクト）',
+    to: {
+      name: 'category-slug',
+      params: {
+        slug: 'object',
+      },
+    },
+    icon: 'mdi-chart-bar',
+    description: '検出した物体のメタデータ別の集計結果を表示します。',
+    top: true,
+  },
 ]
 
 // `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
@@ -337,6 +361,64 @@ env.searches = {
       {
         label: 'description',
         value: 'description',
+      },
+    ],
+  },
+  object: {
+    label: 'object',
+    index: 'data/gcv.json',
+    aggs: {
+      mtag: {
+        key: 'mtag',
+        sort: '',
+        label: 'mtag',
+        value: {},
+        more: false,
+        open: true,
+      },
+    },
+    sort: [
+      { label: '適合度', value: '_score' },
+      { label: 'score', value: 'score' },
+    ],
+    defaultSort: '_score:desc',
+    defaultLayout: 'grid',
+    name: 'object-id',
+    detail: [
+      {
+        label: 'mtag',
+        value: 'mtag',
+      },
+      {
+        label: 'score',
+        value: 'score',
+      },
+    ],
+    advanced: [],
+    layout: [
+      {
+        label: 'list',
+        value: 'list',
+        icon: 'mdi-view-list',
+        component: 'search-layout-list',
+      },
+      {
+        label: 'grid',
+        value: 'grid',
+        icon: 'mdi-view-grid',
+        component: 'search-layout-grid',
+      },
+      {
+        label: 'graph',
+        value: 'graph',
+        icon: 'mdi-chart-bar',
+        component: 'search-layout-graph',
+      },
+    ],
+    list: [
+      {
+        label: 'score',
+        value: 'score',
       },
     ],
   },

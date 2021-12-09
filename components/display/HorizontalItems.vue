@@ -1,9 +1,9 @@
 <template>
   <ul class="horizontal-list">
-    <li v-for="(obj, index) in data" :key="index" class="item">
+    <!-- class="mt-2 mb-4" -->
+    <li v-for="(obj, index) in data" :key="index" class="item mb-2">
       <CardItem
         :key="'value_' + index"
-        class="mt-2 mb-4"
         :horizontal="true"
         :item="obj"
         :width="width"
@@ -50,7 +50,7 @@ export default class Header extends Vue {
   display: inline-block;
 
   /* 見た目調整 */
-  margin-right: 16px;
-  margin-left: 16px;
+  margin-right: 8px;
+  margin-left: 8px;
 }
 </style>

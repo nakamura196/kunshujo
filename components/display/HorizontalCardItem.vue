@@ -39,6 +39,9 @@
         class="mt-2 mb-0"
       ></p>
     </div>
+    <v-card-actions class="pa-0">
+      <v-spacer></v-spacer>
+    </v-card-actions>
   </v-card>
 </template>
 
