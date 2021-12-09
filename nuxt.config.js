@@ -120,6 +120,24 @@ env.menu = [
     description: '検出した物体のメタデータ別の集計結果を表示します。',
     top: true,
   },
+  {
+    label: '物体検出',
+    to: {
+      name: 'detection',
+    },
+    icon: 'mdi-api',
+    description: '物体検出を試します。',
+    top: true,
+  },
+  {
+    label: '類似画像検索',
+    to: {
+      name: 'sim',
+    },
+    icon: 'mdi-api',
+    description: '類似画像検索を試します。',
+    top: true,
+  },
 ]
 
 // `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
