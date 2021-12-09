@@ -23,7 +23,7 @@
                       })
                     "
                   >
-                    {{ agg.label }}
+                    {{ $t(agg.label) }}
                   </nuxt-link>
                 </td>
               </tr>
@@ -69,7 +69,7 @@ export default class FullTextSearch extends Vue {
   ]
 
   get title() {
-    return this.$route.params.slug + ' ' + 'category'
+    return this.$t('category') + ' - ' + this.$t(this.$route.params.slug)
   }
 
   head() {

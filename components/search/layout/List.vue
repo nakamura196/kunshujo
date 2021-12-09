@@ -7,6 +7,7 @@
             localePath({
               name,
               params: { id: item._id },
+              query: $route.query,
             })
           "
         >
@@ -28,6 +29,7 @@
               localePath({
                 name,
                 params: { id: item._id },
+                query: $route.query,
               })
             "
             v-html="$utils.highlightRelation(item._source.label, q)"

@@ -65,6 +65,24 @@
         />
       </p>
 
+      <v-row>
+        <v-col cols="12" md="4"></v-col>
+        <v-col cols="12" md="4">
+          <v-btn
+            class="my-10"
+            rounded
+            large
+            block
+            color="primary darken-2"
+            depressed
+            :to="localePath({ name: 'item-id', params: { id: item.within } })"
+          >
+            {{ $t('上位アイテム') }}
+          </v-btn>
+        </v-col>
+        <v-col cols="12" md="4"></v-col>
+      </v-row>
+
       <v-simple-table class="pt-5">
         <template #default>
           <tbody>
@@ -369,7 +387,8 @@ export default class Item extends Vue {
 
   get aggs() {
     const searches: any = process.env.searches
-    const aggs = searches.default.detail
+    const aggs = searches.object.detail
+    console.log({ aggs })
     return aggs
   }
 
@@ -387,6 +406,7 @@ export default class Item extends Vue {
         to: this.localePath({
           name: 'search-slug',
           params: { slug: 'object' },
+          query: this.$route.query,
         }),
         exact: true,
       },

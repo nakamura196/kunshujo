@@ -8,6 +8,7 @@
               localePath({
                 name,
                 params: { id: item._id },
+                query: $route.query,
               })
             "
           >
@@ -27,6 +28,7 @@
             <nuxt-link
               :to="
                 localePath({
+                  query: $route.query,
                   name,
                   params: { id: item._id },
                 })

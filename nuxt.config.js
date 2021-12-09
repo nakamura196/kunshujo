@@ -392,6 +392,7 @@ env.searches = {
       {
         label: 'score',
         value: 'score',
+        type: 'text',
       },
     ],
     advanced: [],

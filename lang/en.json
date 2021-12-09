@@ -488,5 +488,9 @@
   "共起頻度": "Co-occurrence",
   "出現頻度": "Frequency",
   "可視化例 1": "Visualization 1",
-  "可視化例 2": "Visualization 2"
+  "可視化例 2": "Visualization 2",
+  "item": "Item",
+  "object": "Object",
+  "オブジェクト検索": "Object Search",
+  "カテゴリ（オブジェクト）": "Category（Object）"
 }

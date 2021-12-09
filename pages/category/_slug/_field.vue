@@ -16,14 +16,14 @@
                 params: { slug, field: aggField },
               })
             "
-            >{{ aggList.label }}</v-tab
+            >{{ $t(aggList.label) }}</v-tab
           >
         </template>
       </v-tabs>
 
       <v-row>
         <v-col cols="12" md="8">
-          <h2>{{ label }}</h2>
+          <h2>{{ $t(label) }}</h2>
         </v-col>
         <v-col cols="12" md="4">
           <v-tabs v-model="tabs" right>
@@ -180,7 +180,7 @@ export default class categoryTypeSlug extends Vue {
         exact: true,
       },
       {
-        text: this.$t(searches[slug].label + ' category'),
+        text: this.$t('category') + ' - ' + this.$t(searches[slug].label),
         disabled: false,
         to: this.localePath({
           name: 'category-slug',
@@ -191,7 +191,7 @@ export default class categoryTypeSlug extends Vue {
         exact: true,
       },
       {
-        text: this.label,
+        text: this.$t(this.label),
       },
     ]
   }
@@ -218,12 +218,12 @@ export default class categoryTypeSlug extends Vue {
 
     for (const item of buckets) {
       items.push({
-        label: item.key,
+        label: this.fix(item.key),
         value: item.doc_count,
       })
 
       data2.push(item.doc_count)
-      labels.push(item.key)
+      labels.push(this.fix(item.key))
     }
 
     this.items = items
@@ -242,6 +242,13 @@ export default class categoryTypeSlug extends Vue {
     return obj
   }
 
+  fix(value: string) {
+    if (value.includes(':')) {
+      value = value.split(':')[1]
+    }
+    return value
+  }
+
   get label() {
     const field: any = this.$route.params.field
     const aggs: any = this.aggs
@@ -250,7 +257,8 @@ export default class categoryTypeSlug extends Vue {
 
   head() {
     return {
-      title: this.$t('category') + ': ' + this.label,
+      title:
+        this.$t('category') + ' - ' + this.$t(this.slug) + ' : ' + this.label,
     }
   }
 }

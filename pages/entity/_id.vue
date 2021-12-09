@@ -69,21 +69,27 @@
         />
       </p>
 
-      <v-btn
-        class="my-10"
-        large
-        rounded
-        block
-        color="primary darken-2"
-        depressed
-        :to="localePath(to)"
-      >
-        <template v-if="$i18n.locale === 'ja'">
-          {{ Number(item.count) }} 件のアイテムを検索
-        </template>
-        <template v-else> Search {{ Number(item.count) }} items </template>
-        <v-icon class="ml-1">mdi-magnify</v-icon>
-      </v-btn>
+      <v-row>
+        <v-col cols="12" md="4"></v-col>
+        <v-col cols="12" md="4">
+          <v-btn
+            class="my-10"
+            large
+            rounded
+            block
+            color="primary darken-2"
+            depressed
+            :to="localePath(to)"
+          >
+            <template v-if="$i18n.locale === 'ja'">
+              {{ Number(item.count) }} 件のアイテムを検索
+            </template>
+            <template v-else> Search {{ Number(item.count) }} items </template>
+            <v-icon class="ml-1">mdi-magnify</v-icon>
+          </v-btn>
+        </v-col>
+        <v-col cols="12" md="4"></v-col>
+      </v-row>
 
       <v-simple-table class="pt-5">
         <template #default>
@@ -372,6 +378,7 @@ export default class Item extends Vue {
         to: this.localePath({
           name: 'search-slug',
           params: { slug: 'entity' },
+          query: this.$route.query,
         }),
         exact: true,
       },

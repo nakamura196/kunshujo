@@ -225,6 +225,10 @@
       <div class="mt-10">
         <SimilarImages ref="mlt2" :item="item" />
       </div>
+
+      <div class="mt-10">
+        <Objects ref="mlt2" :item="item" />
+      </div>
     </v-container>
 
     <v-sheet class="text-center pa-10 mt-10" color="grey lighten-4">
@@ -278,6 +282,7 @@ import { Component, Vue } from 'nuxt-property-decorator'
 import ResultOption from '~/components/display/ResultOption.vue'
 import MoreLikeThis from '~/components/item/MoreLikeThis.vue'
 import SimilarImages from '~/components/item/SimilarImages.vue'
+import Objects from '~/components/item/Objects.vue'
 import License from '~/components/item/License.vue'
 import axios from 'axios'
 import Breadcrumbs from '~/components/common/Breadcrumbs.vue'
@@ -288,6 +293,7 @@ import MapMain from '~/components/map/MapMain.vue'
     ResultOption,
     MoreLikeThis,
     SimilarImages,
+    Objects,
     License,
     Breadcrumbs,
     MapMain,
@@ -383,7 +389,7 @@ export default class Item extends Vue {
       {
         text: this.$t('search'),
         disabled: false,
-        to: this.localePath({ name: 'search-slug' }),
+        to: this.localePath({ name: 'search-slug', query: this.$route.query }),
         exact: true,
       },
       {

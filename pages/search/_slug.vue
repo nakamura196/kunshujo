@@ -6,6 +6,7 @@
         <!-- 全体 -->
         <div :class="loadingSearch ? 'loading' : ''">
           <div class="pa-4">
+            <h4 class="mb-4">{{ $t($route.params.slug) }}{{ $t('search') }}</h4>
             <FullTextSearch class="mb-5" />
             <FilterOption />
             <v-row dense align="center">
@@ -110,6 +111,9 @@
             class="overflow-y-auto pa-0"
           >
             <div class="pa-4">
+              <h4 class="mb-4">
+                {{ $t($route.params.slug) }}{{ $t('search') }}
+              </h4>
               <FullTextSearch class="mb-5" />
               <FilterOption />
               <v-row dense align="center">
