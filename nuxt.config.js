@@ -84,14 +84,14 @@ env.menu = [
   },
   {
     label: '可視化例 1',
-    href: 'https://utda.github.io/kunshujo-a/pd/',
+    href: 'https://utda.github.io/kunshujo-a/item/pd/',
     img: env.BASE_URL + '/img/etc/pd_banner_magnified.webp',
     description: 'NYPLが公開する手法を用いた可視化を行います。',
     top: true,
   },
   {
     label: '可視化例 2',
-    href: 'https://utda.github.io/kunshujo-a/pp/',
+    href: 'https://utda.github.io/kunshujo-a/item/pp/',
     img: env.BASE_URL + '/img/etc/pixplot.webp',
     description: 'Yale大学が公開する手法「PixPlot」を用いた可視化を行います。',
     top: true,
@@ -118,6 +118,20 @@ env.menu = [
     },
     icon: 'mdi-chart-bar',
     description: '検出した物体のメタデータ別の集計結果を表示します。',
+    top: true,
+  },
+  {
+    label: '可視化例 3 オブジェクト',
+    href: 'https://utda.github.io/kunshujo-a/object/pd/',
+    img: env.BASE_URL + '/img/etc/pd_banner_magnified.webp',
+    description: 'NYPLが公開する手法を用いた可視化を行います。',
+    top: true,
+  },
+  {
+    label: '可視化例 4 オブジェクト',
+    href: 'https://utda.github.io/kunshujo-a/object/pp/',
+    img: env.BASE_URL + '/img/etc/pixplot.webp',
+    description: 'Yale大学が公開する手法「PixPlot」を用いた可視化を行います。',
     top: true,
   },
   {

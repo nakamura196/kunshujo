@@ -33,6 +33,7 @@
         :placeholder="'http://...'"
       ></v-text-field>
 
+      <!--
       <v-btn
         class="ma-1"
         color="primary darken-2"
@@ -48,6 +49,25 @@
         rounded
         depressed
         :href="q ? `http://app.ldas.jp:5003/v1/predict?image=${q}` : null"
+        >API利用</v-btn
+      >
+      -->
+
+      <v-btn
+        class="ma-1"
+        color="primary darken-2"
+        rounded
+        depressed
+        :href="q ? `http://app.ldas.jp:5003/?image=${q}&viewer=1` : null"
+        >ビューアでみる</v-btn
+      >
+
+      <v-btn
+        class="ma-1"
+        color="primary darken-2"
+        rounded
+        depressed
+        :href="q ? `http://app.ldas.jp:5003/?image=${q}` : null"
         >API利用</v-btn
       >
 
