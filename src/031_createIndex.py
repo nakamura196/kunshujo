@@ -40,6 +40,11 @@ path = "data/reps.json"
 with open(path) as f:
     reps = json.load(f)
 
+path = "data/excludes.json"
+
+with open(path) as f:
+    excludes= json.load(f)
+
 index = []
 
 selections = st["selections"]
@@ -56,8 +61,6 @@ freq = {}
 edges = {}
 
 sims = {}
-
-ops = ["Packaged goods"]
 
 for selection in selections:
   members = selection["members"]
@@ -129,7 +132,7 @@ for selection in selections:
 
         elif label == "機械タグ":
             for value in values:
-                if value not in ops and value not in mtags:
+                if value not in excludes and value not in mtags:
                     mtags.append(value)
         elif label == "Color":
             color = values

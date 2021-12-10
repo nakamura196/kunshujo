@@ -23,7 +23,10 @@ selections = st["selections"]
 
 sims = {}
 
-ops = ["Packaged goods"]
+path = "data/excludes.json"
+
+with open(path) as f:
+    excludes= json.load(f)
 
 for selection in selections:
   members = selection["members"]
@@ -48,7 +51,7 @@ for selection in selections:
             score = m["value"]
 
     mtags = []
-    if label not in ops:
+    if label not in excludes:
         mtags.append(label)
 
     item = {
