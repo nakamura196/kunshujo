@@ -43,6 +43,9 @@ for selection in selections:
 
     label = member["label"]
 
+    if label in excludes:
+        continue
+
     score = ""
     metadata = member["metadata"]
 
