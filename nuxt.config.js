@@ -463,6 +463,8 @@ env.searches = {
   },
 }
 
+env.gtag = 'G-KYBLVDY8SM'
+
 export default {
   telemetry: false,
   server: {
@@ -618,7 +620,7 @@ export default {
   ],
 
   'google-gtag': {
-    id: 'G-KYBLVDY8SM', //サイトのID
+    id: env.gtag, //サイトのID
     debug: true, // 開発環境でも表示したい場合
   },
 

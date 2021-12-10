@@ -198,8 +198,9 @@ export default class categoryTypeSlug extends Vue {
 
   async mounted() {
     const routeQuery: any = this.$route.query
-    routeQuery.size = -1
+    routeQuery.size = 0
     routeQuery.sort = '_score:desc'
+    routeQuery.max = -1
 
     const { data } = await this.$localEs.search(
       routeQuery,
