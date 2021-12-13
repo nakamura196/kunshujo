@@ -2,7 +2,20 @@
   <div v-if="moreLikeThisData.length > 0">
     <div class="text-center my-5">
       <h3>{{ $t('オブジェクト') }}（{{ $t('mtag') }}）</h3>
-      <small>誤認識を含みます。ご注意ください。</small>
+      <small
+        >誤認識を含みますのでご注意ください。よろしければ
+        <v-btn
+          rounded
+          class="mx-1"
+          color="primary"
+          depressed
+          small
+          target="_blank"
+          :href="`https://kunshujo-c.web.app/item/${moreLikeThisData[0].id}`"
+          >タグ修正 <v-icon class="ml-1">mdi-exit-to-app</v-icon></v-btn
+        >
+        にご協力ください。</small
+      >
     </div>
     <HorizontalItems :data="moreLikeThisData" :height="150" />
   </div>

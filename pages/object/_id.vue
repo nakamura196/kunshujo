@@ -65,6 +65,17 @@
         />
       </p>
 
+      <p class="text-center">
+        <v-btn
+          text
+          color="primary"
+          :href="`https://kunshujo-c.web.app/item/${id}`"
+          target="_blank"
+        >
+          {{ $t('タグ修正に協力する') }} <v-icon>mdi-exit-to-app</v-icon>
+        </v-btn>
+      </p>
+
       <v-row>
         <v-col cols="12" md="4"></v-col>
         <v-col cols="12" md="4">

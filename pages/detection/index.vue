@@ -95,6 +95,18 @@
         >Sample 2: 早稲田大学
       </v-btn>
 
+      <v-btn
+        class="ma-1"
+        color="success"
+        rounded
+        depressed
+        @click="
+          q =
+            'https://www.kansai-u.ac.jp/Museum/osaka-toshi/img/documents/kakudai/osaka_kashi.jpg'
+        "
+        >Sample 3: 関西大学
+      </v-btn>
+
       <div>
         <v-img :src="q" contain width="200" height="200" />
       </div>

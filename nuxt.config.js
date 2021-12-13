@@ -152,6 +152,23 @@ env.menu = [
     description: '類似画像検索を試します。',
     top: true,
   },
+  {
+    label: 'タグ修正アプリ',
+    href: 'https://kunshujo-c.web.app/',
+    icon: 'mdi-tag',
+    description: '機械が付与したタグを修正するためのアプリケーションです。',
+    top: true,
+    blank: true,
+  },
+  {
+    label: '電子展示『捃拾帖』',
+    href: 'https://kunshujo.dl.itc.u-tokyo.ac.jp/',
+    icon: 'mdi-database',
+    description:
+      '第1~18帖までの『捃拾帖』について、東京大学史料編纂所が作成した目録を用いて検索可能なシステムです。',
+    top: true,
+    blank: true,
+  },
 ]
 
 // `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
