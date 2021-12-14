@@ -8,6 +8,7 @@
             :src="iframeUrl"
             width="100%"
             height="450"
+            class="px-10"
             allowfullscreen
             frameborder="0"
           ></iframe>

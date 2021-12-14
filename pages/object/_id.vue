@@ -9,6 +9,7 @@
             width="100%"
             height="450"
             allowfullscreen
+            class="px-10"
             frameborder="0"
           ></iframe>
         </v-container>

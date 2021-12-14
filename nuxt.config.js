@@ -29,6 +29,15 @@ env.menu = [
     top: true,
   },
   {
+    label: '検索例',
+    to: {
+      name: 'example',
+    },
+    icon: 'mdi-view-list',
+    top: true,
+    description: '本システムの検索例を紹介します。',
+  },
+  {
     label: '検索',
     to: {
       name: 'search-slug',
