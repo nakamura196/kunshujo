@@ -37,6 +37,7 @@ env.menu = [
     top: true,
     description: 'アイテムを検索します',
   },
+  /*
   {
     label: 'エンティティ検索',
     to: {
@@ -49,6 +50,27 @@ env.menu = [
     description: 'エンティティ（人物、場所、キーワードなど）を検索します',
     top: true,
   },
+  */
+
+  {
+    label: 'その他の検索',
+    to: {
+      name: 'search-list',
+    },
+    icon: 'mdi-magnify',
+    description: 'アイテム以外を検索します。',
+    top: true,
+  },
+  {
+    label: 'category',
+    to: {
+      name: 'category-list',
+    },
+    icon: 'mdi-chart-bar',
+    description: 'メタデータ別の集計結果を表示します。',
+    top: true,
+  },
+  /*
   {
     label: 'category',
     to: {
@@ -73,6 +95,7 @@ env.menu = [
     description: 'エンティティのメタデータ別の集計結果を表示します。',
     top: true,
   },
+  */
   {
     label: 'map',
     to: {
@@ -82,6 +105,8 @@ env.menu = [
     description: '地図から探す',
     top: true,
   },
+
+  /*
   {
     label: '可視化例 1',
     href: 'https://utda.github.io/kunshujo-a/item/pd/',
@@ -96,6 +121,8 @@ env.menu = [
     description: 'Yale大学が公開する手法「PixPlot」を用いた可視化を行います。',
     top: true,
   },
+  */
+  /*
   {
     label: 'オブジェクト検索',
     to: {
@@ -108,6 +135,8 @@ env.menu = [
     description: 'Google Cloud Vision APIを用いて検出した物体を検索します。',
     top: true,
   },
+  */
+  /*
   {
     label: 'カテゴリ（オブジェクト）',
     to: {
@@ -120,6 +149,8 @@ env.menu = [
     description: '検出した物体のメタデータ別の集計結果を表示します。',
     top: true,
   },
+  */
+  /*
   {
     label: '可視化例 3 オブジェクト',
     href: 'https://utda.github.io/kunshujo-a/object/pd/',
@@ -134,6 +165,17 @@ env.menu = [
     description: 'Yale大学が公開する手法「PixPlot」を用いた可視化を行います。',
     top: true,
   },
+  */
+  {
+    label: '機械学習関連サービス',
+    to: {
+      name: 'ml',
+    },
+    icon: 'mdi-api',
+    description: '機械学習関連サービスについて紹介します。',
+    top: true,
+  },
+  /*
   {
     label: '物体検出',
     to: {
@@ -152,6 +194,7 @@ env.menu = [
     description: '類似画像検索を試します。',
     top: true,
   },
+  */
   {
     label: 'タグ修正アプリ',
     href: 'https://kunshujo-c.web.app/',
@@ -159,6 +202,15 @@ env.menu = [
     description: '機械が付与したタグを修正するためのアプリケーションです。',
     top: true,
     blank: true,
+  },
+  {
+    label: '可視化',
+    to: {
+      name: 'vis',
+    },
+    img: env.BASE_URL + '/img/etc/pd_banner_magnified.webp',
+    description: '各種可視化を行います。',
+    top: true,
   },
   {
     label: '電子展示『捃拾帖』',

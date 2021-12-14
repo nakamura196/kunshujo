@@ -1,7 +1,7 @@
 <template>
   <div v-if="moreLikeThisData.length > 0">
     <div class="text-center my-5">
-      <h3>{{ $t('オブジェクト') }}（{{ $t('mtag') }}）</h3>
+      <h3 class="mb-2">{{ $t('オブジェクト') }}（{{ $t('mtag') }}）</h3>
       <small
         >誤認識を含みますのでご注意ください。よろしければ
         <v-btn

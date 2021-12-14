@@ -90,6 +90,14 @@ export default class Item extends Vue {
           </p>
         `
 
+        content = `
+          <p class="iw">
+            <a href="${process.env.BASE_URL + '/search?fc-place=' + obj.id}">${
+          obj.label
+        }</a>
+          </p>
+        `
+
         markers.push({
           latlng: [obj.lat, obj.lng],
           content,

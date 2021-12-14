@@ -29,7 +29,6 @@
         hide-details
         :clearable="true"
         :clear-icon="mdiClose"
-        v-bind="attrs"
         :placeholder="'http://...'"
       ></v-text-field>
 
@@ -138,6 +137,12 @@ export default class Item extends Vue {
       text: this.$t('top'),
       disabled: false,
       to: this.localePath({ name: 'index' }),
+      exact: true,
+    },
+    {
+      text: this.$t('機械学習関連サービス'),
+      disabled: false,
+      to: this.localePath({ name: 'ml' }),
       exact: true,
     },
     {

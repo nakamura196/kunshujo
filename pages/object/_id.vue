@@ -67,12 +67,14 @@
 
       <p class="text-center">
         <v-btn
-          text
-          color="primary"
+          rounded
+          depressed
+          color="warning"
           :href="`https://kunshujo-c.web.app/item/${id}`"
           target="_blank"
         >
-          {{ $t('タグ修正に協力する') }} <v-icon>mdi-exit-to-app</v-icon>
+          {{ $t('タグ修正にぜひご協力ください') }}
+          <v-icon>mdi-exit-to-app</v-icon>
         </v-btn>
       </p>
 
