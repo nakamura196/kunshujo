@@ -32,6 +32,13 @@
  */
 
 
+/*!
+    * Start Bootstrap - Freelancer v6.0.4 (https://startbootstrap.com/themes/freelancer)
+    * Copyright 2013-2020 Start Bootstrap
+    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
+    */
+
+
 /* @preserve
  * Leaflet 1.7.1, a JS library for interactive maps. http://leafletjs.com
  * (c) 2010-2019 Vladimir Agafonkin, (c) 2010-2011 CloudMade
@@ -3254,13 +3261,6 @@ PERFORMANCE OF THIS SOFTWARE.
 //! moment.js
 
 //! moment.js locale configuration
-
-
-/*!
-    * Start Bootstrap - Freelancer v6.0.4 (https://startbootstrap.com/themes/freelancer)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
-    */
 
 
 /*!
