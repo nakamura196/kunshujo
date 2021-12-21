@@ -35,15 +35,53 @@ path = "/Users/nakamurasatoru/git/d_omeka/omekac_dd/docs/curation/mod.json"
 with open(path) as f:
     st = json.load(f)
 
+path = "/Users/nakamurasatoru/git/d_kunshujo/enc2021/src/projects/kunshujo/data/401_res.json"
+
+dbl = []
+
+with open(path) as f:
+    dbl2 = json.load(f)
+
+    for key in dbl2:
+        if dbl2[key]["dbl"] == "good":
+            dbl.append(key)
+
+path = "/Users/nakamurasatoru/git/d_omeka/omekac_dd/docs/curation/add_gcv.json"
+
+mtags3 = {}
+
+with open(path) as f:
+    mtags2 = json.load(f)
+
+    selections = mtags2["selections"]
+
+    for selection in selections:
+        for member in selection["members"]:
+            mid = hashlib.md5(member["@id"].encode('utf-8')).hexdigest()
+
+            if mid in dbl:
+                parent = member["within"]
+
+                if parent not in mtags3:
+                    mtags3[parent] = []
+
+                label = member["label"]
+
+                if label not in mtags3[parent]:
+                    mtags3[parent].append(label)
+
+
 path = "data/reps.json"
 
 with open(path) as f:
     reps = json.load(f)
 
+'''
 path = "data/excludes.json"
 
 with open(path) as f:
     excludes= json.load(f)
+'''
 
 index = []
 
@@ -77,7 +115,7 @@ for selection in selections:
     metadata = member["metadata"]
 
     tags = []
-    mtags = []
+    mtags = mtags3[id] if id in mtags3 else [] # []
 
     agentials = []
     places = []
@@ -131,9 +169,12 @@ for selection in selections:
                         entityIds.append(uri)
 
         elif label == "機械タグ":
+            pass
+            '''
             for value in values:
                 if value not in excludes and value not in mtags:
                     mtags.append(value)
+            '''
         elif label == "Color":
             color = values
         elif label == "帖数":
