@@ -100,6 +100,8 @@ edges = {}
 
 sims = {}
 
+hie = {}
+
 for selection in selections:
   members = selection["members"]
 
@@ -177,6 +179,29 @@ for selection in selections:
             '''
         elif label == "Color":
             color = values
+        elif label == "入力者":
+            for value in values:
+                if "[" in value:
+                    etc = value.split("[")[1].split("]")[0].split("］")[0].strip().replace("kunn", "kun").replace("gagoku", "gaigoku")
+                    test = etc.split("-")
+                    if len(test) == 3:
+                        # print(test)
+
+                        a1 = test[0]
+                        a2 = test[1]
+                        a3 = test[2]
+
+                        if a1 not in hie:
+                            hie[a1] = {}
+
+                        if a2 not in hie[a1]:
+                            hie[a1][a2] = {}
+
+                        if a3 not in hie[a1][a2]:
+                            hie[a1][a2][a3] = []
+                        
+                        hie[a1][a2][a3].append(id)
+
         elif label == "帖数":
             book = values  
 
@@ -300,3 +325,52 @@ with open("../static/data/entity_relation.json", 'w') as outfile:
 with open("../static/data/relation.json", 'w') as outfile:
     json.dump(sims, outfile, ensure_ascii=False,
                 indent=4, sort_keys=True, separators=(',', ': '))
+
+'''
+with open("data/hie.json", 'w') as outfile:
+    json.dump(hie, outfile, ensure_ascii=False,
+                indent=4, sort_keys=True, separators=(',', ': '))
+
+for key1 in hie:
+    for key2 in hie[key1]:
+        keys = hie[key1][key2]
+        if len(keys) == 1:
+            print(key1, key2, 1)
+        else:
+            for key3 in keys:
+                if len(keys[key3]) > 1:
+                    print(key1, key2, 2)
+'''
+
+map = {}
+
+for key1 in hie:
+    for key2 in hie[key1]:
+        keys = hie[key1][key2]
+        '''
+        if len(keys) == 1:
+            pass
+            # print(key1, key2, 1)
+        else:
+        '''
+        arr = []
+        for key3 in keys:
+            '''
+            if len(keys[key3]) > 1:
+                print(key1, key2, 2)
+            '''
+            for id in keys[key3]:
+                arr.append(id)
+
+        for id in arr:
+            arr2 = []
+            for id2 in arr:
+                if id != id2:
+                    arr2.append(id2)
+
+            map[id] = arr2
+
+with open("../static/data/relation2.json", 'w') as outfile:
+    json.dump(map, outfile, ensure_ascii=False,
+                indent=4, sort_keys=True, separators=(',', ': '))
+

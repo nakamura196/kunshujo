@@ -220,6 +220,10 @@
 
     <v-container fluid class="mb-10">
       <div class="mt-10">
+        <RelatedItems ref="mlt" :item="item" />
+      </div>
+
+      <div class="mt-10">
         <MoreLikeThis ref="mlt" :item="item" />
       </div>
 
@@ -281,6 +285,7 @@
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 import ResultOption from '~/components/display/ResultOption.vue'
+import RelatedItems from '~/components/item/RelatedItems.vue'
 import MoreLikeThis from '~/components/item/MoreLikeThis.vue'
 import SimilarImages from '~/components/item/SimilarImages.vue'
 import Objects from '~/components/item/Objects.vue'
@@ -291,6 +296,7 @@ import MapMain from '~/components/map/MapMain.vue'
 
 @Component({
   components: {
+    RelatedItems,
     ResultOption,
     MoreLikeThis,
     SimilarImages,
