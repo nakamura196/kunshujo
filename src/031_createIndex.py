@@ -30,6 +30,14 @@ def getUris():
 
 uris = getUris()
 
+import pandas as pd
+
+df = pd.read_csv('data/books.csv')
+# print(df)
+book_ids = {}
+for index, row in df.iterrows():
+    book_ids[row["a"]] = row["b"]
+
 path = "/Users/nakamurasatoru/git/d_omeka/omekac_dd/docs/curation/mod.json"
 
 with open(path) as f:
@@ -106,7 +114,7 @@ for selection in selections:
   members = selection["members"]
 
   manifest = selection["within"]["@id"]
-  label = selection["within"]["label"]
+  # label = selection["within"]["label"]
 
   for member in members:
 
@@ -203,7 +211,7 @@ for selection in selections:
                         hie[a1][a2][a3].append(id)
 
         elif label == "帖数":
-            book = values  
+            book = ['[{}] {}'.format(book_ids[values[0]], values[0])]
 
     label = member["label"]
     
