@@ -31,7 +31,7 @@ jobs:
         run: npm test
 
       - name: generate
-        run: npm run generate:gh-pages
+        run: npm run generate
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
