@@ -1,14 +1,12 @@
 import pandas as pd
-import urllib.parse
 import json
-import copy
-import os
 import hashlib
 import datetime
 import itertools
 today = datetime.datetime.now()
+import settings
 
-import shutil
+APP_DIR = settings.APP_DIR
 
 def getUris():
     path = "data/structured.json"
@@ -43,7 +41,7 @@ path = "/Users/nakamurasatoru/git/d_omeka/omekac_dd/docs/curation/mod.json"
 with open(path) as f:
     st = json.load(f)
 
-path = "/Users/nakamurasatoru/git/d_kunshujo/enc2021/src/projects/kunshujo/data/401_res.json"
+path = f"{APP_DIR}/src/projects/kunshujo/data/401_res.json"
 
 dbl = []
 
@@ -79,28 +77,15 @@ with open(path) as f:
                     mtags3[parent].append(label)
 
 
+# Entityの対応表
 path = "data/reps.json"
 
 with open(path) as f:
     reps = json.load(f)
 
-'''
-path = "data/excludes.json"
-
-with open(path) as f:
-    excludes= json.load(f)
-'''
-
 index = []
 
 selections = st["selections"]
-
-'''
-item_dir = "/Users/nakamurasatoru/git/d_kunshujo/kunshujo/static/data/item"
-if os.path.exists(item_dir):
-  shutil.rmtree(item_dir)
-  os.makedirs(item_dir)
-'''
 
 freq = {}
 
@@ -114,7 +99,6 @@ for selection in selections:
   members = selection["members"]
 
   manifest = selection["within"]["@id"]
-  # label = selection["within"]["label"]
 
   for member in members:
 
@@ -235,14 +219,6 @@ for selection in selections:
         "color" : color
     }
 
-    '''
-    if "images" in member:
-        images = []
-        for image in member["images"]:
-            images.append(hashlib.md5(image.encode('utf-8')).hexdigest())
-        item["images"] = images[0:10] # 5
-    '''
-
     fulltexts = [item["label"]]
 
     #####
@@ -254,14 +230,6 @@ for selection in selections:
         for value in values:
           if "http" not in value:
             fulltexts.append(value)
-
-    '''
-    path = item_dir + "/" + id.replace(":", "-") + ".json"
-
-    with open(path, 'w') as outfile:
-      json.dump(item, outfile, ensure_ascii=False,
-                  indent=4, sort_keys=True, separators=(',', ': '))
-    '''
 
     item["fulltext"] = " ".join(fulltexts)
 
@@ -305,10 +273,12 @@ for selection in selections:
 
                 edges[id1][id2] += 1
 
+# インデックスを作成
 with open("../static/data/index.json", 'w') as outfile:
     json.dump(index, outfile, ensure_ascii=False,
                 indent=4, sort_keys=True, separators=(',', ': '))
 
+# エンティティ毎の頻度マップを作成
 with open("data/freq.json", 'w') as outfile:
     json.dump(freq, outfile, ensure_ascii=False,
                 indent=4, sort_keys=True, separators=(',', ': '))
@@ -326,29 +296,15 @@ for key in edges:
 
     edges2[key] = arr
 
+# エンティティの関連
 with open("../static/data/entity_relation.json", 'w') as outfile:
     json.dump(edges2, outfile, ensure_ascii=False,
                 indent=4, sort_keys=True, separators=(',', ': '))
 
+# 関連アイテム
 with open("../static/data/relation.json", 'w') as outfile:
     json.dump(sims, outfile, ensure_ascii=False,
                 indent=4, sort_keys=True, separators=(',', ': '))
-
-'''
-with open("data/hie.json", 'w') as outfile:
-    json.dump(hie, outfile, ensure_ascii=False,
-                indent=4, sort_keys=True, separators=(',', ': '))
-
-for key1 in hie:
-    for key2 in hie[key1]:
-        keys = hie[key1][key2]
-        if len(keys) == 1:
-            print(key1, key2, 1)
-        else:
-            for key3 in keys:
-                if len(keys[key3]) > 1:
-                    print(key1, key2, 2)
-'''
 
 map = {}
 
@@ -378,6 +334,7 @@ for key1 in hie:
 
             map[id] = arr2
 
+# 要調査
 with open("../static/data/relation2.json", 'w') as outfile:
     json.dump(map, outfile, ensure_ascii=False,
                 indent=4, sort_keys=True, separators=(',', ': '))

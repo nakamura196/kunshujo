@@ -700,6 +700,14 @@ export default {
     '@nuxtjs/stylelint-module',
   ],
 
+  typescript: {
+    typeCheck: {
+      typescript: {
+        memoryLimit: 8192,
+      },
+    },
+  },
+
   moment: {
     // ここにオプションが記述できる
     locales: ['ja'],
