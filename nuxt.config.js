@@ -568,7 +568,7 @@ env.gtag = 'G-2C9ZGXZBJ5'
 export default {
   telemetry: false,
   server: {
-    port: 8003, // デフォルト: 3000
+    port: 8004, // デフォルト: 3000
   },
   // Target (https://go.nuxtjs.dev/config-target)
 
