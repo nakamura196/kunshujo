@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[200],{795:function(o,n){kunshujo2022.dl.itc.u,tokyo.ac.jp}}]);
