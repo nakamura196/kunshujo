@@ -9,6 +9,12 @@ function getUniqueStr() {
 }
 
 export class Utils {
+  _store: any = {}
+
+  constructor(store: any) {
+    this._store = store
+  }
+
   splitKeyword(keyword: string): string[] {
     // 全角を半角に変換
     // 空の配列を削除
@@ -127,8 +133,26 @@ export class Utils {
     str = String(str)
     return str.length <= length ? str : str.substring(0, length) + '...'
   }
+
+  custom(value: string) {
+    if(value.includes("]")){
+      return value.split("]")[1]
+    } else {
+      return value
+    }
+  }
+
+  translate(value: string){
+    const lang = this._store.i18n.locale
+    if(lang !== "ja"){
+      const langMap: any = process.env.trans
+      return langMap[value] || value
+    } else {
+      return value
+    }
+  }
 }
 
 export default (_: any, inject: any) => {
-  inject('utils', new Utils())
+  inject('utils', new Utils(_))
 }

@@ -9,6 +9,9 @@ for (let key in conf) {
   env[key] = conf[key]
 }
 
+const trans = JSON.parse(fs.readFileSync('static/data/trans.json'))
+env.trans = trans
+
 const etc = env.etc || {}
 
 // legend, settings, などの追加項目
@@ -237,6 +240,15 @@ env.menu = [
     icon: 'mdi-database',
     description:
       '第1~18帖までの『捃拾帖』について、東京大学史料編纂所が作成した目録を用いて検索可能なシステムです。',
+    top: true,
+    blank: true,
+  },
+  {
+    label: '田中芳男・博物学コレクション',
+    href: 'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/tanaka/',
+    icon: 'mdi-database',
+    description:
+      '明治時代の博物学者である田中芳男（1838－1916）が収集・所蔵した貴重な資料群です。',
     top: true,
     blank: true,
   },

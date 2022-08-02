@@ -14,7 +14,7 @@
       <span class="mr-1"
         >{{ getLabel(filter.label) }}<span class="ml-1">:</span></span
       >
-      {{ custom(getValue(filter.value), filter.label) }}
+      {{ $utils.translate($utils.custom(custom(getValue(filter.value), filter.label))) }}
     </v-chip>
 
     <v-btn
@@ -133,7 +133,6 @@ export default class FullTextSearch extends Vue {
   }
 
   getValue(value: string) {
-    console.log({value})
     if (value.substring(0, 1) === '-') {
       value = value.substring(1)
     }

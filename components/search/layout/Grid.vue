@@ -34,7 +34,7 @@
                 })
               "
             >
-              <h4>{{ item._source.label }}</h4>
+              <h4>{{ $utils.translate(item._source.label) }}</h4>
             </nuxt-link>
           </div>
         </v-card>

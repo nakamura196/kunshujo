@@ -66,6 +66,7 @@
         />
       </p>
 
+      <!--
       <p class="text-center">
         <v-btn
           rounded
@@ -78,6 +79,7 @@
           <v-icon>mdi-exit-to-app</v-icon>
         </v-btn>
       </p>
+      -->
 
       <v-row>
         <v-col cols="12" md="4"></v-col>

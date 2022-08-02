@@ -31,7 +31,7 @@
                 <template v-else>
                   <v-icon> {{ mdiCheckboxBlankOutline }} </v-icon>
                 </template>
-                {{ formatLabel(e.key) }}
+                {{ $utils.translate($utils.custom(formatLabel(e.key))) }}
               </v-col>
               <v-col cols="3" class="text-right">
                 {{ e.doc_count.toLocaleString() }}
@@ -132,7 +132,7 @@
             <template #top> </template>
 
             <template #[`item.key`]="{ item }">
-              {{ formatLabel(item.key) }}
+              {{ $utils.translate($utils.custom(formatLabel(item.key))) }}
             </template>
 
             <template #[`item.doc_count`]="{ item }">

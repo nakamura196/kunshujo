@@ -13,3 +13,6 @@ python 021_createIndex.py
 # - gcv.json: インデックス
 # - gcv_relation.json: 関連アイテム
 python 051_createGcvIndex.py
+
+# 一時的な処理
+python 900_remove_f.py

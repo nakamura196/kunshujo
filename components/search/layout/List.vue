@@ -32,7 +32,7 @@
                 query: $route.query,
               })
             "
-            v-html="$utils.highlightRelation(item._source.label, q)"
+            v-html="$utils.translate($utils.highlightRelation(item._source.label, q))"
           ></nuxt-link>
         </h3>
 

@@ -100,49 +100,10 @@
                         :key="key2"
                       >
                         <template v-if="agg.type === 'text'">
-                          <template v-if="agg.value === 'jk'">
-                            <v-btn
-                              class="ma-1"
-                              rounded
-                              color="primary darken-2"
-                              depressed
-                              target="_blank"
-                              :href="`https://japanknowledge.com/psnl/display/?lid=${value}`"
-                              >Personal
-                              <v-icon class="ml-2"
-                                >mdi-exit-to-app</v-icon
-                              ></v-btn
-                            >
-
-                            <v-btn
-                              class="ma-1"
-                              rounded
-                              color="primary darken-2"
-                              depressed
-                              target="_blank"
-                              :href="`https://japanknowledge.com/lib/display/?lid=${value}`"
-                              >Lib
-                              <v-icon class="ml-2"
-                                >mdi-exit-to-app</v-icon
-                              ></v-btn
-                            >
-
-                            <v-btn
-                              class="ma-1"
-                              rounded
-                              color="primary darken-2"
-                              depressed
-                              target="_blank"
-                              :href="`https://japanknowledge-com.utokyo.idm.oclc.org/lib/display/?lid=${value}`"
-                              >東京大学限定; EZproxy
-                              <v-icon class="ml-2"
-                                >mdi-exit-to-app</v-icon
-                              ></v-btn
-                            >
-                          </template>
-                          <template v-else>
+                          
+                          
                             {{ value }}
-                          </template>
+                          
                         </template>
                         <template v-else-if="agg.type === 'link'">
                           <a :href="value" target="_blank"
@@ -160,7 +121,7 @@
                                 query: getQuery(agg.value, value),
                               })
                             "
-                            >{{ formatLabel(value) }}</nuxt-link
+                            >{{ $utils.custom(formatLabel(value)) }}</nuxt-link
                           >
                           <template v-if="value.includes(':')">
                             <v-btn

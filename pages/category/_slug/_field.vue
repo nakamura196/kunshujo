@@ -92,7 +92,7 @@
                       })
                     "
                   >
-                    {{ item.label }}
+                    {{ $utils.custom(item.label) }}
                   </nuxt-link>
                 </template>
               </v-data-table>
@@ -263,6 +263,8 @@ export default class categoryTypeSlug extends Vue {
         this.$t('category') + ' - ' + this.$t(this.slug) + ' : ' + this.label,
     }
   }
+
+  
 }
 </script>
 <style>
