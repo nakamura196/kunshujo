@@ -4,6 +4,31 @@
     <v-container class="my-5 mb-10">
       <h2 class="mb-5">{{ title }}</h2>
 
+      <div class="mt-5 mt-10" v-for="(item2, key) in items2" :key="key" >
+        <h3 class="mb-5">{{item2.label}}</h3>
+        <v-row>
+        
+        <v-col cols="6" md="3" v-for="(item, key2) in item2.value" :key="key2">
+          <nuxt-link :to="localePath(item.value)">
+            <v-img
+              max-height="150"
+              contain
+              :src="item.image || baseUrl + '/img/icons/no-image.webp'"
+              style="height: 150px"
+              width="100%"
+              class="grey lighten-2"
+            />
+          </nuxt-link>
+          <nuxt-link :to="localePath(item.value)">
+            <h3 class="mt-2">{{ fix(item.label) }}</h3>
+          </nuxt-link>
+        </v-col>
+      </v-row>
+      </div>
+      
+      <div class="mt-10">
+      <h3 class="mb-5">その他</h3>
+
       <v-row class="mt-5">
         <v-col cols="6" md="3" v-for="(item, key) in items" :key="key">
           <nuxt-link :to="localePath(item.to)">
@@ -19,11 +44,14 @@
           <a :to="localePath(item.to)">
             <h3 class="mt-2">{{ item.label }}</h3>
           </a>
+          <!--
           <div class="mt-2">
             {{ item.description }}
           </div>
+          -->
         </v-col>
       </v-row>
+      </div>
     </v-container>
   </div>
 </template>
@@ -41,6 +69,8 @@ export default class about extends Vue {
   title: any = this.$t('検索例')
 
   baseUrl: any = process.env.BASE_URL
+
+  items2: any = process.env.example
 
   items: any[] = [
     {
@@ -62,7 +92,7 @@ export default class about extends Vue {
           slug: 'object',
         },
         query: {
-          'fc-mtag': 'Building',
+          'fc-mtag': '建物',
         },
       },
       img: 'https://iiif.dl.itc.u-tokyo.ac.jp/iiif/kunshujou/A00_6010/038/038_0069.tif/5545,3670,904,1064/200,/0/default.jpg',
@@ -93,6 +123,14 @@ export default class about extends Vue {
     },
     */
   ]
+
+  fix(str: string) {
+    if(str.includes(":")){
+      return str.split(":")[1]
+    } else {
+      return str
+    }
+  }
 
   bh: any[] = [
     {

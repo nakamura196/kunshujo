@@ -45,7 +45,7 @@
                 item._source[metadataValue.value].length > 0
               "
               ><b>{{ $t(metadataValue.label) }}: </b
-              >{{ $utils.formatArrayValue(item._source[metadataValue.value]) }}
+              >{{ $utils.custom($utils.formatArrayValue(item._source[metadataValue.value])) }}
 
               <span class="mr-2" v-if="key != metadataList.length - 1"></span>
             </span>

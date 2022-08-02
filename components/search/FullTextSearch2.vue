@@ -6,14 +6,15 @@
         v-model="q"
         light
         single-line
-        filled
+        :filled="false"
+        outlined
         rounded
         dense
         hide-details
         :clearable="true"
         :clear-icon="mdiClose"
         :append-icon="mdiMagnify"
-        background-color="#E0E0E0"
+        :background-color="/*'#E0E0E0'*/'white'"
         @click:append="search"
         @keydown.enter="trigger"
         :placeholder="$t('inputSearchKeyword')"

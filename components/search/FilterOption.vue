@@ -7,7 +7,7 @@
       close
       rounded
       dark
-      :class="filter.value.substring(0, 1) === '-' ? 'error darken-1' : 'primary'"
+      :class="filter.value.substring(0, 1) === '-' ? 'error darken-1' : ''"
       @click:close="faceted(filter.label, filter.value)"
     >
 

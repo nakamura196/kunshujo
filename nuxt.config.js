@@ -12,6 +12,10 @@ for (let key in conf) {
 const trans = JSON.parse(fs.readFileSync('static/data/trans.json'))
 env.trans = trans
 
+const example = JSON.parse(fs.readFileSync('static/data/example.json'))
+env.example = example
+
+
 const etc = env.etc || {}
 
 // legend, settings, などの追加項目

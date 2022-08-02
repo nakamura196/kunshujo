@@ -6,14 +6,15 @@
         v-model="q"
         light
         single-line
-        filled
+        :filled="false"
+        outlined
         rounded
         dense
         hide-details
         :clearable="true"
         :clear-icon="mdiClose"
         :append-icon="mdiMagnify"
-        :background-color="backgroundColor"
+        :background-color="/*backgroundColor*/'white'"
         @click:append="search"
         @keydown.enter="trigger"
         v-bind="attrs"
