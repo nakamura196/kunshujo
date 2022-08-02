@@ -8,9 +8,11 @@
           </h1>
           <v-btn
             large
+            rounded
+            depressed
             class="mt-5 mb-5"
             :to="localePath({ name: 'search-slug' })"
-            color="primary"
+            color="error"
             >{{ $t('try_out') }}</v-btn
           >
         </v-layout>

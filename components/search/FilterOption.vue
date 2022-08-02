@@ -5,14 +5,11 @@
       :key="key"
       class="mr-2 my-1"
       close
-      label
-      :dark="filter.value.substring(0, 1) !== '-'"
-      :class="filter.value.substring(0, 1) === '-' ? '' : 'primary'"
+      rounded
+      dark
+      :class="filter.value.substring(0, 1) === '-' ? 'error darken-1' : 'primary'"
       @click:close="faceted(filter.label, filter.value)"
     >
-      <template v-if="isMinus(filter.value)">
-        <v-icon class="mr-1">{{ mdiMinusBox }}</v-icon>
-      </template>
 
       <span class="mr-1"
         >{{ getLabel(filter.label) }}<span class="ml-1">:</span></span
@@ -26,7 +23,7 @@
       text
       small
       class="my-1"
-      color="error darken-1"
+      color="primary"
       @click="init()"
     >
       {{ $t('Clear all') }}
@@ -136,8 +133,9 @@ export default class FullTextSearch extends Vue {
   }
 
   getValue(value: string) {
+    console.log({value})
     if (value.substring(0, 1) === '-') {
-      value.substring(1)
+      value = value.substring(1)
     }
     if (value.includes(':')) {
       value = value.split(':')[1]
@@ -148,8 +146,8 @@ export default class FullTextSearch extends Vue {
   getLabel(value: string) {
     const spl: any = value.split('-')
     return (
-      spl[0].replace('fc', this.$t('facet')).replace('q', this.$t('detail')) +
-      ' - ' +
+      /*spl[0].replace('fc', this.$t('facet')).replace('q', this.$t('detail')) +
+      ' - ' +*/
       this.$t(spl[1])
     )
   }

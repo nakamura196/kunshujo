@@ -212,6 +212,7 @@ env.menu = [
     top: true,
   },
   */
+  /*
   {
     label: 'タグ修正アプリ',
     href: 'https://kunshujo-c.web.app/',
@@ -220,6 +221,7 @@ env.menu = [
     top: true,
     blank: true,
   },
+  */
   {
     label: '可視化',
     to: {
