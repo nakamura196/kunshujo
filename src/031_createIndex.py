@@ -5,8 +5,11 @@ import datetime
 import itertools
 today = datetime.datetime.now()
 import settings
+import gzip
 
 APP_DIR = settings.APP_DIR
+DATA_DIR = settings.DATA_DIR
+C_DIR = settings.C_DIR
 
 def getUris():
     path = "data/structured.json"
@@ -36,12 +39,24 @@ book_ids = {}
 for index, row in df.iterrows():
     book_ids[row["a"]] = row["b"]
 
-path = "/Users/nakamurasatoru/git/d_omeka/omekac_dd/docs/curation/mod.json"
+path = f"{DATA_DIR}/docs/curation/mod.json.gz"
 
+with gzip.open(path, 'r') as f:
+    '''
+    for line in f:
+        print(line)
+        st = json.loads(line)
+    '''
+    json_bytes = f.read()
+    json_str = json_bytes.decode('utf-8')            # 2. string (i.e. JSON)
+    st = json.loads(json_str) 
+
+'''
 with open(path) as f:
     st = json.load(f)
+'''
 
-path = f"{APP_DIR}/src/projects/kunshujo/data/401_res.json"
+path = f"{C_DIR}/src/projects/kunshujo/data/401_res.json"
 
 dbl = []
 
@@ -52,7 +67,7 @@ with open(path) as f:
         if dbl2[key]["dbl"] == "good":
             dbl.append(key)
 
-path = "/Users/nakamurasatoru/git/d_omeka/omekac_dd/docs/curation/add_gcv.json"
+path = f"{DATA_DIR}/docs/curation/add_gcv.json"
 
 mtags3 = {}
 

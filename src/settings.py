@@ -9,3 +9,6 @@ load_dotenv(dotenv_path)
 
 APP_DIR = os.environ.get("APP_DIR")
 DATA_DIR = os.environ.get("DATA_DIR")
+C_DIR = os.environ.get("C_DIR")
+OMEKA_DIR = os.environ.get("OMEKA_DIR")
+DATA2_DIR = os.environ.get("DATA2_DIR")

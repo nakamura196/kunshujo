@@ -6,12 +6,20 @@ import os
 import datetime
 today = datetime.datetime.now()
 
+import settings
+import gzip
+
+APP_DIR = settings.APP_DIR
+DATA_DIR = settings.DATA_DIR
+C_DIR = settings.C_DIR
+OMEKA_DIR = settings.OMEKA_DIR
+
 def getGeo(obj, map):
   geohash = obj["http://schema.org/geo"][0]["@id"]
   geo = map[geohash]
   return "{} {}".format(geo["http://schema.org/latitude"][0]["@value"], geo["http://schema.org/longitude"][0]["@value"])
 
-path = "/Users/nakamurasatoru/git/d_omeka/omekac_kunshujo/src/rdf/data/all.json"
+path = f"{OMEKA_DIR}/src/rdf/data/all.json"
 
 with open(path) as f:
     st = json.load(f)
@@ -95,6 +103,6 @@ for obj in st:
 
   index.append(item)
 
-with open("/Users/nakamurasatoru/git/d_kunshujo/kunshujo/static/data/entity.json", 'w') as outfile:
+with open(f"{APP_DIR}/static/data/entity.json", 'w') as outfile:
     json.dump(index, outfile, ensure_ascii=False,
                 indent=4, sort_keys=True, separators=(',', ': '))

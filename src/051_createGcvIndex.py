@@ -10,14 +10,26 @@ today = datetime.datetime.now()
 
 import shutil
 
+import settings
+import gzip
 
+APP_DIR = settings.APP_DIR
+DATA2_DIR = settings.DATA2_DIR
+C_DIR = settings.C_DIR
 
-path = "/Users/nakamurasatoru/git/d_omeka/omekac_dd2/docs/curation/mod.json"
+path = f"{DATA2_DIR}/docs/curation/mod.json.gz"
 
-with open(path) as f:
-    st = json.load(f)
+with gzip.open(path, 'r') as f:
+    '''
+    for line in f:
+        print(line)
+        st = json.loads(line)
+    '''
+    json_bytes = f.read()
+    json_str = json_bytes.decode('utf-8')            # 2. string (i.e. JSON)
+    st = json.loads(json_str) 
 
-path = "/Users/nakamurasatoru/git/d_kunshujo/enc2021/src/projects/kunshujo/data/401_res.json"
+path = f"{C_DIR}/src/projects/kunshujo/data/401_res.json"
 
 dbl = []
 
