@@ -6,14 +6,40 @@
 
       <h3 class="mt-10 mb-5">画像をアップロードする</h3>
 
+      <div class="mb-5">
+        <input
+          @change="selectedFile"
+          type="file"
+          name="file"
+          truncate-length="15"
+        />
+      </div>
+
       <v-btn
         class="ma-1"
         color="primary darken-2"
         rounded
         depressed
-        href="http://app.ldas.jp:5003"
-        >登録画面</v-btn
+        @click="upload"
+        >登録</v-btn
       >
+
+      <div v-show="uploadedBase64">
+        <v-img :src="uploadedBase64" contain width="200" height="200" />
+      </div>
+
+      <template v-if="loading">
+        
+        <div class="text-center pa-10">
+        <v-progress-circular
+          indeterminate
+          color="primary"
+        />
+        </div>
+      </template>
+      <template v-else>
+        <v-img class="my-5" :src="previewBase64" />
+      </template>
 
       <h3 class="mt-10 mb-5">URLを使う</h3>
 
@@ -57,7 +83,11 @@
         color="primary darken-2"
         rounded
         depressed
-        :href="q ? `http://app.ldas.jp:5003/?image=${q}&viewer=1` : null"
+        :href="
+          q
+            ? `https://da.dl.itc.u-tokyo.ac.jp/mirador/?manifest=https://d3hfvu5xqm867i.cloudfront.net/yolo/kunshujo/?url=${q}&annotationState=1`
+            : null
+        "
         >ビューアでみる</v-btn
       >
 
@@ -66,7 +96,11 @@
         color="primary darken-2"
         rounded
         depressed
-        :href="q ? `http://app.ldas.jp:5003/?image=${q}` : null"
+        :href="
+          q
+            ? `https://d3hfvu5xqm867i.cloudfront.net/yolo/kunshujo/?url=${q}`
+            : null
+        "
         >API利用</v-btn
       >
 
@@ -155,5 +189,92 @@ export default class Item extends Vue {
       title: this.title,
     }
   }
+
+  uploadFile: any = null
+  uploadedBase64: any = ""
+  previewBase64: any = ''
+  loading: boolean = false
+
+  async selectedFile(e: any) {
+    // 選択された File の情報を保存しておく
+    e.preventDefault()
+    let files = e.target.files
+    //this.uploadFile = files[0]
+    let res: any = await toBase64(files[0])
+    this.uploadedBase64 = res
+  }
+
+  async upload() {
+    this.loading = true
+    /*
+    let formData = new FormData();
+    formData.append('data', this.uploadFile);
+    let config = {
+                    headers: {
+                        'content-type': 'multipart/form-data'
+                    }
+                };
+    const {data} = await axios.post('https://d3hfvu5xqm867i.cloudfront.net/yolo/kunshujo/', formData, config)
+    console.log({data})
+    */
+    
+    let res: any = this.uploadedBase64
+    const prefix = res.split(',')[0]
+    res = res.replace(`${prefix},`, '')
+
+    console.log({ res })
+
+    /*
+    let config = {
+      headers: {
+        'content-type': 'text/plain',
+      },
+    }
+
+    const { data } = await axios.post(
+      'https://d3hfvu5xqm867i.cloudfront.net/overall/detect',
+      { data: res },
+      config
+    )
+    */
+    //console.log({ data })
+    
+
+    
+    var config: any = {
+      method: 'post',
+      url: 'https://d3hfvu5xqm867i.cloudfront.net/overall/detect',
+      headers: {
+        'Content-Type': 'text/plain',
+      },
+      data: res,
+    }
+
+    const {data} = await axios(config)
+    /*
+      .then(function (response) {
+        console.log(JSON.stringify(response.data))
+      })
+      .catch(function (error) {
+        console.log(error)
+      })
+    */
+    /*
+    */
+
+    console.log({data})
+
+    this.previewBase64 = `data:image/jpeg;base64,${data.content}`
+
+    this.loading = false
+  }
 }
+
+const toBase64 = (file: any) =>
+  new Promise((resolve, reject) => {
+    const reader = new FileReader()
+    reader.readAsDataURL(file)
+    reader.onload = () => resolve(reader.result)
+    reader.onerror = (error) => reject(error)
+  })
 </script>

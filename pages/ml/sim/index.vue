@@ -24,7 +24,7 @@
         color="primary darken-2"
         rounded
         depressed
-        :href="q ? `http://app.ldas.jp:5002/search?image=${q}&viewer=1` : null"
+        :href="q ? `http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=${encodeURIComponent(`https://d3hfvu5xqm867i.cloudfront.net/ann/kunshujo/?url=${q}`)}&tn=1` : null"
         >ビューアでみる</v-btn
       >
 
@@ -33,7 +33,7 @@
         color="primary darken-2"
         rounded
         depressed
-        :href="q ? `http://app.ldas.jp:5002/search?image=${q}` : null"
+        :href="q ? `https://d3hfvu5xqm867i.cloudfront.net/ann/kunshujo/?url=${q}` : null"
         >API利用</v-btn
       >
 
@@ -49,7 +49,19 @@
         >Sample 1: からしづけ
       </v-btn>
 
-      <div>
+      <v-btn
+        class="ma-1"
+        color="success"
+        rounded
+        depressed
+        @click="
+          q =
+            'https://iiif.dl.itc.u-tokyo.ac.jp/iiif/kunshujou/A00_6010/046/046_0051.tif/4147,826,2101,2082/200,/0/default.jpg'
+        "
+        >Sample 2: 鯛味噌
+      </v-btn>
+
+      <div class="mt-5">
         <v-img :src="q" contain width="200" height="200" />
       </div>
     </v-container>
