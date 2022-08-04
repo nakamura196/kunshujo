@@ -59,7 +59,7 @@ env.menu = [
     },
     icon: 'mdi-magnify',
     top: true,
-    description: 'アイテムを検索します',
+    description: '貼り込み資料を検索します',
   },
   /*
   {
@@ -82,7 +82,7 @@ env.menu = [
       name: 'search-list',
     },
     icon: 'mdi-magnify',
-    description: 'アイテム以外を検索します。',
+    description: '貼り込み資料以外を検索します。',
     top: true,
   },
   {
@@ -91,7 +91,7 @@ env.menu = [
       name: 'category-list',
     },
     icon: 'mdi-chart-bar',
-    description: 'メタデータ別の集計結果を表示します。',
+    description: '集計結果を表示します。',
     top: true,
   },
   /*
@@ -302,14 +302,7 @@ env.searches = {
     label: 'item',
     index: 'data/index.json',
     aggs: {
-      book: {
-        key: 'book',
-        sort: '',
-        label: 'book',
-        value: {},
-        more: false,
-        open: true,
-      },
+      
       agential: {
         key: 'agential',
         sort: '',
@@ -342,6 +335,14 @@ env.searches = {
         more: false,
         open: true,
       },
+      book: {
+        key: 'book',
+        sort: '',
+        label: 'book',
+        value: {},
+        more: false,
+        open: true,
+      },
       time: {
         key: 'time',
         sort: '',
@@ -367,8 +368,11 @@ env.searches = {
         open: true,
       },
     },
-    sort: [{ label: '適合度', value: '_score' }],
-    defaultSort: '_score:desc',
+    sort: [
+      { label: 'ID', value: 'index' },
+      { label: '適合度', value: '_score' }
+    ],
+    defaultSort: 'index:asc',
     defaultLayout: 'grid',
     name: 'item-id',
     detail: [

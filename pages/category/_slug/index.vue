@@ -69,7 +69,7 @@ export default class FullTextSearch extends Vue {
   ]
 
   get title() {
-    return this.$t('category') + ' - ' + this.$t(this.$route.params.slug)
+    return this.$t('stats') + ' - ' + this.$t(this.$route.params.slug)
   }
 
   head() {

@@ -10,13 +10,23 @@ import hashlib
 import datetime
 import itertools
 today = datetime.datetime.now()
+import pprint
 
+def translate(tags, trans):
+    tags2 = []
+    for tag in tags:
+        tag = trans[tag] if tag in trans else tag
+        tags2.append(tag)
+    return tags2
 
 APP_DIR = settings.APP_DIR
 DATA2_DIR = settings.DATA2_DIR
 C_DIR = settings.C_DIR
 
-files = ["gcv.json", "index.json"]
+files = [
+    "gcv.json", 
+    "index.json", 
+    "entity.json"]
 
 excludes = ["439de0af-e08a-476d-a4f4-db91daee0413", "c8e64d67-51af-4cfb-99f9-2c191ac4ef3b",
             "e4756874-9c62-4abf-9588-ab6b243df0ba", "28f334b3-8ef0-4e98-92d8-1f055514cef3", 
@@ -47,9 +57,11 @@ for file in files:
         df = json.load(f)
 
         for item in df:
-            manifest = item["manifest"]
+            uuid = None
 
-            uuid = manifest.split("/")[-2]
+            if "manifest" in item:
+                manifest = item["manifest"]
+                uuid = manifest.split("/")[-2]
 
             if uuid not in excludes:
 
@@ -69,23 +81,20 @@ for file in files:
 
                 # color
 
-                colors = item["color"]
-                colors2 = []
-                for color in colors:
-                    color = trans[color] if color in trans else color
-                    colors2.append(color)
-                item["color"] = colors2
+                fields = ["color", "mtag", "タイプ"]
 
-                # tag
+                for field in fields:
+                    if field in item:
+                        # pprint.pprint(translate(item[field], trans))
+                        item[field] = translate(item[field], trans)
 
-                tags = item["mtag"]
-                tags2 = []
-                for tag in tags:
-                    tag = trans[tag] if tag in trans else tag
-                    tags2.append(tag)
-                item["mtag"] = tags2
+                # 並び順
+                if "index.json" in file:
+                    item["index"] = [str(len(items)).zfill(5)]
 
                 items.append(item)
+
+
 
     with open(path, 'w') as outfile:
         json.dump(items, outfile, ensure_ascii=False,

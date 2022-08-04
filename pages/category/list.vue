@@ -38,31 +38,31 @@ import Breadcrumbs from '~/components/common/Breadcrumbs.vue'
   },
 })
 export default class about extends Vue {
-  title: any = this.$t('category')
+  title: any = this.$t('stats')
 
   items: any[] = [
     {
-      label: 'アイテム別',
+      label: '貼り込み資料別',
       to: {
         name: 'category-slug',
         params: {
           slug: 'item',
         },
       },
-      description: 'アイテムのメタデータ別の集計結果を表示します。',
+      description: '貼り込み資料別の集計結果を表示します。',
     },
     {
-      label: 'エンティティ別',
+      label: '固有表現別',
       to: {
         name: 'category-slug',
         params: {
           slug: 'entity',
         },
       },
-      description: 'エンティティのメタデータ別の集計結果を表示します。',
+      description: '固有表現別の集計結果を表示します。',
     },
     {
-      label: 'オブジェクト別',
+      label: '機械タグ別',
       to: {
         name: 'category-slug',
         params: {
@@ -70,7 +70,7 @@ export default class about extends Vue {
         },
       },
       description:
-        'Google Cloud Visionを用いて検出した物体のメタデータ別の集計結果を表示します。',
+        '機械タグ（Google Cloud Visionを用いて検出した物体）別の集計結果を表示します。',
     },
   ]
 

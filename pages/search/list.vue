@@ -42,24 +42,24 @@ export default class about extends Vue {
 
   items: any[] = [
     {
-      label: 'エンティティ別',
+      label: '固有表現',
       to: {
         name: 'search-slug',
         params: {
           slug: 'entity',
         },
       },
-      description: 'エンティティ（人物、場所、キーワードなど）を検索します。',
+      description: '固有表現（人物、場所、キーワードなど）を検索します。',
     },
     {
-      label: 'オブジェクト別',
+      label: '機械タグ',
       to: {
         name: 'search-slug',
         params: {
           slug: 'object',
         },
       },
-      description: 'Google Cloud Visionを用いて検出した物体を検索します。',
+      description: '機械タグ（Google Cloud Visionを用いて検出した物体）を検索します。',
     },
   ]
 

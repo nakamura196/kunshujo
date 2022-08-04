@@ -492,5 +492,7 @@
   "item": "Item",
   "object": "Object",
   "オブジェクト検索": "Object Search",
-  "カテゴリ（オブジェクト）": "Category（Object）"
+  "カテゴリ（オブジェクト）": "Category（Object）",
+  "stats": "Statistics",
+  "score": "Score"
 }

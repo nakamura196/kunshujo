@@ -4,6 +4,8 @@
     <v-container class="my-5">
       <h2 class="mb-5">{{ title }}</h2>
 
+      <p>Wikipediaで位置情報が取得できた場所のみを表示しています。</p>
+
       <client-only>
         <MapMain
           style="width: 100%; height: 600px"
@@ -30,7 +32,7 @@ import axios from 'axios'
   },
 })
 export default class Item extends Vue {
-  title: any = this.$t('領域')
+  title: any = this.$t("map")
 
   baseUrl: any = process.env.BASE_URL
 

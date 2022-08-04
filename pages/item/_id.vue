@@ -28,11 +28,14 @@
 
         <v-btn
           v-if="viewerUrl"
-          icon
+          color="primary"
+          rounded
+          depressed
+          :icon="false"
           class="ma-1"
           target="_blank"
           :href="viewerUrl"
-          ><img :src="baseUrl + '/img/icons/icp-logo.svg'" width="24px"
+          ><span class="mr-2">ページ全体をみる</span> <img :src="baseUrl + '/img/icons/icp-logo.svg'" width="24px"
         /></v-btn>
 
         <span class="mx-2"></span>
