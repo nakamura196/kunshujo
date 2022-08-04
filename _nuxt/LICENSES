@@ -1,11 +1,4 @@
 /*!
-    * Start Bootstrap - Freelancer v6.0.4 (https://startbootstrap.com/themes/freelancer)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
-    */
-
-
-/*!
 	autosize 4.0.4
 	license: MIT
 	http://www.jacklmoore.com/autosize
@@ -29,6 +22,13 @@
 //! http://openseadragon.github.io
 
 //! openseadragon 2.4.2
+
+
+/*!
+    * Start Bootstrap - Freelancer v6.0.4 (https://startbootstrap.com/themes/freelancer)
+    * Copyright 2013-2020 Start Bootstrap
+    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
+    */
 
 
 /*!
