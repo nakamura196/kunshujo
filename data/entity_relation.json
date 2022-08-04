@@ -9819,12 +9819,6 @@
             "value": 5
         }
     ],
-    "keyword:ウィーン万国博覧会": [
-        {
-            "label": "time:1873",
-            "value": 5
-        }
-    ],
     "keyword:ウニ": [
         {
             "label": "keyword:特産品",
@@ -11025,10 +11019,6 @@
             "value": 2
         },
         {
-            "label": "keyword:国際博覧会",
-            "value": 1
-        },
-        {
             "label": "keyword:案内状",
             "value": 1
         },
@@ -11344,23 +11334,15 @@
     "keyword:メモ": [
         {
             "label": "keyword:自筆",
-            "value": 68
-        },
-        {
-            "label": "place:フィラデルフィア",
-            "value": 7
+            "value": 25
         },
         {
             "label": "keyword:商標",
-            "value": 5
+            "value": 4
         },
         {
             "label": "place:伊勢国",
             "value": 3
-        },
-        {
-            "label": "place:日本",
-            "value": 2
         },
         {
             "label": "keyword:特産品",
@@ -11368,26 +11350,6 @@
         },
         {
             "label": "place:山田",
-            "value": 1
-        },
-        {
-            "label": "place:ニューヨーク",
-            "value": 1
-        },
-        {
-            "label": "place:パリ",
-            "value": 1
-        },
-        {
-            "label": "place:ロンドン",
-            "value": 1
-        },
-        {
-            "label": "keyword:名刺",
-            "value": 1
-        },
-        {
-            "label": "place:サンフランシスコ",
             "value": 1
         },
         {
@@ -16629,22 +16591,6 @@
             "value": 1
         },
         {
-            "label": "place:シカゴ",
-            "value": 1
-        },
-        {
-            "label": "keyword:自筆",
-            "value": 1
-        },
-        {
-            "label": "keyword:メモ",
-            "value": 1
-        },
-        {
-            "label": "place:日本",
-            "value": 1
-        },
-        {
             "label": "keyword:広告",
             "value": 1
         },
@@ -17787,14 +17733,6 @@
             "value": 5
         },
         {
-            "label": "keyword:自筆",
-            "value": 5
-        },
-        {
-            "label": "keyword:メモ",
-            "value": 5
-        },
-        {
             "label": "place:東京",
             "value": 5
         },
@@ -17824,6 +17762,14 @@
         },
         {
             "label": "keyword:白藤",
+            "value": 4
+        },
+        {
+            "label": "keyword:自筆",
+            "value": 4
+        },
+        {
+            "label": "keyword:メモ",
             "value": 4
         },
         {
@@ -18180,10 +18126,6 @@
         },
         {
             "label": "keyword:火持請合",
-            "value": 1
-        },
-        {
-            "label": "place:ロンドン",
             "value": 1
         },
         {
@@ -19054,20 +18996,6 @@
     "keyword:国産展覧会出品略目録": [
         {
             "label": "place:本郷 (文京区)",
-            "value": 1
-        }
-    ],
-    "keyword:国際博覧会": [
-        {
-            "label": "time:1876",
-            "value": 3
-        },
-        {
-            "label": "keyword:プログラム",
-            "value": 1
-        },
-        {
-            "label": "place:フィラデルフィア",
             "value": 1
         }
     ],
@@ -21671,10 +21599,6 @@
             "value": 2
         },
         {
-            "label": "place:フィラデルフィア",
-            "value": 2
-        },
-        {
             "label": "place:長野県",
             "value": 2
         },
@@ -21732,18 +21656,6 @@
         },
         {
             "label": "chname:今井佐一郎",
-            "value": 1
-        },
-        {
-            "label": "keyword:裏面",
-            "value": 1
-        },
-        {
-            "label": "place:サンフランシスコ",
-            "value": 1
-        },
-        {
-            "label": "place:ニューヨーク",
             "value": 1
         },
         {
@@ -22864,7 +22776,7 @@
         },
         {
             "label": "keyword:恭賀新年",
-            "value": 21
+            "value": 20
         },
         {
             "label": "keyword:謹賀",
@@ -24808,7 +24720,7 @@
     "keyword:恭賀新年": [
         {
             "label": "keyword:年賀状",
-            "value": 21
+            "value": 20
         },
         {
             "label": "chname:守田治兵衛",
@@ -24953,10 +24865,6 @@
         {
             "label": "place:東京",
             "value": 2
-        },
-        {
-            "label": "place:フィラデルフィア",
-            "value": 1
         },
         {
             "label": "place:本郷 (文京区)",
@@ -28924,14 +28832,6 @@
         }
     ],
     "keyword:桑": [
-        {
-            "label": "place:Baker_&_Hamilton",
-            "value": 3
-        },
-        {
-            "label": "place:サンフランシスコ",
-            "value": 2
-        },
         {
             "label": "org:東京人造肥料会社",
             "value": 1
@@ -34451,10 +34351,6 @@
             "value": 1
         },
         {
-            "label": "keyword:裏面",
-            "value": 1
-        },
-        {
             "label": "org:関西府県連合共進会",
             "value": 1
         },
@@ -35302,39 +35198,11 @@
     "keyword:自筆": [
         {
             "label": "keyword:メモ",
-            "value": 68
-        },
-        {
-            "label": "place:フィラデルフィア",
-            "value": 7
+            "value": 25
         },
         {
             "label": "keyword:商標",
-            "value": 5
-        },
-        {
-            "label": "place:日本",
-            "value": 2
-        },
-        {
-            "label": "place:ニューヨーク",
-            "value": 1
-        },
-        {
-            "label": "place:パリ",
-            "value": 1
-        },
-        {
-            "label": "place:ロンドン",
-            "value": 1
-        },
-        {
-            "label": "keyword:名刺",
-            "value": 1
-        },
-        {
-            "label": "place:サンフランシスコ",
-            "value": 1
+            "value": 4
         },
         {
             "label": "chname:奥畑寛篤",
@@ -35758,10 +35626,6 @@
         },
         {
             "label": "chname:早川久右エ門",
-            "value": 1
-        },
-        {
-            "label": "place:フィラデルフィア",
             "value": 1
         },
         {
@@ -37540,14 +37404,6 @@
         }
     ],
     "keyword:裏面": [
-        {
-            "label": "keyword:封筒",
-            "value": 1
-        },
-        {
-            "label": "keyword:絵はがき",
-            "value": 1
-        },
         {
             "label": "org:帝国大学運動会",
             "value": 1
@@ -43298,16 +43154,6 @@
         },
         {
             "label": "keyword:醸造元",
-            "value": 1
-        }
-    ],
-    "org:ホテル": [
-        {
-            "label": "place:アメリカ",
-            "value": 5
-        },
-        {
-            "label": "place:フィラデルフィア",
             "value": 1
         }
     ],
@@ -52125,16 +51971,6 @@
             "value": 1
         }
     ],
-    "place:Baker_&_Hamilton": [
-        {
-            "label": "place:サンフランシスコ",
-            "value": 5
-        },
-        {
-            "label": "keyword:桑",
-            "value": 3
-        }
-    ],
     "place:なにわ": [
         {
             "label": "keyword:特産品",
@@ -52157,61 +51993,13 @@
             "value": 1
         }
     ],
-    "place:アメリカ": [
-        {
-            "label": "org:ホテル",
-            "value": 5
-        },
-        {
-            "label": "place:フィラデルフィア",
-            "value": 1
-        }
-    ],
     "place:サンフランシスコ": [
-        {
-            "label": "place:Baker_&_Hamilton",
-            "value": 5
-        },
-        {
-            "label": "keyword:桑",
-            "value": 2
-        },
-        {
-            "label": "place:フィラデルフィア",
-            "value": 1
-        },
-        {
-            "label": "keyword:封筒",
-            "value": 1
-        },
-        {
-            "label": "keyword:自筆",
-            "value": 1
-        },
-        {
-            "label": "keyword:メモ",
-            "value": 1
-        },
         {
             "label": "keyword:年賀状",
             "value": 1
         },
         {
             "label": "keyword:謹賀新年",
-            "value": 1
-        }
-    ],
-    "place:シカゴ": [
-        {
-            "label": "place:フィラデルフィア",
-            "value": 1
-        },
-        {
-            "label": "time:1876",
-            "value": 1
-        },
-        {
-            "label": "keyword:名刺",
             "value": 1
         }
     ],
@@ -52225,107 +52013,7 @@
             "value": 1
         }
     ],
-    "place:ニューヨーク": [
-        {
-            "label": "place:パリ",
-            "value": 1
-        },
-        {
-            "label": "keyword:自筆",
-            "value": 1
-        },
-        {
-            "label": "keyword:メモ",
-            "value": 1
-        },
-        {
-            "label": "keyword:封筒",
-            "value": 1
-        }
-    ],
-    "place:パリ": [
-        {
-            "label": "place:ニューヨーク",
-            "value": 1
-        },
-        {
-            "label": "keyword:自筆",
-            "value": 1
-        },
-        {
-            "label": "keyword:メモ",
-            "value": 1
-        }
-    ],
-    "place:フィラデルフィア": [
-        {
-            "label": "keyword:自筆",
-            "value": 7
-        },
-        {
-            "label": "keyword:メモ",
-            "value": 7
-        },
-        {
-            "label": "time:1876",
-            "value": 3
-        },
-        {
-            "label": "keyword:封筒",
-            "value": 2
-        },
-        {
-            "label": "place:アメリカ",
-            "value": 1
-        },
-        {
-            "label": "org:ホテル",
-            "value": 1
-        },
-        {
-            "label": "place:サンフランシスコ",
-            "value": 1
-        },
-        {
-            "label": "place:シカゴ",
-            "value": 1
-        },
-        {
-            "label": "keyword:荷札",
-            "value": 1
-        },
-        {
-            "label": "time:1874",
-            "value": 1
-        },
-        {
-            "label": "keyword:手紙",
-            "value": 1
-        },
-        {
-            "label": "keyword:国際博覧会",
-            "value": 1
-        }
-    ],
-    "place:マルセイユ": [
-        {
-            "label": "place:横浜",
-            "value": 1
-        }
-    ],
     "place:ロンドン": [
-        {
-            "label": "keyword:自筆",
-            "value": 1
-        },
-        {
-            "label": "keyword:メモ",
-            "value": 1
-        },
-        {
-            "label": "keyword:商標",
-            "value": 1
-        },
         {
             "label": "keyword:ジャム",
             "value": 1
@@ -55553,14 +55241,6 @@
             "value": 2
         },
         {
-            "label": "keyword:自筆",
-            "value": 2
-        },
-        {
-            "label": "keyword:メモ",
-            "value": 2
-        },
-        {
             "label": "keyword:官許",
             "value": 2
         },
@@ -55646,10 +55326,6 @@
         },
         {
             "label": "keyword:菓子製所",
-            "value": 1
-        },
-        {
-            "label": "keyword:名刺",
             "value": 1
         },
         {
@@ -57171,10 +56847,6 @@
             "value": 5
         },
         {
-            "label": "place:横浜",
-            "value": 4
-        },
-        {
             "label": "keyword:ビスケット",
             "value": 4
         },
@@ -57216,6 +56888,10 @@
         },
         {
             "label": "keyword:日本帝国郵便",
+            "value": 3
+        },
+        {
+            "label": "place:横浜",
             "value": 3
         },
         {
@@ -57816,7 +57492,7 @@
     "place:横浜": [
         {
             "label": "place:東京",
-            "value": 4
+            "value": 3
         },
         {
             "label": "keyword:菓子屋",
@@ -57824,10 +57500,6 @@
         },
         {
             "label": "org:明治屋",
-            "value": 1
-        },
-        {
-            "label": "place:マルセイユ",
             "value": 1
         },
         {
@@ -59553,12 +59225,6 @@
             "value": 1
         }
     ],
-    "time:1873": [
-        {
-            "label": "keyword:ウィーン万国博覧会",
-            "value": 5
-        }
-    ],
     "time:1874": [
         {
             "label": "keyword:博覧会",
@@ -59582,24 +59248,6 @@
         },
         {
             "label": "keyword:第1号",
-            "value": 1
-        },
-        {
-            "label": "place:フィラデルフィア",
-            "value": 1
-        }
-    ],
-    "time:1876": [
-        {
-            "label": "place:フィラデルフィア",
-            "value": 3
-        },
-        {
-            "label": "keyword:国際博覧会",
-            "value": 3
-        },
-        {
-            "label": "place:シカゴ",
             "value": 1
         }
     ],
