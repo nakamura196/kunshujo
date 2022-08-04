@@ -86,6 +86,10 @@ https://github.com/ultralytics/yolov5
 
 物体検出対象の画像の入力方法として、画像をアップロードする方法と、URLを指定する方法の2種類を提供します。特に後者については、検出結果をIIIF Presentation API v3に対応した形式で返却することで、本APIに対応したビューア（Mirador 3など）で閲覧することができます。
 
+データセットは以下で公開しています。
+
+https://github.com/utda/kunshujo-layout-dataset
+
 <br/>
 
 ### 類似画像検索
