@@ -45,7 +45,7 @@ env.menu = [
   },
   */
   {
-    label: '検索例',
+    label: 'example',
     to: {
       name: 'example',
     },
@@ -192,7 +192,7 @@ env.menu = [
   },
   */
   {
-    label: '機械学習関連サービス',
+    label: 'machine_learning',
     to: {
       name: 'ml',
     },
@@ -231,7 +231,7 @@ env.menu = [
   },
   */
   {
-    label: '可視化',
+    label: 'visualization',
     to: {
       name: 'vis',
     },
@@ -461,6 +461,7 @@ env.searches = {
       },
     },
     sort: [
+      { label: 'ID', value: 'index' },
       { label: '適合度', value: '_score' },
       { label: '出現頻度', value: 'count' },
     ],
@@ -535,6 +536,7 @@ env.searches = {
       },
     },
     sort: [
+      { label: 'ID', value: 'index' },
       { label: '適合度', value: '_score' },
       { label: 'score', value: 'score' },
     ],

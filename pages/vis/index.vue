@@ -39,7 +39,7 @@ import Breadcrumbs from '~/components/common/Breadcrumbs.vue'
   },
 })
 export default class about extends Vue {
-  title: any = this.$t('可視化')
+  title: any = this.$t('visualization')
 
   baseUrl: any = process.env.BASE_URL
 

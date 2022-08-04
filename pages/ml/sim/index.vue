@@ -25,7 +25,7 @@
         rounded
         depressed
         :href="q ? `http://codh.rois.ac.jp/software/iiif-curation-viewer/demo/?curation=${encodeURIComponent(`https://d3hfvu5xqm867i.cloudfront.net/ann/kunshujo/?url=${q}`)}&tn=1` : null"
-        >ビューアでみる</v-btn
+        >{{$t("viewer")}}</v-btn
       >
 
       <v-btn
@@ -34,7 +34,7 @@
         rounded
         depressed
         :href="q ? `https://d3hfvu5xqm867i.cloudfront.net/ann/kunshujo/?url=${q}` : null"
-        >API利用</v-btn
+        >{{$t("api")}}</v-btn
       >
 
       <v-btn
@@ -80,7 +80,7 @@ import Breadcrumbs from '~/components/common/Breadcrumbs.vue'
   },
 })
 export default class Item extends Vue {
-  title: any = this.$t('類似画像検索')
+  title: any = this.$t('similar_search')
 
   q: any = ''
 
@@ -95,7 +95,7 @@ export default class Item extends Vue {
       exact: true,
     },
     {
-      text: this.$t('機械学習関連サービス'),
+      text: this.$t('machine_learning'),
       disabled: false,
       to: this.localePath({ name: 'ml' }),
       exact: true,

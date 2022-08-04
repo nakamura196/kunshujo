@@ -42,7 +42,7 @@ export default class about extends Vue {
 
   items: any[] = [
     {
-      label: '固有表現',
+      label: this.$t('entity'),
       to: {
         name: 'search-slug',
         params: {
@@ -52,7 +52,7 @@ export default class about extends Vue {
       description: '固有表現（人物、場所、キーワードなど）を検索します。',
     },
     {
-      label: '機械タグ',
+      label: this.$t('mtag'),
       to: {
         name: 'search-slug',
         params: {

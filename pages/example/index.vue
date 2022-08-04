@@ -66,7 +66,7 @@ import Breadcrumbs from '~/components/common/Breadcrumbs.vue'
   },
 })
 export default class about extends Vue {
-  title: any = this.$t('検索例')
+  title: any = this.$t('example')
 
   baseUrl: any = process.env.BASE_URL
 

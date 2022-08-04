@@ -110,10 +110,21 @@ sims = {}
 
 hie = {}
 
+# 外国
+excludes = ["439de0af-e08a-476d-a4f4-db91daee0413", "c8e64d67-51af-4cfb-99f9-2c191ac4ef3b",
+            "e4756874-9c62-4abf-9588-ab6b243df0ba", "28f334b3-8ef0-4e98-92d8-1f055514cef3", 
+            "b9e50108-b8b0-43e5-ae16-c5c51d3e457c"]
+
 for selection in selections:
   members = selection["members"]
 
   manifest = selection["within"]["@id"]
+
+  manifest_id = manifest.split("/")[-2]
+
+  # 外国は除外
+  if manifest_id in excludes:
+    continue
 
   for member in members:
 

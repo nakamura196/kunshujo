@@ -4,7 +4,7 @@
     <v-container class="my-5 mb-10">
       <h2 class="mb-5">{{ title }}</h2>
 
-      <h3 class="mt-10 mb-5">画像をアップロードする</h3>
+      <h3 class="mt-10 mb-5">{{$t("upload")}}</h3>
 
       <div class="mb-5">
         <input
@@ -21,7 +21,7 @@
         rounded
         depressed
         @click="upload"
-        >登録</v-btn
+        >{{$t("upload")}}</v-btn
       >
 
       <div v-show="uploadedBase64">
@@ -41,7 +41,7 @@
         <v-img class="my-5" :src="previewBase64" />
       </template>
 
-      <h3 class="mt-10 mb-5">URLを使う</h3>
+      <h3 class="mt-10 mb-5">URL</h3>
 
       <v-text-field
         class="mb-5"
@@ -88,7 +88,7 @@
             ? `https://da.dl.itc.u-tokyo.ac.jp/mirador/?manifest=https://d3hfvu5xqm867i.cloudfront.net/yolo/kunshujo/?url=${q}&annotationState=1`
             : null
         "
-        >ビューアでみる</v-btn
+        >{{$t("viewer")}}</v-btn
       >
 
       <v-btn
@@ -101,7 +101,7 @@
             ? `https://d3hfvu5xqm867i.cloudfront.net/yolo/kunshujo/?url=${q}`
             : null
         "
-        >API利用</v-btn
+        >{{this.$t("api")}}</v-btn
       >
 
       <v-btn
@@ -159,7 +159,7 @@ import Breadcrumbs from '~/components/common/Breadcrumbs.vue'
   },
 })
 export default class Item extends Vue {
-  title: any = this.$t('物体検出')
+  title: any = this.$t('object_detection')
 
   q: any = ''
 
@@ -174,7 +174,7 @@ export default class Item extends Vue {
       exact: true,
     },
     {
-      text: this.$t('機械学習関連サービス'),
+      text: this.$t('machine_learning'),
       disabled: false,
       to: this.localePath({ name: 'ml' }),
       exact: true,

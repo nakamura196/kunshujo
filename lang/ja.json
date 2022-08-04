@@ -508,5 +508,11 @@
   "オブジェクト検索": "機械タグ検索",
   "カテゴリ（オブジェクト）": "カテゴリ（オブジェクト）",
   "stats": "統計",
-  "score": "スコア"
+  "score": "スコア",
+  "visualization": "可視化",
+  "machine_learning": "機械学習サービス",
+  "object_detection": "物体検出",
+  "similar_search": "類似画像検索",
+  "api": "API",
+  "upload": "アップロード"
 }

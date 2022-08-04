@@ -39,13 +39,13 @@ import Breadcrumbs from '~/components/common/Breadcrumbs.vue'
   },
 })
 export default class about extends Vue {
-  title: any = this.$t('機械学習関連サービス')
+  title: any = this.$t('machine_learning')
 
   baseUrl: any = process.env.BASE_URL
 
   items: any[] = [
     {
-      label: '物体検出',
+      label: this.$t('object_detection'),
       to: {
         name: 'ml-detection',
       },
@@ -53,7 +53,7 @@ export default class about extends Vue {
       description: '物体検出を試します。',
     },
     {
-      label: '類似画像検索',
+      label: this.$t('similar_search'),
       to: {
         name: 'ml-sim',
       },

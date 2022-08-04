@@ -494,5 +494,11 @@
   "オブジェクト検索": "Object Search",
   "カテゴリ（オブジェクト）": "Category（Object）",
   "stats": "Statistics",
-  "score": "Score"
+  "score": "Score",
+  "visualization": "Visualization",
+  "machine_learning": "Machine Learning Service",
+  "object_detection": "Object Detection",
+  "similar_search": "Similar Image Searach",
+  "api": "API",
+  "upload": "Upload"
 }

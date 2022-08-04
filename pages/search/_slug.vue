@@ -112,7 +112,7 @@
           >
             <div class="pa-4">
               <h4 class="mb-4">
-                {{ $t($route.params.slug) }}{{ $t('search') }}
+                {{ $t($route.params.slug) }} {{ $t('search') }}
               </h4>
               <FullTextSearch class="mb-5" />
               <FilterOption />
