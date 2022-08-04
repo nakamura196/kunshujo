@@ -24,7 +24,7 @@ for (let key in etc) {
 }
 
 env.menu = [
-  /*
+  
   {
     label: 'about_',
     to: {
@@ -36,13 +36,14 @@ env.menu = [
     icon: 'mdi-information',
     top: true,
   },
-  */
+  /*
   {
     label: 'about_',
     href: 'https://docs.google.com/document/d/1mT1-9BLyFvKK7qSHpt59CWbMEc02hp4LQt19YBJUzPU/edit?usp=sharing',
     icon: 'mdi-information',
     top: true,
   },
+  */
   {
     label: '検索例',
     to: {
