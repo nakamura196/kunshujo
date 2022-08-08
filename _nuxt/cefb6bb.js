@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{626:function(e){e.exports=JSON.parse('{"lang":"ja","siteName":"電子展示『捃拾帖』2022","siteDesc":"このシステムは、東京大学総合図書館所蔵『捃拾帖』の検索・閲覧を中心とした電子展示サイトです。機械学習を利用した実験的なデータ表示なども実装しています。","footer":"東京大学","siteKeywords":"IIIF","shortName":"捃拾帖","etc":{}}')}}]);
