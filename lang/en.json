@@ -500,5 +500,6 @@
   "object_detection": "Object Detection",
   "similar_search": "Similar Image Searach",
   "api": "API",
-  "upload": "Upload"
+  "upload": "Upload",
+  "reuse": "Reuse"
 }

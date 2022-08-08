@@ -89,16 +89,16 @@
       </div>
     </v-container>
 
-    <v-sheet color="grey lighten-3">
-      <v-container class="mt-10 py-10">
-        <v-card-title>
-          <h3>{{ $t('updates') }}</h3>
-        </v-card-title>
-        <v-card-text>
-          <ul class="text--primary">
-            <li>2021年XX月XX日: システムを公開しました。</li>
-          </ul>
-        </v-card-text>
+    <v-sheet color="grey lighten-3" class="">
+      <v-container class="py-10">
+        <div>
+          <span class="text-h5 mr-2">{{ $t('news') }}</span>
+          <nuxt-link :to="localePath({ name: 'news' })">{{
+            $t('all')
+          }}</nuxt-link>
+
+          <News class="mt-4" />
+        </div>
       </v-container>
     </v-sheet>
   </div>

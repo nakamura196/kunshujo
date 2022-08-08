@@ -34,7 +34,22 @@ env.menu = [
       },
     },
     icon: 'mdi-information',
+    type: 'about_',
+    weight: 0,
     top: true,
+  },
+  {
+    label: 'reuse',
+    to: {
+      name: 'page-slug',
+      params: {
+        slug: 'reuse',
+      },
+    },
+    icon: 'mdi-license',
+    type: 'about_',
+    weight: 1,
+    top: false,
   },
   /*
   {
@@ -51,7 +66,19 @@ env.menu = [
     },
     icon: 'mdi-view-list',
     top: true,
+    type: 'about_',
+    weight: 2,
     description: '本システムの検索例を紹介します。',
+  },
+  {
+    label: 'news',
+    to: {
+      name: 'news',
+    },
+    icon: 'mdi-information',
+    top: false,
+    type: 'about_',
+    weight: 3,
   },
   {
     label: '検索',
@@ -61,6 +88,8 @@ env.menu = [
     icon: 'mdi-magnify',
     top: true,
     description: '貼り込み資料を検索します',
+    type: 'tools',
+    weight: 0,
   },
   /*
   {
@@ -85,6 +114,8 @@ env.menu = [
     icon: 'mdi-magnify',
     description: '貼り込み資料以外を検索します。',
     top: true,
+    type: 'tools',
+    weight: 1,
   },
   {
     label: 'category',
@@ -93,7 +124,7 @@ env.menu = [
     },
     icon: 'mdi-chart-bar',
     description: '集計結果を表示します。',
-    top: true,
+    top: false,
   },
   /*
   {
@@ -129,6 +160,8 @@ env.menu = [
     icon: 'mdi-map',
     description: '地図から探す',
     top: true,
+    type: 'tools',
+    weight: 2,
   },
 
   /*
@@ -199,6 +232,8 @@ env.menu = [
     icon: 'mdi-api',
     description: '機械学習関連サービスについて紹介します。',
     top: true,
+    type: 'tools',
+    weight: 4,
   },
   /*
   {
@@ -238,6 +273,8 @@ env.menu = [
     img: env.BASE_URL + '/img/etc/pd_banner_magnified.webp',
     description: '各種可視化を行います。',
     top: true,
+    type: 'tools',
+    weight: 3,
   },
   {
     label: '電子展示『捃拾帖』',
@@ -245,7 +282,9 @@ env.menu = [
     icon: 'mdi-database',
     description:
       '第1~18帖までの『捃拾帖』について、東京大学史料編纂所が作成した目録を用いて検索可能なシステムです。',
-    top: true,
+    top: false,
+    type: 'links',
+    weight: 0,
     blank: true,
   },
   {
@@ -254,7 +293,9 @@ env.menu = [
     icon: 'mdi-database',
     description:
       '明治時代の博物学者である田中芳男（1838－1916）が収集・所蔵した貴重な資料群です。',
-    top: true,
+    top: false,
+    type: 'links',
+    weight: 1,
     blank: true,
   },
 ]

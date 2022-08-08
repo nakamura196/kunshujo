@@ -61,6 +61,13 @@ export default class about extends Vue {
       },
       description: '機械タグ（Google Cloud Visionを用いて検出した物体）を検索します。',
     },
+    {
+      label: this.$t('category'),
+      to: {
+        name: 'category-list',
+      },
+      description: 'データ数から検索します。',
+    },
   ]
 
   bh: any[] = [

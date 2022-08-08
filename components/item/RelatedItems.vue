@@ -1,8 +1,8 @@
 <template>
   <div v-if="moreLikeThisData.length > 0">
     <div class="text-center my-5">
-      <h3 class="mb-2">{{ $t('関連するアイテム') }}</h3>
-      <small>裏面、複数のページにまたがるアイテム、など</small>
+      <h3 class="mb-2">{{ $t('一連の資料') }}</h3>
+      <small>複数のページに渡っている場合、前後の資料がここに表示されます</small>
     </div>
     <HorizontalItems :data="moreLikeThisData" :height="150" />
   </div>
