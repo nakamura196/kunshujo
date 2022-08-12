@@ -16,10 +16,16 @@
             {{ item.label }}
           </v-card>
           -->
-
+          <template v-if="item.href">
+            <a :href="item.href" target="_blank">
+            <h3>{{ item.label }}</h3>
+          </a>
+          </template>
+          <template v-else>
           <nuxt-link :to="localePath(item.to)">
             <h3>{{ item.label }}</h3>
           </nuxt-link>
+          </template>
           <div class="mt-2">
             {{ item.description }}
           </div>
@@ -46,17 +52,32 @@ export default class about extends Vue {
   items: any[] = [
     {
       label: this.$t('object_detection'),
+      /*
       to: {
         name: 'ml-detection',
       },
+      */
+      href: "https://huggingface.co/spaces/nakamura196/yolov5-kunshujo",
       icon: 'mdi-api',
-      description: '物体検出を試します。',
+      description: '物体検出を試します。（Gradio版）',
+    },
+    
+    {
+      label: this.$t('similar_search'),
+      href: "https://huggingface.co/spaces/nakamura196/ann-kunshujo",
+      icon: 'mdi-api',
+      description: '類似画像検索を試します。（Gradio版）',
+      top: true,
     },
     {
       label: this.$t('similar_search'),
+      
       to: {
         name: 'ml-sim',
       },
+      /*
+      href: "https://huggingface.co/spaces/nakamura196/yolov5-kunshujo",
+      */
       icon: 'mdi-api',
       description: '類似画像検索を試します。',
       top: true,

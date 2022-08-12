@@ -82,7 +82,7 @@ https://www.lib.u-tokyo.ac.jp/sites/default/files/2021-02/04_nakamura_ccby.pdf
 
 ## 機械学習関連サービス
 
-本サービスは実験的なサービスとなります。予告無くサービスの中止、改変を行う事があります。また、AWS Lambdaを使用しているため、コールドスタート（初回実行時に時間がかかる）にご注意ください。
+本サービスは実験的なサービスとなります。予告無くサービスの中止、改変を行う事があります。<!-- また、AWS Lambdaを使用しているため、コールドスタート（初回実行時に時間がかかる）にご注意ください。-->
 
 <br/>
 
@@ -92,7 +92,11 @@ https://www.lib.u-tokyo.ac.jp/sites/default/files/2021-02/04_nakamura_ccby.pdf
 
 https://github.com/ultralytics/yolov5
 
-物体検出対象の画像の入力方法として、画像をアップロードする方法と、URLを指定する方法の2種類を提供します。特に後者については、検出結果をIIIF Presentation API v3に対応した形式で返却することで、本APIに対応したビューア（Mirador 3など）で閲覧することができます。
+<!-- 物体検出対象の画像の入力方法として、画像をアップロードする方法と、URLを指定する方法の2種類を提供します。特に後者については、検出結果をIIIF Presentation API v3に対応した形式で返却することで、本APIに対応したビューア（Mirador 3など）で閲覧することができます。 -->
+
+デモアプリケーションをHugging Faceで公開しています。
+
+https://huggingface.co/spaces/nakamura196/yolov5-kunshujo
 
 データセットは以下で公開しています。
 
@@ -106,5 +110,9 @@ https://github.com/utda/kunshujo-layout-dataset
 
 https://github.com/spotify/annoy
 
-検索結果は、人文学オープンデータ共同利用センターが提供するIIIF Curation APIに対応した形式で返却されます。同センターが提供するIIIF Curation Viewerを用いて、類似画像を閲覧することができます。
+<!-- 検索結果は、人文学オープンデータ共同利用センターが提供するIIIF Curation APIに対応した形式で返却されます。同センターが提供するIIIF Curation Viewerを用いて、類似画像を閲覧することができます。 -->
+
+デモアプリケーションをHugging Faceで公開しています。
+
+https://huggingface.co/spaces/nakamura196/ann-kunshujo
 
