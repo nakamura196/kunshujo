@@ -1,4 +1,12 @@
 /*!
+ * Chart.js v2.9.4
+ * https://www.chartjs.org
+ * (c) 2020 Chart.js Contributors
+ * Released under the MIT License
+ */
+
+
+/*!
 	autosize 4.0.4
 	license: MIT
 	http://www.jacklmoore.com/autosize
@@ -22,14 +30,6 @@
 //! http://openseadragon.github.io
 
 //! openseadragon 2.4.2
-
-
-/*!
- * Chart.js v2.9.4
- * https://www.chartjs.org
- * (c) 2020 Chart.js Contributors
- * Released under the MIT License
- */
 
 
 /* @preserve
