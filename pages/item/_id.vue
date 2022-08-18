@@ -27,7 +27,7 @@
         /></v-btn>
 
         <v-btn
-          v-if="viewerUrl"
+          v-if="viewerUrl && false"
           color="primary"
           rounded
           depressed
@@ -37,6 +37,17 @@
           :href="viewerUrl"
           ><span class="mr-2">ページ全体をみる</span> <img :src="baseUrl + '/img/icons/icp-logo.svg'" width="24px"
         /></v-btn>
+
+        <v-btn
+          v-if="viewerUrl2"
+          color="primary"
+          rounded
+          depressed
+          :icon="false"
+          class="ma-1"
+          target="_blank"
+          :href="viewerUrl2"
+          ><span class="mr-2">公開元サイトで見る</span></v-btn>
 
         <span class="mx-2"></span>
 
@@ -357,6 +368,29 @@ export default class Item extends Vue {
       '&xywh=' +
       spl[1] +
       '&xywh_highlight=border'
+    )
+  }
+
+  get viewerUrl2() {
+    const item = (this as any).item
+    const manifest = item.manifest
+    const memberId = item.member
+    const spl = memberId.split('#xywh=')
+    const uuid = manifest.split("/iiif/")[1].split("/manifest")[0]
+    const cv = Number(spl[0].split("/canvas/p")[1]) - 1
+    const xywh = spl[1]
+    return (
+      `https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/tanaka/document/${uuid}#?cv=${cv}&c=0&m=0&s=0&xywh=${xywh}`/* +
+      //'?curation=' +
+      //item.curation +
+      '?manifest=' +
+      item.manifest +
+      '&canvas=' +
+      spl[0] +
+      '&xywh=' +
+      spl[1] +
+      '&xywh_highlight=border'
+      */
     )
   }
 

@@ -4,66 +4,74 @@
     <v-main>
       <template v-if="isMobile">
         <!-- 全体 -->
-        <div :class="loadingSearch ? 'loading' : ''">
-          <div class="pa-4">
-            <h4 class="mb-4">{{ $t($route.params.slug) }}{{ $t('search') }}</h4>
-            <FullTextSearch class="mb-5" />
-            <FilterOption />
-            <v-row dense align="center">
-              <v-col cols="12" md="3">
-                <v-tooltip bottom v-if="!isMobile">
-                  <template v-slot:activator="{ on, attrs }">
-                    <v-btn
-                      fab
-                      depressed
-                      :color="isFacetOpen ? 'primary' : 'grey lighten-2'"
-                      x-small
-                      class="mr-2"
-                      @click="isFacetOpen = !isFacetOpen"
-                      v-on="on"
-                      ><v-icon>{{ mdiMenu }}</v-icon></v-btn
-                    >
-                  </template>
-                  <span>{{
-                    isFacetOpen ? $t('close_facets') : $t('open_facets')
-                  }}</span>
-                </v-tooltip>
+        <div :class="loadingSearch && results.hits ? 'loading' : ''">
+          <template v-if="results.hits">
+            <div class="pa-4">
+              <h4 class="mb-4">
+                {{ $t($route.params.slug) }}{{ $t('search') }}
+              </h4>
+              <FullTextSearch class="mb-5" />
+              <FilterOption />
 
-                {{ $t('search_result') }}: {{ totalAll.toLocaleString() }}
-                <!-- {{ $t('hits') }} -->
-              </v-col>
+              <v-row dense align="center">
+                <v-col cols="12" md="3">
+                  <v-tooltip bottom v-if="!isMobile">
+                    <template v-slot:activator="{ on }">
+                      <v-btn
+                        fab
+                        depressed
+                        :color="isFacetOpen ? 'primary' : 'grey lighten-2'"
+                        x-small
+                        class="mr-2"
+                        @click="isFacetOpen = !isFacetOpen"
+                        v-on="on"
+                        ><v-icon>{{ mdiMenu }}</v-icon></v-btn
+                      >
+                    </template>
+                    <span>{{
+                      isFacetOpen ? $t('close_facets') : $t('open_facets')
+                    }}</span>
+                  </v-tooltip>
 
-              <v-col cols="12" md="3">
-                <Pagination v-if="isPage" :length="length" />
-              </v-col>
+                  {{ $t('search_result') }}: {{ totalAll.toLocaleString() }}
+                  <!-- {{ $t('hits') }} -->
+                </v-col>
 
-              <v-col cols="6" md="2">
-                <ResultPerPage v-if="isPage" />
-              </v-col>
-              <v-col cols="6" md="2">
-                <Sort v-if="isPage" />
-              </v-col>
+                <v-col cols="12" md="3">
+                  <Pagination v-if="isPage" :length="length" />
+                </v-col>
 
-              <v-col cols="12" md="2" class="text-right">
-                <LayoutOption />
-              </v-col>
-            </v-row>
-          </div>
+                <v-col cols="6" md="2">
+                  <ResultPerPage v-if="isPage" />
+                </v-col>
+                <v-col cols="6" md="2">
+                  <Sort v-if="isPage" />
+                </v-col>
 
-          <v-sheet color="grey lighten-2">
-            <div class="text-center py-2">
-              <v-btn
-                rounded
-                depressed
-                color="primary"
-                @click="isNarrowOpen = true"
-                ><v-icon class="mr-1">{{ mdiFilterVariant }}</v-icon>
-                {{ $t('Narrow search result') }}</v-btn
-              >
+                <v-col cols="12" md="2" class="text-right">
+                  <LayoutOption />
+                </v-col>
+              </v-row>
             </div>
-          </v-sheet>
+
+            <v-sheet color="grey lighten-2">
+              <div class="text-center py-2">
+                <v-btn
+                  rounded
+                  depressed
+                  color="primary"
+                  @click="isNarrowOpen = true"
+                  ><v-icon class="mr-1">{{ mdiFilterVariant }}</v-icon>
+                  {{ $t('Narrow search result') }}</v-btn
+                >
+              </div>
+            </v-sheet>
+          </template>
 
           <div class="pa-5">
+            <p v-if="!results.hits" class="py-10 my-10">
+              初回はインデックスファイルのダウンロードに時間を要します。2回目以降はキャッシュにより待ち時間が改善します。
+            </p>
             <component
               v-if="results.hits"
               :is="searchLayout"
@@ -72,7 +80,7 @@
               :col="isFacetOpen ? 3 : 2"
             ></component>
 
-            <div class="text-center my-10" v-if="isPage">
+            <div class="text-center my-10" v-if="results.hits">
               <v-pagination
                 v-model="page"
                 :length="length"
@@ -89,7 +97,7 @@
         <v-row
           dense
           :style="
-            loadingSearch
+            loadingSearch && results.hits
               ? 'pointer-events: none; background-color: white; opacity: 0.5;'
               : ''
           "
@@ -116,10 +124,10 @@
               </h4>
               <FullTextSearch class="mb-5" />
               <FilterOption />
-              <v-row dense align="center">
+              <v-row dense align="center" v-if="results.hits">
                 <v-col cols="12" md="3">
                   <v-tooltip bottom v-if="!isMobile">
-                    <template v-slot:activator="{ on, attrs }">
+                    <template v-slot:activator="{ on }">
                       <v-btn
                         fab
                         depressed
@@ -156,6 +164,10 @@
                 </v-col>
               </v-row>
 
+              <p v-if="!results.hits" class="pt-10 mt-10">
+                初回はインデックスファイルのダウンロードに時間を要します。2回目以降はキャッシュにより待ち時間が改善します。
+              </p>
+
               <component
                 v-if="results.hits"
                 :is="searchLayout"
@@ -165,7 +177,7 @@
                 :itemsAll="itemsAll"
               ></component>
 
-              <v-row class="my-10" align="center" v-if="isPage">
+              <v-row class="my-10" align="center" v-if="results.hits">
                 <v-col cols="12" md="12" class="text-center">
                   <v-pagination
                     v-model="page"
