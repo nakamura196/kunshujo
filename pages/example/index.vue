@@ -4,6 +4,8 @@
     <v-container class="my-5 mb-10">
       <h2 class="mb-5">{{ title }}</h2>
 
+      <p>3万件を超える貼り込み資料を前に、「何を検索しよう？」「一体、どんなものがあるんだろう？」と思った方は、ぜひ以下の検索例から『捃拾帖』の世界をのぞいてみてください。</p>
+
       <div class="mt-5 mt-10" v-for="(item2, key) in items2" :key="key" >
         <h3 class="mb-5">{{item2.label}}</h3>
         <v-row>
@@ -41,9 +43,9 @@
               class="grey lighten-2"
             />
           </nuxt-link>
-          <a :to="localePath(item.to)">
+          <nuxt-link :to="localePath(item.to)">
             <h3 class="mt-2">{{ item.label }}</h3>
-          </a>
+          </nuxt-link>
           <!--
           <div class="mt-2">
             {{ item.description }}

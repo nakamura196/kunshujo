@@ -125,9 +125,12 @@
       <v-container>
         <p class="text-center my-5">
           <!-- {{ $t(footer) }} -->
-          東京大学学術資産等アーカイブズ委員会事務局<br />
+          <!--東京大学学術資産等アーカイブズ委員会事務局<br />
           （東京大学附属図書館総務課／学術資産アーカイブ化推進室）<br />
-          E-mail: digital-archive [at] lib.u-tokyo.ac.jp.
+          E-mail: digital-archive [at] lib.u-tokyo.ac.jp.-->
+
+          東京大学附属図書館　学術資産アーカイブ化推進室<br />
+          E-mail：digital-archive [at] lib.u-tokyo.ac.jp
         </p>
       </v-container>
     </v-footer>
