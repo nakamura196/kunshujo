@@ -415,7 +415,7 @@ env.searches = {
       { label: '適合度', value: '_score' }
     ],
     defaultSort: 'index:asc',
-    defaultLayout: 'grid',
+    defaultLayout: 'list',
     name: 'item-id',
     detail: [
       {
@@ -845,6 +845,8 @@ export default {
 function routes2() {
   const pages = []
   const fs = require('fs')
+
+  //アイテム
   const index = JSON.parse(fs.readFileSync('static/data/index.json'))
   for (const item of index) {
     const id = item.objectID
@@ -856,6 +858,38 @@ function routes2() {
 
     pages.push({
       route: `/en/item/${id}`,
+      payload: item
+    })
+  }
+
+  //entity
+  const index4entity = JSON.parse(fs.readFileSync('static/data/entity.json'))
+  for (const item of index4entity) {
+    const id = item.objectID
+    //console.log({id})
+    pages.push({
+      route: `/entity/${id}`,
+      payload: item
+    })
+
+    pages.push({
+      route: `/en/entity/${id}`,
+      payload: item
+    })
+  }
+
+  //entity
+  const index4gcv = JSON.parse(fs.readFileSync('static/data/gcv.json'))
+  for (const item of index4gcv) {
+    const id = item.objectID
+    //console.log({id})
+    pages.push({
+      route: `/object/${id}`,
+      payload: item
+    })
+
+    pages.push({
+      route: `/en/object/${id}`,
       payload: item
     })
   }

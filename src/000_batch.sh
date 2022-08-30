@@ -1,5 +1,5 @@
 set -e
-# python 001_createSt.py
+python 001_createSt.py
 
 # relation2.jsonを作成する
 # - relation2.json: 類似画像検索？

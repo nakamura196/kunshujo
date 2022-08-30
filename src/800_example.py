@@ -81,6 +81,8 @@ for _, row in df.iterrows():
         key = "fc-org"
     elif "keyword" in tag:
         key = "fc-keyword"
+    else:
+        key = "keyword"
 
     item = {
         "label": row["タグ"],

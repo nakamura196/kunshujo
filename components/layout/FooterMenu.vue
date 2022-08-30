@@ -129,7 +129,7 @@
           （東京大学附属図書館総務課／学術資産アーカイブ化推進室）<br />
           E-mail: digital-archive [at] lib.u-tokyo.ac.jp.-->
 
-          東京大学附属図書館　学術資産アーカイブ化推進室<br />
+          {{$t("東京大学附属図書館　学術資産アーカイブ化推進室")}}<br />
           E-mail：digital-archive [at] lib.u-tokyo.ac.jp
         </p>
       </v-container>

@@ -733,6 +733,40 @@
             "value": 1
         }
     ],
+    "chname:伊澤修二": [
+        {
+            "label": "keyword:はがき",
+            "value": 2
+        },
+        {
+            "label": "keyword:案内",
+            "value": 1
+        },
+        {
+            "label": "chname:辻新次",
+            "value": 1
+        },
+        {
+            "label": "keyword:死亡記事",
+            "value": 1
+        },
+        {
+            "label": "org:小石川植物園",
+            "value": 1
+        },
+        {
+            "label": "org:東京音楽学校 (旧制)",
+            "value": 1
+        },
+        {
+            "label": "place:東京",
+            "value": 1
+        },
+        {
+            "label": "chname:鍋島直大",
+            "value": 1
+        }
+    ],
     "chname:伊藤伝七": [
         {
             "label": "place:三重県",
@@ -7273,7 +7307,7 @@
             "value": 1
         },
         {
-            "label": "place:伊澤修二",
+            "label": "chname:伊澤修二",
             "value": 1
         },
         {
@@ -7795,7 +7829,7 @@
             "value": 1
         },
         {
-            "label": "place:伊澤修二",
+            "label": "chname:伊澤修二",
             "value": 1
         },
         {
@@ -9157,7 +9191,7 @@
             "value": 2
         },
         {
-            "label": "place:伊澤修二",
+            "label": "chname:伊澤修二",
             "value": 2
         },
         {
@@ -28185,7 +28219,7 @@
             "value": 1
         },
         {
-            "label": "place:伊澤修二",
+            "label": "chname:伊澤修二",
             "value": 1
         },
         {
@@ -29161,7 +29195,7 @@
             "value": 1
         },
         {
-            "label": "place:伊澤修二",
+            "label": "chname:伊澤修二",
             "value": 1
         },
         {
@@ -46465,7 +46499,7 @@
             "value": 1
         },
         {
-            "label": "place:伊澤修二",
+            "label": "chname:伊澤修二",
             "value": 1
         },
         {
@@ -49111,7 +49145,7 @@
             "value": 1
         },
         {
-            "label": "place:伊澤修二",
+            "label": "chname:伊澤修二",
             "value": 1
         },
         {
@@ -53297,40 +53331,6 @@
             "value": 1
         }
     ],
-    "place:伊澤修二": [
-        {
-            "label": "keyword:はがき",
-            "value": 2
-        },
-        {
-            "label": "keyword:案内",
-            "value": 1
-        },
-        {
-            "label": "chname:辻新次",
-            "value": 1
-        },
-        {
-            "label": "keyword:死亡記事",
-            "value": 1
-        },
-        {
-            "label": "org:小石川植物園",
-            "value": 1
-        },
-        {
-            "label": "org:東京音楽学校 (旧制)",
-            "value": 1
-        },
-        {
-            "label": "place:東京",
-            "value": 1
-        },
-        {
-            "label": "chname:鍋島直大",
-            "value": 1
-        }
-    ],
     "place:伊香保町": [
         {
             "label": "keyword:案内",
@@ -57307,7 +57307,7 @@
             "value": 1
         },
         {
-            "label": "place:伊澤修二",
+            "label": "chname:伊澤修二",
             "value": 1
         },
         {

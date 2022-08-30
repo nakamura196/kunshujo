@@ -14,7 +14,7 @@ export const state = () => ({
 
   sort: '',
 
-  layout: process.env.searches.entity.defaultLayout,
+  layout: process.env.searches.default.defaultLayout,
 
   index: null,
 })
