@@ -17,11 +17,11 @@ description: Learn how to use @nuxt/content.
 
 (*1)「電子展示『捃拾帖』」も、引き続き公開しています。
 
-(*2)使われるための地道なデータづくりの話－コロナ禍だからできた「捃拾帖」 のタグ付け－（第4回東京大学学術資産アーカイブ化推進室セミナー資料）
+(*2)[使われるための地道なデータづくりの話－コロナ禍だからできた「捃拾帖」 のタグ付け－](https://www.lib.u-tokyo.ac.jp/sites/default/files/2021-02/04_nakamura_ccby.pdf)（第4回東京大学学術資産アーカイブ化推進室セミナー資料）
 
-https://www.lib.u-tokyo.ac.jp/sites/default/files/2021-02/04_nakamura_ccby.pdf
+<br/>
 
-[（参考）田中芳男文庫と『捃拾帖』について　（電気通信大学　佐藤 賢一）](https://www.lib.u-tokyo.ac.jp/ja/library/general/tanaka-collection)
+『捃拾帖』の解説：[田中芳男文庫と『捃拾帖』について　（電気通信大学　佐藤 賢一）](https://www.lib.u-tokyo.ac.jp/ja/library/general/tanaka-collection)
 
 
 
