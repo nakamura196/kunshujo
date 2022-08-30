@@ -177,7 +177,7 @@
                 :itemsAll="itemsAll"
               ></component>
 
-              <v-row class="my-10" align="center" v-if="results.hits">
+              <v-row class="my-10" align="center" v-if="results.hits && isPage">
                 <v-col cols="12" md="12" class="text-center">
                   <v-pagination
                     v-model="page"
