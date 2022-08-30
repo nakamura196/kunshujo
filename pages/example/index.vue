@@ -4,56 +4,60 @@
     <v-container class="my-5 mb-10">
       <h2 class="mb-5">{{ title }}</h2>
 
-      <p>3万件を超える貼り込み資料を前に、「何を検索しよう？」「一体、どんなものがあるんだろう？」と思った方は、ぜひ以下の検索例から『捃拾帖』の世界をのぞいてみてください。</p>
+      <p>
+        3万件を超える貼り込み資料を前に、「何を検索しよう？」「一体、どんなものがあるんだろう？」と思った方は、ぜひ以下の検索例から『捃拾帖』の世界をのぞいてみてください。
+      </p>
 
-      <div class="mt-5 mt-10" v-for="(item2, key) in items2" :key="key" >
-        <h3 class="mb-5">{{item2.label}}</h3>
+      <div class="mt-5 mt-10" v-for="(item2, key) in items2" :key="key">
+        <h3 class="mb-5">{{ item2.label }}</h3>
+        <p class="mb-5" v-html="item2.description"></p>
         <v-row>
-        
-        <v-col cols="6" md="3" v-for="(item, key2) in item2.value" :key="key2">
-          <nuxt-link :to="localePath(item.value)">
-            <v-img
-              max-height="150"
-              contain
-              :src="item.image || baseUrl + '/img/icons/no-image.webp'"
-              style="height: 150px"
-              width="100%"
-              class="grey lighten-2"
-            />
-          </nuxt-link>
-          <nuxt-link :to="localePath(item.value)">
-            <h3 class="mt-2">{{ fix(item.label) }}</h3>
-          </nuxt-link>
-        </v-col>
-      </v-row>
+          <v-col
+            cols="6"
+            md="3"
+            v-for="(item, key2) in item2.value"
+            :key="key2"
+          >
+            <nuxt-link :to="localePath(item.value)">
+              <v-img
+                max-height="150"
+                contain
+                :src="item.image || baseUrl + '/img/icons/no-image.webp'"
+                style="height: 150px"
+                width="100%"
+                class="grey lighten-2"
+              />
+            </nuxt-link>
+            <nuxt-link :to="localePath(item.value)">
+              <h3 class="mt-2">{{ fix(item.label) }}</h3>
+            </nuxt-link>
+          </v-col>
+        </v-row>
       </div>
-      
-      <div class="mt-10">
-      <h3 class="mb-5">その他</h3>
 
-      <v-row class="mt-5">
-        <v-col cols="6" md="3" v-for="(item, key) in items" :key="key">
-          <nuxt-link :to="localePath(item.to)">
-            <v-img
-              max-height="150"
-              contain
-              :src="item.img"
-              style="height: 150px"
-              width="100%"
-              class="grey lighten-2"
-            />
-          </nuxt-link>
-          <nuxt-link :to="localePath(item.to)">
-            <h3 class="mt-2">{{ item.label }}</h3>
-          </nuxt-link>
-          <!--
-          <div class="mt-2">
-            {{ item.description }}
-          </div>
-          -->
-        </v-col>
-      </v-row>
+      <!--
+      <div class="mt-10">
+        <h3 class="mb-5">その他</h3>
+
+        <v-row class="mt-5">
+          <v-col cols="6" md="3" v-for="(item, key) in items" :key="key">
+            <nuxt-link :to="localePath(item.to)">
+              <v-img
+                max-height="150"
+                contain
+                :src="item.img"
+                style="height: 150px"
+                width="100%"
+                class="grey lighten-2"
+              />
+            </nuxt-link>
+            <nuxt-link :to="localePath(item.to)">
+              <h3 class="mt-2">{{ item.label }}</h3>
+            </nuxt-link>
+          </v-col>
+        </v-row>
       </div>
+      -->
     </v-container>
   </div>
 </template>
@@ -127,8 +131,8 @@ export default class about extends Vue {
   ]
 
   fix(str: string) {
-    if(str.includes(":")){
-      return str.split(":")[1]
+    if (str.includes(':')) {
+      return str.split(':')[1]
     } else {
       return str
     }

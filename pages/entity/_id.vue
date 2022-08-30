@@ -345,7 +345,7 @@ export default class Item extends Vue {
         exact: true,
       },
       {
-        text: this.$t('エンティティ検索'),
+        text: this.$t('entity'),
         disabled: false,
         to: this.localePath({
           name: 'search-slug',

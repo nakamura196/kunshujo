@@ -50,6 +50,7 @@ group_p = ""
 for _, row in df.iterrows():
     index = row["インデックス"]
     group = row["グループ"]
+    description = row["説明"]
     
     if pd.isnull(index):
         index = index_p
@@ -62,11 +63,15 @@ for _, row in df.iterrows():
     if index not in map:
         map[index] = {
             "label": group,
+            "description": description,
             "index": index,
             "value": []
         }
 
     tag = row["タグ"]
+    print(tag)
+    if pd.isnull(tag):
+        continue
     key = ""
     if "chname" in tag:
         key = "fc-agential"
