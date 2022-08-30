@@ -226,7 +226,7 @@
                 }
             },
             {
-                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Forest01s2048.jpg/1024px-Forest01s2048.jpg",
+                "image": "https://upload.wikimedia.o/rg/wikipedia/commons/thumb/3/36/Forest01s2048.jpg/1024px-Forest01s2048.jpg",
                 "label": "org:大日本山林会",
                 "value": {
                     "name": "search-slug",
