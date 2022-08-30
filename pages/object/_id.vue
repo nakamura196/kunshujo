@@ -382,7 +382,6 @@ export default class Item extends Vue {
   get aggs() {
     const searches: any = process.env.searches
     const aggs = searches.object.detail
-    console.log({ aggs })
     return aggs
   }
 

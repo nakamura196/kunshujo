@@ -638,7 +638,7 @@ export default {
   },
   // Target (https://go.nuxtjs.dev/config-target)
 
-  ssr: env.ssr,
+  ssr: false, // true, //env.ssr,
   target: 'static',
   // srcDir: 'src/',
 
@@ -832,8 +832,12 @@ export default {
   ...routerBase,
 
   generate: {
+    exclude: [
+      /^\/old/ // path starts with /admin
+    ],
     routes() {
-      return [] //routes2()
+      //return [] //routes2()
+      return routes2()
     },
   },
 }
@@ -844,12 +848,15 @@ function routes2() {
   const index = JSON.parse(fs.readFileSync('static/data/index.json'))
   for (const item of index) {
     const id = item.objectID
+    //console.log({id})
     pages.push({
       route: `/item/${id}`,
+      payload: item
     })
 
     pages.push({
       route: `/en/item/${id}`,
+      payload: item
     })
   }
 

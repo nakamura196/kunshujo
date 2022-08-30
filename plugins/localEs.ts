@@ -15,6 +15,19 @@ export class localEs {
 
     index = index.data
 
+    // console.log({index})
+
+    for(const item of index){
+      let fulltext: any[] = []
+      for(const key in item){
+        const value = item[key]
+        if(typeof value === "object"){
+          fulltext = fulltext.concat(value)
+        }
+      }
+      item.fulltext = fulltext.join(", ")
+    }
+
     //IDをキーとしたマップ
     const docs: any = {}
 

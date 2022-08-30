@@ -1,6 +1,8 @@
 <template>
   <div>
     <Breadcrumbs :items="bh" />
+
+
     <template v-if="iframeUrl">
       <div style="background-color: #f5f5f5">
         <v-container class="py-0" style="height: 450px">
@@ -193,6 +195,8 @@
       </small>
     </v-sheet>
 
+    <!--
+        -->
     <v-container fluid class="mb-10">
       <div class="mt-10">
         <RelatedItems ref="mlt" :item="item" />
@@ -210,6 +214,7 @@
         <Objects ref="mlt2" :item="item" />
       </div>
     </v-container>
+    
 
     <License></License>
 
@@ -232,10 +237,13 @@
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 import ResultOption from '~/components/display/ResultOption.vue'
+/*
+*/
 import RelatedItems from '~/components/item/RelatedItems.vue'
 import MoreLikeThis from '~/components/item/MoreLikeThis.vue'
 import SimilarImages from '~/components/item/SimilarImages.vue'
 import Objects from '~/components/item/Objects.vue'
+
 import License from '~/components/item/License.vue'
 import axios from 'axios'
 import Breadcrumbs from '~/components/common/Breadcrumbs.vue'
@@ -243,11 +251,14 @@ import MapMain from '~/components/map/MapMain.vue'
 
 @Component({
   components: {
+    /*
+    */
     RelatedItems,
-    ResultOption,
     MoreLikeThis,
     SimilarImages,
     Objects,
+    
+    ResultOption,
     License,
     Breadcrumbs,
     MapMain,
@@ -258,9 +269,12 @@ export default class Item extends Vue {
 
   hide: any = process.env.hide || {}
 
-  async asyncData({ payload, app, $axios, params }: any) {
+  //, $axios, params
+  async asyncData({ payload, app }: any) {
+    let item = null
     if (payload) {
-      return { item: payload }
+      //return { item: payload }
+      item = payload
     } else {
       const id = app.context.params.id
 
@@ -272,7 +286,7 @@ export default class Item extends Vue {
 
       const index = data
 
-      let item = {}
+      //let item = {}
 
       for (const obj of index) {
         if (obj.objectID === id) {
@@ -280,14 +294,14 @@ export default class Item extends Vue {
           break
         }
       }
-
-      //const item = await import(`~/static/data/item/${params.id}.json`)
-
-      const markers: any[] = []
-      let center: Number[] = [33, 130]
-
-      return { item, center, markers }
     }
+
+    //const item = await import(`~/static/data/item/${params.id}.json`)
+
+    const markers: any[] = []
+    let center: Number[] = [33, 130]
+
+    return { item, center, markers }
   }
 
   baseUrl: any = process.env.BASE_URL

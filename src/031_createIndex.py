@@ -257,13 +257,18 @@ for selection in selections:
           if "http" not in value:
             fulltexts.append(value)
 
-    item["fulltext"] = " ".join(fulltexts)
+    # item["fulltext"] = " ".join(fulltexts)
 
     index.append(item)
 
     #####
 
-    sims[id] = {}
+    manifest_id = manifest.split("/")[-2]
+
+    if manifest_id not in sims:
+        sims[manifest_id] = {}
+
+    sims[manifest_id][id] = {}
 
     keys = ["images", "texts"]
 
@@ -274,7 +279,7 @@ for selection in selections:
             for uri in member[key]:
                 id2 = hashlib.md5(uri.encode('utf-8')).hexdigest()
                 arr.append(id2)
-            sims[id][key] = arr
+            sims[manifest_id][id][key] = arr
 
     #####
 
@@ -301,8 +306,11 @@ for selection in selections:
 
 # インデックスを作成
 with open("../static/data/index.json", 'w') as outfile:
+    json.dump(index, outfile)
+    '''
     json.dump(index, outfile, ensure_ascii=False,
                 indent=4, sort_keys=True, separators=(',', ': '))
+    '''
 
 # エンティティ毎の頻度マップを作成
 with open("data/freq.json", 'w') as outfile:
@@ -328,8 +336,19 @@ with open("../static/data/entity_relation.json", 'w') as outfile:
                 indent=4, sort_keys=True, separators=(',', ': '))
 
 # 関連アイテム
+'''
 with open("../static/data/relation.json", 'w') as outfile:
     json.dump(sims, outfile, ensure_ascii=False,
+                indent=4, sort_keys=True, separators=(',', ': '))
+'''
+
+import os
+
+for mid in sims:
+    r_path = f"../static/data/relations/{mid}.json"
+    os.makedirs(os.path.dirname(r_path), exist_ok=True)
+    with open(r_path, 'w') as outfile:
+        json.dump(sims[mid], outfile, ensure_ascii=False,
                 indent=4, sort_keys=True, separators=(',', ': '))
 
 map = {}

@@ -94,7 +94,7 @@ export default class about extends Vue {
 
   @Watch('$route', { immediate: true })
   watchTmp(newValue: any, oldValue: any) {
-    console.log(newValue)
+    //console.log(newValue)
     const query = newValue.query
     const self = this
     if (query.url) {

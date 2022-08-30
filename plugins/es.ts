@@ -146,7 +146,6 @@ export class es {
 
         const should: any[] = []
         for (const v of values) {
-          //console.log({ facetField, v })
 
           const term: any = {}
           should.push({ term })

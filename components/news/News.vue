@@ -54,7 +54,7 @@ export default class License extends Vue {
 
       this.items = items
     } catch (e) {
-      console.log({ e })
+      //console.log({ e })
     }
   }
 }

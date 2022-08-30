@@ -44,7 +44,13 @@ export default class morelikethis extends Vue {
       indexMap[item.objectID] = item
     }
 
-    let relation: any = await axios.get(this.baseUrl + '/data/relation.json')
+    const item = this.item
+
+    const manifest = item.manifest
+    const spl = manifest.split("/")
+    const mid = spl[spl.length - 2]
+
+    let relation: any = await axios.get(this.baseUrl + `/data/relations/${mid}.json`)
     relation = relation.data
 
     const id = this.item.objectID

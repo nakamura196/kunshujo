@@ -215,14 +215,14 @@ export default class Item extends Vue {
                     }
                 };
     const {data} = await axios.post('https://d3hfvu5xqm867i.cloudfront.net/yolo/kunshujo/', formData, config)
-    console.log({data})
+    //console.log({data})
     */
     
     let res: any = this.uploadedBase64
     const prefix = res.split(',')[0]
     res = res.replace(`${prefix},`, '')
 
-    console.log({ res })
+    //console.log({ res })
 
     /*
     let config = {
@@ -251,18 +251,6 @@ export default class Item extends Vue {
     }
 
     const {data} = await axios(config)
-    /*
-      .then(function (response) {
-        console.log(JSON.stringify(response.data))
-      })
-      .catch(function (error) {
-        console.log(error)
-      })
-    */
-    /*
-    */
-
-    console.log({data})
 
     this.previewBase64 = `data:image/jpeg;base64,${data.content}`
 
