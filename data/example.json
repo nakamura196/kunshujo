@@ -1,33 +1,8 @@
 [
     {
+        "description": "『捃拾帖』には、時の内閣総理大臣や文化人など様々な人物が登場します。明治時代の著名人で検索すると、思わぬ資料と出会えるかもしれません。",
         "index": 1,
-        "label": "『捃拾帖』のなかの東大総長",
-        "value": [
-            {
-                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kato_Hiroyuki.jpg/400px-Kato_Hiroyuki.jpg",
-                "label": "chname:加藤弘之",
-                "value": {
-                    "name": "search-slug",
-                    "query": {
-                        "fc-agential": "chname:加藤弘之"
-                    }
-                }
-            },
-            {
-                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Kenjiro_Yamakawa_2.jpg/400px-Kenjiro_Yamakawa_2.jpg",
-                "label": "chname:山川健次郎",
-                "value": {
-                    "name": "search-slug",
-                    "query": {
-                        "fc-agential": "chname:山川健次郎"
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "index": 2,
-        "label": "『捃拾帖』のなかの歴代総理",
+        "label": "こんなところに著名人",
         "value": [
             {
                 "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/IT%C5%8C_Hirobumi.jpg/440px-IT%C5%8C_Hirobumi.jpg",
@@ -36,6 +11,16 @@
                     "name": "search-slug",
                     "query": {
                         "fc-agential": "chname:伊藤博文"
+                    }
+                }
+            },
+            {
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Eiichi_Shibusawa.jpg/800px-Eiichi_Shibusawa.jpg",
+                "label": "chname:渋沢栄一",
+                "value": {
+                    "name": "search-slug",
+                    "query": {
+                        "fc-agential": "chname:渋沢栄一"
                     }
                 }
             },
@@ -50,88 +35,69 @@
                 }
             },
             {
-                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/11_KatsuraT.jpg/440px-11_KatsuraT.jpg",
-                "label": "chname:桂太郎",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Makino_Tomitaro.jpg/800px-Makino_Tomitaro.jpg",
+                "label": "chname:牧野富太郎",
                 "value": {
                     "name": "search-slug",
                     "query": {
-                        "fc-agential": "chname:桂太郎"
+                        "fc-agential": "chname:牧野富太郎"
+                    }
+                }
+            },
+            {
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Kato_Hiroyuki.jpg/400px-Kato_Hiroyuki.jpg",
+                "label": "chname:加藤弘之",
+                "value": {
+                    "name": "search-slug",
+                    "query": {
+                        "fc-agential": "chname:加藤弘之"
                     }
                 }
             }
         ]
     },
     {
-        "index": 3,
-        "label": "本郷近辺の歴史を知る",
+        "description": "田中芳男は甘いものが好きだったようで、お菓子の包み紙や広告が多くあります。（そして<a href=\"https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/tanaka/document/7c2275c1-d86a-464f-9cc2-0f32869a26c7#?cv=46&c=0&m=0&s=0&xywh=4312,1770,1769,2406\">「菓子唱歌」</a>という自作の楽曲もあります。）レトロな広告や老舗菓子店の商品など、明治スイーツの世界をお楽しみください。",
+        "index": 2,
+        "label": "明治スイーツの世界",
         "value": [
             {
-                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/%E6%9D%B1%E4%BA%AC%E5%A4%A7%E5%AD%A6%E6%9C%AC%E9%83%B7%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9%E6%AD%A3%E9%96%80.JPG/540px-%E6%9D%B1%E4%BA%AC%E5%A4%A7%E5%AD%A6%E6%9C%AC%E9%83%B7%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9%E6%AD%A3%E9%96%80.JPG",
-                "label": "place:本郷 (文京区)",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Youkan_001.jpg/1280px-Youkan_001.jpg",
+                "label": "keyword:羊羹",
                 "value": {
                     "name": "search-slug",
                     "query": {
-                        "fc-place": "place:本郷 (文京区)"
+                        "fc-keyword": "keyword:羊羹"
                     }
                 }
             },
             {
-                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/%E3%82%B7%E3%83%86%E3%82%A3%E3%82%BF%E3%83%AF%E3%83%BC%E4%B8%8A%E9%87%8E%E6%B1%A0%E4%B9%8B%E7%AB%AF.jpg/540px-%E3%82%B7%E3%83%86%E3%82%A3%E3%82%BF%E3%83%AF%E3%83%BC%E4%B8%8A%E9%87%8E%E6%B1%A0%E4%B9%8B%E7%AB%AF.jpg",
-                "label": "place:池之端",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Japanese_Senbeis.jpg/1024px-Japanese_Senbeis.jpg",
+                "label": "keyword:煎餅",
                 "value": {
                     "name": "search-slug",
                     "query": {
-                        "fc-place": "place:池之端"
+                        "fc-keyword": "keyword:煎餅"
                     }
                 }
             },
             {
-                "label": "place:湯島切通坂上",
+                "image": "https://upload.wikimedia.org/wikipedia/ja/a/a5/%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC%E3%81%A8%E3%83%93%E3%82%B9%E3%82%B1%E3%83%83%E3%83%88.jpg",
+                "label": "keyword:ビスケット",
                 "value": {
                     "name": "search-slug",
                     "query": {
-                        "fc-place": "place:湯島切通坂上"
+                        "fc-keyword": "keyword:ビスケット"
                     }
                 }
             },
             {
-                "label": "place:湯島",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Caramel-1.jpg/1024px-Caramel-1.jpg",
+                "label": "keyword:キャラメル",
                 "value": {
                     "name": "search-slug",
                     "query": {
-                        "fc-place": "place:湯島"
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "index": 4,
-        "label": "捃拾帖から見る東大",
-        "value": [
-            {
-                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/PSM_V64_D470_Imperial_university_of_tokyo.png/500px-PSM_V64_D470_Imperial_university_of_tokyo.png",
-                "label": "org:帝国大学",
-                "value": {
-                    "name": "search-slug",
-                    "query": {
-                        "fc-org": "org:帝国大学"
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "index": 5,
-        "label": "老舗の歴史を見る",
-        "value": [
-            {
-                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Imperial_Hotel_Tokyo.JPG/460px-Imperial_Hotel_Tokyo.JPG",
-                "label": "org:帝国ホテル",
-                "value": {
-                    "name": "search-slug",
-                    "query": {
-                        "fc-org": "org:帝国ホテル"
+                        "fc-keyword": "keyword:キャラメル"
                     }
                 }
             },
@@ -146,30 +112,81 @@
                 }
             },
             {
-                "label": "org:三越呉服店",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1024px-A_small_cup_of_coffee.JPG",
+                "label": "keyword:珈琲",
                 "value": {
                     "name": "search-slug",
                     "query": {
-                        "fc-org": "org:三越呉服店"
-                    }
-                }
-            },
-            {
-                "label": "org:資生堂",
-                "value": {
-                    "name": "search-slug",
-                    "query": {
-                        "fc-org": "org:資生堂"
+                        "fc-keyword": "keyword:珈琲"
                     }
                 }
             }
         ]
     },
     {
-        "index": 6,
-        "label": "捃拾帖から見る博覧会",
+        "description": "田中芳男は様々な公職についていたこともあり、東京大学と関連する資料が含まれています。また彼の自宅が文京区本郷にあったことから、本郷界隈の資料も多くあります。",
+        "index": 3,
+        "label": "捃拾帖から東大を知る",
         "value": [
             {
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/PSM_V64_D470_Imperial_university_of_tokyo.png/500px-PSM_V64_D470_Imperial_university_of_tokyo.png",
+                "label": "org:帝国大学",
+                "value": {
+                    "name": "search-slug",
+                    "query": {
+                        "fc-org": "org:帝国大学"
+                    }
+                }
+            },
+            {
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Komaba_I_Campus_-_University_of_Tokyo_3.jpg/1280px-Komaba_I_Campus_-_University_of_Tokyo_3.jpg",
+                "label": "keyword:駒場",
+                "value": {
+                    "name": "search-slug",
+                    "query": {
+                        "fc-keyword": "keyword:駒場"
+                    }
+                }
+            },
+            {
+                "image": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Bunkyou_Koishikawa_Botanical_Japanese_Garden_1_%281%29.JPG",
+                "label": "org:小石川植物園",
+                "value": {
+                    "name": "search-slug",
+                    "query": {
+                        "fc-org": "org:小石川植物園"
+                    }
+                }
+            },
+            {
+                "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/ToudaiAkamon.jpg",
+                "label": "keyword:赤門",
+                "value": {
+                    "name": "search-slug",
+                    "query": {
+                        "fc-keyword": "keyword:赤門"
+                    }
+                }
+            },
+            {
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/%E6%9D%B1%E4%BA%AC%E5%A4%A7%E5%AD%A6%E6%9C%AC%E9%83%B7%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9%E6%AD%A3%E9%96%80.JPG/540px-%E6%9D%B1%E4%BA%AC%E5%A4%A7%E5%AD%A6%E6%9C%AC%E9%83%B7%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9%E6%AD%A3%E9%96%80.JPG",
+                "label": "place:本郷 (文京区)",
+                "value": {
+                    "name": "search-slug",
+                    "query": {
+                        "fc-place": "place:本郷 (文京区)"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "description": "田中芳男は殖産興業や啓蒙活動に努め、内国勧業博覧会や海外での万博実施に大きく貢献しました。また枇杷や西洋リンゴを広めたり、大日本水産会の幹事に就任するなど様々な分野で活躍した人物です。それらに関する資料も捃拾帖には残されています。",
+        "index": 4,
+        "label": "田中芳男の業績",
+        "value": [
+            {
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Tokyo-Ueno-Park-National-Industrial-Exhibition-Museum-Hiroshige-III-1877.png/1280px-Tokyo-Ueno-Park-National-Industrial-Exhibition-Museum-Hiroshige-III-1877.png",
                 "label": "keyword:内国勧業博覧会",
                 "value": {
                     "name": "search-slug",
@@ -179,143 +196,99 @@
                 }
             },
             {
-                "label": "keyword:博覧会",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Le_Chateau_d%27eau_and_plaza%2C_Exposition_Universal%2C_1900%2C_Paris%2C_France.jpg/1024px-Le_Chateau_d%27eau_and_plaza%2C_Exposition_Universal%2C_1900%2C_Paris%2C_France.jpg",
+                "label": "keyword:万国博覧会",
                 "value": {
                     "name": "search-slug",
                     "query": {
-                        "fc-keyword": "keyword:博覧会"
+                        "fc-keyword": "keyword:万国博覧会"
                     }
                 }
             },
             {
-                "label": "keyword:水産博覧会",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Eriobotrya_japonica_C.jpg/800px-Eriobotrya_japonica_C.jpg",
+                "label": "keyword:枇杷",
                 "value": {
                     "name": "search-slug",
                     "query": {
-                        "fc-keyword": "keyword:水産博覧会"
+                        "fc-keyword": "keyword:枇杷"
                     }
                 }
             },
             {
-                "label": "keyword:博覧会事務局",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Sankaido_Building.jpg/1024px-Sankaido_Building.jpg",
+                "label": "org:大日本水産会",
                 "value": {
                     "name": "search-slug",
                     "query": {
-                        "fc-keyword": "keyword:博覧会事務局"
+                        "fc-org": "org:大日本水産会"
+                    }
+                }
+            },
+            {
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Forest01s2048.jpg/1024px-Forest01s2048.jpg",
+                "label": "org:大日本山林会",
+                "value": {
+                    "name": "search-slug",
+                    "query": {
+                        "fc-org": "org:大日本山林会"
                     }
                 }
             }
         ]
     },
     {
-        "index": 7,
-        "label": "明治スイーツの世界",
+        "description": "日本全国にとどまらず、海外も含め各地域の様々な情報が捃拾帖には残されています。",
+        "index": 5,
+        "label": "その他",
         "value": [
             {
-                "label": "keyword:菓子",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hirosaki_Montage.jpg/420px-Hirosaki_Montage.jpg",
+                "label": "place:弘前市",
                 "value": {
                     "name": "search-slug",
                     "query": {
-                        "fc-keyword": "keyword:菓子"
+                        "fc-place": "place:弘前市"
                     }
                 }
             },
             {
-                "label": "keyword:羊羹",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Shirakawago.jpg/1024px-Shirakawago.jpg",
+                "label": "place:岐阜県",
                 "value": {
                     "name": "search-slug",
                     "query": {
-                        "fc-keyword": "keyword:羊羹"
+                        "fc-place": "place:岐阜県"
                     }
                 }
             },
             {
-                "label": "keyword:洋菓子",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/170811_Rokko-Arima_Ropeway_Kobe_Japan00n.jpg/450px-170811_Rokko-Arima_Ropeway_Kobe_Japan00n.jpg",
+                "label": "place:有馬温泉",
                 "value": {
                     "name": "search-slug",
                     "query": {
-                        "fc-keyword": "keyword:洋菓子"
+                        "fc-place": "place:有馬温泉"
                     }
                 }
             },
             {
-                "label": "keyword:和菓子",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Isoteien-sakurajima2.jpg/1024px-Isoteien-sakurajima2.jpg",
+                "label": "place:鹿児島県",
                 "value": {
                     "name": "search-slug",
                     "query": {
-                        "fc-keyword": "keyword:和菓子"
+                        "fc-place": "place:鹿児島県"
                     }
                 }
             },
             {
-                "label": "keyword:朝鮮飴",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/View_From_Montparnasse_Tower_%28255652451%29.jpeg/1280px-View_From_Montparnasse_Tower_%28255652451%29.jpeg",
+                "label": "place:パリ",
                 "value": {
                     "name": "search-slug",
                     "query": {
-                        "fc-keyword": "keyword:朝鮮飴"
-                    }
-                }
-            },
-            {
-                "label": "keyword:ビスケット",
-                "value": {
-                    "name": "search-slug",
-                    "query": {
-                        "fc-keyword": "keyword:ビスケット"
-                    }
-                }
-            },
-            {
-                "label": "keyword:昆布羊羹",
-                "value": {
-                    "name": "search-slug",
-                    "query": {
-                        "fc-keyword": "keyword:昆布羊羹"
-                    }
-                }
-            },
-            {
-                "label": "keyword:栗羊羹",
-                "value": {
-                    "name": "search-slug",
-                    "query": {
-                        "fc-keyword": "keyword:栗羊羹"
-                    }
-                }
-            },
-            {
-                "label": "keyword:和洋菓子",
-                "value": {
-                    "name": "search-slug",
-                    "query": {
-                        "fc-keyword": "keyword:和洋菓子"
-                    }
-                }
-            },
-            {
-                "label": "keyword:翁飴",
-                "value": {
-                    "name": "search-slug",
-                    "query": {
-                        "fc-keyword": "keyword:翁飴"
-                    }
-                }
-            },
-            {
-                "label": "keyword:うばもち",
-                "value": {
-                    "name": "search-slug",
-                    "query": {
-                        "fc-keyword": "keyword:うばもち"
-                    }
-                }
-            },
-            {
-                "label": "keyword:吉備団子",
-                "value": {
-                    "name": "search-slug",
-                    "query": {
-                        "fc-keyword": "keyword:吉備団子"
+                        "fc-place": "place:パリ"
                     }
                 }
             }
