@@ -79,7 +79,7 @@ export default class FullTextSearch extends Vue {
           label = label.split(':')[1]
         }
         items.push({
-          label,
+          label: this.$utils.custom(label),
           value: obj.doc_count,
         })
       }

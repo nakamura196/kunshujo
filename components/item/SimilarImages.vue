@@ -61,11 +61,19 @@ export default class morelikethis extends Vue {
 
     const item = this.item
 
-    const manifest = item.manifest
-    const spl = manifest.split("/")
-    const mid = spl[spl.length - 2]
+    
 
-    let relation: any = await axios.get(this.baseUrl + `/data/relations/${mid}.json`)
+    let relation: any = {}
+    const relationProp = this.relation 
+    if(relationProp !== "default"){
+      relation = await axios.get(this.baseUrl + `/data/${relationProp}.json`)
+    } else {
+      const manifest = item.manifest
+      const spl = manifest.split("/")
+      const mid = spl[spl.length - 2]
+      relation = await axios.get(this.baseUrl + `/data/relations/${mid}.json`)
+    }
+    
     relation = relation.data
 
     const id = this.item.objectID
