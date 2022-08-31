@@ -64,14 +64,14 @@ export default class morelikethis extends Vue {
     
 
     let relation: any = {}
-    const relationProp = this.relation 
-    if(relationProp !== "default"){
-      relation = await axios.get(this.baseUrl + `/data/${relationProp}.json`)
-    } else {
+    const relationProp = this.relation
+    if(relationProp === "relation"){
       const manifest = item.manifest
       const spl = manifest.split("/")
       const mid = spl[spl.length - 2]
       relation = await axios.get(this.baseUrl + `/data/relations/${mid}.json`)
+    } else {
+      relation = await axios.get(this.baseUrl + `/data/${relationProp}.json`)
     }
     
     relation = relation.data
