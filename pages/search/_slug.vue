@@ -264,7 +264,7 @@ export default class search extends Vue {
   }
 
   get isPage() {
-    return ['table', 'grid', 'list'].includes(this.layout_)
+    return ['table', 'grid', 'list', 'image'].includes(this.layout_)
   }
 
   toTop(): void {

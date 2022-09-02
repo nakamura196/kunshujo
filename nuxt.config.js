@@ -471,6 +471,12 @@ env.searches = {
         component: 'search-layout-grid',
       },
       {
+        label: 'image',
+        value: 'image',
+        icon: 'mdi-image',
+        component: 'custom-search-layout-image',
+      },
+      {
         label: 'graph',
         value: 'graph',
         icon: 'mdi-chart-bar',
