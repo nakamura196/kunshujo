@@ -20,6 +20,7 @@ import {
   mdiChartBar,
   mdiTable,
   mdiMap,
+  mdiImage,
 } from '@mdi/js'
 
 @Component({
@@ -28,7 +29,7 @@ import {
 export default class Sort extends Vue {
   mdiViewGrid: string = mdiViewGrid
   mdiViewList: string = mdiViewList
-
+  mdiImage: string = mdiImage
   mdiChartBar: string = mdiChartBar
   mdiTable: string = mdiTable
   mdiMap: string = mdiMap
@@ -82,6 +83,8 @@ export default class Sort extends Vue {
       return this.mdiChartBar
     } else if (value === 'mdi-map') {
       return this.mdiMap
+    } else if (value === 'mdi-image') {
+      return this.mdiImage
     } else {
       return null
     }

@@ -8,7 +8,8 @@
   >
     <nuxt-link :to="localePath(item.to)">
       <v-img
-        :src="item.thumbnail || baseUrl + '/img/icons/no-image.webp'"
+        :src="baseUrl + '/data/images/' + item.id + '.jpg'"
+        :src2="item.thumbnail || baseUrl + '/img/icons/no-image.webp'"
         contain
         style="height: 150px"
         width="100%"
