@@ -98,7 +98,7 @@ export default class Map extends Vue {
 
   tileProviders: any[] = [
     {
-      name: '地理院タイル',
+      name: 'OpenStreetMap',
       visible: true,
       url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       attribution:

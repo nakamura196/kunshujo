@@ -38,7 +38,7 @@ import Breadcrumbs from '~/components/common/Breadcrumbs.vue'
   },
 })
 export default class about extends Vue {
-  title: any = this.$t('その他の検索')
+  title: any = this.$t('other_search')
 
   items: any[] = [
     {
@@ -49,7 +49,7 @@ export default class about extends Vue {
           slug: 'entity',
         },
       },
-      description: '固有表現（人物、場所、キーワードなど）を検索します。',
+      description: this.$t('desc_entity_search'),
     },
     {
       label: this.$t('mtag'),
@@ -59,14 +59,14 @@ export default class about extends Vue {
           slug: 'object',
         },
       },
-      description: '機械タグ（Google Cloud Visionを用いて検出した物体）を検索します。',
+      description: this.$t('desc_mtag_search'),
     },
     {
       label: this.$t('category'),
       to: {
         name: 'category-list',
       },
-      description: 'データ数から検索します。',
+      description: this.$t('desc_category_search'),
     },
   ]
 

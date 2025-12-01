@@ -48,7 +48,7 @@
           ></v-progress-circular>
 
           <p>
-            初回はインデックスファイルのダウンロードに時間を要します。2回目以降はキャッシュにより待ち時間が改善します。
+            {{ $t('loading_index_message') }}
           </p>
         </div>
       </template>

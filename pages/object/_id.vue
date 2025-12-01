@@ -46,7 +46,7 @@
           class="ma-1"
           target="_blank"
           :href="viewerUrl2"
-          ><span class="mr-2">公開元サイトで見る</span></v-btn>
+          ><span class="mr-2">{{ $t('view_original_site') }}</span></v-btn>
 
         <span class="mx-2"></span>
 
@@ -180,7 +180,7 @@
                               depressed
                               target="_blank"
                               :href="`https://japanknowledge-com.utokyo.idm.oclc.org/lib/display/?lid=${value}`"
-                              >東京大学限定; EZproxy
+                              >{{ $t('utokyo_ezproxy') }}
                               <v-icon class="ml-2"
                                 >mdi-exit-to-app</v-icon
                               ></v-btn
@@ -227,7 +227,7 @@
                                 })
                               "
                             >
-                              詳細をみる
+                              {{ $t('view_details') }}
                             </v-btn>
                           </template>
                         </template>
@@ -407,7 +407,7 @@ export default class Item extends Vue {
         exact: true,
       },
       {
-        text: this.$t('オブジェクト検索'),
+        text: this.$t('mtag_search'),
         disabled: false,
         to: this.localePath({
           name: 'search-slug',
@@ -462,23 +462,9 @@ export default class Item extends Vue {
     const item = (this as any).item
     const manifest = item.manifest
     const memberId = item.member
-    const spl = memberId.split('#xywh=')
     const uuid = manifest.split("/iiif/")[1].split("/manifest")[0]
-    const cv = Number(spl[0].split("/canvas/p")[1]) - 1
-    const xywh = spl[1]
-    return (
-      `https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/tanaka/document/${uuid}#?cv=${cv}&c=0&m=0&s=0&xywh=${xywh}`/* +
-      //'?curation=' +
-      //item.curation +
-      '?manifest=' +
-      item.manifest +
-      '&canvas=' +
-      spl[0] +
-      '&xywh=' +
-      spl[1] +
-      '&xywh_highlight=border'
-      */
-    )
+    const pos = Number(memberId.split('#xywh=')[0].split("/canvas/p")[1])
+    return `https://da.dl.itc.u-tokyo.ac.jp/portal/assets/${uuid}?pos=${pos}`
   }
 
   get rdfUrl() {

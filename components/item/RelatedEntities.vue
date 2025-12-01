@@ -1,7 +1,7 @@
 <template>
   <div v-if="moreLikeThisData.length > 0">
     <div class="text-center">
-      <h3 class="my-5">{{ $t('関連するエンティティ') }}</h3>
+      <h3 class="my-5">{{ $t('related_entities') }}</h3>
     </div>
     <HorizontalItems :data="moreLikeThisData" :height="150" />
   </div>
@@ -66,9 +66,9 @@ export default class morelikethis extends Vue {
               id: metadata.objectID,
             },
           },
-          description: `${this.$t('タイプ')}: ${this.$t(
+          description: `${this.$t('type')}: ${this.$t(
             metadata['タイプ'].join(', ')
-          )} / ${this.$t('共起頻度')}: ${item.value}`,
+          )} / ${this.$t('co_occurrence')}: ${item.value}`,
         })
       }
     }

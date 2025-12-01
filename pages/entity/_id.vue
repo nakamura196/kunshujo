@@ -81,10 +81,7 @@
             depressed
             :to="localePath(to)"
           >
-            <template v-if="$i18n.locale === 'ja'">
-              {{ Number(item.count) }} 件のアイテムを検索
-            </template>
-            <template v-else> Search {{ Number(item.count) }} items </template>
+            {{ $t('search_n_items', { count: Number(item.count) }) }}
             <v-icon class="ml-1">mdi-magnify</v-icon>
           </v-btn>
         </v-col>
@@ -147,7 +144,7 @@
                               depressed
                               target="_blank"
                               :href="`https://japanknowledge-com.utokyo.idm.oclc.org/lib/display/?lid=${value}`"
-                              >東京大学限定; EZproxy
+                              >{{ $t('utokyo_ezproxy') }}
                               <v-icon class="ml-2"
                                 >mdi-exit-to-app</v-icon
                               ></v-btn

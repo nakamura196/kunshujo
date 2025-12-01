@@ -7,7 +7,7 @@ description: Learn how to use @nuxt/content.
 
 ## はじめに
 
-東京大学総合図書館所蔵の田中芳男文庫『捃拾帖（くんしゅうじょう）』は、幕末から大正時代にかけての商品ラベルやチラシ、パンフレットなど多種多様な印刷物を貼り込んだスクラップブックで、2018年6月に[「田中芳男・博物学コレクション」](https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/tanaka/)において全帖がデジタル公開されました。2019年には史料編纂所との連携により、[史料編纂所「摺物データベース」](https://wwwap2.hi.u-tokyo.ac.jp/ships/shipscontroller)で公開されていた『捃拾帖』第1帖から第18帖までのメタデータを活用し、貼り込み資料単位の検索が可能な[「電子展示『捃拾帖』」](https://kunshujo.dl.itc.u-tokyo.ac.jp/)を公開しました(*1)。
+東京大学総合図書館所蔵の田中芳男文庫『捃拾帖（くんしゅうじょう）』は、幕末から大正時代にかけての商品ラベルやチラシ、パンフレットなど多種多様な印刷物を貼り込んだスクラップブックで、2018年6月に[「田中芳男・博物学コレクション」](https://da.dl.itc.u-tokyo.ac.jp/portal/collection/tanaka/)において全帖がデジタル公開されました。2019年には史料編纂所との連携により、[史料編纂所「摺物データベース」](https://wwwap2.hi.u-tokyo.ac.jp/ships/shipscontroller)で公開されていた『捃拾帖』第1帖から第18帖までのメタデータを活用し、貼り込み資料単位の検索が可能な[「電子展示『捃拾帖』」](https://kunshujo.dl.itc.u-tokyo.ac.jp/)を公開しました(*1)。
 
 その後、第19帖以降のメタデータ作成が課題となっていましたが、本学が実施している「オンキャンパスジョブ」の活用や、特に2020年度における在宅勤務時の作業によりメタデータ作成が進み(*2)、「外国捃拾帖」を除く全帖のデータ入力が完了しました。
 
@@ -86,42 +86,4 @@ https://github.com/nypl-publicdomain/pd-visualization#building-the-visualization
 <br/>
 
 <v-img src="/img/etc/data.png" height="400px" contain></v-img>
-
-<br/><br/>
-
-## 機械学習サービス
-
-本サービスは実験的なサービスとなります。予告無くサービスの中止、改変を行う事があります。<!-- また、AWS Lambdaを使用しているため、コールドスタート（初回実行時に時間がかかる）にご注意ください。-->
-
-<br/>
-
-### 物体検出
-
-上述したプロセスにより作成した約33,000件のアノテーションデータを用いて、資料画像から貼り込み資料を検出するAPIおよびサービスを提供しています。物体検出の手法には、YOLOv5を用いています。
-
-https://github.com/ultralytics/yolov5
-
-<!-- 物体検出対象の画像の入力方法として、画像をアップロードする方法と、URLを指定する方法の2種類を提供します。特に後者については、検出結果をIIIF Presentation API v3に対応した形式で返却することで、本APIに対応したビューア（Mirador 3など）で閲覧することができます。 -->
-
-デモアプリケーションをHugging Faceで公開しています。
-
-https://huggingface.co/spaces/nakamura196/yolov5-kunshujo
-
-データセットは以下で公開しています。
-
-https://github.com/utda/kunshujo-layout-dataset
-
-<br/>
-
-### 類似画像検索
-
-貼り込み資料画像から抽出した特徴量に基づき、類似する画像を提示します。特徴量については、inception-v3モデルを用いて抽出した2,048次元の特徴ベクトルを使用しています。またベクトルの類似度計算には近似最近傍探索ライブラリAnnoyを使用しています。
-
-https://github.com/spotify/annoy
-
-<!-- 検索結果は、人文学オープンデータ共同利用センターが提供するIIIF Curation APIに対応した形式で返却されます。同センターが提供するIIIF Curation Viewerを用いて、類似画像を閲覧することができます。 -->
-
-デモアプリケーションをHugging Faceで公開しています。
-
-https://huggingface.co/spaces/nakamura196/ann-kunshujo
 

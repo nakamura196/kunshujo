@@ -1,7 +1,12 @@
 const fs = require('fs')
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV || 'development'}`
+})
 
-const environment = process.env.NODE_ENV
-const env = require(`./env/${environment}.ts`)
+const env = {
+  BASE_URL: process.env.BASE_URL || '',
+  ssr: process.env.SSR === 'true',
+}
 
 const conf = JSON.parse(fs.readFileSync('static/data/conf.json'))
 
@@ -68,7 +73,7 @@ env.menu = [
     top: true,
     type: 'about_',
     weight: 2,
-    description: '本システムの検索例を紹介します。',
+    description: 'desc_example',
   },
   {
     label: 'news',
@@ -81,13 +86,13 @@ env.menu = [
     weight: 3,
   },
   {
-    label: '検索',
+    label: 'search',
     to: {
       name: 'search-slug',
     },
     icon: 'mdi-magnify',
     top: true,
-    description: '貼り込み資料を検索します',
+    description: 'desc_search_item',
     type: 'tools',
     weight: 0,
   },
@@ -107,12 +112,12 @@ env.menu = [
   */
 
   {
-    label: 'その他の検索',
+    label: 'other_search',
     to: {
       name: 'search-list',
     },
     icon: 'mdi-magnify',
-    description: '貼り込み資料以外を検索します。',
+    description: 'desc_other_search',
     top: true,
     type: 'tools',
     weight: 1,
@@ -123,7 +128,7 @@ env.menu = [
       name: 'category-list',
     },
     icon: 'mdi-chart-bar',
-    description: '集計結果を表示します。',
+    description: 'desc_category_list',
     top: false,
   },
   /*
@@ -158,7 +163,7 @@ env.menu = [
       name: 'map',
     },
     icon: 'mdi-map',
-    description: '地図から探す',
+    description: 'desc_map',
     top: true,
     type: 'tools',
     weight: 2,
@@ -224,17 +229,6 @@ env.menu = [
     top: true,
   },
   */
-  {
-    label: 'machine_learning',
-    to: {
-      name: 'ml',
-    },
-    icon: 'mdi-api',
-    description: '機械学習関連サービスについて紹介します。',
-    top: true,
-    type: 'tools',
-    weight: 4,
-  },
   /*
   {
     label: '物体検出',
@@ -271,28 +265,26 @@ env.menu = [
       name: 'vis',
     },
     img: env.BASE_URL + '/img/etc/pd_banner_magnified.webp',
-    description: '各種可視化を行います。',
+    description: 'desc_visualization',
     top: true,
     type: 'tools',
     weight: 3,
   },
   {
-    label: '電子展示『捃拾帖』',
+    label: 'kunshujo_original',
     href: 'https://kunshujo.dl.itc.u-tokyo.ac.jp/',
     icon: 'mdi-database',
-    description:
-      '第1~18帖までの『捃拾帖』について、東京大学史料編纂所が作成した目録を用いて検索可能なシステムです。',
+    description: 'desc_kunshujo_original',
     top: false,
     type: 'links',
     weight: 0,
     blank: true,
   },
   {
-    label: '田中芳男・博物学コレクション',
-    href: 'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/tanaka/',
+    label: 'tanaka_collection',
+    href: 'https://da.dl.itc.u-tokyo.ac.jp/portal/collection/tanaka/',
     icon: 'mdi-database',
-    description:
-      '明治時代の博物学者である田中芳男（1838－1916）が収集・所蔵した貴重な資料群です。',
+    description: 'desc_tanaka_collection',
     top: false,
     type: 'links',
     weight: 1,
@@ -644,7 +636,7 @@ export default {
   },
   // Target (https://go.nuxtjs.dev/config-target)
 
-  ssr: false, // true, //env.ssr,
+  ssr: env.ssr,
   target: 'static',
   // srcDir: 'src/',
 
