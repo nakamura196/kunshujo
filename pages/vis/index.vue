@@ -43,35 +43,34 @@ export default class about extends Vue {
 
   baseUrl: any = process.env.BASE_URL
 
-  items: any[] = [
-    {
-      label: 'アイテムの可視化 1',
-      href: 'https://utda.github.io/kunshujo-a/item/pd/',
-      img: this.baseUrl + '/img/etc/pd_banner_magnified.webp',
-      description: 'NYPLが公開する手法を用いた可視化を行います。',
-    },
-    {
-      label: 'アイテムの可視化 2',
-      href: 'https://utda.github.io/kunshujo-a/item/pp/',
-      img: this.baseUrl + '/img/etc/pixplot.webp',
-      description:
-        'Yale大学が公開する手法「PixPlot」を用いた可視化を行います。',
-    },
-    {
-      label: 'オブジェクトの可視化 1',
-
-      href: 'https://utda.github.io/kunshujo-a/object/pd/',
-      img: this.baseUrl + '/img/etc/pd_banner_magnified.webp',
-      description: 'NYPLが公開する手法を用いた可視化を行います。',
-    },
-    {
-      label: 'オブジェクトの可視化 2',
-      href: 'https://utda.github.io/kunshujo-a/object/pp/',
-      img: this.baseUrl + '/img/etc/pixplot.webp',
-      description:
-        'Yale大学が公開する手法「PixPlot」を用いた可視化を行います。',
-    },
-  ]
+  get items(): any[] {
+    return [
+      {
+        label: this.$t('vis_item_1'),
+        href: 'https://utda.github.io/kunshujo-a/item/pd/',
+        img: this.baseUrl + '/img/etc/pd_banner_magnified.webp',
+        description: this.$t('desc_vis_nypl'),
+      },
+      {
+        label: this.$t('vis_item_2'),
+        href: 'https://utda.github.io/kunshujo-a/item/pp/',
+        img: this.baseUrl + '/img/etc/pixplot.webp',
+        description: this.$t('desc_vis_pixplot'),
+      },
+      {
+        label: this.$t('vis_object_1'),
+        href: 'https://utda.github.io/kunshujo-a/object/pd/',
+        img: this.baseUrl + '/img/etc/pd_banner_magnified.webp',
+        description: this.$t('desc_vis_nypl'),
+      },
+      {
+        label: this.$t('vis_object_2'),
+        href: 'https://utda.github.io/kunshujo-a/object/pp/',
+        img: this.baseUrl + '/img/etc/pixplot.webp',
+        description: this.$t('desc_vis_pixplot'),
+      },
+    ]
+  }
 
   bh: any[] = [
     {

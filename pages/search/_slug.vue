@@ -70,7 +70,7 @@
 
           <div class="pa-5">
             <p v-if="!results.hits" class="py-10 my-10">
-              初回はインデックスファイルのダウンロードに時間を要します。2回目以降はキャッシュにより待ち時間が改善します。
+              {{ $t('loading_index_message') }}
             </p>
             <component
               v-if="results.hits"
@@ -165,7 +165,7 @@
               </v-row>
 
               <p v-if="!results.hits" class="pt-10 mt-10">
-                初回はインデックスファイルのダウンロードに時間を要します。2回目以降はキャッシュにより待ち時間が改善します。
+                {{ $t('loading_index_message') }}
               </p>
 
               <component

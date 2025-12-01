@@ -1,6 +1,6 @@
 {
     "@context": "http://iiif.io/api/presentation/2/context.json",
-    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2d522f09-a944-4348-afcc-69cf87e9dae4/manifest",
+    "@id": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/2d522f09-a944-4348-afcc-69cf87e9dae4/manifest",
     "@type": "sc:Manifest",
     "attribution": "東京大学総合図書館 General Library in the University of Tokyo, JAPAN",
     "label": "捃拾帖 (丁)三十八",
@@ -41,7 +41,7 @@
         },
         {
             "label": "Manifest Uri",
-            "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2d522f09-a944-4348-afcc-69cf87e9dae4/manifest"
+            "value": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/2d522f09-a944-4348-afcc-69cf87e9dae4/manifest"
         },
         {
             "label": "Database Label",

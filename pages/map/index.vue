@@ -4,7 +4,7 @@
     <v-container class="my-5">
       <h2 class="mb-5">{{ title }}</h2>
 
-      <p>Wikipediaで位置情報が取得できた場所のみを表示しています。</p>
+      <p>{{ $t('map_description') }}</p>
 
       <client-only>
         <MapMain

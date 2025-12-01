@@ -65,7 +65,7 @@
                     </component>
                   </h3>
                   <div class="mt-2" v-if="obj.description">
-                    {{ obj.description }}
+                    {{ $t(obj.description) }}
                     <div class="mt-2" v-if="obj.to2 || obj.href2">
                       <v-btn
                         :to="localePath(obj.to2 || null)"
@@ -111,7 +111,9 @@ import { Vue, Component } from 'nuxt-property-decorator'
 export default class about extends Vue {
   baseUrl: any = process.env.BASE_URL
   siteName: any = (this as any).$t(process.env.siteName)
-  siteDesc: any = process.env.siteDesc
+  get siteDesc(): string {
+    return this.$t('site_description') as string
+  }
   top: any = process.env.top
   visualization: any = process.env.visualization
 

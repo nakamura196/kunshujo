@@ -40,39 +40,40 @@ import Breadcrumbs from '~/components/common/Breadcrumbs.vue'
 export default class about extends Vue {
   title: any = this.$t('stats')
 
-  items: any[] = [
-    {
-      label: '貼り込み資料別',
-      to: {
-        name: 'category-slug',
-        params: {
-          slug: 'item',
+  get items(): any[] {
+    return [
+      {
+        label: this.$t('category_by_item'),
+        to: {
+          name: 'category-slug',
+          params: {
+            slug: 'item',
+          },
         },
+        description: this.$t('desc_category_by_item'),
       },
-      description: '貼り込み資料別の集計結果を表示します。',
-    },
-    {
-      label: '固有表現別',
-      to: {
-        name: 'category-slug',
-        params: {
-          slug: 'entity',
+      {
+        label: this.$t('category_by_entity'),
+        to: {
+          name: 'category-slug',
+          params: {
+            slug: 'entity',
+          },
         },
+        description: this.$t('desc_category_by_entity'),
       },
-      description: '固有表現別の集計結果を表示します。',
-    },
-    {
-      label: '機械タグ別',
-      to: {
-        name: 'category-slug',
-        params: {
-          slug: 'object',
+      {
+        label: this.$t('category_by_mtag'),
+        to: {
+          name: 'category-slug',
+          params: {
+            slug: 'object',
+          },
         },
+        description: this.$t('desc_category_by_mtag'),
       },
-      description:
-        '機械タグ（Google Cloud Visionを用いて検出した物体）別の集計結果を表示します。',
-    },
-  ]
+    ]
+  }
 
   bh: any[] = [
     {

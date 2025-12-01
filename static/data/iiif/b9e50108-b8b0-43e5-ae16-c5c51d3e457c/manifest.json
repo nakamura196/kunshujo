@@ -1,6 +1,6 @@
 {
     "@context": "http://iiif.io/api/presentation/2/context.json",
-    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/b9e50108-b8b0-43e5-ae16-c5c51d3e457c/manifest",
+    "@id": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/b9e50108-b8b0-43e5-ae16-c5c51d3e457c/manifest",
     "@type": "sc:Manifest",
     "attribution": "東京大学総合図書館 General Library in the University of Tokyo, JAPAN",
     "label": "外国捃拾帖 五",
@@ -41,7 +41,7 @@
         },
         {
             "label": "Manifest Uri",
-            "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/b9e50108-b8b0-43e5-ae16-c5c51d3e457c/manifest"
+            "value": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/b9e50108-b8b0-43e5-ae16-c5c51d3e457c/manifest"
         },
         {
             "label": "Database Label",

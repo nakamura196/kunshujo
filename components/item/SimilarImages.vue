@@ -1,7 +1,7 @@
 <template>
   <div v-if="moreLikeThisData.length > 0">
     <div class="text-center">
-      <h3 class="my-5">{{ $t('画像が似ているアイテム') }}</h3>
+      <h3 class="my-5">{{ $t('similar_images') }}</h3>
     </div>
     <HorizontalItems :data="moreLikeThisData" :height="150" />
   </div>

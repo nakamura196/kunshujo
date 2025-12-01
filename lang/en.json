@@ -23,7 +23,6 @@
   "institutions": "Institutions",
   "pix_plot": "PixPlot",
   "usage": "Usage",
-  "map_comparison": "Comparison of Kuni-ezu (Map)",
   "metadata": "Metadata",
   "about_iiif": "Manifest URI icon & IIIF viewers",
   "view_full_item": "View Full Item",
@@ -80,97 +79,36 @@
   "change_locale": "日本語",
   "project": "UTokyo Academic Archives Project Office",
   "library": "General Affairs Division, University of Tokyo Library System",
-  "about_the_kamei_collection": "About the Kamei Collection",
   "browse": "Volume Index",
-  "browse_about": "All 29 volumes by page number.",
   "text_search": "Text Search",
-  "text_search_about": "Search by title, keyword, or catelogue no. etc.",
-  "link_about": "Move to an other site.",
   "works": "works",
 
   "search_subject_directory": "Search Subject",
-  "piranesi_db": "『大正新脩大蔵経』底本・校本データベース",
   "volume_index": "Volume Index",
   "related_information": "Related Information",
   "detailed_information": "Detailed Information",
   "basic_information": "Basic Information",
 
-  "plate_size": "Plate Size",
-  "image_size": "Image Size",
-
   "author": "Author",
-  "author_JP": "Author (Japanese)",
-
-  "kamei_no": "Kamei no.",
 
   "legend": "Legend",
-  "catalogues_no": "Catalogues no.",
-
-  "machida": "Machida",
-  "kanagawa": "Kanagawa",
 
   "search_works": "Search",
 
   "list": "List",
   "grid": "Grid",
 
-  "rome_map": "Rome Map",
-  "concordance": "Concordance",
   "sitemap": "Sitemap",
-
-  "subject_search": "Subject Search",
 
   "about": "Keyword",
 
   "license": "License",
 
-  "ia_print": "Browse prints with IA",
-
-  "exp_browse": "All 29 volumes by page number.",
-  "exp_search": "Search by title, keyword, or catalogue no. etc.",
-  "exp_map": "Serach by the location depicted in the work.",
-  "exp_subject": "Search by the category of subjects.",
-
-  "latin_inscriptions": "Latin inscriptions",
-  "incriptions_on_the_print": "Inscriptions on the print",
-
-  "signatute": "Signatute",
-
-  "prints_and_photos": "Prints and present photos",
-
-  "present_photos": "Present Photos",
-
-  "move_to_comp": "Move to Compare page",
-  "move_to_search": "Move to Search page",
-
-  "[ A to Z ]": "[ A to Z ]",
-  "Index of all places": "Index of all places",
-  "Index of cities": "Index of cities",
-
-  "[ ]= the no. on the Roman map.": "[ ]= the no. on the Roman map.",
-  "' '= the Latin name of the site.": "' '= the Latin name of the site.",
-
-  "Select the number on the map.": "Select the number on the map.",
-
-  "Prints and photos from the same angle": "Prints and photos from the same angle",
-
-  "Other prints": "Other prints",
-
-  "Photos": "Other photos",
-
   "series": "Series",
-  "series_JP": "Series (Japanese)",
   "work": "Title of the work",
   "image_no": "Image ID",
 
   "subject": "Subject",
-  "subcategoria": "Sub category",
-
-  "Edificio": "Place",
-
-  "Inscription 1": "Inscription 1",
-
-  "conservazione": "Conservazione",
 
   "volume": "Volume",
 
@@ -178,8 +116,6 @@
 
   "advanced": "Partical",
   "advanced_search": "Advanced Search",
-
-  "citta": "Citta",
 
   "other": "Other",
 
@@ -194,41 +130,18 @@
   "en_text": "in English",
   "it_text": "in Italian",
 
-  "WE_title": "Title by J. W. Ely",
-
-  "Exhibition catalogues no": "Exhibition catalogues no.",
-
   "Field": "Field",
 
   "Sort by": "Sort by",
 
   "image_ID": "Image ID",
 
-  "map_no": "Map ID",
-
   "it": "Italian",
   "la": "Latin",
   "ja": "Japanese",
   "wikipedia": "Wikipedia",
 
-  "Maps of areas": "Maps of areas",
-
   "data_set": "Data Set",
-
-  "According to the site of architecures, remains excavated.": "According to the site of architecures, remains excavated.",
-
-  "list_of_prints": "List of Prints",
-  "list_of_photo": "List of Photos",
-  "view_ia": "View with Image Annotator",
-  "view_ld": "View with Linked Data Browser",
-
-  "opera": "Opera",
-
-  "Calcografia": "Calcografia",
-
-  "J. W. Ely": "J. W. Ely",
-
-  "序文": "PREFAZIONE",
 
   "thumbnail": "Thumbnail",
   "table": "Table",
@@ -296,7 +209,7 @@
   "戦国時代": "Sengoku Period",
   "安土桃山時代": "Azuchi-Momoyama Period",
   "江戸時代": "Edo Period",
-  "明治": "Edo Period",
+  "明治": "Meiji Period",
   "大正": "Taisho Period",
   "昭和": "Showa Period",
   "平成": "Heisei Period",
@@ -335,12 +248,8 @@
   "non_repeatable": "Non-repeatable",
   "lod_vocabulary": "LOD Vocabulary",
   "Item": "Item",
-  "Hieroglyph No": "Hieroglyph No",
-  "Hieratic No": "Hieratic No",
-  "Phone/Word": "Phone/Word",
   "Vol": "Vol",
   "label": "Label",
-  "Möller No": "Hieratic No",
   "delete": "Remove",
   "selected_items": "Selected items",
   "default": "Default",
@@ -353,13 +262,12 @@
   "Order": "Order",
   "manual": "Manual",
   "uta": "田中芳男・博物学コレクション",
-  "ユーザーズガイド": "User’s Guide",
+  "ユーザーズガイド": "User's Guide",
   "検索画面": "Search Interface",
   "対象データ": "Data",
   "メニューバー": "Menu",
   "全文検索": "Full text search",
   "Category": "Category",
-  "Compound": "Single/Compound",
   "Class": "Category Class",
   "reset": "Reset",
   "tag": "Tag",
@@ -396,46 +304,12 @@
   "show all": "Show All",
   "results": "results",
   "collection": "Collection",
-  "東洋文庫": "Toyo Bunko",
-  "水経注図": "Suikeichuzu",
-  "水名": "River",
-  "巻": "Volume",
-  "画像": "Image",
-  "画像をみる": "View",
-  "rivers": "River List",
-  "地図名": "Name",
-  "地図": "Map",
-  "list_": "List",
-  "東洋文庫水経注図データベース": "Toyo Bunko Suikeichuzu DB",
-  "東洋文庫所蔵の水経注図データベースです。": "Database about Suikeichuzu owned by Toyo Bunko.",
-  "冊": "冊",
-  "図": "図",
-  "区画南北": "区画南北",
-  "区画東西": "区画東西",
-  "表裏": "表裏",
-  "詳細区画": "詳細区画",
-  "墨朱": "墨朱",
-  "分類": "分類",
-  "記号説明": "記号説明",
-  "水経注：巻": "水経注：巻",
-  "水経注図：冊子画像": "水経注図：冊子画像",
   "Clear all": "Clear all",
   "none": "None",
   "sort": "Sort",
-  "記号": "記号",
-  "画像を一覧する": "Imgaes",
-  "冊子画像": "Books",
   "viewer": "Viewer",
   "download": "Download",
   "format": "Format",
-  "book_list": "Book List",
-  "map_list": "Map List",
-  "検索結果一覧を表示": "Search Result",
-  "検索結果一覧（地図表示）": "Search Result 'Map View'",
-  "地図をそのまま見る": "Browse Map",
-  "初回はインデックスファイルのダウンロードに時間を要します。2回目以降はキャッシュにより待ち時間が改善します。": "The first time it takes some time to download the index file, but after the second time, the waiting time will improve with the cache.",
-  "地名": "Name",
-  "拡大図": "拡大図",
   "選択": "Select",
   "除外": "Exclude",
   "inputSearchKeyword": "Input Search Keyword",
@@ -444,35 +318,12 @@
   "history": "Search History",
   "iiif_curation": "IIIF Curation List",
   "dataset": "Dataset",
-  "正保琉球国絵図デジタルアーカイブ": "正保琉球国絵図デジタルアーカイブ",
-  "領域": "Region",
-  "絵図": "絵図",
-  "沖縄県教育委員会編『琉球国絵図史料集』第１集の番号": "沖縄県教育委員会編『琉球国絵図史料集』第１集の番号",
-  "リンク": "Link",
-  "現在の地名": "現在の地名",
-  "正保琉球国絵図写": "正保琉球国絵図写",
-  "正保琉球国八山島絵図": "正保琉球国八山島絵図",
-  "正保琉球国悪鬼納島絵図写": "正保琉球国悪鬼納島絵図写",
-  "現代地図": "Map",
-  "凡例": "Legend",
-  "比較": "Compare",
-  "ジャパンナレッジ": "Japan Knowledge",
-  "石高": "Kokudaka",
-  "関連資料": "Related materials",
-  "地名分類・凡例": "地名分類・凡例",
-  "地名分類表": "地名分類表",
-  "地名分類": "地名分類",
-  "備考": "備考",
   "適合度": "Relevance",
   "Narrow search result": "Narrow search result",
   "デジタルギャラリー": "Digital Gallery",
-  "JKリンク": "JK Link",
-  "緯度経度": "LatLng",
   "xlsx": "XLSX",
   "csv": "CSV",
   "json": "JSON",
-  "正保琉球国絵図・地名辞書": "正保琉球国絵図・地名辞書",
-  "正保琉球国絵図（3絵図）": "正保琉球国絵図（3絵図）",
   "org": "Organization",
   "place": "Place",
   "book": "Book",
@@ -509,5 +360,45 @@
   "その他の検索": "Other",
   "ID": "ID",
   "東京大学附属図書館　学術資産アーカイブ化推進室": "UTokyo Academic Archives Project Office（General Affairs Division, University of Tokyo Library System)",
-  "上位アイテム": "Parent"
+  "上位アイテム": "Parent",
+  "desc_example": "Browse search examples for this system.",
+  "desc_search_item": "Search pasted materials.",
+  "desc_other_search": "Search items other than pasted materials.",
+  "desc_category_list": "View aggregated results.",
+  "desc_map": "Search by map",
+  "desc_visualization": "Various visualizations.",
+  "desc_kunshujo_original": "A searchable system for volumes 1-18 of Kunshujo using the catalog created by the Historiographical Institute of the University of Tokyo.",
+  "desc_tanaka_collection": "A valuable collection of materials collected and owned by Yoshio Tanaka (1838-1916), a naturalist of the Meiji era.",
+  "kunshujo_original": "Digital Exhibition \"Kunshujo\"",
+  "tanaka_collection": "Tanaka Yoshio Natural History Collection",
+  "other_search": "Other Search",
+  "site_description": "This system is a digital exhibition site centered on searching and browsing the \"Kunshujo\" collection held by the University of Tokyo General Library. It also implements experimental data displays using machine learning.",
+  "example_intro": "With over 30,000 pasted materials, if you're wondering \"What should I search for?\" or \"What kind of things are there?\", please explore the world of Kunshujo through the following search examples.",
+  "desc_entity_search": "Search for named entities (people, places, keywords, etc.).",
+  "desc_mtag_search": "Search for machine tags (objects detected using Google Cloud Vision).",
+  "desc_category_search": "Search by data count.",
+  "search_n_items": "Search {count} items",
+  "vis_item_1": "Item Visualization 1",
+  "vis_item_2": "Item Visualization 2",
+  "vis_object_1": "Object Visualization 1",
+  "vis_object_2": "Object Visualization 2",
+  "desc_vis_nypl": "Visualization using the method published by NYPL.",
+  "desc_vis_pixplot": "Visualization using the \"PixPlot\" method published by Yale University.",
+  "view_original_site": "View on original site",
+  "view_full_page": "View full page",
+  "view_details": "View details",
+  "mtag_search": "Machine Tag Search",
+  "map_description": "Only locations with geographic information available from Wikipedia are displayed.",
+  "category_by_item": "By Pasted Materials",
+  "category_by_entity": "By Named Entities",
+  "category_by_mtag": "By Machine Tags",
+  "desc_category_by_item": "Display aggregated results by pasted materials.",
+  "desc_category_by_entity": "Display aggregated results by named entities.",
+  "desc_category_by_mtag": "Display aggregated results by machine tags (objects detected using Google Cloud Vision).",
+  "utokyo_ezproxy": "UTokyo only; EZproxy",
+  "related_items_series": "Related Materials",
+  "related_items_description": "If the material spans multiple pages, previous and next materials are displayed here",
+  "related_entities": "Related Entities",
+  "co_occurrence": "Co-occurrence",
+  "loading_index_message": "The first time it takes some time to download the index file. The waiting time will improve with the cache after the second time."
 }

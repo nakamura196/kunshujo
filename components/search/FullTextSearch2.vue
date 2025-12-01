@@ -23,7 +23,7 @@
     <v-col cols="12" md="4" v-if="false">
       <v-btn rounded color="primary" depressed>
         <v-icon class="mr-1">mdi-menu</v-icon>
-        詳細検索
+        {{ $t('advanced_search') }}
       </v-btn>
     </v-col>
   </v-row>
