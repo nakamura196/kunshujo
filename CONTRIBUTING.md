@@ -30,16 +30,16 @@ git clone https://github.com/utda/kunshujo.git
 cd kunshujo
 
 # 依存関係をインストール
-yarn install
+npm install
 
 # 開発サーバーを起動
-yarn dev
+npm run dev
 ```
 
 ## コーディング規約
 
 - ESLint と Prettier の設定に従ってください
-- コミット前に `yarn lint` を実行してください
+- コミット前に `npm run lint` を実行してください
 
 ## ライセンス
 
