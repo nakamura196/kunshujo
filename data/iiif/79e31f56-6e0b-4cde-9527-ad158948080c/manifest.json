@@ -1,6 +1,6 @@
 {
     "@context": "http://iiif.io/api/presentation/2/context.json",
-    "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/79e31f56-6e0b-4cde-9527-ad158948080c/manifest",
+    "@id": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/79e31f56-6e0b-4cde-9527-ad158948080c/manifest",
     "@type": "sc:Manifest",
     "attribution": "東京大学総合図書館 General Library in the University of Tokyo, JAPAN",
     "label": "捃拾帖 六八",
@@ -41,7 +41,7 @@
         },
         {
             "label": "Manifest Uri",
-            "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/79e31f56-6e0b-4cde-9527-ad158948080c/manifest"
+            "value": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/79e31f56-6e0b-4cde-9527-ad158948080c/manifest"
         },
         {
             "label": "Database Label",
@@ -56,7 +56,7 @@
             "value": "東京大学総合図書館 General Library in the University of Tokyo, JAPAN"
         }
     ],
-    "related": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/tanaka/document/79e31f56-6e0b-4cde-9527-ad158948080c",
+    "related": "https://da.dl.itc.u-tokyo.ac.jp/portal/collection/tanaka/document/79e31f56-6e0b-4cde-9527-ad158948080c",
     "seeAlso": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/api/items/25263",
     "sequences": [
         {
