@@ -23,20 +23,17 @@
 
 ```bash
 # 依存関係のインストール
-yarn install
+npm install
 
 # 開発サーバーの起動（http://localhost:8004）
-yarn dev
+npm run dev
 
 # 本番用ビルド
-yarn build
-yarn start
+npm run build
+npm start
 
 # 静的サイトの生成
-yarn generate
-
-# GitHub Pages用の生成
-yarn generate:gh-pages
+npm run generate
 ```
 
 ## ディレクトリ構成

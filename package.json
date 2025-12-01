@@ -10,8 +10,7 @@
     "generate": "NODE_OPTIONS=\"--openssl-legacy-provider --max-old-space-size=8192\" nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
-    "lint": "yarn lint:js && yarn lint:style",
-    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES NODE_OPTIONS=\"--openssl-legacy-provider\" NODE_ENV=\"production\" nuxt generate"
+    "lint": "npm run lint:js && npm run lint:style"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
