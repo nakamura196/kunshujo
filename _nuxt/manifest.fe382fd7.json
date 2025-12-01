@@ -4,49 +4,49 @@
   "description": "このシステムは、東京大学総合図書館所蔵『捃拾帖』の検索・閲覧を中心とした電子展示サイトです。機械学習を利用した実験的なデータ表示なども実装しています。",
   "icons": [
     {
-      "src": "/kunshujo/_nuxt/icons/icon_64x64.3e7366.png",
+      "src": "/_nuxt/icons/icon_64x64.3e7366.png",
       "sizes": "64x64",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/kunshujo/_nuxt/icons/icon_120x120.3e7366.png",
+      "src": "/_nuxt/icons/icon_120x120.3e7366.png",
       "sizes": "120x120",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/kunshujo/_nuxt/icons/icon_144x144.3e7366.png",
+      "src": "/_nuxt/icons/icon_144x144.3e7366.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/kunshujo/_nuxt/icons/icon_152x152.3e7366.png",
+      "src": "/_nuxt/icons/icon_152x152.3e7366.png",
       "sizes": "152x152",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/kunshujo/_nuxt/icons/icon_192x192.3e7366.png",
+      "src": "/_nuxt/icons/icon_192x192.3e7366.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/kunshujo/_nuxt/icons/icon_384x384.3e7366.png",
+      "src": "/_nuxt/icons/icon_384x384.3e7366.png",
       "sizes": "384x384",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/kunshujo/_nuxt/icons/icon_512x512.3e7366.png",
+      "src": "/_nuxt/icons/icon_512x512.3e7366.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
   ],
-  "start_url": "/kunshujo/?standalone=true",
+  "start_url": "/?standalone=true",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
