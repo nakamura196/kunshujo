@@ -292,16 +292,6 @@ env.menu = [
   },
 ]
 
-// `DEPLOY_ENV` が `GH_PAGES` の場合のみ `router.base = '/<repository-name>/'` を追加する
-let routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? {
-        router: {
-          base: '/kunshujo/',
-        },
-      }
-    : {}
-
 // path
 const baseUrl = env.BASE_URL || ''
 const baseDir = env.BASE_DIR || '/'
@@ -826,8 +816,6 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
-
-  ...routerBase,
 
   generate: {
     exclude: [
