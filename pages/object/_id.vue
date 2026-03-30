@@ -424,7 +424,7 @@ export default class Item extends Vue {
 
   get viewerUrl() {
     const item = (this as any).item
-    const manifest = item.manifest
+    const manifest = this.normalizeManifestUrl(item.manifest)
     const memberId = item.member
     const spl = memberId.split('#xywh=')
     return (
@@ -432,7 +432,7 @@ export default class Item extends Vue {
       //'?curation=' +
       //item.curation +
       '?manifest=' +
-      item.manifest +
+      manifest +
       '&canvas=' +
       spl[0] +
       '&xywh=' +
@@ -442,7 +442,7 @@ export default class Item extends Vue {
   }
 
   get iframeUrl() {
-    const manifest = (this as any).item.manifest
+    const manifest = this.normalizeManifestUrl((this as any).item.manifest)
 
     const memberId = (this as any).item.member
     return (
@@ -452,7 +452,6 @@ export default class Item extends Vue {
         'https://iiif.dl.itc.u-tokyo.ac.jp/repo',
         this.baseUrl + '/data'
       ) +
-      '.json' +
       '&canvas=' +
       encodeURIComponent(memberId)
     )
@@ -460,11 +459,15 @@ export default class Item extends Vue {
 
   get viewerUrl2() {
     const item = (this as any).item
-    const manifest = item.manifest
+    const manifest = this.normalizeManifestUrl(item.manifest)
     const memberId = item.member
     const uuid = manifest.split("/iiif/")[1].split("/manifest")[0]
     const pos = Number(memberId.split('#xywh=')[0].split("/canvas/p")[1])
     return `https://da.dl.itc.u-tokyo.ac.jp/portal/assets/${uuid}?pos=${pos}`
+  }
+
+  normalizeManifestUrl(manifest: string) {
+    return manifest.replace(/\/manifest\.json$/, '/manifest')
   }
 
   get rdfUrl() {
