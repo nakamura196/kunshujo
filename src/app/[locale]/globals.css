@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@plugin "@tailwindcss/typography";
+
+:root {
+  --background: #f7f2e8;
+  --foreground: #1f1a17;
+  --panel: rgba(255, 252, 247, 0.84);
+  --panel-strong: rgba(255, 249, 240, 0.92);
+  --border: rgba(74, 56, 41, 0.18);
+  --accent: #8c3d1f;
+  --accent-soft: #d8b99a;
+}
+
+.dark {
+  --background: #161311;
+  --foreground: #f6efe6;
+  --panel: rgba(35, 29, 26, 0.86);
+  --panel-strong: rgba(43, 34, 30, 0.96);
+  --border: rgba(255, 236, 215, 0.12);
+  --accent: #f2c08a;
+  --accent-soft: #6b4a31;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(183, 117, 51, 0.16), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(109, 63, 37, 0.16), transparent 28%),
+    var(--background);
+  color: var(--foreground);
+  font-family:
+    "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", Georgia, serif;
+}
+
+a {
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.82;
+}
+
+.prose a {
+  color: var(--accent);
+}

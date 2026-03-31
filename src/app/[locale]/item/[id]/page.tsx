@@ -1,0 +1,44 @@
+import {Suspense} from 'react'
+import {notFound} from 'next/navigation'
+import {setRequestLocale} from 'next-intl/server'
+import {getTranslations} from 'next-intl/server'
+
+import PageLayout from '@/components/layout/PageLayout'
+import ItemDetailClient from '@/components/search/ItemDetailClient'
+import {getAllItemIds, getItemById} from '@/lib/site-data'
+import {routing} from '@/i18n/routing'
+
+export function generateStaticParams() {
+  const ids = getAllItemIds()
+  const params: {locale: string; id: string}[] = []
+  for (const locale of routing.locales) {
+    for (const id of ids) {
+      params.push({locale, id})
+    }
+  }
+  return params
+}
+
+export default async function ItemPage({
+  params,
+}: {
+  params: Promise<{locale: string; id: string}>
+}) {
+  const {locale, id} = await params
+  setRequestLocale(locale)
+  const t = await getTranslations('Search')
+
+  const decodedId = decodeURIComponent(id)
+  const item = getItemById(decodedId)
+  if (!item) {
+    notFound()
+  }
+
+  return (
+    <PageLayout title={t('detailTitle')}>
+      <Suspense fallback={<div>...</div>}>
+        <ItemDetailClient initialId={decodedId} initialItem={item} />
+      </Suspense>
+    </PageLayout>
+  )
+}
