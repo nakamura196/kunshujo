@@ -7,6 +7,7 @@ import {ToggleTheme} from './ToggleTheme'
 
 export default function Header() {
   const t = useTranslations('Nav')
+  const tCommon = useTranslations('Common')
 
   return (
     <header
@@ -16,7 +17,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <Link href="/" className="min-w-0">
           <div className="text-lg font-semibold tracking-wide sm:text-xl">
-            {t('home')}
+            {tCommon('siteTitle')}
           </div>
         </Link>
         <nav className="hidden items-center gap-4 text-sm md:flex">

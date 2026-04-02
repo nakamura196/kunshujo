@@ -2,8 +2,9 @@
 
 import {useEffect, useRef, useState} from 'react'
 import {useLocale, useTranslations} from 'next-intl'
+import 'maplibre-gl/dist/maplibre-gl.css'
 
-type Marker = {
+type MarkerData = {
   lat: number
   lng: number
   label: string
@@ -21,46 +22,26 @@ export default function MapClient() {
   const t = useTranslations('Common')
   const locale = useLocale()
   const mapRef = useRef<HTMLDivElement>(null)
+  const mapInstanceRef = useRef<import('maplibre-gl').Map | null>(null)
   const [isLoading, setIsLoading] = useState(true)
-  const leafletRef = useRef<typeof import('leaflet') | null>(null)
-  const mapInstanceRef = useRef<import('leaflet').Map | null>(null)
 
   useEffect(() => {
     let mounted = true
 
     async function init() {
-      const L = await import('leaflet')
-      leafletRef.current = L
-
-      // Load CSS
-      if (!document.querySelector('link[href*="leaflet"]')) {
-        const link = document.createElement('link')
-        link.rel = 'stylesheet'
-        link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
-        document.head.appendChild(link)
-      }
-
-      // Fix default icon
-      delete (L.Icon.Default.prototype as unknown as Record<string, unknown>)._getIconUrl
-      L.Icon.Default.mergeOptions({
-        iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-        iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-        shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-      })
+      const maplibregl = await import('maplibre-gl')
 
       const res = await fetch('/data/entity.json')
       const data: EntityItem[] = await res.json()
 
       if (!mounted || !mapRef.current) return
 
-      const markers: Marker[] = []
-      const geoMap: Record<string, Marker> = {}
-      let cLat = 0
-      let cLng = 0
-      let count = 0
+      const markers: MarkerData[] = []
+      const geoMap: Record<string, MarkerData> = {}
 
       for (const item of data) {
         if (!item.geo) continue
+        if (!Number(item.count)) continue
         const [lat, lng] = item.geo.split(' ').map(Number)
         if (isNaN(lat) || isNaN(lng)) continue
 
@@ -72,35 +53,59 @@ export default function MapClient() {
             id: item.objectID,
           }
         }
-        cLat += lat
-        cLng += lng
-        count++
       }
 
       for (const geo in geoMap) {
         markers.push(geoMap[geo])
       }
 
-      const map = L.map(mapRef.current).setView([35.7, 139.7], 3)
+      const map = new maplibregl.Map({
+        container: mapRef.current,
+        style: {
+          version: 8,
+          sources: {
+            osm: {
+              type: 'raster',
+              tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+              tileSize: 256,
+              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            },
+          },
+          layers: [
+            {
+              id: 'osm',
+              type: 'raster',
+              source: 'osm',
+            },
+          ],
+        },
+        center: [139.7, 35.7],
+        zoom: 2,
+      })
+
       mapInstanceRef.current = map
 
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors',
-      }).addTo(map)
+      map.addControl(new maplibregl.NavigationControl(), 'top-right')
 
-      const leafletMarkers: import('leaflet').Marker[] = []
+      const bounds = new maplibregl.LngLatBounds()
+      let hasBounds = false
+
       for (const marker of markers) {
-        const m = L.marker([marker.lat, marker.lng])
+        const popup = new maplibregl.Popup({offset: 25}).setHTML(
+          `<a href="/${locale}/search?fc-place=${marker.id}" style="color:#1d4ed8;text-decoration:underline">${marker.label}</a>`
+        )
+
+        new maplibregl.Marker({color: '#b91c1c'})
+          .setLngLat([marker.lng, marker.lat])
+          .setPopup(popup)
           .addTo(map)
-          .bindPopup(
-            `<a href="/${locale}/search?fc-place=${marker.id}">${marker.label}</a>`
-          )
-        leafletMarkers.push(m)
+
+        bounds.extend([marker.lng, marker.lat])
+        hasBounds = true
       }
 
-      if (leafletMarkers.length > 0) {
-        const group = L.featureGroup(leafletMarkers)
-        map.fitBounds(group.getBounds(), {padding: [40, 40]})
+      if (hasBounds) {
+        map.fitBounds(bounds, {padding: 40, maxZoom: 10})
       }
 
       setIsLoading(false)

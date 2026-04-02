@@ -1,6 +1,6 @@
 ---
 title: このサイトについて
-description: Learn how to use @nuxt/content.
+description: 『捃拾帖』の成立と拡張版サイトの背景を紹介します。
 ---
 
 <br/>
