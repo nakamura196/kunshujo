@@ -26,10 +26,21 @@ export async function generateMetadata({
   return {
     title: {
       default: SITE.name[typedLocale],
-      template: `%s | ${SITE.name[typedLocale]}`,
+      template: `%s - ${SITE.name[typedLocale]}`,
     },
     description: SITE.description[typedLocale],
-    metadataBase: new URL(SITE.url),
+    openGraph: {
+      siteName: SITE.name[typedLocale],
+      title: SITE.name[typedLocale],
+      description: SITE.description[typedLocale],
+      url: SITE.url,
+      type: 'website',
+      locale: typedLocale === 'ja' ? 'ja_JP' : 'en_US',
+      images: [{url: '/img/ogp/home.jpg'}],
+    },
+    twitter: {
+      card: 'summary',
+    },
   }
 }
 
