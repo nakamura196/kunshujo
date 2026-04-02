@@ -92,4 +92,6 @@ src/gis/output
 
 serviceAccountKey.json
 
-__pycache__
+__pycache__public/data/images/
+out/
+tsconfig.tsbuildinfo
