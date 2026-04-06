@@ -7,22 +7,10 @@ import type {Metadata} from 'next'
 
 import PageLayout from '@/components/layout/PageLayout'
 import EntityDetailClient from '@/components/search/EntityDetailClient'
-import {routing} from '@/i18n/routing'
 import {SITE, Locale} from '@/constants/site'
 
-export function generateStaticParams() {
-  const data = JSON.parse(
-    readFileSync(join(process.cwd(), 'public/data/entity.json'), 'utf-8')
-  ) as {objectID: string}[]
-
-  const params: {locale: string; id: string}[] = []
-  for (const locale of routing.locales) {
-    for (const item of data) {
-      params.push({locale, id: encodeURIComponent(item.objectID)})
-    }
-  }
-  return params
-}
+export const dynamicParams = true
+export const revalidate = false
 
 function getEntityById(id: string) {
   const data = JSON.parse(

@@ -6,20 +6,11 @@ import type {Metadata} from 'next'
 
 import PageLayout from '@/components/layout/PageLayout'
 import ItemDetailClient from '@/components/search/ItemDetailClient'
-import {getAllItemIds, getItemById} from '@/lib/site-data'
-import {routing} from '@/i18n/routing'
+import {getItemById} from '@/lib/site-data'
 import {SITE, Locale} from '@/constants/site'
 
-export function generateStaticParams() {
-  const ids = getAllItemIds()
-  const params: {locale: string; id: string}[] = []
-  for (const locale of routing.locales) {
-    for (const id of ids) {
-      params.push({locale, id})
-    }
-  }
-  return params
-}
+export const dynamicParams = true
+export const revalidate = false
 
 export async function generateMetadata({
   params,

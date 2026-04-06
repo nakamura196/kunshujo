@@ -95,3 +95,4 @@ serviceAccountKey.json
 __pycache__public/data/images/
 out/
 tsconfig.tsbuildinfo
+.vercel
