@@ -116,7 +116,6 @@ export default function ItemDetailClient({
   const id = initialId || params?.get('id') || null
 
   const [item, setItem] = useState<Item | null>(initialItem || null)
-  const [indexData, setIndexData] = useState<Item[]>([])
   const [isLoading, setIsLoading] = useState(!initialItem)
 
   const [relatedItems, setRelatedItems] = useState<RelatedEntry[]>([])
@@ -126,21 +125,24 @@ export default function ItemDetailClient({
 
   const [snackbar, setSnackbar] = useState(false)
 
-  // Load main index (needed for related items even when initialItem is provided)
+  // Load item from API
   useEffect(() => {
     if (!id) {
       setIsLoading(false)
       return
     }
+    if (initialItem) {
+      setIsLoading(false)
+      return
+    }
     let mounted = true
 
-    fetch('/data/index.json')
-      .then((res) => res.json())
-      .then((data: Item[]) => {
+    fetch(`/api/item?id=${encodeURIComponent(id)}`)
+      .then((res) => res.json() as Promise<Item>)
+      .then((data) => {
         if (!mounted) return
-        setIndexData(data)
-        if (!initialItem) {
-          setItem(data.find((entry) => entry.objectID === id) || null)
+        if (data && data.objectID) {
+          setItem(data)
         }
         setIsLoading(false)
       })
@@ -153,33 +155,39 @@ export default function ItemDetailClient({
     }
   }, [id, initialItem])
 
-  // Build index map
-  const indexMap = useMemo(() => {
+  // Helper: fetch items by IDs from batch API
+  async function fetchItemsByIds(ids: string[]): Promise<Record<string, Item>> {
+    if (ids.length === 0) return {}
     const map: Record<string, Item> = {}
-    for (const entry of indexData) {
-      map[entry.objectID] = entry
+    // Batch in groups of 100
+    for (let i = 0; i < ids.length; i += 100) {
+      const batch = ids.slice(i, i + 100)
+      const res = await fetch(`/api/items?ids=${batch.join(',')}`)
+      const data = await res.json() as Item[]
+      for (const item of data) map[item.objectID] = item
     }
     return map
-  }, [indexData])
+  }
 
   // Load related items (series)
   useEffect(() => {
     if (!item) return
     let mounted = true
 
-    fetch('/data/relation2.json')
-      .then((res) => res.json())
-      .then((data: Record<string, string[]>) => {
+    fetch(`/api/relations?id=${encodeURIComponent(item.objectID)}`)
+      .then((res) => res.json() as Promise<string[]>)
+      .then(async (ids) => {
         if (!mounted) return
-        const ids = data[item.objectID] || []
+        const itemMap = await fetchItemsByIds(ids)
+        if (!mounted) return
         setRelatedItems(
           ids
-            .filter((rid) => indexMap[rid])
+            .filter((rid) => itemMap[rid])
             .map((rid) => ({
               id: rid,
-              label: indexMap[rid].label || rid,
-              thumbnail: indexMap[rid].thumbnail,
-              description: indexMap[rid].tag?.join(', ') || null,
+              label: itemMap[rid].label || rid,
+              thumbnail: itemMap[rid].thumbnail,
+              description: (itemMap[rid].tag as string[] | undefined)?.join(', ') || null,
               href: `/item/${rid}`,
             }))
         )
@@ -189,47 +197,46 @@ export default function ItemDetailClient({
     return () => {
       mounted = false
     }
-  }, [item, indexMap])
+  }, [item])
 
-  // Load more like this (text similarity)
+  // Load more like this (text similarity) and similar images
   useEffect(() => {
     if (!item?.manifest) return
     let mounted = true
 
-    const spl = item.manifest.split('/')
-    const mid = spl[spl.length - 2]
-
-    fetch(`/data/relations/${mid}.json`)
-      .then((res) => res.json())
-      .then((data: Record<string, {texts?: string[]; images?: string[]}>) => {
+    fetch(`/api/similarities?id=${encodeURIComponent(item.objectID)}`)
+      .then((res) => res.json() as Promise<{texts: string[]; images: string[]}>)
+      .then(async (entry) => {
         if (!mounted) return
-        const entry = data[item.objectID]
+        if (!entry.texts.length && !entry.images.length) return
 
-        // texts → MoreLikeThis
-        if (entry?.texts) {
+        const allIds = [...entry.texts, ...entry.images]
+        const itemMap = await fetchItemsByIds(allIds)
+        if (!mounted) return
+
+        if (entry.texts) {
           setMoreLikeThis(
             entry.texts
-              .filter((rid) => indexMap[rid])
+              .filter((rid) => itemMap[rid])
               .map((rid) => ({
                 id: rid,
-                label: indexMap[rid].label || rid,
-                thumbnail: indexMap[rid].thumbnail,
-                description: indexMap[rid].tag?.join(', ') || null,
+                label: itemMap[rid].label || rid,
+                thumbnail: itemMap[rid].thumbnail,
+                description: (itemMap[rid].tag as string[] | undefined)?.join(', ') || null,
                 href: `/item/${rid}`,
               }))
           )
         }
 
-        // images → SimilarImages
-        if (entry?.images) {
+        if (entry.images) {
           setSimilarImages(
             entry.images
-              .filter((rid) => indexMap[rid])
+              .filter((rid) => itemMap[rid])
               .map((rid) => ({
                 id: rid,
-                label: indexMap[rid].label || rid,
-                thumbnail: indexMap[rid].thumbnail,
-                description: indexMap[rid].tag?.join(', ') || null,
+                label: itemMap[rid].label || rid,
+                thumbnail: itemMap[rid].thumbnail,
+                description: (itemMap[rid].tag as string[] | undefined)?.join(', ') || null,
                 href: `/item/${rid}`,
               }))
           )
@@ -240,30 +247,26 @@ export default function ItemDetailClient({
     return () => {
       mounted = false
     }
-  }, [item, indexMap])
+  }, [item])
 
-  // Load detected objects (GCV)
+  // Load detected objects (GCV) from API
   useEffect(() => {
     if (!item) return
     let mounted = true
 
-    fetch('/data/gcv.json')
-      .then((res) => res.json())
+    fetch(`/api/objects?within=${encodeURIComponent(item.objectID)}`)
+      .then((res) => res.json() as Promise<{objectID: string; label?: string; thumbnail?: string}[]>)
       .then(
-        (
-          data: {objectID: string; label?: string; thumbnail?: string; within?: string}[]
-        ) => {
+        (data) => {
           if (!mounted) return
           setObjects(
-            data
-              .filter((obj) => obj.within === item.objectID)
-              .map((obj) => ({
-                id: obj.objectID,
-                label: obj.label || obj.objectID,
-                thumbnail: obj.thumbnail,
-                description: null,
-                href: `/object/${obj.objectID}`,
-              }))
+            data.map((obj) => ({
+              id: obj.objectID,
+              label: obj.label || obj.objectID,
+              thumbnail: obj.thumbnail,
+              description: null,
+              href: `/object/${obj.objectID}`,
+            }))
           )
         }
       )

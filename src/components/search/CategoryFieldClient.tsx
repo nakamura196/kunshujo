@@ -38,31 +38,12 @@ export default function CategoryFieldClient({
     if (!config) return
     let mounted = true
 
-    fetch(config.index)
-      .then((res) => res.json())
-      .then((data: Record<string, unknown>[]) => {
+    const type = slug === 'item' ? 'default' : slug
+    fetch(`/api/category?type=${type}&field=${encodeURIComponent(field)}&size=0`)
+      .then((res) => res.json() as Promise<{items: {key: string; label: string; value: number}[]; total: number}>)
+      .then((data) => {
         if (!mounted) return
-
-        const counts: Record<string, number> = {}
-        for (const item of data) {
-          const fieldValues = item[field]
-          if (!Array.isArray(fieldValues)) continue
-          for (const val of fieldValues) {
-            if (!val) continue
-            const key = String(val)
-            counts[key] = (counts[key] || 0) + 1
-          }
-        }
-
-        const buckets: BucketItem[] = Object.entries(counts)
-          .map(([key, count]) => ({
-            label: formatLabel(key),
-            value: count,
-            key,
-          }))
-          .sort((a, b) => b.value - a.value)
-
-        setItems(buckets)
+        setItems(data.items || [])
         setIsLoading(false)
       })
       .catch(() => {
@@ -72,7 +53,7 @@ export default function CategoryFieldClient({
     return () => {
       mounted = false
     }
-  }, [config, field])
+  }, [config, field, slug])
 
   const filteredItems = useMemo(() => {
     if (!search.trim()) return items

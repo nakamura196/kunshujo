@@ -32,9 +32,11 @@ type RelatedEntry = {
 function HorizontalItems({
   title,
   items,
+  coOccurrenceLabel,
 }: {
   title: string
   items: RelatedEntry[]
+  coOccurrenceLabel?: string
 }) {
   if (items.length === 0) return null
 
@@ -64,9 +66,11 @@ function HorizontalItems({
             </div>
             <div className="p-2">
               <p className="line-clamp-2 text-xs font-medium">{entry.label}</p>
-              <p className="mt-1 text-[10px] text-stone-500">
-                {entry.coOccurrence}
-              </p>
+              {coOccurrenceLabel && (
+                <p className="mt-1 text-[10px] text-stone-500">
+                  {coOccurrenceLabel}: {entry.coOccurrence}
+                </p>
+              )}
             </div>
           </Link>
         ))}
@@ -83,22 +87,21 @@ export default function EntityDetailClient({id}: {id: string}) {
   const tEntity = useTranslations('Entity')
   const locale = useLocale()
   const [item, setItem] = useState<EntityItem | null>(null)
-  const [entityIndex, setEntityIndex] = useState<EntityItem[]>([])
   const [isLoading, setIsLoading] = useState(true)
   const [relatedEntities, setRelatedEntities] = useState<RelatedEntry[]>([])
   const [snackbar, setSnackbar] = useState(false)
 
-  // Load entity index
+  // Load entity from API
   useEffect(() => {
     let mounted = true
 
-    fetch('/data/entity.json')
-      .then((res) => res.json())
-      .then((data: EntityItem[]) => {
+    fetch(`/api/entity?id=${encodeURIComponent(id)}`)
+      .then((res) => res.json() as Promise<EntityItem>)
+      .then((data) => {
         if (!mounted) return
-        setEntityIndex(data)
-        const found = data.find((obj) => obj.objectID === id) || null
-        setItem(found)
+        if (data && data.objectID) {
+          setItem(data)
+        }
         setIsLoading(false)
       })
       .catch(() => {
@@ -110,36 +113,23 @@ export default function EntityDetailClient({id}: {id: string}) {
     }
   }, [id])
 
-  // Build entity index map
-  const entityMap = useMemo(() => {
-    const map: Record<string, EntityItem> = {}
-    for (const entry of entityIndex) {
-      map[entry.objectID] = entry
-    }
-    return map
-  }, [entityIndex])
-
   // Load related entities
   useEffect(() => {
     if (!item) return
     let mounted = true
 
-    fetch('/data/entity_relation.json')
-      .then((res) => res.json())
-      .then((data: Record<string, {label: string; value: number}[]>) => {
+    fetch(`/api/entity-relations?id=${encodeURIComponent(item.objectID)}`)
+      .then((res) => res.json() as Promise<{relatedLabel: string; coOccurrence: number}[]>)
+      .then((relations) => {
         if (!mounted) return
-        const relations = data[item.objectID] || []
         setRelatedEntities(
-          relations.map((rel) => {
-            const entity = entityMap[rel.label]
-            return {
-              id: rel.label,
-              label: entity?.label || rel.label.split(':')[1] || rel.label,
-              thumbnail: entity?.thumbnail,
-              coOccurrence: rel.value,
-              href: `/entity/${encodeURIComponent(rel.label)}`,
-            }
-          })
+          relations.map((rel) => ({
+            id: rel.relatedLabel,
+            label: rel.relatedLabel.split(':')[1] || rel.relatedLabel,
+            thumbnail: undefined,
+            coOccurrence: rel.coOccurrence,
+            href: `/entity/${encodeURIComponent(rel.relatedLabel)}`,
+          }))
         )
       })
       .catch(() => {})
@@ -147,7 +137,7 @@ export default function EntityDetailClient({id}: {id: string}) {
     return () => {
       mounted = false
     }
-  }, [item, entityMap])
+  }, [item])
 
   // Citation
   const citationText = useMemo(() => {
@@ -256,7 +246,7 @@ export default function EntityDetailClient({id}: {id: string}) {
       {/* Search items button */}
       <div className="text-center">
         <Link
-          href={`/search/entity?fc-${searchField}=${id}`}
+          href={`/search?fc-${searchField}=${id}`}
           className="inline-flex rounded-full px-6 py-3 font-medium text-white"
           style={{background: 'var(--accent)'}}
         >
@@ -412,6 +402,7 @@ export default function EntityDetailClient({id}: {id: string}) {
       <HorizontalItems
         title={tEntity('relatedEntities')}
         items={relatedEntities}
+        coOccurrenceLabel={tEntity('coOccurrence')}
       />
 
       {/* Last updated */}

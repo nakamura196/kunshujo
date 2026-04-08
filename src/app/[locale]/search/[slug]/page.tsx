@@ -10,6 +10,8 @@ import {SEARCHES} from '@/constants/search'
 
 const SEARCH_SLUGS = Object.keys(SEARCHES).filter((k) => k !== 'default')
 
+export const dynamicParams = true
+
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
     SEARCH_SLUGS.map((slug) => ({locale, slug}))

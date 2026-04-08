@@ -96,3 +96,20 @@ __pycache__public/data/images/
 out/
 tsconfig.tsbuildinfo
 .vercel
+.open-next/
+
+# Large data files (now in D1)
+public/data/index.json
+public/data/entity.json
+public/data/gcv.json
+public/data/relation2.json
+public/data/entity_relation.json
+public/data/object_relation.json
+public/data/relations/
+
+# Cloudflare
+.wrangler/
+
+# Generated SQL (large)
+scripts/seed.sql
+scripts/seed-relations.sql

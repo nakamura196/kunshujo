@@ -11,10 +11,17 @@ export function ToggleLanguage() {
 
   const nextLocale = locale === 'ja' ? 'en' : 'ja'
 
+  const handleChange = () => {
+    // Preserve query parameters from current URL
+    const queryString = typeof window !== 'undefined' ? window.location.search : ''
+    const fullPath = queryString ? `${pathname}${queryString}` : pathname
+    router.replace(fullPath, {locale: nextLocale})
+  }
+
   return (
     <button
       type="button"
-      onClick={() => router.replace(pathname, {locale: nextLocale})}
+      onClick={handleChange}
       className="rounded-full border px-3 py-2 text-sm"
       style={{borderColor: 'var(--border)', background: 'var(--panel)'}}
     >

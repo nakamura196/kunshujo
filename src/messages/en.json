@@ -94,7 +94,9 @@
     "layoutLabel": "Layout",
     "layoutList": "List",
     "layoutGrid": "Grid",
-    "layoutGraph": "Graph"
+    "layoutGraph": "Graph",
+    "more": "more...",
+    "advancedSearch": "Advanced Search"
   },
   "OtherSearch": {
     "title": "Other Search",

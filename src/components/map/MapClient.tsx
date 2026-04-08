@@ -31,8 +31,8 @@ export default function MapClient() {
     async function init() {
       const maplibregl = await import('maplibre-gl')
 
-      const res = await fetch('/data/entity.json')
-      const data: EntityItem[] = await res.json()
+      const res = await fetch('/api/map')
+      const data = await res.json() as {objectID: string; label?: string; geo: string; count?: string}[]
 
       if (!mounted || !mapRef.current) return
 
@@ -41,7 +41,6 @@ export default function MapClient() {
 
       for (const item of data) {
         if (!item.geo) continue
-        if (!Number(item.count)) continue
         const [lat, lng] = item.geo.split(' ').map(Number)
         if (isNaN(lat) || isNaN(lng)) continue
 

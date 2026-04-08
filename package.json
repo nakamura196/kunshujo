@@ -4,8 +4,10 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev -p 3335",
+    "prebuild": "node scripts/prebuild-content.mjs",
+    "build": "npm run prebuild && next build",
+    "build:cloudflare": "npm run prebuild && npx opennextjs-cloudflare build",
     "start": "next start",
     "lint": "eslint src"
   },
@@ -25,6 +27,8 @@
     "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260405.1",
+    "@opennextjs/cloudflare": "^1.18.0",
     "@types/node": "^24.3.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
@@ -32,6 +36,7 @@
     "eslint-config-next": "^16.2.1",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "wrangler": "^4.80.0"
   }
 }

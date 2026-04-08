@@ -1,7 +1,21 @@
 import {getTranslations} from 'next-intl/server'
 
 import {Link} from '@/i18n/routing'
-import type {Item} from '@/lib/site-data'
+type Item = {
+  objectID: string
+  label?: string
+  thumbnail?: string
+  _updated?: string
+  member?: string
+  tag?: string[]
+  book?: string[]
+  place?: string[]
+  agential?: string[]
+  org?: string[]
+  keyword?: string[]
+  color?: string[]
+  mtag?: string[]
+}
 
 async function MetaSection({
   title,

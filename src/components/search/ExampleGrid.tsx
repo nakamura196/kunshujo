@@ -26,8 +26,8 @@ export default function ExampleGrid() {
 
   useEffect(() => {
     fetch('/data/example.json')
-      .then((response) => response.json())
-      .then((data: ExampleItem[]) => setItems(data))
+      .then((response) => response.json() as Promise<ExampleItem[]>)
+      .then((data) => setItems(data))
       .catch(() => setItems([]))
   }, [])
 

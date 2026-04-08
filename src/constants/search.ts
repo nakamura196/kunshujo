@@ -10,11 +10,17 @@ export type AggField = {
   hide?: boolean
 }
 
+export type ListField = {
+  value: string
+  max?: number
+}
+
 export type SearchConfig = {
   label: string
   index: string
   aggs: Record<string, AggField>
   detail: DetailField[]
+  list?: ListField[]
 }
 
 export const SEARCHES: Record<string, SearchConfig> = {
@@ -42,6 +48,11 @@ export const SEARCHES: Record<string, SearchConfig> = {
       {label: 'colors', value: 'color'},
       {label: 'objects', value: 'mtag'},
     ],
+    list: [
+      {value: 'tag', max: 4},
+      {value: 'book', max: 1},
+      {value: 'place', max: 2},
+    ],
   },
   entity: {
     label: 'entity',
@@ -52,6 +63,9 @@ export const SEARCHES: Record<string, SearchConfig> = {
     detail: [
       {label: 'type', value: '\u30BF\u30A4\u30D7'},
       {label: 'jk', value: 'jk'},
+    ],
+    list: [
+      {value: 'タイプ', max: 2},
     ],
   },
   object: {
@@ -66,6 +80,10 @@ export const SEARCHES: Record<string, SearchConfig> = {
       {label: 'objects', value: 'mtag'},
       {label: 'colors', value: 'color'},
       {label: 'score', value: 'score', type: 'text'},
+    ],
+    list: [
+      {value: 'mtag', max: 3},
+      {value: 'color', max: 2},
     ],
   },
 }

@@ -35,12 +35,13 @@ export default function ObjectDetailClient({id}: {id: string}) {
   useEffect(() => {
     let mounted = true
 
-    fetch('/data/gcv.json')
-      .then((res) => res.json())
-      .then((data: ObjectItem[]) => {
+    fetch(`/api/object?id=${encodeURIComponent(id)}`)
+      .then((res) => res.json() as Promise<ObjectItem>)
+      .then((data) => {
         if (!mounted) return
-        const found = data.find((obj) => obj.objectID === id) || null
-        setItem(found)
+        if (data && data.objectID) {
+          setItem(data)
+        }
         setIsLoading(false)
       })
       .catch(() => {

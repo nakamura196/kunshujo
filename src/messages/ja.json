@@ -94,7 +94,9 @@
     "layoutLabel": "レイアウト",
     "layoutList": "リスト",
     "layoutGrid": "グリッド",
-    "layoutGraph": "グラフ"
+    "layoutGraph": "グラフ",
+    "more": "もっと見る...",
+    "advancedSearch": "詳細検索"
   },
   "OtherSearch": {
     "title": "その他の検索",

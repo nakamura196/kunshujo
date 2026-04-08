@@ -1,6 +1,6 @@
 'use client'
 
-import {useDeferredValue, useEffect, useMemo, useState} from 'react'
+import {useEffect, useMemo, useState, useCallback, useRef} from 'react'
 import {useTranslations} from 'next-intl'
 import {useSearchParams} from 'next/navigation'
 
@@ -42,6 +42,121 @@ function formatLabel(value: string) {
   return value.includes(':') ? value.split(':').slice(1).join(':') : value
 }
 
+const SEARCH_TYPE_MAP: Record<string, string> = {
+  default: 'default',
+  entity: 'entity',
+  object: 'object',
+}
+
+/* ── Facet Modal ── */
+function FacetModal({
+  field,
+  label,
+  searchType,
+  onSelect,
+  onClose,
+}: {
+  field: string
+  label: string
+  searchType: string
+  onSelect: (value: string) => void
+  onClose: () => void
+}) {
+  const [filter, setFilter] = useState('')
+  const [values, setValues] = useState<{value: string; count: number}[]>([])
+  const [isLoading, setIsLoading] = useState(true)
+  const backdropRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    let cancelled = false
+    setIsLoading(true)
+    const params = new URLSearchParams()
+    params.set('field', field)
+    params.set('type', searchType === 'entity' ? 'entity' : searchType === 'object' ? 'object' : 'default')
+    if (filter.trim()) params.set('q', filter.trim())
+    params.set('limit', '200')
+
+    fetch(`/api/facet-values?${params.toString()}`)
+      .then((r) => r.json() as Promise<{values: {value: string; count: number}[]}>)
+      .then((data) => {
+        if (!cancelled) {
+          setValues(data.values || [])
+          setIsLoading(false)
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setValues([])
+          setIsLoading(false)
+        }
+      })
+    return () => { cancelled = true }
+  }, [field, searchType, filter])
+
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose() }
+    window.addEventListener('keydown', handler)
+    return () => window.removeEventListener('keydown', handler)
+  }, [onClose])
+
+  return (
+    <div
+      ref={backdropRef}
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/40"
+      onClick={(e) => { if (e.target === backdropRef.current) onClose() }}
+    >
+      <div
+        className="w-full max-w-md rounded-2xl border p-5 shadow-xl"
+        style={{borderColor: 'var(--border)', background: 'var(--background)'}}
+      >
+        <div className="mb-4 flex items-center justify-between">
+          <h2 className="text-lg font-semibold">{label}</h2>
+          <button onClick={onClose} className="text-xl leading-none px-2">&times;</button>
+        </div>
+        <input
+          autoFocus
+          value={filter}
+          onChange={(e) => setFilter(e.target.value)}
+          placeholder="Filter..."
+          className="mb-3 w-full rounded-full border px-4 py-2 text-sm outline-none"
+          style={{borderColor: 'var(--border)', background: 'var(--panel)'}}
+        />
+        <div className="max-h-80 overflow-y-auto">
+          {isLoading ? (
+            <div className="py-4 text-center text-sm text-stone-400">Loading...</div>
+          ) : values.length === 0 ? (
+            <div className="py-4 text-center text-sm text-stone-400">No values found</div>
+          ) : (
+            <ul className="space-y-0.5">
+              {values.map(({value, count}) => (
+                <li key={value}>
+                  <button
+                    type="button"
+                    onClick={() => { onSelect(value); onClose() }}
+                    className="flex w-full items-center justify-between gap-2 rounded-lg px-2 py-1 text-sm text-left transition hover:bg-stone-100 dark:hover:bg-stone-800"
+                  >
+                    <span className="min-w-0 truncate">{formatLabel(value)}</span>
+                    <span className="shrink-0 text-xs tabular-nums text-stone-400">{count}</span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+/* ── Advanced Search Fields ── */
+const ADVANCED_FIELDS = [
+  {field: 'book', labelKey: 'book'},
+  {field: 'tag', labelKey: 'tags'},
+  {field: 'place', labelKey: 'places'},
+  {field: 'agential', labelKey: 'people'},
+  {field: 'keyword', labelKey: 'keywords'},
+] as const
+
 export default function SearchExplorer({searchType = 'default'}: {searchType?: string}) {
   const searchConfig = SEARCHES[searchType] || SEARCHES.default
   const FACET_FIELDS = Object.keys(searchConfig.aggs)
@@ -64,9 +179,13 @@ export default function SearchExplorer({searchType = 'default'}: {searchType?: s
   })()
 
   const [items, setItems] = useState<Item[]>([])
+  const [totalCount, setTotalCount] = useState(0)
+  const [facetCounts, setFacetCounts] = useState<Record<string, Record<string, number>>>({})
   const [isLoading, setIsLoading] = useState(true)
   const [query, setQuery] = useState(urlQuery)
-  const deferredQuery = useDeferredValue(query)
+  const [facetModal, setFacetModal] = useState<{field: string; label: string} | null>(null)
+  const [showAdvanced, setShowAdvanced] = useState(false)
+  const [advancedFields, setAdvancedFields] = useState<Record<string, string>>({})
 
   // Parse fc-* facet filters from URL
   const activeFacets = useMemo(() => {
@@ -84,95 +203,100 @@ export default function SearchExplorer({searchType = 'default'}: {searchType?: s
 
   useEffect(() => { setQuery(urlQuery) }, [urlQuery])
 
+  // Sync advanced field values from URL
   useEffect(() => {
-    let mounted = true
-    fetch(searchConfig.index)
-      .then((r) => r.json())
-      .then((data: Item[]) => { if (mounted) { setItems(data); setIsLoading(false) } })
-      .catch(() => { if (mounted) { setItems([]); setIsLoading(false) } })
-    return () => { mounted = false }
-  }, [searchConfig.index])
-
-  // 1. Text filter
-  const textFilteredItems = useMemo(() => {
-    const normalized = deferredQuery.trim().toLowerCase()
-    if (!normalized) return items
-    return items.filter((item) => {
-      const target = [
-        item.label,
-        ...(item.tag || []),
-        ...(item.book || []),
-        ...(item.place || []),
-        ...(item.agential || []),
-        ...(item.org || []),
-        ...(item.keyword || []),
-        ...(item.color || []),
-        ...(item.mtag || []),
-        ...(item.time || []),
-      ].filter(Boolean).join(' ').toLowerCase()
-      return target.includes(normalized)
-    })
-  }, [deferredQuery, items])
-
-  // 2. Facet filter (OR within facet, AND across facets)
-  const fullyFilteredItems = useMemo(() => {
-    let result = textFilteredItems
-    for (const [field, values] of Object.entries(activeFacets)) {
-      result = result.filter((item) => {
-        const itemValues = (item[field as keyof Item] as string[] | undefined) || []
-        return values.some((v) => itemValues.includes(v))
-      })
-    }
-    return result
-  }, [textFilteredItems, activeFacets])
-
-  // 3. Sort
-  const sortedItems = useMemo(() => {
-    const [field, dir] = urlSort.split(':')
-    if (!field || field === 'index' && !dir) return fullyFilteredItems
-    return [...fullyFilteredItems].sort((a, b) => {
-      let av: string
-      let bv: string
-      if (field === 'index') {
-        av = a.index?.[0] ?? ''
-        bv = b.index?.[0] ?? ''
-      } else if (field === 'label') {
-        av = a.label ?? ''
-        bv = b.label ?? ''
-      } else if (field === '_updated') {
-        av = a._updated ?? ''
-        bv = b._updated ?? ''
-      } else {
-        return 0
+    if (!searchParams) return
+    const fields: Record<string, string> = {}
+    for (const [key, value] of searchParams.entries()) {
+      if (key.startsWith('q-')) {
+        fields[key.slice(2)] = value
+        setShowAdvanced(true)
       }
-      const cmp = av.localeCompare(bv, undefined, {numeric: true})
-      return dir === 'desc' ? -cmp : cmp
-    })
-  }, [fullyFilteredItems, urlSort])
+    }
+    setAdvancedFields(fields)
+  }, [searchParams])
 
-  // 4. Pagination
-  const totalCount = sortedItems.length
-  const totalPages = Math.max(1, Math.ceil(totalCount / urlSize))
-  const currentPage = Math.min(urlPage, totalPages)
-  const pagedItems = useMemo(
-    () => sortedItems.slice((currentPage - 1) * urlSize, currentPage * urlSize),
-    [sortedItems, currentPage, urlSize]
-  )
+  // Fetch from API
+  const fetchResults = useCallback(async () => {
+    setIsLoading(true)
+    const params = new URLSearchParams()
+    params.set('type', SEARCH_TYPE_MAP[searchType] || 'default')
+    if (urlQuery) params.set('q', urlQuery)
+    params.set('sort', urlSort)
+    params.set('page', String(urlPage))
+    params.set('size', String(urlSize))
 
-  // Facet counts: count values within fully-filtered results.
-  const facetCounts = useMemo(() => {
-    const counts: Record<string, Record<string, number>> = {}
-    for (const field of FACET_FIELDS) {
-      counts[field] = {}
-      for (const item of fullyFilteredItems) {
-        const values = (item[field as keyof Item] as string[] | undefined) || []
-        for (const value of values) {
-          counts[field][value] = (counts[field][value] || 0) + 1
+    // Add facet filters and field-specific queries
+    if (searchParams) {
+      for (const [key, value] of searchParams.entries()) {
+        if (key.startsWith('fc-') || key.startsWith('q-')) {
+          params.append(key, value)
         }
       }
     }
-    return counts
-  }, [fullyFilteredItems, FACET_FIELDS])
+
+    try {
+      const res = await fetch(`/api/search?${params.toString()}`)
+      const data = await res.json() as {items: Item[]; total: number; facets: Record<string, Record<string, number>>}
+      setItems(data.items || [])
+      setTotalCount(data.total || 0)
+      setFacetCounts(data.facets || {})
+    } catch {
+      setItems([])
+      setTotalCount(0)
+      setFacetCounts({})
+    }
+    setIsLoading(false)
+  }, [searchType, urlQuery, urlSort, urlPage, urlSize, searchParams])
+
+  useEffect(() => { fetchResults() }, [fetchResults])
+
+  // Auto-save search history to localStorage
+  useEffect(() => {
+    if (!searchParams) return
+    const keyword = searchParams.get('q') || ''
+    const fcParams: Record<string, string[]> = {}
+    for (const [key, value] of searchParams.entries()) {
+      if (key.startsWith('fc-')) {
+        const field = key.slice(3)
+        if (!fcParams[field]) fcParams[field] = []
+        fcParams[field].push(value)
+      }
+    }
+    // Only save if there is a keyword or facet filter
+    if (!keyword && Object.keys(fcParams).length === 0) return
+
+    const q: Record<string, string | string[]> = {}
+    if (keyword) q.keyword = keyword
+    for (const [k, v] of Object.entries(fcParams)) {
+      q[`fc-${k}`] = v.length === 1 ? v[0] : v
+    }
+
+    // Build human-readable label
+    const parts: string[] = []
+    if (keyword) parts.push(keyword)
+    for (const [field, values] of Object.entries(fcParams)) {
+      parts.push(`${field}: ${values.map(formatLabel).join(', ')}`)
+    }
+    const label = parts.join(' / ')
+
+    const STORAGE_KEY = 'kunshujo-search-history'
+    const MAX_ITEMS = 20
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY)
+      const history: {label: string; q: Record<string, string | string[]>}[] = raw ? JSON.parse(raw) : []
+      const serialized = JSON.stringify(q)
+      const filtered = history.filter((h) => JSON.stringify(h.q) !== serialized)
+      filtered.unshift({label, q})
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(filtered.slice(0, MAX_ITEMS)))
+    } catch {
+      // Ignore localStorage errors
+    }
+  }, [searchParams])
+
+  // Pagination (now server-side)
+  const totalPages = Math.max(1, Math.ceil(totalCount / urlSize))
+  const currentPage = Math.min(urlPage, totalPages)
 
   // URL builders — all reset page to 1
   function buildParams(overrides: Record<string, string | null>): string {
@@ -210,6 +334,7 @@ export default function SearchExplorer({searchType = 'default'}: {searchType?: s
 
   function handleReset() {
     setQuery('')
+    setAdvancedFields({})
     router.push(pathname)
   }
 
@@ -226,6 +351,28 @@ export default function SearchExplorer({searchType = 'default'}: {searchType?: s
   function handleLayoutChange(layout: string) {
     const qs = buildParams({layout: layout === 'list' ? null : layout})
     router.push(qs ? `${pathname}?${qs}` : pathname)
+  }
+
+  // Search submit (includes advanced fields)
+  function handleSearchSubmit(e: React.FormEvent) {
+    e.preventDefault()
+    const overrides: Record<string, string | null> = {q: query.trim() || null}
+    // Clear existing q-* params
+    for (const f of ADVANCED_FIELDS) {
+      overrides[`q-${f.field}`] = null
+    }
+    // Set new q-* params from advancedFields
+    for (const [field, value] of Object.entries(advancedFields)) {
+      if (value.trim()) overrides[`q-${field}`] = value.trim()
+    }
+    const qs = buildParams(overrides)
+    router.push(qs ? `${pathname}?${qs}` : pathname)
+  }
+
+  // Handle facet selection from modal
+  function handleFacetSelect(field: string, value: string) {
+    const href = buildFacetHref(field, value, false)
+    router.push(href)
   }
 
   // Compact page range: always show first, last, and up to 3 around current
@@ -248,7 +395,7 @@ export default function SearchExplorer({searchType = 'default'}: {searchType?: s
   return (
     <div className="space-y-6">
       {/* Search input */}
-      <div className="flex flex-col gap-3">
+      <form onSubmit={handleSearchSubmit} className="flex flex-col gap-3">
         <label htmlFor="search-query" className="text-sm font-medium">
           {tSearch('queryLabel')}
         </label>
@@ -262,6 +409,13 @@ export default function SearchExplorer({searchType = 'default'}: {searchType?: s
             style={selectStyle}
           />
           <button
+            type="submit"
+            className="rounded-full border px-5 py-3 text-sm font-medium"
+            style={{background: 'var(--accent)', color: '#fff', borderColor: 'var(--accent)'}}
+          >
+            {tSearch('queryLabel')}
+          </button>
+          <button
             type="button"
             onClick={handleReset}
             className="rounded-full border px-5 py-3"
@@ -270,7 +424,78 @@ export default function SearchExplorer({searchType = 'default'}: {searchType?: s
             {tSearch('reset')}
           </button>
         </div>
+      </form>
+
+      {/* Advanced Search */}
+      <div>
+        <button
+          type="button"
+          onClick={() => setShowAdvanced(!showAdvanced)}
+          className="text-sm font-medium transition hover:underline"
+          style={{color: 'var(--accent)'}}
+        >
+          {tSearch('advancedSearch')} {showAdvanced ? '\u25B2' : '\u25BC'}
+        </button>
+        {showAdvanced && (
+          <div
+            className="mt-3 rounded-2xl border p-4 space-y-3"
+            style={{borderColor: 'var(--border)', background: 'var(--panel)'}}
+          >
+            <div className="grid gap-3 sm:grid-cols-2">
+              {ADVANCED_FIELDS.map(({field, labelKey}) => (
+                <div key={field}>
+                  <label htmlFor={`adv-${field}`} className="mb-1 block text-xs font-medium text-stone-500 dark:text-stone-400">
+                    {tSearch(labelKey as Parameters<typeof tSearch>[0])}
+                  </label>
+                  <input
+                    id={`adv-${field}`}
+                    value={advancedFields[field] || ''}
+                    onChange={(e) => setAdvancedFields((prev) => ({...prev, [field]: e.target.value}))}
+                    className="w-full rounded-full border px-4 py-2 text-sm outline-none"
+                    style={{borderColor: 'var(--border)', background: 'var(--background)'}}
+                  />
+                </div>
+              ))}
+            </div>
+            <div className="flex gap-2">
+              <button
+                type="button"
+                onClick={(e) => handleSearchSubmit(e)}
+                className="rounded-full border px-4 py-2 text-sm font-medium"
+                style={{background: 'var(--accent)', color: '#fff', borderColor: 'var(--accent)'}}
+              >
+                {tSearch('queryLabel')}
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setAdvancedFields({})
+                  // Clear q-* params from URL
+                  const overrides: Record<string, string | null> = {}
+                  for (const f of ADVANCED_FIELDS) overrides[`q-${f.field}`] = null
+                  const qs = buildParams(overrides)
+                  router.push(qs ? `${pathname}?${qs}` : pathname)
+                }}
+                className="rounded-full border px-4 py-2 text-sm"
+                style={{borderColor: 'var(--border)', background: 'var(--panel)'}}
+              >
+                {tSearch('reset')}
+              </button>
+            </div>
+          </div>
+        )}
       </div>
+
+      {/* Facet Modal */}
+      {facetModal && (
+        <FacetModal
+          field={facetModal.field}
+          label={facetModal.label}
+          searchType={searchType}
+          onSelect={(value) => handleFacetSelect(facetModal.field, value)}
+          onClose={() => setFacetModal(null)}
+        />
+      )}
 
       {/* Active facet chips */}
       {Object.keys(activeFacets).length > 0 && (
@@ -330,6 +555,16 @@ export default function SearchExplorer({searchType = 'default'}: {searchType?: s
                     )
                   })}
                 </ul>
+                {Object.keys(counts).length >= FACET_SHOW && (
+                  <button
+                    type="button"
+                    onClick={() => setFacetModal({field, label: tSearch(agg.label as Parameters<typeof tSearch>[0])})}
+                    className="mt-1 w-full text-center text-xs py-1 transition hover:underline"
+                    style={{color: 'var(--accent)'}}
+                  >
+                    {tSearch('more')}
+                  </button>
+                )}
               </div>
             )
           })}
@@ -396,7 +631,7 @@ export default function SearchExplorer({searchType = 'default'}: {searchType?: s
           )}
 
           {/* List layout */}
-          {urlLayout === 'list' && pagedItems.map((item) => (
+          {urlLayout === 'list' && items.map((item) => (
             <Link
               key={item.objectID}
               href={`/${searchType === 'entity' ? 'entity' : searchType === 'object' ? 'object' : 'item'}/${item.objectID}`}
@@ -414,21 +649,31 @@ export default function SearchExplorer({searchType = 'default'}: {searchType?: s
               </div>
               <div className="min-w-0">
                 <h2 className="text-xl font-semibold">{item.label || item.objectID}</h2>
-                <p className="mt-3 text-sm leading-7 text-stone-700 dark:text-stone-300">
-                  {(item.tag || []).slice(0, 4).join(' / ') || item.objectID}
-                </p>
-                <div className="mt-4 flex flex-wrap gap-2 text-xs text-stone-600 dark:text-stone-400">
-                  {(item.book || []).slice(0, 1).map((value) => (
-                    <span key={value} className="rounded-full border px-3 py-1" style={{borderColor: 'var(--border)'}}>
-                      {value}
-                    </span>
-                  ))}
-                  {(item.place || []).slice(0, 2).map((value) => (
-                    <span key={value} className="rounded-full border px-3 py-1" style={{borderColor: 'var(--border)'}}>
-                      {value}
-                    </span>
-                  ))}
-                </div>
+                {(() => {
+                  const listFields = searchConfig.list || [{value: 'tag', max: 4}]
+                  const firstField = listFields[0]
+                  const restFields = listFields.slice(1)
+                  return (
+                    <>
+                      {firstField && (
+                        <p className="mt-3 text-sm leading-7 text-stone-700 dark:text-stone-300">
+                          {((item as Record<string, unknown>)[firstField.value] as string[] || []).slice(0, firstField.max ?? 4).join(' / ') || item.objectID}
+                        </p>
+                      )}
+                      {restFields.length > 0 && (
+                        <div className="mt-4 flex flex-wrap gap-2 text-xs text-stone-600 dark:text-stone-400">
+                          {restFields.flatMap((f) =>
+                            ((item as Record<string, unknown>)[f.value] as string[] || []).slice(0, f.max ?? 2).map((value) => (
+                              <span key={`${f.value}-${value}`} className="rounded-full border px-3 py-1" style={{borderColor: 'var(--border)'}}>
+                                {value}
+                              </span>
+                            ))
+                          )}
+                        </div>
+                      )}
+                    </>
+                  )
+                })()}
               </div>
             </Link>
           ))}
@@ -436,7 +681,7 @@ export default function SearchExplorer({searchType = 'default'}: {searchType?: s
           {/* Grid layout */}
           {urlLayout === 'grid' && (
             <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-              {pagedItems.map((item) => (
+              {items.map((item) => (
                 <Link
                   key={item.objectID}
                   href={`/${searchType === 'entity' ? 'entity' : searchType === 'object' ? 'object' : 'item'}/${item.objectID}`}

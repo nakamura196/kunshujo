@@ -9,6 +9,8 @@ import {STATIC_PAGES} from '@/constants/site'
 import {routing} from '@/i18n/routing'
 import {getPageContent} from '@/lib/site-data'
 
+export const dynamicParams = true
+
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
     STATIC_PAGES.map((slug) => ({locale, slug}))

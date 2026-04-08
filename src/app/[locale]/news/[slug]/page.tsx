@@ -9,6 +9,8 @@ import {Locale} from '@/constants/site'
 import {routing} from '@/i18n/routing'
 import {getNewsEntry, getNewsList} from '@/lib/site-data'
 
+export const dynamicParams = true
+
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
     getNewsList(locale as Locale).map((entry) => ({locale, slug: entry.slug}))

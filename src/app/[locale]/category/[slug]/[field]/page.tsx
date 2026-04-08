@@ -9,6 +9,8 @@ import {routing} from '@/i18n/routing'
 
 const SLUGS = ['item', 'entity', 'object']
 
+export const dynamicParams = true
+
 export function generateStaticParams() {
   const params: {locale: string; slug: string; field: string}[] = []
   for (const locale of routing.locales) {
