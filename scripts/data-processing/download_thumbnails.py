@@ -13,7 +13,7 @@ import urllib.request
 import urllib.parse
 from pathlib import Path
 
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).parent.parent.parent
 PUBLIC = ROOT / "public"
 ENTITY_JSON = PUBLIC / "data" / "entity.json"
 EXAMPLE_JSON = PUBLIC / "data" / "example.json"
