@@ -42,6 +42,31 @@ function formatLabel(value: string) {
   return value.includes(':') ? value.split(':').slice(1).join(':') : value
 }
 
+/** Highlight search terms in text */
+function Highlight({text, query}: {text: string; query: string}) {
+  if (!query.trim() || !text) return <>{text}</>
+  const terms = query.split(/[\s\u3000]+/).filter((t) => t && !t.startsWith('-'))
+  if (terms.length === 0) return <>{text}</>
+
+  // Build regex from terms, longest first to avoid partial matches
+  const sorted = [...terms].sort((a, b) => b.length - a.length)
+  const escaped = sorted.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+  const re = new RegExp(`(${escaped.join('|')})`, 'gi')
+  const parts = text.split(re)
+
+  return (
+    <>
+      {parts.map((part, i) =>
+        re.test(part) ? (
+          <mark key={i} className="bg-yellow-200 dark:bg-yellow-700/60 font-bold rounded-sm px-0.5">{part}</mark>
+        ) : (
+          <span key={i}>{part}</span>
+        )
+      )}
+    </>
+  )
+}
+
 const SEARCH_TYPE_MAP: Record<string, string> = {
   default: 'default',
   entity: 'entity',
@@ -648,7 +673,7 @@ export default function SearchExplorer({searchType = 'default'}: {searchType?: s
                 ) : null}
               </div>
               <div className="min-w-0">
-                <h2 className="text-xl font-semibold">{item.label || item.objectID}</h2>
+                <h2 className="text-xl font-semibold"><Highlight text={item.label || item.objectID} query={urlQuery} /></h2>
                 {(() => {
                   const listFields = searchConfig.list || [{value: 'tag', max: 4}]
                   const firstField = listFields[0]
@@ -657,7 +682,7 @@ export default function SearchExplorer({searchType = 'default'}: {searchType?: s
                     <>
                       {firstField && (
                         <p className="mt-3 text-sm leading-7 text-stone-700 dark:text-stone-300">
-                          {((item as Record<string, unknown>)[firstField.value] as string[] || []).slice(0, firstField.max ?? 4).join(' / ') || item.objectID}
+                          <Highlight text={((item as Record<string, unknown>)[firstField.value] as string[] || []).slice(0, firstField.max ?? 4).join(' / ') || item.objectID} query={urlQuery} />
                         </p>
                       )}
                       {restFields.length > 0 && (
@@ -665,7 +690,7 @@ export default function SearchExplorer({searchType = 'default'}: {searchType?: s
                           {restFields.flatMap((f) =>
                             ((item as Record<string, unknown>)[f.value] as string[] || []).slice(0, f.max ?? 2).map((value) => (
                               <span key={`${f.value}-${value}`} className="rounded-full border px-3 py-1" style={{borderColor: 'var(--border)'}}>
-                                {value}
+                                <Highlight text={value} query={urlQuery} />
                               </span>
                             ))
                           )}
@@ -697,9 +722,9 @@ export default function SearchExplorer({searchType = 'default'}: {searchType?: s
                       />
                     ) : null}
                   </div>
-                  <h2 className="mt-2 text-sm font-semibold line-clamp-2">{item.label || item.objectID}</h2>
+                  <h2 className="mt-2 text-sm font-semibold line-clamp-2"><Highlight text={item.label || item.objectID} query={urlQuery} /></h2>
                   <p className="mt-1 text-xs text-stone-500 dark:text-stone-400 line-clamp-1">
-                    {(item.tag || []).slice(0, 2).join(' / ') || item.objectID}
+                    <Highlight text={(item.tag || []).slice(0, 2).join(' / ') || item.objectID} query={urlQuery} />
                   </p>
                 </Link>
               ))}
