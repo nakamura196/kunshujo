@@ -35,3 +35,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          # gh-pages を毎回単一コミットで上書きし、デプロイ成果物の履歴蓄積を防ぐ
+          force_orphan: true

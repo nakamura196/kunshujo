@@ -93,3 +93,7 @@ src/gis/output
 serviceAccountKey.json
 
 __pycache__
+
+# 大量のローカル画像はコミットしない (IIIF Image API から配信する)
+static/data/images/
+public/data/images/
