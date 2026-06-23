@@ -15,15 +15,13 @@
             <!-- query, -->
             <v-img
               contain
-              :lazy-src2="baseUrl + '/data/images/' + item._id + '.jpg'"
-              :src="baseUrl + '/data/images/' + item._id + '.jpg'"
+              :src="
+                item._source.thumbnail || baseUrl + '/img/icons/no-image.webp'
+              "
               max-height="150"
               style="height: 150px"
               width="100%"
               class="grey lighten-2"
-              :src2="
-                item._source.thumbnail || baseUrl + '/img/icons/no-image.webp'
-              "
             />
           </nuxt-link>
           <div class="pa-4">
